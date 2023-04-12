@@ -7,7 +7,13 @@ Nous avons réaliser une application Web qui permet de collecter des données su
 
 
 *************Intro Greneral*************
+La sécurité en ligne est un enjeu de plus en plus important dans notre société numérique. Les utilisateurs d'Internet sont confrontés à de nombreux problèmes de sécurité, tels que les attaques de phishing, les virus informatiques, les logiciels malveillants, les attaques par déni de service (DDoS), et bien d'autres. Ces menaces peuvent causer des dommages importants, tels que la perte de données, le vol d'identité, le piratage de comptes en ligne et bien d'autres.
 
+En Algérie, les utilisateurs d'Internet sont confrontés à ces mêmes problèmes de sécurité. Les cybercriminels utilisent des techniques sophistiquées pour exploiter les vulnérabilités des sites web et des applications, et pour compromettre la sécurité des utilisateurs algériens. C'est pourquoi il est important de mettre en place des mesures de sécurité adéquates pour protéger les utilisateurs et les sites web algériens.
+
+La plateforme en ligne pour les statistiques et la veille sécuritaire en Algérie est une solution pour aider les utilisateurs algériens à se protéger contre les menaces en ligne. En permettant de scanner les sites web à la recherche de vulnérabilités potentielles, cette plateforme peut aider les administrateurs de sites à détecter et à corriger les failles de sécurité avant qu'elles ne soient exploitées par des cybercriminels.
+
+En fournissant des statistiques sur les types d'attaques les plus courantes et les méthodes les plus efficaces pour s'en protéger, cette plateforme peut également aider les utilisateurs algériens à mieux comprendre les risques potentiels et à prendre des mesures pour renforcer la sécurité de leurs systèmes. En fin de compte, cette plateforme peut contribuer à améliorer la sécurité en ligne en Algérie, en offrant une solution pratique et efficace pour la veille et la surveillance de la sécurité informatique.
 
 *************Plan du mémoire************
 Afin d'atteindre cet objectif, la structure suivante a été choisie :
