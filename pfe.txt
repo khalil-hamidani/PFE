@@ -1,0 +1,46 @@
+
+******************resume**************
+
+Avec la croissance et l'utilisation généralisées des informations numériques, dont une grande partie est confidentielle, il y a également eu une augmentation des incidents de vol d'informations. La sécurité est trés importante pour toute organisation afin d'éviter que des utilisateurs non autorisés n'accèdent aux données électroniques. 
+Nous avons réaliser une application Web qui permet de collecter des données sur les incidents liés à la sécurité, de les traiter et de les analyser pour fournir des statistiques précises sur la criminalité et la sécurité dans l'Algérie. En outre, notre plateforme dispose également d'une fonctionnalité de scan de services web pour détecter les vulnérabilités potentielles et renforcer la sécurité de ces services. Le mémoire présente les étapes clés de la conception et du développement de la plateforme, ainsi que les technologies utilisées et les résultats obtenus.
+
+
+
+*************Intro Greneral*************
+
+
+*************Plan du mémoire************
+Afin d'atteindre cet objectif, la structure suivante a été choisie :
+● Le premier chapitre, intitulé « Introduction à la sécurité informatique », présente le domaine d'étude et explore les aspects liés à la sécurité informatique.
+● Le deuxième chapitre, intitulé « Conception », présente les différentes étapes du processus de conception, de la collecte des besoins à la conception détaillée.
+● Enfin, le troisième chapitre, intitulé «  Implémentation », porte sur la réalisation et l’implémentation de l’application ainsi que son fonctionnement.
+
+/////////////////////////////////////////////////////////////////
+chpitre1:
+-----------------intro:
+Ce chapitre a pour but de fournir une vue d'ensemble de la sécurité informatique, examiner ses notions fondamentales  et de mettre en évidence son importance dans le monde numérique actuel. 
+
+-------------------definitions:
+----1/IOC: IOC est l'acronyme de "Indicator of Compromise" ou "Indicateur de compromission" en français. Il s'agit d'un élément de preuve qui indique qu'un système informatique a été compromis ou qu'une activité malveillante a eu lieu. Les IOC peuvent prendre diverses formes, notamment des fichiers de logs, des adresses IP, des noms de domaine, des signatures de virus, des hash de fichiers, des comportements suspects, des identifiants de connexion, des emails suspects, etc. Les IOC sont utilisés par les professionnels de la sécurité informatique pour détecter, prévenir et enquêter sur les incidents de sécurité, ainsi que pour mettre en place des mesures de protection et de remédiation. Les IOC sont également largement utilisés dans les systèmes de détection et de réponse aux incidents de sécurité (SIEM), qui permettent aux organisations de surveiller en temps réel les activités suspectes sur leurs réseaux et de détecter les menaces potentielles.
+
+------2/SI: Ensemble de mesures de sécurité physiques, logiques et administratives, et de mesures d'urgence, mises en place dans une organisation, en vue d'assurer la protection de ses biens informatiques, la confidentialité des données de son système d'information et la continuité de service. La sécurité informatique comporte trois aspects : la protection physique des installations, la protection des données contre la consultation, la modification ou la dégradation, effectuées de façon volontaire ou accidentelle par des personnes non autorisées, et la protection de la fiabilité de ces données (c'est-à-dire la conservation de leur contenu au fil du temps ou lors de leur traitement).
+
+-------3/Vulnerabilite: Une vulnérabilité est une faiblesse ou une lacune dans un système informatique ou dans une application qui peut être exploitée par des attaquants pour pénétrer ou perturber le système. Les vulnérabilités peuvent être causées par des erreurs de conception, des défauts de codage, des configurations inappropriées, ou des problèmes de mise à jour. Les attaquants exploitent souvent les vulnérabilités pour accéder à des données sensibles, installer des logiciels malveillants ou perturber le fonctionnement normal du système.
+
+
+--------4/Attaque: Une attaque informatique est un acte malveillant visant à compromettre ou à perturber un système informatique, un réseau ou une application. Les attaques peuvent prendre de nombreuses formes, notamment des virus, des malwares, des tentatives d'intrusion, des attaques par déni de service, des attaques de phishing, etc. Les attaquants peuvent chercher à voler des données sensibles, à perturber les opérations normales du système, à détruire des informations ou à compromettre la sécurité des utilisateurs. 
+
+---------------------analyse vulnerabilite:
+L'analyse de vulnérabilités est un processus visant à identifier les vulnérabilités dans un système informatique, une application ou un réseau, afin de les corriger avant qu'elles ne soient exploitées par des attaquants. Le processus commence généralement par une évaluation de la sécurité du système, qui peut comprendre des tests de pénétration, des analyses de configuration, des scans de vulnérabilités et d'autres techniques. Les vulnérabilités identifiées sont ensuite évaluées en termes de leur impact potentiel sur le système et de la probabilité qu'elles soient exploitées. Une fois les vulnérabilités prioritaires identifiées, des correctifs sont appliqués pour réduire les risques. L'analyse de vulnérabilités est un processus continu, car de nouvelles vulnérabilités peuvent apparaître en raison de changements dans les systèmes, les applications ou les menaces. Par conséquent, il est important de maintenir les systèmes à jour et de réaliser des analyses de vulnérabilités régulières pour maintenir une posture de sécurité optimale.
+
+
+
+
+
+--------------------Exemple d'etude:
+
+(on ajoute une capture de cisa)
+
+--------------------conclusion:
+En conclusion de ce chapitre, nous avons vu que la sécurité informatique est un domaine crucial dans le monde numérique actuel. Nous avons défini ce qu'est la sécurité informatique, ainsi que les indicateurs de compromission (IOC), les vulnérabilités et les attaques. Nous avons également examiné l'analyse de vulnérabilités, une méthode qui permet d'identifier et de corriger les vulnérabilités dans les systèmes informatiques.
+
