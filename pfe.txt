@@ -24,8 +24,7 @@ Afin d'atteindre cet objectif, la structure suivante a été choisie :
 /////////////////////////////////////////////////////////////////
 chpitre1:
 -----------------intro:
-Ce chapitre a pour but de fournir une vue d'ensemble de la sécurité informatique, examiner ses notions fondamentales  et de mettre en évidence son importance dans le monde numérique actuel. 
-
+L'objectif de ce chapitre est de fournir un aperçu de la sécurité informatique, d'examiner ses concepts fondamentaux et de souligner son importance dans le monde numérique actuel.
 -------------------definitions:
 ----1/IOC: IOC est l'acronyme de "Indicator of Compromise" ou "Indicateur de compromission" en français. Il s'agit d'un élément de preuve qui indique qu'un système informatique a été compromis ou qu'une activité malveillante a eu lieu. Les IOC peuvent prendre diverses formes, notamment des fichiers de logs, des adresses IP, des noms de domaine, des signatures de virus, des hash de fichiers, des comportements suspects, des identifiants de connexion, des emails suspects, etc. Les IOC sont utilisés par les professionnels de la sécurité informatique pour détecter, prévenir et enquêter sur les incidents de sécurité, ainsi que pour mettre en place des mesures de protection et de remédiation. Les IOC sont également largement utilisés dans les systèmes de détection et de réponse aux incidents de sécurité (SIEM), qui permettent aux organisations de surveiller en temps réel les activités suspectes sur leurs réseaux et de détecter les menaces potentielles.
 
@@ -48,5 +47,5 @@ L'analyse de vulnérabilités est un processus visant à identifier les vulnéra
 (on ajoute une capture de cisa)
 
 --------------------conclusion:
-En conclusion de ce chapitre, nous avons vu que la sécurité informatique est un domaine crucial dans le monde numérique actuel. Nous avons défini ce qu'est la sécurité informatique, ainsi que les indicateurs de compromission (IOC), les vulnérabilités et les attaques. Nous avons également examiné l'analyse de vulnérabilités, une méthode qui permet d'identifier et de corriger les vulnérabilités dans les systèmes informatiques.
+A la fin du présent chapitre, nous avons constaté que la sécurité informatique est un domaine crucial dans le monde numérique actuel. Nous avons défini on quoi consiste la sécurité informatique, ainsi que les indicateurs de compromission (IOC), les vulnérabilités et les attaques. Nous nous sommes aussi penchés sur l'analyse des vulnérabilités, une méthode d'identification et de correction des vulnérabilités dans les systèmes informatiques.
 
