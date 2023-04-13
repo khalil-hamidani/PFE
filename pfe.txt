@@ -49,3 +49,27 @@ L'analyse de vulnérabilités est un processus visant à identifier les vulnéra
 --------------------conclusion:
 A la fin du présent chapitre, nous avons constaté que la sécurité informatique est un domaine crucial dans le monde numérique actuel. Nous avons défini on quoi consiste la sécurité informatique, ainsi que les indicateurs de compromission (IOC), les vulnérabilités et les attaques. Nous nous sommes aussi penchés sur l'analyse des vulnérabilités, une méthode d'identification et de correction des vulnérabilités dans les systèmes informatiques.
 
+
+
+/////////////////////////////////////////////////////////////////
+chpitre2:
+-----------------intro:
+La conception est une étape clé dans tout projet de développement logiciel. Afin de la réussir,  il est nécessaire de suivre une méthodologie rigoureuse et structurée. Ce chapitre se concentre sur les différentes étapes de la conception, en mettant l'accent sur l'analyse des besoins et la conception avec les diagrammes de cas d’utilisation, de classe et de séquence. Les différentes techniques utilisées pour collecter, analyser et formaliser les besoins des utilisateurs sont détaillées, et les différents types de diagrammes utilisés en conception logicielle sont présentés pour concevoir une solution adaptée.
+
+-----------------Analyse des besoins:
+
+
+-----------------Conception:
+Dans cette section, nous avons choisi de travailler avec UML, qui est un langage de modélisation graphique servant à décrire les processus et les structures des systèmes logiciels. Le modèle UML est composé de plusieurs diagrammes, chacun ayant une fonction spécifique. Les diagrammes suivants sont présentés dans le cadre de cette étude : 
+a)	Le diagramme de cas d’utilisation :
+
+
+b)	Le diagramme de classe :
+
+
+c)	Le diagramme de séquence :
+
+
+
+-----------------conclusion:
+Pour conclure, le chapitre consacré à la conception a souligné l'importance de cette phase dans le processus de développement logiciel. Nous avons vu comment l'analyse des besoins est un élément fondamental pour définir une solution logicielle qui répond de manière optimale aux attentes des utilisateurs. Les différents types de diagrammes UML, tels que les diagrammes de classe, de séquence et de cas d'utilisation, ont été présentés comme des outils indispensables pour modéliser les différentes vues et interactions entre les éléments du système.
