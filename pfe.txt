@@ -57,6 +57,20 @@ chpitre2:
 La conception est une étape clé dans tout projet de développement logiciel. Afin de la réussir,  il est nécessaire de suivre une méthodologie rigoureuse et structurée. Ce chapitre se concentre sur les différentes étapes de la conception, en mettant l'accent sur l'analyse des besoins et la conception avec les diagrammes de cas d’utilisation, de classe et de séquence. Les différentes techniques utilisées pour collecter, analyser et formaliser les besoins des utilisateurs sont détaillées, et les différents types de diagrammes utilisés en conception logicielle sont présentés pour concevoir une solution adaptée.
 
 -----------------Analyse des besoins:
+Cette étape consiste à identifier et comprendre les besoins des utilisateurs ainsi que les exigences du système, afin de définir les fonctionnalités et les caractéristiques nécessaires pour répondre à ces besoins.
+.1  Les besoins fonctionnels 
+Il s'agit des tâches ou des actions que les utilisateurs doivent pouvoir accomplir avec notre système.
+•	Un citoyen peut déclarer, en anonyme, un acte suspect de piratage ou de tentative d’attaque.
+•	Une administration peut suivre l’état d’actualité de sécurité en Algérie avec les nouvelles vulnérabilités liées aux équipements et applications utilisés.
+•	Un tableau de bord des statistiques officielles de nombres d’attaques par type et par cible au service de l’état pour le suivi et la veille sécuritaire.
+
+.2  Les besoins non fonctionnels
+Afin d’assurer le bon fonctionnement de notre application et pour garantir la satisfaction de l’utilisateur, des contraintes doivent être prises en compte tout au long du développement du notre projet :
+•	Sécurité : La plateforme doit fournir un haut niveau de sécurité afin de protéger les données et les utilisateurs contre les attaques malveillantes.
+•	Performance : L’application doit être rapide et réactive pour permettre aux utilisateurs de naviguer rapidement à travers les différentes sections.
+•	Accessibilité : L’application doit être conçue pour être accessible à tous les utilisateurs, y compris ceux ayant des besoins particuliers en termes d'accessibilité.
+•	Fiabilité : La plateforme doit être fiable et offrir une grande disponibilité afin que les utilisateurs puissent l'utiliser sans interruption.
+
 
 
 -----------------Conception:
