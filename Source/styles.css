@@ -62,10 +62,6 @@ body {
     position: relative;
     padding-left: 25px;
     cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 .formbold-input-radio {
