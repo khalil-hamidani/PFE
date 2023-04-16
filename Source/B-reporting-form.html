@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <a href="P-reporting.html"> <button type="button" class="btn btn-light">&#8592; Back</button></a>
+    <a href="B-reporting.html"> <button type="button" class="btn btn-light">&#8592; Back</button></a>
     <h1>Reporting form</h1>
     <hr>
     <h2>Complainant's Information</h2>
@@ -21,28 +21,6 @@
     <div class="main-wrapper">
         <div class="form-wrapper">
             <form action="" method="POST">
-                <div class="input-radio-wrapper">
-                    <label for="ans" class="form-label">
-                        I am : <span>*</span>
-                    </label>
-
-                    <div class="radio-flex">
-                        <div class="radio-group">
-                            <label class="radio-label">
-                                <input class="input-radio" type="radio" name="ans" id="ans" />
-                                the impacted user
-                            </label>
-                        </div>
-
-                        <div class="radio-group">
-                            <label class="radio-label">
-                                <input class="input-radio" type="radio" name="ans" id="ans" />
-                                reporting on behalf of the impacted user
-                            </label>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="input-group">
                     <label for="name" class="form-label"> First Name </label>
                     <input type="text" name="F-name" id="F-name" placeholder="Enter your First name" autocomplete="off"
@@ -66,25 +44,30 @@
                 </div>
 
                 <div class="input-group">
-                    <label for="age" class="form-label"> Age </label>
-                    <input type="text" name="age" id="age" placeholder="Enter your age" autocomplete="off" class="form-input" />
+                    <label for="name" class="form-label"> organization name <span>*</span></label>
+                    <input type="text" name="O-name" id="O-name" placeholder="Enter the organization name" autocomplete="off"
+                        class="form-input" />
                 </div>
 
                 <div class="input-group">
-                    <label for="age" class="form-label"> Gender </label>
-                    <input type="text" name="age" id="age" placeholder="Enter your age" autocomplete="off" class="form-input" />
+                    <label for="name" class="form-label"> organization website </label>
+                    <input type="text" name="O-web" id="O-web" placeholder="Enter the organization URL" autocomplete="off"
+                        class="form-input" />
                 </div>
 
                 <div class="input-group">
                     <label class="form-label">
-                        Which option best describes you?
+                        Which option best describes your organization? <span>*</span>
                     </label>
 
                     <select class="form-select" name="occupation" id="occupation">
-                        <option value="">Student</option>
-                        <option value="">Employee</option>
-                        <option value="">Retiree</option>
-                        <option value="">Other</option>
+                        <option disabled selected>select an option</option>
+                        <option value="for-profit">For-profit organizations</option>
+                        <option value="non-profit">Non-profit organizations</option>
+                        <option value="educational">Educational organizations</option>
+                        <option value="healthcare">Healthcare organizations</option>
+                        <option value="religious">Religious organizations</option>
+                        <option value="social">Social organizations</option>
                     </select>
                 </div>
 
@@ -105,28 +88,34 @@
                 </div>
 
                 <div class="input-group">
-                    <label for="name" class="form-label"> Company Name </label>
+                    <label for="name" class="form-label"> organization Name </label>
                     <input type="text" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off" class="form-input" />
                 </div>
 
                 <div class="input-group">
                     <label for="name" class="form-label"> Country </label>
-                    <input type="text" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off" class="form-input" />
+                    <input type="text" name="country" id="country" placeholder="Enter the Country" autocomplete="off" class="form-input" />
+                </div>
+
+                <div class="input-group">
+                    <label for="name" class="form-label"> City </label>
+                    <input type="text" name="city" id="city" placeholder="Enter the city" autocomplete="off" class="form-input" />
                 </div>
 
                 <div class="input-group">
                     <label for="name" class="form-label"> Email Address </label>
-                    <input type="text" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off" class="form-input" />
+                    <input type="text" name="L-name" id="L-name" placeholder="Enter the email" autocomplete="off" class="form-input" />
                 </div>
 
                 <div class="input-group">
                     <label for="name" class="form-label"> Website </label>
-                    <input type="text" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off" class="form-input" />
+                    <input type="text" name="website" id="website" placeholder="Enter the URL" autocomplete="off" class="form-input" />
                 </div>
 
                 <h2>Details of Your Complaint</h2>
                 <p>Please provide us with information on the incedent, along with a detailed description of the
-                    events, business conduct observed and any additional information you feel is pertinent to your complaint.</p>
+                    events, business conduct observed and any additional information you feel is pertinent to your complaint. Attach any and
+                    all documents you might have on hand to support your complaint.</p>
 
                 <div class="input-group">
                     <label for="name" class="form-label"> When was this incident detected <span>*</span> </label>
@@ -139,7 +128,6 @@
                     </label>
                     <textarea rows="5" name="message" id="message" placeholder="Type here..." class="form-input"></textarea>
                 </div>
-
                 <h2>Evidences</h2>
                 <p>Attach any and all documents you might have on hand to support your complaint.</p>
                 <p>Electronic files can be submitted by clicking the "Attach files" button. You can attach pictures, documents and
