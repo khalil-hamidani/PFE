@@ -10,21 +10,92 @@
 </head>
 
 <body id="categories">
-<a href="index.html"><button>Back</button></a>
+    <a href="index.html"><button>Back</button></a>
     <h2>what is an IOC ?</h2>
-    <p>Indicators of compromise (IOCs) are “pieces of forensic data, such as data found in system log entries or files, that identify
-        potentially malicious activity on a system or network.” Indicators of compromise aid information security and IT professionals in
-        detecting data breaches, malware infections, or other threat activity. By monitoring for indicators of compromise, organizations can
-        detect attacks and act quickly to prevent breaches from occurring or limit damages by stopping attacks in earlier stages.
+    <p>Indicators of Compromise (IOCs) are pieces of information that can help detect and identify potential security threats or attacks.
+        IOCs can include any data that suggests malicious activity in IP addresses or domain names.</p>
+    <p>By collecting and analyzing IOCs reports, security professionals can identify patterns and trends in attacks and develop strategies
+        to protect against future threats. these reports will be shared within the security community to improve threat intelligence and
+        response efforts.</p>
 
-        Indicators of compromise act as breadcrumbs that lead infosec and IT pros to detect malicious activity early in the attack sequence.
-        These unusual activities are the red flags that indicate a potential or in-progress attack that could lead to a data breach or
-        systems compromise. But, IOCs are not always easy to detect; they can be as simple as metadata elements or incredibly complex
-        malicious code and content samples. Analysts often identify various IOCs to look for correlation and piece them together to analyze
-        a potential threat or incident.</p>
+    <h2>report an IOC</h2>
+    <p>Reporting Indicators of Compromise (IOCs) to the appropriate authorities or security teams is crucial in the fight against cybercrime
+        and other security threats. By sharing IOCs, security professionals can collaborate and coordinate efforts to identify, investigate,
+        and respond to potential attacks.</p>
 
+    <div class="main-wrapper">
+        <div class="form-wrapper">
+            <form action="" method="POST">
+                <div class="input-group">
+                    <label for="telephone" class="form-label">Enter the website URL: </label>
+                    <input type="text" name="URL" id="URL" placeholder="example.com" autocomplete="off" class="form-input" />
+                </div>
 
+                <div class="input-checkbox-wrapper">
+                    <label for="ans" class="form-label">
+                        What are the IOCs you detect in this website : <span></span> (at least one is required) </span>
+                    </label><br>
+                    <label>
+                        <input type="checkbox" value="Unusual Outbound Network Traffic">Unusual Outbound Network Traffic
+                    </label><br>
+                    <label>
+                        <input type="checkbox" value="Anomalies in Privileged User Account Activity">Anomalies in Privileged User Account
+                        Activity
+                    </label><br>
+                    <label>
+                        <input type="checkbox" value="Geographical Irregularities">Geographical Irregularities
+                    </label><br>
+                    <label>
+                        <input type="checkbox" value="Log-In Red Flags">Log-In Red Flags
+                    </label><br>
+                    <label>
+                        <input type="checkbox" value="Increases in Database Read Volume">Increases in Database Read
+                        Volume
+                    </label><br>
+                    <label>
+                        <input type="checkbox" value="HTML Response Sizes">HTML Response Sizes
+                    </label><br>
+                    <label>
+                        <input type="checkbox" value="Large Numbers of Requests for the Same File">Large Numbers of Requests for the Same
+                        File
+                    </label><br>
+                    <label>
+                        <input type="checkbox" value="Mismatched Port-Application Traffic">Mismatched Port-Application Traffic
+                    </label><br>
+                    <label>
+                        <input type="checkbox" value="Suspicious Registry or System File Changes">Suspicious Registry or System File Changes
+                    </label><br>
+                    <label>
+                        <input type="checkbox" value="Unusual DNS Requests">Unusual DNS Requests
+                    </label><br>
+                    <label>
+                        <input type="checkbox" value="Unexpected Patching of Systems">Unexpected Patching of Systems
+                    </label><br>
+                    <label>
+                        <input type="checkbox" value="Mobile Device Profile Changes">Mobile Device Profile Changes
+                    </label><br>
+                    <label>
+                        <input type="checkbox" value="Bundles of Data in the Wrong Place">Bundles of Data in the Wrong Place
+                    </label><br>
+                    <label>
+                        <input type="checkbox" value="Web Traffic with Unhuman Behavior">Web Traffic with Unhuman Behavior
+                    </label><br>
+                    <label>
+                        <input type="checkbox" value="Signs of DDoS Activity">Signs of DDoS Activity
+                    </label><br>
 
+                    <div>
+                        <label for="message" class="form-label">
+                            comments 
+                        </label>
+                        <textarea rows="5" name="message" id="message" placeholder="provide more details" class="form-input"></textarea>
+                    </div>
+                </div>
+
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
 
 
     <script src="https://kit.fontawesome.com/c070b8016f.js" crossorigin="anonymous"></script>
