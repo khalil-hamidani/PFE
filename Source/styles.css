@@ -1,16 +1,42 @@
 /* ----- table of content ----- */
-/*! ---- I- .html -------- */
-/* ? 1)  */
+/*! ---- I- header -------- */
 /*! ---- II- report.html -------- */
-/* ? 1) categories */ 
+/* ? 1) categories */
+* {
+    margin: 0;
+}
 
-/*! -------------------------------- I- index.html-----------------------------#ff0000 */
-/*? -------------------------------- 1)  -------------------------------#1100ff */
+/*! -------------------------------- I- header -----------------------------#ff0000 */
+header {
+    background-color: #041e52;
+    height: 18rem;
+
+}
+
+header h1 {
+    color: #e8f5ff;
+}
+
+header img {
+    height: auto;
+    max-width: 30%;
+    padding-top: 1rem;
+    padding-left: 5rem;
+    margin: 0;
+}
+
+header hr {
+    border: 1px solid #e8f5ff;
+    width: 100px;
+    rotate: 90deg;
+    padding: 0;
+    margin: 0;
+}
 
 /*! -------------------------------- IT- report.html-----------------------------#ff0000 */
 /*? -------------------------------- 1) categories -------------------------------#1100ff */
 
-.categories{
+.categories {
     border: 1px solid black;
     border-radius: 5px;
     padding: 5px;
@@ -18,10 +44,12 @@
     margin: 15px;
     max-width: 30em;
 }
-.categories:hover{
+
+.categories:hover {
     border-color: #0078d4;
     background-color: #e8f5ff;
 }
+
 #categories a {
     text-decoration: none;
     color: black;
