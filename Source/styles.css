@@ -1,32 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+
 /* ----- table of content ----- */
 /*! ---- I- header -------- */
 /*! ---- II- report.html -------- */
 /* ? 1) categories */
 * {
     margin: 0;
+    font-family: 'Poppins';
 }
 
 /*! -------------------------------- I- header -----------------------------#ff0000 */
 header {
-    background-color: #041e52;
+    background-color: rgb(4, 30, 82);
     height: 18rem;
 
 }
 
 header h1 {
-    color: #e8f5ff;
+    color: #ffffff;
+    padding-left: 8rem;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+header h2 {
+    color: #ffffff;
+    padding-left: 9rem;
 }
 
 header img {
     height: auto;
-    max-width: 80%;
+    max-width: 50%;
     padding-left: 5em;
     margin: 0;
-    /* make the image non selected ?  */  
 }
 
 header hr {
-    border: 1px solid #e8f5ff;
+    border: 1px solid #ffffff;
     width: 100px;
     rotate: 90deg;
     padding: 0;
