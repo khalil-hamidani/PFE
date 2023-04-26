@@ -19,10 +19,10 @@ header h1 {
 
 header img {
     height: auto;
-    max-width: 30%;
-    padding-top: 1rem;
-    padding-left: 5rem;
+    max-width: 80%;
+    padding-left: 5em;
     margin: 0;
+    /* make the image non selected ?  */  
 }
 
 header hr {
