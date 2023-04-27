@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
 
 /* ----- table of content ----- */
-/*! ---- I- header -------- */
+/*! ---- I- header & footer-------- */
+/* ? 1) header */
+/* ? 2) footer */
 /*! ---- II- report.html -------- */
 /* ? 1) notes */
 /* ? 2) categories */
@@ -19,8 +21,10 @@ p {
 }
 
 /*! -------------------------------- I- header -----------------------------#ff0000 */
+/*? -------------------------------- 1) header -------------------------------#1100ff */
 header {
-    background: radial-gradient(circle at 50% 100%, #1d4186, #051c48 75%);
+    /* background: radial-gradient(circle at 50% 100%, #1d4186, #051c48 75%); */
+    background-color: #041e52;
     height: 18rem;
 }
 
@@ -126,7 +130,99 @@ header hr {
     text-decoration: none;
 }
 
+/*? -------------------------------- 2) footer -------------------------------#1100ff */
+.footer-distributed {
+    /* background: radial-gradient(circle at 50% 100%, #1d4186, #051c48 75%); */
+    background-color: #041e52;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px;
+    padding: 5px 50px;
+    color: white;
+    margin-top: 75px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-distributed .footer-left img {
+    max-width: 55%;
+}
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-center h6 {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+
+.footer-center .footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-center .footer-links li {
+    list-style-type: none;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "";
+    font-weight: 300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+.footer-distributed .footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+
+.footer-distributed .footer-right {
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0px 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
 /*! -------------------------------- IT- report.html-----------------------------#ff0000 */
+#categories{
+    display: flex;
+    flex-direction: column;
+}
 /*? -------------------------------- 1) notes -------------------------------#1100ff */
 
 #report-cyber {
@@ -198,6 +294,12 @@ header hr {
     font-weight: 600;
 }
 
+.categories a {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
 .categories:hover {
     border-color: #0078d4;
     background-color: #e8f5ff;
@@ -207,13 +309,12 @@ header hr {
     margin-right: 15px;
 }
 
-.categorie #this {
-    display: flex;
-    align-items: end;
-    justify-content: end;
-}
-
 .categorie a {
     text-decoration: none;
     color: black;
+}
+
+#lasthr {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
