@@ -11,9 +11,14 @@
 
 /*! -------------------------------- I- header -----------------------------#ff0000 */
 header {
-    background-color: rgb(4, 30, 82);
+    /* background-color: rgb(4, 30, 82); */
+    background: radial-gradient(circle at 50% 100%, #1d4186, #051c48 75%);
     height: 18rem;
 
+}
+
+.top-header {
+    display: flex;
 }
 
 header h1 {
@@ -30,17 +35,86 @@ header h2 {
 
 header img {
     height: auto;
-    max-width: 50%;
+    max-width: 47%;
     padding-left: 5em;
     margin: 0;
 }
 
 header hr {
-    border: 1px solid #ffffff;
-    width: 100px;
-    rotate: 90deg;
+    border: 1px solid #ffffff80;
+    width: 1200px;
     padding: 0;
+    padding-left: 2rem;
+    margin-left: 8rem;
+}
+
+.right-nav-container {
+    font-size: 1rem;
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* padding-right: 8rem; */
+    /* padding-top: 2.5rem; */
+    margin: auto;
+    margin-right: 8rem;
+    border: 0.5px solid rgba(0, 0, 0, 0.151);
+    border-radius: 25px;
+    background-color: rgb(1, 18, 51);
+    padding: 8px 17px;
+}
+
+.header-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    margin: 0px 10px;
+    text-decoration: none;
+}
+
+ul {
+    margin-top: 0;
+    margin: auto;
+    padding: 0;
+    border: 0;
+    list-style-type: none;
+    text-transform: none;
+    color: #ffffff;
+}
+
+.menu-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
     margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+a, a:visited {
+    color: #ffffff;
+}
+
+.menu-link {
+    font-family: Poppins;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1em;
+    line-height: normal;
+    letter-spacing: normal;
+    margin: auto;
+    text-transform: none;
+    color: #fff;
+    text-decoration: none;
 }
 
 /*! -------------------------------- IT- report.html-----------------------------#ff0000 */
