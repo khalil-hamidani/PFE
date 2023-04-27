@@ -9,6 +9,12 @@
     font-family: 'Poppins';
 }
 
+p {
+    font-size: 1.2rem;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
 /*! -------------------------------- I- header -----------------------------#ff0000 */
 header {
     /* background-color: rgb(4, 30, 82); */
@@ -35,7 +41,7 @@ header h2 {
 
 header img {
     height: auto;
-    max-width: 47%;
+    max-width: 45%;
     padding-left: 5em;
     margin: 0;
 }
@@ -122,19 +128,60 @@ header hr {
 /*! -------------------------------- IT- report.html-----------------------------#ff0000 */
 /*? -------------------------------- 1) categories -------------------------------#1100ff */
 
-#report-cyber{
-    padding-top: 2rem;
+#report-cyber {
+    padding-top: 1rem;
     padding-left: 10rem;
 }
+
 .report-incdent-container {
     z-index: 2;
     background-color: #fff;
-    /* border: 1px solid black; */
-    padding: 5px;
-    margin: -50px 12rem;
+    padding: 15px;
+    margin: -75px 12rem;
     max-width: 100rem;
     top: -50px;
 }
+
+.explain {
+    background-color: #def7ff;
+    border-left: 5px solid #017ab5;
+    padding: 15px;
+    margin-bottom: 1rem;
+}
+
+.explain h2 {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.explain p {
+    font-weight: 500;
+    line-height: 30px;
+}
+.report-incdent-container p{
+    font-size: 1.2rem;
+    font-family: 'Poppins';
+    margin-bottom: 1rem;    
+}
+.danger {
+    background-color: #fcf2f3;
+    border-left: 5px solid #c00718;
+    padding: 15px;
+    margin-bottom: 1rem;
+}
+
+.danger h2 {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.danger ul {
+    font-weight: 500;
+    line-height: 30px;
+}
+
+
+
 .categories {
     border: 1px solid black;
     border-radius: 5px;
