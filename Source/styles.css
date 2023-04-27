@@ -3,7 +3,10 @@
 /* ----- table of content ----- */
 /*! ---- I- header -------- */
 /*! ---- II- report.html -------- */
-/* ? 1) categories */
+/* ? 1) notes */
+/* ? 2) categories */
+/* ------------------------------- */
+
 * {
     margin: 0;
     font-family: 'Poppins';
@@ -17,10 +20,8 @@ p {
 
 /*! -------------------------------- I- header -----------------------------#ff0000 */
 header {
-    /* background-color: rgb(4, 30, 82); */
     background: radial-gradient(circle at 50% 100%, #1d4186, #051c48 75%);
     height: 18rem;
-
 }
 
 .top-header {
@@ -126,7 +127,7 @@ header hr {
 }
 
 /*! -------------------------------- IT- report.html-----------------------------#ff0000 */
-/*? -------------------------------- 1) categories -------------------------------#1100ff */
+/*? -------------------------------- 1) notes -------------------------------#1100ff */
 
 #report-cyber {
     padding-top: 1rem;
@@ -158,11 +159,13 @@ header hr {
     font-weight: 500;
     line-height: 30px;
 }
-.report-incdent-container p{
+
+.report-incdent-container p {
     font-size: 1.2rem;
     font-family: 'Poppins';
-    margin-bottom: 1rem;    
+    margin-bottom: 1rem;
 }
+
 .danger {
     background-color: #fcf2f3;
     border-left: 5px solid #c00718;
@@ -180,20 +183,34 @@ header hr {
     line-height: 30px;
 }
 
-
+/*? -------------------------------- 2) categories -------------------------------#1100ff */
 
 .categories {
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(210, 208, 206);
+    border-radius: 4px;
+    padding: 10px;
     cursor: pointer;
-    margin: 15px;
-    max-width: 30em;
+    margin: 20px 15px;
+    max-width: 1100px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .categories:hover {
     border-color: #0078d4;
     background-color: #e8f5ff;
+}
+
+.categorie i {
+    margin-right: 15px;
+}
+
+.categorie #this {
+    display: flex;
+    align-items: end;
+    justify-content: end;
 }
 
 .categorie a {
