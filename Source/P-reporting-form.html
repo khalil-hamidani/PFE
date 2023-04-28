@@ -33,42 +33,19 @@
         <h3 class="section">Section 1</h3>
         <h2>Complainant's Information</h2>
         <p>How much personal information you provide is up to you, however too little information may impact our ability to properly respond
-            to or handle your request.
-        </p>
+            to or handle your request.</p>
         <div class="explain form-explain">
             <p>Mandatory fields are marked with an asterisk (<span class="Mandatory">*</span>).</p>
         </div>
         <div class="main-wrapper">
             <div class="form-wrapper">
                 <form action="" method="POST">
-                    <div class="input-radio-wrapper">
-                        <label for="ans" class="form-label">
-                            I am : <span class="Mandatory">*</span>
-                        </label>
-
-                        <div class="radio-flex">
-                            <div class="radio-group">
-                                <label class="radio-label">
-                                    <input class="input-radio" type="radio" name="ans" id="ans" />
-                                    the impacted user
-                                </label>
-                            </div>
-
-                            <div class="radio-group">
-                                <label class="radio-label">
-                                    <input class="input-radio" type="radio" name="ans" id="ans" />
-                                    reporting on behalf of the impacted user
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="textBox">
                         <label for="name" class="form-label"> First Name </label>
                         <br>
                         <p class="helpText">
                         </p>
-                        <input type="text" name="F-name" id="F-name" placeholder="Enter your First name" autocomplete="off"
+                        <input type="text" id="first_name" maxlength="49" pattern="[^]*" name="first_name" autocomplete="on" value=""
                             class="form-input" />
                     </div>
 
@@ -77,17 +54,17 @@
                         <br>
                         <p class="helpText">
                         </p>
-                        <input type="text" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off"
+                        <input type="text" id="last_name" maxlength="49" pattern="[^]*" name="first_name" autocomplete="on" value=""
                             class="form-input" />
                     </div>
 
                     <div class="textBox">
-                        <label for="email" class="form-label"> Email <span>*</span> </label>
+                        <label for="email" class="form-label"> Email </label>
                         <br>
                         <p class="helpText">
                         </p>
-                        <input type="email" name="lastname" id="email" placeholder="Enter your email" autocomplete="off"
-                            class="form-input" />
+                        <input type="email" id="contact_email" maxlength="100" pattern="[^]*" name="contact_email" autocomplete="on"
+                            value="" class="form-input" />
                     </div>
 
                     <div class="textBox">
@@ -95,8 +72,8 @@
                         <br>
                         <p class="helpText">
                         </p>
-                        <input type="text" name="telephone" id="telephone" placeholder="Enter your phone number" autocomplete="off"
-                            class="form-input" />
+                        <input type="text" id="telephone_number" maxlength="40" pattern="[^]*" name="telephone_number" autocomplete="on"
+                            value="" class="form-input" />
                     </div>
 
                     <div class="textBox">
@@ -104,30 +81,60 @@
                         <br>
                         <p class="helpText">
                         </p>
-                        <input type="text" name="age" id="age" placeholder="Enter your age" autocomplete="off" class="form-input" />
+                        <input type="number" id="age" name="age" autocomplete="off" value="" class="form-input" />
                     </div>
 
                     <div class="textBox">
                         <label for="age" class="form-label"> Gender </label>
-                        <br>
                         <p class="helpText">
                         </p>
-                        <input type="text" name="age" id="age" placeholder="Enter your age" autocomplete="off" class="form-input" />
+                        <div class="radio-flex">
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input class="input-radio" type="radio" name="gender" id="male" />
+                                    Male
+                                </label>
+                            </div>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input class="input-radio" type="radio" name="gender" id="female" />
+                                    Female
+                                </label>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="textBox">
                         <label class="form-label">
                             Which option best describes you?
                         </label>
-
-                        <select class="form-select" name="occupation" id="occupation">
-                            <option value="">Student</option>
-                            <option value="">Employee</option>
-                            <option value="">Retiree</option>
-                            <option value="">Other</option>
-                        </select>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input class="input-radio" type="radio" name="role" id="st" />
+                                Student
+                            </label>
+                        </div>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input class="input-radio" type="radio" name="role" id="em" />
+                                Employee
+                            </label>
+                        </div>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input class="input-radio" type="radio" name="role" id="re" />
+                                Retiree
+                            </label>
+                        </div>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input class="input-radio" type="radio" name="role" id="other" />
+                                Other
+                            </label>
+                        </div>
                     </div>
-
+                    <hr class="section_end">
+                    <h3 class="section">Section 2</h3>
                     <h2>Company or Person Complained Against</h2>
                     <p>Tell us about the company, organization or individual that you have a complaint against. Please provide as much
                         information as possible and attach all documents you might have on hand to support your complaint.Any empty field
@@ -187,35 +194,42 @@
                         <input type="text" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off"
                             class="form-input" />
                     </div>
-
+                    <hr class="section_end">
+                    <h3 class="section">Section 3</h3>
                     <h2>Details of Your Complaint</h2>
                     <p>Please provide us with information on the incedent, along with a detailed description of the
                         events, business conduct observed and any additional information you feel is pertinent to your complaint.</p>
 
                     <div class="textBox">
-                        <label for="name" class="form-label"> When was this incident detected <span>*</span> </label>
+                        <label for="name" class="form-label"> When was this incident detected </label>
                         <input type="date" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off"
                             class="form-input" />
                     </div>
 
                     <div>
                         <label for="message" class="form-label">
-                            description of the incident <span>*</span>
+                            description of the incident
                         </label>
                         <br>
                         <textarea rows="5" name="message" id="message" placeholder="Type here..." class="form-input"></textarea>
                     </div>
-
+                    <hr class="section_end">
+                    <h3 class="section">Section 4</h3>
                     <h2>Evidences</h2>
                     <p>Attach any and all documents you might have on hand to support your complaint.</p>
                     <p>Electronic files can be submitted by clicking the "Attach files" button. You can attach pictures, documents and
-                        spreadsheets. Please note that combined file size cannot exceed 15 MB in size.</p>
+                        spreadsheets. </p>
+                    <div class="warn">
+                        <p> Note that combined file size cannot exceed 15 MB in size.</p>
+                    </div>
+
                     <div class="formbold-input-file">
 
                         <label for="upload" class="formbold-input-label">
                             Attach files
                             <input type="file" name="upload" id="upload">
                         </label>
+                        <hr class="section_end">
                     </div>
                     <button class="btn">Submit</button>
                 </form>

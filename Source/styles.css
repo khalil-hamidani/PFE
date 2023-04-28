@@ -10,12 +10,13 @@
 /*! ---- III- pre-report -------- */
 /* ? 1) befor you report */
 /* ------------------------------- */
-:root{
+:root {
     --main-color: #041e52;
     --cayan-color: #017ab5;
     --warning-color: #f5a523;
     --danger-color: #c00718;
 }
+
 * {
     margin: 0;
     font-family: 'Poppins';
@@ -423,39 +424,94 @@ a.back-btn:active {
     max-width: 100rem;
     top: -50px;
 }
-.backbtn{
+
+.backbtn {
     text-decoration: none;
     color: black;
     font-weight: 500;
 }
-.Mandatory{
+
+.Mandatory {
     color: var(--danger-color);
 }
-h3.section{
+
+h3.section {
     margin-top: 1.5rem;
 }
-.section{
-    color: gray;
+
+.section {
+    /* color: gray; */
+    color: var(--main-color);
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 0.4rem;
 }
+
 .form-container h2 {
     margin-bottom: 1rem;
 }
-.form-explain{
+
+.form-explain {
     margin-top: 1rem;
 }
-form{
-   display: block; 
+
+form {
+    display: block;
 }
-label { 
-    display:  inline-block; 
-    margin-bottom:  0;
+
+.textBox {
+    margin-bottom: 1.8%;
+    margin-top: 1.8%;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0;
     font-weight: 500;
     font-size: large;
-} 
-.input-radio-wrapper{
+}
+
+.form-input {
+    margin-bottom: 1rem;
+    align-self: stretch;
+    border-color: black;
+    border-style: solid;
+    border-radius: 4px;
+    display: block;
+    font-size: 1rem;
+    line-height: var(--lh-body-sm);
+    margin: 4px 0px;
+    padding: 7px 16px;
+    width: 97%;
+}
+
+
+.input-radio-wrapper {
     display: flex;
     flex-direction: column;
+}
+.input-radio{
+    height: 20px;
+    width: 20px;
+    left: 0;
+    margin: 0;
+    --active-color: var(--main-color);
+}
+input[type='radio']:after {
+    background-color: var(--main-color);
+}
+input[type='radio']:hover {
+    background-color: var(--main-color);
+}
+.radio-group{
+    margin-top: 5px;
+}
+.radio-label{
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: large;
+}
+.section_end{
+    border: 3px solid var(--main-color);
+    border-radius: 50px;
 }
