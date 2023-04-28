@@ -6,157 +6,244 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>****</title>
+    <link rel="icon" type="image/x-icon" href="img/icon.ico">
+    <title>Report Form</title>
 </head>
 
 <body>
-    <a href="P-reporting.html"> <button type="button" class="btn btn-light">&#8592; Back</button></a>
-    <h1>Reporting form</h1>
-    <hr>
-    <h2>Complainant's Information</h2>
-    <p>How much personal information you provide is up to you, however too little information may impact our ability to properly respond to
-        or handle your request. If you don't provide your name and certain other information, It will be considered as an anonymous report.
-    </p>
-    <p>Mandatory fields are marked with an asterisk (<span>*</span>).</p>
-    <div class="main-wrapper">
-        <div class="form-wrapper">
-            <form action="" method="POST">
-                <div class="input-radio-wrapper">
-                    <label for="ans" class="form-label">
-                        I am : <span>*</span>
-                    </label>
+    <header>
+        <div class="top-header">
+            <img src="img/Header.svg" alt="">
+            <div class="right-nav-container snipcss-YiXoc">
+                <div class="utility-items">
+                    <ul class="header-links">
+                        <li class="item"><a class="menu-link" href="">HOME</a></li>
+                        <li class="item"><a class="menu-link" href="index.html">REPORT AN INCIDENT</a></li>
+                        <li class="item"><a class="menu-link" href="IOC-reporting.html">REPORT AN IOC</a></li>
+                        <li class="item"><a class="menu-link" href="">SCAN A SERVICE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h1 id="report-cyber">Report Personal cyber issue Form</h1>
+    </header>
+    <div class="form-container">
+        <a class="backbtn" href="P-reporting.html">&#8592; Back</a>
+        <h3 class="section">Section 1</h3>
+        <h2>Complainant's Information</h2>
+        <p>How much personal information you provide is up to you, however too little information may impact our ability to properly respond
+            to or handle your request.
+        </p>
+        <div class="explain form-explain">
+            <p>Mandatory fields are marked with an asterisk (<span class="Mandatory">*</span>).</p>
+        </div>
+        <div class="main-wrapper">
+            <div class="form-wrapper">
+                <form action="" method="POST">
+                    <div class="input-radio-wrapper">
+                        <label for="ans" class="form-label">
+                            I am : <span class="Mandatory">*</span>
+                        </label>
 
-                    <div class="radio-flex">
-                        <div class="radio-group">
-                            <label class="radio-label">
-                                <input class="input-radio" type="radio" name="ans" id="ans" />
-                                the impacted user
-                            </label>
-                        </div>
+                        <div class="radio-flex">
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input class="input-radio" type="radio" name="ans" id="ans" />
+                                    the impacted user
+                                </label>
+                            </div>
 
-                        <div class="radio-group">
-                            <label class="radio-label">
-                                <input class="input-radio" type="radio" name="ans" id="ans" />
-                                reporting on behalf of the impacted user
-                            </label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input class="input-radio" type="radio" name="ans" id="ans" />
+                                    reporting on behalf of the impacted user
+                                </label>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="input-group">
-                    <label for="name" class="form-label"> First Name </label>
-                    <input type="text" name="F-name" id="F-name" placeholder="Enter your First name" autocomplete="off"
-                        class="form-input" />
-                </div>
+                    <div class="textBox">
+                        <label for="name" class="form-label"> First Name </label>
+                        <br>
+                        <p class="helpText">
+                        </p>
+                        <input type="text" name="F-name" id="F-name" placeholder="Enter your First name" autocomplete="off"
+                            class="form-input" />
+                    </div>
 
-                <div class="input-group">
-                    <label for="name" class="form-label"> Last Name </label>
-                    <input type="text" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off" class="form-input" />
-                </div>
+                    <div class="textBox">
+                        <label for="name" class="form-label"> Last Name </label>
+                        <br>
+                        <p class="helpText">
+                        </p>
+                        <input type="text" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off"
+                            class="form-input" />
+                    </div>
 
-                <div class="input-group">
-                    <label for="email" class="form-label"> Email <span>*</span> </label>
-                    <input type="email" name="lastname" id="email" placeholder="Enter your email" autocomplete="off" class="form-input" />
-                </div>
+                    <div class="textBox">
+                        <label for="email" class="form-label"> Email <span>*</span> </label>
+                        <br>
+                        <p class="helpText">
+                        </p>
+                        <input type="email" name="lastname" id="email" placeholder="Enter your email" autocomplete="off"
+                            class="form-input" />
+                    </div>
 
-                <div class="input-group">
-                    <label for="email" class="form-label"> Telephone </label>
-                    <input type="text" name="telephone" id="telephone" placeholder="Enter your phone number" autocomplete="off"
-                        class="form-input" />
-                </div>
+                    <div class="textBox">
+                        <label for="email" class="form-label"> Telephone </label>
+                        <br>
+                        <p class="helpText">
+                        </p>
+                        <input type="text" name="telephone" id="telephone" placeholder="Enter your phone number" autocomplete="off"
+                            class="form-input" />
+                    </div>
 
-                <div class="input-group">
-                    <label for="age" class="form-label"> Age </label>
-                    <input type="text" name="age" id="age" placeholder="Enter your age" autocomplete="off" class="form-input" />
-                </div>
+                    <div class="textBox">
+                        <label for="age" class="form-label"> Age </label>
+                        <br>
+                        <p class="helpText">
+                        </p>
+                        <input type="text" name="age" id="age" placeholder="Enter your age" autocomplete="off" class="form-input" />
+                    </div>
 
-                <div class="input-group">
-                    <label for="age" class="form-label"> Gender </label>
-                    <input type="text" name="age" id="age" placeholder="Enter your age" autocomplete="off" class="form-input" />
-                </div>
+                    <div class="textBox">
+                        <label for="age" class="form-label"> Gender </label>
+                        <br>
+                        <p class="helpText">
+                        </p>
+                        <input type="text" name="age" id="age" placeholder="Enter your age" autocomplete="off" class="form-input" />
+                    </div>
 
-                <div class="input-group">
-                    <label class="form-label">
-                        Which option best describes you?
-                    </label>
+                    <div class="textBox">
+                        <label class="form-label">
+                            Which option best describes you?
+                        </label>
 
-                    <select class="form-select" name="occupation" id="occupation">
-                        <option value="">Student</option>
-                        <option value="">Employee</option>
-                        <option value="">Retiree</option>
-                        <option value="">Other</option>
-                    </select>
-                </div>
+                        <select class="form-select" name="occupation" id="occupation">
+                            <option value="">Student</option>
+                            <option value="">Employee</option>
+                            <option value="">Retiree</option>
+                            <option value="">Other</option>
+                        </select>
+                    </div>
 
-                <h2>Company or Person Complained Against</h2>
-                <p>Tell us about the company, organization or individual that you have a complaint against. Please provide as much
-                    information as possible and attach all documents you might have on hand to support your complaint.Any empty field will
-                    be considered as unknown information</p>
+                    <h2>Company or Person Complained Against</h2>
+                    <p>Tell us about the company, organization or individual that you have a complaint against. Please provide as much
+                        information as possible and attach all documents you might have on hand to support your complaint.Any empty field
+                        will
+                        be considered as unknown information</p>
 
-                <div class="input-group">
-                    <label for="name" class="form-label"> First Name </label>
-                    <input type="text" name="F-name" id="F-name" placeholder="Enter your First name" autocomplete="off"
-                        class="form-input" />
-                </div>
+                    <div class="textBox">
+                        <label for="name" class="form-label"> First Name </label>
+                        <br>
+                        <p class="helpText">
+                        </p>
+                        <input type="text" name="F-name" id="F-name" placeholder="Enter your First name" autocomplete="off"
+                            class="form-input" />
+                    </div>
 
-                <div class="input-group">
-                    <label for="name" class="form-label"> Last Name </label>
-                    <input type="text" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off" class="form-input" />
-                </div>
+                    <div class="textBox">
+                        <label for="name" class="form-label"> Last Name </label>
+                        <br>
+                        <p class="helpText">
+                        </p>
+                        <input type="text" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off"
+                            class="form-input" />
+                    </div>
 
-                <div class="input-group">
-                    <label for="name" class="form-label"> Company Name </label>
-                    <input type="text" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off" class="form-input" />
-                </div>
+                    <div class="textBox">
+                        <label for="name" class="form-label"> Company Name </label>
+                        <br>
+                        <p class="helpText">
+                        </p>
+                        <input type="text" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off"
+                            class="form-input" />
+                    </div>
 
-                <div class="input-group">
-                    <label for="name" class="form-label"> Country </label>
-                    <input type="text" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off" class="form-input" />
-                </div>
+                    <div class="textBox">
+                        <label for="name" class="form-label"> Country </label>
+                        <br>
+                        <p class="helpText">
+                        </p>
+                        <input type="text" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off"
+                            class="form-input" />
+                    </div>
 
-                <div class="input-group">
-                    <label for="name" class="form-label"> Email Address </label>
-                    <input type="text" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off" class="form-input" />
-                </div>
+                    <div class="textBox">
+                        <label for="name" class="form-label"> Email Address </label>
+                        <br>
+                        <p class="helpText">
+                        </p>
+                        <input type="text" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off"
+                            class="form-input" />
+                    </div>
 
-                <div class="input-group">
-                    <label for="name" class="form-label"> Website </label>
-                    <input type="text" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off" class="form-input" />
-                </div>
+                    <div class="textBox">
+                        <label for="name" class="form-label"> Website </label>
+                        <br>
+                        <p class="helpText">
+                        </p>
+                        <input type="text" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off"
+                            class="form-input" />
+                    </div>
 
-                <h2>Details of Your Complaint</h2>
-                <p>Please provide us with information on the incedent, along with a detailed description of the
-                    events, business conduct observed and any additional information you feel is pertinent to your complaint.</p>
+                    <h2>Details of Your Complaint</h2>
+                    <p>Please provide us with information on the incedent, along with a detailed description of the
+                        events, business conduct observed and any additional information you feel is pertinent to your complaint.</p>
 
-                <div class="input-group">
-                    <label for="name" class="form-label"> When was this incident detected <span>*</span> </label>
-                    <input type="date" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off" class="form-input" />
-                </div>
+                    <div class="textBox">
+                        <label for="name" class="form-label"> When was this incident detected <span>*</span> </label>
+                        <input type="date" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off"
+                            class="form-input" />
+                    </div>
 
-                <div>
-                    <label for="message" class="form-label">
-                        description of the incident <span>*</span>
-                    </label>
-                    <textarea rows="5" name="message" id="message" placeholder="Type here..." class="form-input"></textarea>
-                </div>
+                    <div>
+                        <label for="message" class="form-label">
+                            description of the incident <span>*</span>
+                        </label>
+                        <br>
+                        <textarea rows="5" name="message" id="message" placeholder="Type here..." class="form-input"></textarea>
+                    </div>
 
-                <h2>Evidences</h2>
-                <p>Attach any and all documents you might have on hand to support your complaint.</p>
-                <p>Electronic files can be submitted by clicking the "Attach files" button. You can attach pictures, documents and
-                    spreadsheets. Please note that combined file size cannot exceed 15 MB in size.</p>
-                <div class="formbold-input-file">
+                    <h2>Evidences</h2>
+                    <p>Attach any and all documents you might have on hand to support your complaint.</p>
+                    <p>Electronic files can be submitted by clicking the "Attach files" button. You can attach pictures, documents and
+                        spreadsheets. Please note that combined file size cannot exceed 15 MB in size.</p>
+                    <div class="formbold-input-file">
 
-                    <label for="upload" class="formbold-input-label">
-                        Attach files
-                        <input type="file" name="upload" id="upload">
-                    </label>
-                </div>
-                <button class="btn">Submit</button>
-            </form>
+                        <label for="upload" class="formbold-input-label">
+                            Attach files
+                            <input type="file" name="upload" id="upload">
+                        </label>
+                    </div>
+                    <button class="btn">Submit</button>
+                </form>
+            </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <img src="img/footer.svg" alt="">
+            <p class="footer-company-name">Algerian Cybersecurity Center © 2023</p>
+        </div>
+        <div class="footer-center">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html">REPORT AN INCIDENT</a></li>
+                <li><a href="IOC-reporting.html">REPORT IOC</a></li>
+                <li><a href="">SCAN A SERVICE</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum amet quam reprehenderit sequi corporis, vel laborum beatae
+                ipsam ad nam sit officia eligendi accusamus aperiam reiciendis perferendis similique voluptate illum.
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>

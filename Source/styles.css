@@ -10,7 +10,12 @@
 /*! ---- III- pre-report -------- */
 /* ? 1) befor you report */
 /* ------------------------------- */
-
+:root{
+    --main-color: #041e52;
+    --cayan-color: #017ab5;
+    --warning-color: #f5a523;
+    --danger-color: #c00718;
+}
 * {
     margin: 0;
     font-family: 'Poppins';
@@ -26,7 +31,7 @@ p {
 /*? -------------------------------- 1) header -------------------------------#1100ff */
 header {
     /* background: radial-gradient(circle at 50% 100%, #1d4186, #051c48 75%); */
-    background-color: #041e52;
+    background-color: var(--main-color);
     height: 18rem;
 }
 
@@ -135,7 +140,7 @@ header hr {
 /*? -------------------------------- 2) footer -------------------------------#1100ff */
 .footer-distributed {
     /* background: radial-gradient(circle at 50% 100%, #1d4186, #051c48 75%); */
-    background-color: #041e52;
+    background-color: var(--main-color);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
@@ -244,7 +249,7 @@ header hr {
 
 .explain {
     background-color: #def7ff;
-    border-left: 5px solid #017ab5;
+    border-left: 5px solid var(--cayan-color);
     padding: 15px;
     margin-bottom: 1rem;
 }
@@ -267,7 +272,7 @@ header hr {
 
 .warn {
     background-color: #fff0d6;
-    border-left: 5px solid #f5a523;
+    border-left: 5px solid var(--warning-color);
     padding: 15px;
     margin-bottom: 1rem;
 }
@@ -331,7 +336,7 @@ header hr {
 
 .danger {
     background-color: #fcf2f3;
-    border-left: 5px solid #c00718;
+    border-left: 5px solid var(--danger-color);
     padding: 15px;
     margin-bottom: 1rem;
 }
@@ -345,19 +350,23 @@ header hr {
     font-weight: 500;
     line-height: 30px;
 }
-.beforreport h2{
+
+.beforreport h2 {
     font-weight: 600;
     margin-bottom: 0.4rem;
 }
-.beforreport p{
+
+.beforreport p {
     font-weight: 400;
     margin-bottom: 0.4rem;
 }
-.beforreport li{
+
+.beforreport li {
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
-a.report-btn{
+
+a.report-btn {
     margin-top: 20px;
     background-color: #196bca;
     color: #fff;
@@ -370,15 +379,17 @@ a.report-btn{
     border: 0px solid #ffffff;
     border-radius: 100px;
     display: inline-block;
-   }
-   a.report-btn:hover{
-    background-color: #0e4787;
-   }
-   a.report-btn:active{
-    transform: scale(0.95);
-   }
+}
 
-   a.back-btn{
+a.report-btn:hover {
+    background-color: #0e4787;
+}
+
+a.report-btn:active {
+    transform: scale(0.95);
+}
+
+a.back-btn {
     margin-top: 20px;
     margin-left: 60px;
     background-color: #adb5bd;
@@ -392,13 +403,59 @@ a.report-btn{
     border: 0px solid #ffffff;
     border-radius: 100px;
     display: inline-block;
-   }
-   a.back-btn:hover{
-    background-color: #6c757d;
-   }
-   a.back-btn:active{
-    transform: scale(0.95);
-   }
+}
 
-   /*! -------------------------------- IV) -----------------------------#ff0000 */
-/*? -------------------------------- 1) -------------------------------#1100ff */
+a.back-btn:hover {
+    background-color: #6c757d;
+}
+
+a.back-btn:active {
+    transform: scale(0.95);
+}
+
+/*! -------------------------------- IV) Report Form -----------------------------#ff0000 */
+/*? -------------------------------- 1) Container -------------------------------#1100ff */
+.form-container {
+    z-index: 2;
+    background-color: #fff;
+    padding: 15px;
+    margin: -75px 12rem;
+    max-width: 100rem;
+    top: -50px;
+}
+.backbtn{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.Mandatory{
+    color: var(--danger-color);
+}
+h3.section{
+    margin-top: 1.5rem;
+}
+.section{
+    color: gray;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+}
+.form-container h2 {
+    margin-bottom: 1rem;
+}
+.form-explain{
+    margin-top: 1rem;
+}
+form{
+   display: block; 
+}
+label { 
+    display:  inline-block; 
+    margin-bottom:  0;
+    font-weight: 500;
+    font-size: large;
+} 
+.input-radio-wrapper{
+    display: flex;
+    flex-direction: column;
+}
