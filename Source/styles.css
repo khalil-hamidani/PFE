@@ -7,6 +7,8 @@
 /*! ---- II- report.html -------- */
 /* ? 1) notes */
 /* ? 2) categories */
+/*! ---- III- P-reporting.html -------- */
+/* ? 1) befor */
 /* ------------------------------- */
 
 * {
@@ -219,11 +221,12 @@ header hr {
 }
 
 /*! -------------------------------- IT- report.html-----------------------------#ff0000 */
-#categories{
+/*? -------------------------------- 1) notes -------------------------------#1100ff */
+
+#categories {
     display: flex;
     flex-direction: column;
 }
-/*? -------------------------------- 1) notes -------------------------------#1100ff */
 
 #report-cyber {
     padding-top: 1rem;
@@ -262,19 +265,19 @@ header hr {
     margin-bottom: 1rem;
 }
 
-.danger {
-    background-color: #fcf2f3;
-    border-left: 5px solid #c00718;
+.warn {
+    background-color: #fff0d6;
+    border-left: 5px solid #f5a523;
     padding: 15px;
     margin-bottom: 1rem;
 }
 
-.danger h2 {
+.warn h2 {
     font-weight: 600;
     margin-bottom: 0.4rem;
 }
 
-.danger ul {
+.warn ul {
     font-weight: 500;
     line-height: 30px;
 }
@@ -315,6 +318,84 @@ header hr {
 }
 
 #lasthr {
-    margin-top: 3rem;
+    margin-top: 30px;
     margin-bottom: 1rem;
 }
+
+.helpus p {
+    margin: 0.5rem 0px;
+}
+
+/*! -------------------------------- III) P-reporting.html -----------------------------#ff0000 */
+/*? -------------------------------- 1) befor  -------------------------------#1100ff */
+
+.danger {
+    background-color: #fcf2f3;
+    border-left: 5px solid #c00718;
+    padding: 15px;
+    margin-bottom: 1rem;
+}
+
+.danger h2 {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.danger p {
+    font-weight: 500;
+    line-height: 30px;
+}
+.beforreport h2{
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+.beforreport p{
+    font-weight: 400;
+    margin-bottom: 0.4rem;
+}
+.beforreport li{
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+a.report-btn{
+    margin-top: 20px;
+    background-color: #196bca;
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 19px;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding: 6px 14px;
+    border: 0px solid #ffffff;
+    border-radius: 100px;
+    display: inline-block;
+   }
+   a.report-btn:hover{
+    background-color: #0e4787;
+   }
+   a.report-btn:active{
+    transform: scale(0.95);
+   }
+
+   a.back-btn{
+    margin-top: 20px;
+    margin-left: 60px;
+    background-color: #adb5bd;
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 19px;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding: 6px 14px;
+    border: 0px solid #ffffff;
+    border-radius: 100px;
+    display: inline-block;
+   }
+   a.back-btn:hover{
+    background-color: #6c757d;
+   }
+   a.back-btn:active{
+    transform: scale(0.95);
+   }
