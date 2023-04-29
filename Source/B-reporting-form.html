@@ -11,139 +11,218 @@
 </head>
 
 <body>
-    <a href="B-reporting.html"> <button type="button" class="btn btn-light">&#8592; Back</button></a>
-    <h1>Reporting form</h1>
-    <hr>
-    <h2>Complainant's Information</h2>
-    <p>How much personal information you provide is up to you, however too little information may impact our ability to properly respond to
-        or handle your request. If you don't provide your name and certain other information, It will be considered as an anonymous report.
-    </p>
-    <p>Mandatory fields are marked with an asterisk (<span>*</span>).</p>
-    <div class="main-wrapper">
-        <div class="form-wrapper">
-            <form action="" method="POST">
-                <div class="input-group">
-                    <label for="name" class="form-label"> First Name </label>
-                    <input type="text" name="F-name" id="F-name" placeholder="Enter your First name" autocomplete="off"
+    <header>
+        <div class="top-header">
+            <img src="img/Header.svg" alt="">
+            <div class="right-nav-container snipcss-YiXoc">
+                <div class="utility-items">
+                    <ul class="header-links">
+                        <li class="item"><a class="menu-link" href="">HOME</a></li>
+                        <li class="item"><a class="menu-link" href="index.html">REPORT AN INCIDENT</a></li>
+                        <li class="item"><a class="menu-link" href="IOC-reporting.html">REPORT AN IOC</a></li>
+                        <li class="item"><a class="menu-link" href="">SCAN A SERVICE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h1 id="report-cyber">Report Business cyber issue Form</h1>
+    </header>
+    <div class="form-container">
+        <a class="backbtn" href="P-reporting.html">&#8592; Back</a>
+        <h3 class="section">Section 1</h3>
+        <h2>Complainant's Information</h2>
+        <p>How much personal information you provide is up to you, however too little information may impact our ability to properly respond
+            to or handle your request.</p>
+        <div class="explain form-explain">
+            <p>Mandatory fields are marked with an asterisk (<span class="Mandatory">*</span>).</p>
+        </div>
+        <div class="main-wrapper">
+            <div class="form-wrapper">
+                <form action="" method="POST">
+                    <label for="name" class="form-label"> First Name <span class="Mandatory">*</span></label>
+                    <br>
+                    <p class="helpText">
+                    </p>
+                    <input type="text" id="first_name" maxlength="49" pattern="[^]*" name="first_name" autocomplete="on" value=""
                         class="form-input" />
-                </div>
-
-                <div class="input-group">
-                    <label for="name" class="form-label"> Last Name </label>
-                    <input type="text" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off" class="form-input" />
-                </div>
-
-                <div class="input-group">
-                    <label for="email" class="form-label"> Email <span>*</span> </label>
-                    <input type="email" name="lastname" id="email" placeholder="Enter your email" autocomplete="off" class="form-input" />
-                </div>
-
-                <div class="input-group">
-                    <label for="email" class="form-label"> Telephone </label>
-                    <input type="text" name="telephone" id="telephone" placeholder="Enter your phone number" autocomplete="off"
-                        class="form-input" />
-                </div>
-
-                <div class="input-group">
-                    <label for="name" class="form-label"> organization name <span>*</span></label>
-                    <input type="text" name="O-name" id="O-name" placeholder="Enter the organization name" autocomplete="off"
-                        class="form-input" />
-                </div>
-
-                <div class="input-group">
-                    <label for="name" class="form-label"> organization website </label>
-                    <input type="text" name="O-web" id="O-web" placeholder="Enter the organization URL" autocomplete="off"
-                        class="form-input" />
-                </div>
-
-                <div class="input-group">
-                    <label class="form-label">
-                        Which option best describes your organization? <span>*</span>
-                    </label>
-
-                    <select class="form-select" name="occupation" id="occupation">
-                        <option disabled selected>select an option</option>
-                        <option value="for-profit">For-profit organizations</option>
-                        <option value="non-profit">Non-profit organizations</option>
-                        <option value="educational">Educational organizations</option>
-                        <option value="healthcare">Healthcare organizations</option>
-                        <option value="religious">Religious organizations</option>
-                        <option value="social">Social organizations</option>
-                    </select>
-                </div>
-
-                <h2>Company or Person Complained Against</h2>
-                <p>Tell us about the company, organization or individual that you have a complaint against. Please provide as much
-                    information as possible and attach all documents you might have on hand to support your complaint.Any empty field will
-                    be considered as unknown information</p>
-
-                <div class="input-group">
-                    <label for="name" class="form-label"> First Name </label>
-                    <input type="text" name="F-name" id="F-name" placeholder="Enter your First name" autocomplete="off"
-                        class="form-input" />
-                </div>
-
-                <div class="input-group">
-                    <label for="name" class="form-label"> Last Name </label>
-                    <input type="text" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off" class="form-input" />
-                </div>
-
-                <div class="input-group">
-                    <label for="name" class="form-label"> organization Name </label>
-                    <input type="text" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off" class="form-input" />
-                </div>
-
-                <div class="input-group">
-                    <label for="name" class="form-label"> Country </label>
-                    <input type="text" name="country" id="country" placeholder="Enter the Country" autocomplete="off" class="form-input" />
-                </div>
-
-                <div class="input-group">
-                    <label for="name" class="form-label"> City </label>
-                    <input type="text" name="city" id="city" placeholder="Enter the city" autocomplete="off" class="form-input" />
-                </div>
-
-                <div class="input-group">
-                    <label for="name" class="form-label"> Email Address </label>
-                    <input type="text" name="L-name" id="L-name" placeholder="Enter the email" autocomplete="off" class="form-input" />
-                </div>
-
-                <div class="input-group">
-                    <label for="name" class="form-label"> Website </label>
-                    <input type="text" name="website" id="website" placeholder="Enter the URL" autocomplete="off" class="form-input" />
-                </div>
-
-                <h2>Details of Your Complaint</h2>
-                <p>Please provide us with information on the incedent, along with a detailed description of the
-                    events, business conduct observed and any additional information you feel is pertinent to your complaint. Attach any and
-                    all documents you might have on hand to support your complaint.</p>
-
-                <div class="input-group">
-                    <label for="name" class="form-label"> When was this incident detected <span>*</span> </label>
-                    <input type="date" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off" class="form-input" />
-                </div>
-
-                <div>
-                    <label for="message" class="form-label">
-                        description of the incident <span>*</span>
-                    </label>
-                    <textarea rows="5" name="message" id="message" placeholder="Type here..." class="form-input"></textarea>
-                </div>
-                <h2>Evidences</h2>
-                <p>Attach any and all documents you might have on hand to support your complaint.</p>
-                <p>Electronic files can be submitted by clicking the "Attach files" button. You can attach pictures, documents and
-                    spreadsheets. Please note that combined file size cannot exceed 15 MB in size.</p>
-                <div class="formbold-input-file">
-
-                    <label for="upload" class="formbold-input-label">
-                        Attach files
-                        <input type="file" name="upload" id="upload">
+            </div>
+            <div class="textBox">
+                <label for="name" class="form-label"> Last Name <span class="Mandatory">*</span></label>
+                <br>
+                <p class="helpText">
+                </p>
+                <input type="text" id="last_name" maxlength="49" pattern="[^]*" name="first_name" autocomplete="on" value=""
+                    class="form-input" />
+            </div>
+            <div class="textBox">
+                <label for="email" class="form-label"> Email <span class="Mandatory">*</span></label>
+                <br>
+                <p class="helpText">
+                </p>
+                <input type="email" id="contact_email" maxlength="100" pattern="[^]*" name="contact_email" autocomplete="on" value=""
+                    class="form-input" />
+            </div>
+            <div class="textBox">
+                <label for="email" class="form-label"> Telephone </label>
+                <br>
+                <p class="helpText">
+                </p>
+                <input type="text" id="telephone_number" maxlength="40" pattern="[^]*" name="telephone_number" autocomplete="on" value=""
+                    class="form-input" />
+            </div>
+            <div class="textBox">
+                <label for="organ-name" class="form-label">Organization Name <span class="Mandatory">*</span></label>
+                <br>
+                <p class="helpText">
+                </p>
+                <input type="text" id="organ-name" maxlength="40" pattern="[^]*" name="organ-name" autocomplete="off" value=""
+                    class="form-input" />
+            </div>
+            <div class="textBox">
+                <label for="organ-website" class="form-label">Organization Website </label>
+                <br>
+                <p class="helpText">
+                </p>
+                <input type="text" id="organ-website" maxlength="40" pattern="[^]*" name="organ-website" autocomplete="off" value=""
+                    class="form-input" />
+            </div>
+            <div class="textBox">
+                <label class="form-label">
+                    Which option best describes your organization? <span class="Mandatory">*</span>
+                </label>
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input class="input-radio" type="radio" name="role" id="st" />
+                        For-profit organizations
                     </label>
                 </div>
-                <button class="btn">Submit</button>
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input class="input-radio" type="radio" name="role" id="em" />
+                        Non-profit organizations
+                    </label>
+                </div>
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input class="input-radio" type="radio" name="role" id="re" />
+                        Educational organizations
+                    </label>
+                </div>
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input class="input-radio" type="radio" name="role" id="other" />
+                        Healthcare organizations
+                    </label>
+                </div>
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input class="input-radio" type="radio" name="role" id="other" />
+                        Social organizations
+                    </label>
+                </div>
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input class="input-radio" type="radio" name="role" id="other" />
+                        Religious organizations
+                    </label>
+                </div>
+            </div>
+
+            <h2>Company or Person Complained Against</h2>
+            <p>Tell us about the company, organization or individual that you have a complaint against. Please provide as much
+                information as possible and attach all documents you might have on hand to support your complaint.Any empty field will
+                be considered as unknown information</p>
+
+            <div class="input-group">
+                <label for="name" class="form-label"> First Name </label>
+                <input type="text" name="F-name" id="F-name" placeholder="Enter your First name" autocomplete="off" class="form-input" />
+            </div>
+
+            <div class="input-group">
+                <label for="name" class="form-label"> Last Name </label>
+                <input type="text" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off" class="form-input" />
+            </div>
+
+            <div class="input-group">
+                <label for="name" class="form-label"> organization Name </label>
+                <input type="text" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off" class="form-input" />
+            </div>
+
+            <div class="input-group">
+                <label for="name" class="form-label"> Country </label>
+                <input type="text" name="country" id="country" placeholder="Enter the Country" autocomplete="off" class="form-input" />
+            </div>
+
+            <div class="input-group">
+                <label for="name" class="form-label"> City </label>
+                <input type="text" name="city" id="city" placeholder="Enter the city" autocomplete="off" class="form-input" />
+            </div>
+
+            <div class="input-group">
+                <label for="name" class="form-label"> Email Address </label>
+                <input type="text" name="L-name" id="L-name" placeholder="Enter the email" autocomplete="off" class="form-input" />
+            </div>
+
+            <div class="input-group">
+                <label for="name" class="form-label"> Website </label>
+                <input type="text" name="website" id="website" placeholder="Enter the URL" autocomplete="off" class="form-input" />
+            </div>
+
+            <h2>Details of Your Complaint</h2>
+            <p>Please provide us with information on the incedent, along with a detailed description of the
+                events, business conduct observed and any additional information you feel is pertinent to your complaint. Attach any and
+                all documents you might have on hand to support your complaint.</p>
+
+            <div class="input-group">
+                <label for="name" class="form-label"> When was this incident detected <span>*</span> </label>
+                <input type="date" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off" class="form-input" />
+            </div>
+
+            <div>
+                <label for="message" class="form-label">
+                    description of the incident <span>*</span>
+                </label>
+                <textarea rows="5" name="message" id="message" placeholder="Type here..." class="form-input"></textarea>
+            </div>
+            <h2>Evidences</h2>
+            <p>Attach any and all documents you might have on hand to support your complaint.</p>
+            <p>Electronic files can be submitted by clicking the "Attach files" button. You can attach pictures, documents and
+                spreadsheets. Please note that combined file size cannot exceed 15 MB in size.</p>
+            <div class="formbold-input-file">
+
+                <label for="upload" class="formbold-input-label">
+                    Attach files
+                    <input type="file" name="upload" id="upload">
+                </label>
+            </div>
+            <button class="btn">Submit</button>
             </form>
         </div>
     </div>
+    </div>
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <img src="img/footer.svg" alt="">
+            <p class="footer-company-name">Algerian Cybersecurity Center © 2023. All Rights Reserved</p>
+        </div>
+        <div class="footer-center">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html">REPORT AN INCIDENT</a></li>
+                <li><a href="IOC-reporting.html">REPORT IOC</a></li>
+                <li><a href="">SCAN A SERVICE</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                The Ministry of Digitization and Statistics in Algeria was formed in January 2020 through the restructuring of the former
+                Ministry of Post, Telecommunications, Technologies and Digital and the former National Statistics Office (ONS).
+            </p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
