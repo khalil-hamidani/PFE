@@ -100,7 +100,7 @@
                     </div>
                     <div class="textBox">
                         <label class="form-label">
-                            Which option best describes you?<span class="Mandatory">*</span>
+                            Which option best describes you? <span class="Mandatory">*</span>
                         </label>
                         <div class="radio-group">
                             <label class="radio-label">
@@ -126,6 +126,14 @@
                                 Other
                             </label>
                         </div>
+                    </div>
+                    <div class="textBox">
+                        <label for="otherrole" class="form-label"> If you select "Other", what is your role ? </label>
+                        <br>
+                        <p class="helpText">
+                        </p>
+                        <input type="text" id="otherrole" maxlength="40" pattern="[^]*" name="otherrole" autocomplete="on"
+                            value="" class="form-input lastinput" />
                     </div>
                     <hr class="section_end">
                     <h3 class="section">Section 2</h3>
@@ -420,13 +428,15 @@
                         <br>
                         <p class="helpText">
                         </p>
-                        <input type="text" name="L-name" id="L-name" autocomplete="off" class="form-input" />
+                        <input type="text" name="L-name" id="L-name" autocomplete="off" class="form-input lastinput" />
                     </div>
                     <hr class="section_end">
                     <h3 class="section">Section 3</h3>
                     <h2>Details of Your Complaint</h2>
                     <p>
-                        Please describe briefly what happened. Try and put the elements in the order in which they happened. Refer to a person, company or financial transaction which you have not already reported in the Suspect and Payment sections.</p>
+                        Please describe briefly what happened. Try and put the elements in the order in which they happened. Refer to a
+                        person, company or financial transaction which you have not already reported in the Suspect and Payment sections.
+                    </p>
                     <p>Please provide us with information on the incedent, along with a detailed description of the
                         events, business conduct observed and any additional information you feel is pertinent to your complaint.</p>
 
@@ -441,7 +451,7 @@
                             description of the incident<span class="Mandatory">*</span>
                         </label>
                         <br>
-                        <textarea rows="5" name="message" id="message" placeholder="Type here..." class="form-input"></textarea>
+                        <textarea rows="10" name="message" id="message" placeholder="Type here..." class="form-input lastinput"></textarea>
                     </div>
                     <hr class="section_end">
                     <h3 class="section">Section 4</h3>
@@ -449,7 +459,7 @@
                     <p>Attach any and all documents you might have on hand to support your complaint.</p>
                     <p>Electronic files can be submitted by clicking the "Attach files" button. You can attach pictures, documents and
                         spreadsheets. </p>
-                    <div class="warn">
+                    <div class="form-warn">
                         <p> Note that combined file size cannot exceed 15 MB in size.</p>
                     </div>
 
@@ -469,7 +479,7 @@
     <footer class="footer-distributed">
         <div class="footer-left">
             <img src="img/footer.svg" alt="">
-            <p class="footer-company-name">Algerian Cybersecurity Center © 2023</p>
+            <p class="footer-company-name">Algerian Cybersecurity Center © 2023. All Rights Reserved</p>
         </div>
         <div class="footer-center">
             <h6>Quick Links</h6>
@@ -483,9 +493,7 @@
         <div class="footer-right">
             <p class="footer-company-about">
                 <span>About the company</span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum amet quam reprehenderit sequi corporis, vel laborum beatae
-                ipsam ad nam sit officia eligendi accusamus aperiam reiciendis perferendis similique voluptate illum.
-            </p>
+                The Ministry of Digitization and Statistics in Algeria was formed in January 2020 through the restructuring of the former Ministry of Post, Telecommunications, Technologies and Digital and the former National Statistics Office (ONS).</p>
         </div>
     </footer>
 </body>

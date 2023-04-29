@@ -28,9 +28,11 @@ p {
     font-family: 'Poppins';
     font-weight: 400;
 }
-body{
+
+body {
     background-color: var(--bg-color);
 }
+
 /*! -------------------------------- I- header -----------------------------#ff0000 */
 /*? -------------------------------- 1) header -------------------------------#1100ff */
 header {
@@ -305,13 +307,15 @@ header hr {
     font-size: 20px;
     font-weight: 600;
 }
-.categories small{
+
+.categories small {
     display: flex;
     width: 100%;
     color: rgba(87, 87, 87, 0.808);
     font-weight: 400;
     margin: 15px 0px;
 }
+
 .categories a {
     display: flex;
     flex-direction: c;
@@ -450,7 +454,6 @@ h3.section {
 }
 
 .section {
-    /* color: gray; */
     color: var(--main-color);
     font-size: 20px;
     font-weight: 500;
@@ -500,32 +503,55 @@ label {
     display: flex;
     flex-direction: column;
 }
-.input-radio{
+
+.input-radio {
     height: 20px;
     width: 20px;
     left: 0;
     margin: 0;
     --active-color: var(--main-color);
 }
+
 input[type='radio']:after {
     background-color: var(--main-color);
 }
+
 input[type='radio']:hover {
     background-color: var(--main-color);
 }
-.radio-group{
+
+.radio-group {
     margin-top: 5px;
 }
-.radio-label{
+
+.radio-label {
     margin-bottom: 5px;
     font-weight: 400;
     font-size: large;
 }
-.section_end{
+
+.section_end {
     border: 3px solid var(--main-color);
     border-radius: 50px;
 }
-#country{
-      width: 100%;
-      border: 2px solid black;   
+
+#country {
+    width: 100%;
+    border: 2px solid black;
+}
+
+.lastinput {
+    margin-bottom: 35px;
+}
+
+textarea {
+    border: 2px solid black;
+}
+
+.form-warn {
+    background-color: #fff0d6;
+    border-left: 5px solid var(--warning-color);
+    padding: 15px;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
