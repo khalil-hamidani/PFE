@@ -59,8 +59,17 @@ A la fin du présent chapitre, nous avons constaté que la sécurité informatiq
 
 /////////////////////////////////////////////////////////////////
 chpitre2:
------------------intro:
+-----------------Intro:
 La conception est une étape clé dans tout projet de développement logiciel. Afin de la réussir,  il est nécessaire de suivre une méthodologie rigoureuse et structurée. Ce chapitre se concentre sur les différentes étapes de la conception, en mettant l'accent sur l'analyse des besoins et la conception avec les diagrammes de cas d’utilisation, de classe et de séquence. Les différentes techniques utilisées pour collecter, analyser et formaliser les besoins des utilisateurs sont détaillées, et les différents types de diagrammes utilisés en conception logicielle sont présentés pour concevoir une solution adaptée.
+
+-----------------l'organisme d'acceuil:
+Le Ministère de la Numérisation et des Statistiques en Algérie créé en janvier 2020, est le département ministériel chargé de la mise en place de politiques et de programmes visant à améliorer l'utilisation des technologies de l'information et de la communication (TIC) dans les différents secteurs de la société, ainsi que la production et la gestion des données statistiques.
+Ce ministère a pour mission de moderniser l'administration publique en favorisant la numérisation de ses procédures, en facilitant l'accès aux services publics en ligne, en renforçant la sécurité des données numériques, et en encourageant l'innovation dans le domaine des TIC.
+Il est également responsable de la production et de la diffusion de données statistiques fiables et pertinentes, qui sont nécessaires pour la prise de décisions éclairées en matière de planification, de suivi et d'évaluation des politiques économiques, sociales et environnementales en Algérie.
+	I.2.1 Service de Sous-direction de la Cybersécurité
+		Est une entité chargée de la sécurité informatique et de la protection des données numériques au sein du ministère. Elle est responsable de la mise en place de mesures visant à protéger les systèmes d'information et les données électroniques contre les cyberattaques, les virus informatiques, le piratage et les autres menaces liées à la sécurité numérique.
+
+
 
 -----------------Analyse des besoins:
 Cette étape consiste à identifier et comprendre les besoins des utilisateurs ainsi que les exigences du système, afin de définir les fonctionnalités et les caractéristiques nécessaires pour répondre à ces besoins.
