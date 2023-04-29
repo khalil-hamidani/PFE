@@ -43,8 +43,14 @@ L'analyse de vulnérabilités est un processus visant à identifier les vulnéra
 
 
 --------------------Exemple d'etude:
+titre d'exemple pour cette étude, on a opté pour le site CISA qui est un site d'une agence gouvernementale américaine chargée de protéger l'infrastructure critique des États-Unis contre les menaces de cybersécurité.
+(Figure 2 : Site de l’Agence de cybersécurité et de sécurité des infrastructures
+-CISA-)
 
-(on ajoute une capture de cisa)
+Ce site propose plusieurs formulaires à remplir pour signaler différents types de problèmes de cybersécurité. La figure suivante, représente le formulaire de déclaration d'incident (Incident Reporting Form), qui se compose de plusieurs sections. Les sections du formulaire incluent des informations sur l'organisation signalant l'incident, des détails sur l'incident ou la vulnérabilité, et des informations sur les mesures de sécurité en place.
+En remplissant le formulaire, l'utilisateur peut fournir à la CISA des informations détaillées sur l'incident ou la vulnérabilité, ce qui permet à l'agence de fournir rapidement une assistance technique et opérationnelle pour atténuer les risques.
+
+(       Figure 3 : Le formulaire de déclaration d'incident du site CISA )
 
 --------------------conclusion:
 A la fin du présent chapitre, nous avons constaté que la sécurité informatique est un domaine crucial dans le monde numérique actuel. Nous avons défini on quoi consiste la sécurité informatique, ainsi que les indicateurs de compromission (IOC), les vulnérabilités et les attaques. Nous nous sommes aussi penchés sur l'analyse des vulnérabilités, une méthode d'identification et de correction des vulnérabilités dans les systèmes informatiques.
