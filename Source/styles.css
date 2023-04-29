@@ -15,6 +15,7 @@
     --cayan-color: #017ab5;
     --warning-color: #f5a523;
     --danger-color: #c00718;
+    --bg-color: #f5f6fa;
 }
 
 * {
@@ -27,7 +28,9 @@ p {
     font-family: 'Poppins';
     font-weight: 400;
 }
-
+body{
+    background-color: var(--bg-color);
+}
 /*! -------------------------------- I- header -----------------------------#ff0000 */
 /*? -------------------------------- 1) header -------------------------------#1100ff */
 header {
@@ -241,7 +244,7 @@ header hr {
 
 .report-incdent-container {
     z-index: 2;
-    background-color: #fff;
+    background-color: var(--bg-color);
     padding: 15px;
     margin: -75px 12rem;
     max-width: 100rem;
@@ -249,10 +252,11 @@ header hr {
 }
 
 .explain {
+    margin-top: 5px;
     background-color: #def7ff;
     border-left: 5px solid var(--cayan-color);
     padding: 15px;
-    margin-bottom: 1rem;
+    margin-bottom: 25px;
 }
 
 .explain h2 {
@@ -268,14 +272,14 @@ header hr {
 .report-incdent-container p {
     font-size: 1.2rem;
     font-family: 'Poppins';
-    margin-bottom: 1rem;
+    margin-bottom: 25px;
 }
 
 .warn {
     background-color: #fff0d6;
     border-left: 5px solid var(--warning-color);
     padding: 15px;
-    margin-bottom: 1rem;
+    margin-bottom: 25px;
 }
 
 .warn h2 {
@@ -291,21 +295,26 @@ header hr {
 /*? -------------------------------- 2) categories -------------------------------#1100ff */
 
 .categories {
-    display: flex;
-    flex-direction: row;
-    border: 1px solid rgb(210, 208, 206);
-    border-radius: 4px;
-    padding: 10px;
+    border: 1px solid rgb(139, 133, 127);
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px;
     cursor: pointer;
-    margin: 20px 15px;
+    margin: 25px 15px;
     max-width: 1100px;
     font-size: 20px;
     font-weight: 600;
 }
-
+.categories small{
+    display: flex;
+    width: 100%;
+    color: rgba(87, 87, 87, 0.808);
+    font-weight: 400;
+    margin: 15px 0px;
+}
 .categories a {
     display: flex;
-    flex-direction: row;
+    flex-direction: c;
     width: 100%;
 }
 
@@ -316,6 +325,7 @@ header hr {
 
 .categorie i {
     margin-right: 15px;
+    margin-top: 4px;
 }
 
 .categorie a {
@@ -418,7 +428,7 @@ a.back-btn:active {
 /*? -------------------------------- 1) Container -------------------------------#1100ff */
 .form-container {
     z-index: 2;
-    background-color: #fff;
+    background-color: var(--bg-color);
     padding: 15px;
     margin: -75px 12rem;
     max-width: 100rem;
@@ -514,4 +524,8 @@ input[type='radio']:hover {
 .section_end{
     border: 3px solid var(--main-color);
     border-radius: 50px;
+}
+#country{
+      width: 100%;
+      border: 2px solid black;   
 }
