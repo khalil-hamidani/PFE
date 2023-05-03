@@ -40,26 +40,31 @@
         <div class="main-wrapper">
             <div class="form-wrapper">
                 <form action="" method="POST">
-                    <div class="textBox">
+                    <div class="textBox required">
                         <label for="name" class="form-label"> First Name <span class="Mandatory">*</span></label>
                         <br>
                         <p class="helpText">
+                            Please provide your First name
                         </p>
-                        <input type="text" id="first_name" maxlength="49" pattern="[^]*" name="first_name" autocomplete="on" value=""
-                            class="form-input" />
+                        <input type="text" id="first_name" required maxlength="49" pattern="[^]*" name="first_name" autocomplete="on"
+                            value="" class="form-input" />
                     </div>
-                    <div class="textBox">
+                    <div class="textBox required">
                         <label for="name" class="form-label"> Last Name <span class="Mandatory">*</span></label>
                         <br>
+                        <p class="helpText">
+                            Please provide your Last name
+                        </p>
                         <p class="helpText">
                         </p>
                         <input type="text" id="last_name" maxlength="49" pattern="[^]*" name="first_name" autocomplete="on" value=""
                             class="form-input" />
                     </div>
-                    <div class="textBox">
+                    <div class="textBox required">
                         <label for="email" class="form-label"> Email <span class="Mandatory">*</span></label>
                         <br>
                         <p class="helpText">
+                            Please provide your email
                         </p>
                         <input type="email" id="contact_email" maxlength="100" pattern="[^]*" name="contact_email" autocomplete="on"
                             value="" class="form-input" />
@@ -79,9 +84,12 @@
                         </p>
                         <input type="number" id="age" name="age" autocomplete="off" value="" class="form-input" />
                     </div>
-                    <div class="textBox">
-                        <label for="age" class="form-label"> Gender </label>
+                    <div class="textBox required">
+                        <label for="age" class="form-label"> Gender <span class="Mandatory">*</span> </label>
                         <p class="helpText">
+                        </p>
+                        <p class="helpText">
+                            Please slect an option
                         </p>
                         <div class="radio-flex">
                             <div class="radio-group">
@@ -98,10 +106,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="textBox">
+                    <div class="textBox required">
                         <label class="form-label">
                             Which option best describes you? <span class="Mandatory">*</span>
                         </label>
+                        <p class="helpText">
+                            Please slect an option
+                        </p>
                         <div class="radio-group">
                             <label class="radio-label">
                                 <input class="input-radio" type="radio" name="role" id="st" />
@@ -141,24 +152,27 @@
                     <p>Tell us about the company, organization or individual that you have a complaint against. Please provide as much
                         information as possible and attach all documents you might have on hand to support your complaint.Any empty field
                         will be considered as unknown information</p>
-                    <div class="textBox">
+                    <div class="textBox required">
                         <label for="name" class="form-label"> First Name <span class="Mandatory">*</span></label>
                         <br>
                         <p class="helpText">
+                            Please provide a valid First name
                         </p>
                         <input type="text" name="F-name" id="F-name" autocomplete="off" class="form-input" />
                     </div>
-                    <div class="textBox">
+                    <div class="textBox required">
                         <label for="name" class="form-label"> Last Name <span class="Mandatory">*</span></label>
                         <br>
                         <p class="helpText">
+                            Please provide a valid Last name
                         </p>
                         <input type="text" name="L-name" id="L-name" autocomplete="off" class="form-input" />
                     </div>
-                    <div class="textBox">
+                    <div class="textBox required">
                         <label for="name" class="form-label"> Company Name <span class="Mandatory">*</span></label>
                         <br>
                         <p class="helpText">
+                            Please provide a valid Company name
                         </p>
                         <input type="text" name="L-name" id="L-name" autocomplete="off" class="form-input" />
                     </div>
@@ -440,17 +454,23 @@
                     <p>Please provide us with information on the incedent, along with a detailed description of the
                         events, business conduct observed and any additional information you feel is pertinent to your complaint.</p>
 
-                    <div class="textBox">
+                    <div class="textBox required">
                         <label for="name" class="form-label"> When was this incident detected <span class="Mandatory">*</span></label>
+                        <p class="helpText">
+                            Please provide a valid Date
+                        </p>
                         <input type="date" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off"
                             class="form-input" />
                     </div>
 
-                    <div>
+                    <div class="textBox required">
                         <label for="message" class="form-label">
-                            description of the incident<span class="Mandatory">*</span>
+                            Description of the incident<span class="Mandatory">*</span>
                         </label>
                         <br>
+                        <p class="helpText">
+                            Please provide some informations about the incident
+                        </p>
                         <textarea rows="10" name="message" id="message" placeholder="Type here..." class="form-input lastinput"></textarea>
                     </div>
                     <hr class="section_end">
@@ -466,7 +486,7 @@
                     <div class="formbold-input-file">
 
                         <label for="upload" class="formbold-input-label">
-                            Attach files<span class="Mandatory">*</span>
+                            Attach files
                             <input type="file" name="upload" id="upload">
                         </label>
                         <hr class="section_end">

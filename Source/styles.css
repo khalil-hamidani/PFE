@@ -13,8 +13,11 @@
 :root {
     --main-color: #041e52;
     --cayan-color: #017ab5;
+    --cayan-color2: #def7ff;
     --warning-color: #f5a523;
+    --warning-color2: #fff0d6;
     --danger-color: #c00718;
+    --danger-color2: #fcf2f3;
     --bg-color: #f5f6fa;
 }
 
@@ -25,7 +28,6 @@
 
 p {
     font-size: 1.2rem;
-    font-family: 'Poppins';
     font-weight: 400;
 }
 
@@ -248,7 +250,7 @@ header hr {
     z-index: 2;
     background-color: var(--bg-color);
     padding: 15px;
-    margin: -75px 12rem;
+    margin: -75px 10rem;
     max-width: 100rem;
     top: -50px;
 }
@@ -434,7 +436,7 @@ a.back-btn:active {
     z-index: 2;
     background-color: var(--bg-color);
     padding: 15px;
-    margin: -75px 12rem;
+    margin: -75px 10rem;
     max-width: 100rem;
     top: -50px;
 }
@@ -475,6 +477,7 @@ form {
 .textBox {
     margin-bottom: 1.8%;
     margin-top: 1.8%;
+    padding: 10px;
 }
 
 label {
@@ -541,7 +544,7 @@ input[type='radio']:hover {
 }
 
 .lastinput {
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 
 textarea {
@@ -554,4 +557,15 @@ textarea {
     padding: 15px;
     margin-bottom: 25px;
     margin-top: 25px;
+}
+.helpText{
+    display: none;
+}
+.required{
+    background-color: #fcf2f3;
+    border-left: 5px solid var(--danger-color);
+}
+.required p {
+    display: block;
+    font-weight: 300;
 }
