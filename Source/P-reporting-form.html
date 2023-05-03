@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="icon" type="image/x-icon" href="img/icon.ico">
     <title>Report Form</title>
 </head>
@@ -39,7 +40,7 @@
         </div>
         <div class="main-wrapper">
             <div class="form-wrapper">
-                <form action="" method="POST">
+                <form action="" method="POST" onbeforeunload="return warn()">
                     <div class="textBox required">
                         <label for="name" class="form-label"> First Name <span class="Mandatory">*</span></label>
                         <br>
@@ -483,13 +484,14 @@
                         <p> Note that combined file size cannot exceed 15 MB in size.</p>
                     </div>
 
-                    <div class="formbold-input-file">
-
-                        <label for="upload" class="formbold-input-label">
-                            Attach files
-                            <input type="file" name="upload" id="upload">
-                        </label>
-                        <hr class="section_end">
+                    <div class="uploader">
+                        <div class="uploadbox">
+                            <input class="file-input" type="file" name="file" hidden>
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Browse File to Upload</p>
+                        </div>
+                        <section class="progress-area"></section>
+                        <section class="uploaded-area"></section>
                     </div>
                     <button class="btn">Submit</button>
                 </form>
@@ -518,6 +520,13 @@
             </p>
         </div>
     </footer>
+    <script src="Scripts/Upload.js"></script>
+    <script>
+        let form = document.querySelector("form");
+        form.addEventListener("submit", (e) => {
+            e.preventDefault(); 
+        });
+    </script>
 </body>
 
 </html>
