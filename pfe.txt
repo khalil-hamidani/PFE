@@ -91,7 +91,7 @@ Afin d’assurer le bon fonctionnement de notre application et pour garantir la 
 -----------------Conception:
 Dans cette section, nous avons choisi de travailler avec UML, qui est un langage de modélisation graphique servant à décrire les processus et les structures des systèmes logiciels. Le modèle UML est composé de plusieurs diagrammes, chacun ayant une fonction spécifique. Les diagrammes suivants sont présentés dans le cadre de cette étude : 
 a)	Le diagramme de cas d’utilisation :
-
+Le diagramme de cas d'utilisation de cette application permettra de visualiser les différentes actions et interactions possibles entre les utilisateurs et le système.
 
 b)	Le diagramme de classe :
 
