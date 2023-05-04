@@ -560,6 +560,9 @@ textarea {
 }
 .helpText{
     display: none;
+    color: var(--danger-color);
+    font-weight: 600;
+    font-size: 15px;
 }
 .required{
     background-color: #fcf2f3;
