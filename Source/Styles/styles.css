@@ -9,11 +9,13 @@
 /* ? 2) categories */
 /*! ---- III- pre-report -------- */
 /* ? 1) befor you report */
+/*! ---- IV- IOC report -------- */
+/* ? 1) IOC form */
 /* ------------------------------- */
 :root {
     --main-color: #041e52;
-    --cayan-color: #017ab5;
-    --cayan-color2: #def7ff;
+    --cyan-color: #017ab5;
+    --cyan-color2: #def7ff;
     --warning-color: #f5a523;
     --warning-color2: #fff0d6;
     --danger-color: #c00718;
@@ -233,7 +235,7 @@ header hr {
     margin-top: 25px;
 }
 
-/*! -------------------------------- IT- report.html-----------------------------#ff0000 */
+/*! -------------------------------- II- report.html-----------------------------#ff0000 */
 /*? -------------------------------- 1) notes -------------------------------#1100ff */
 
 #categories {
@@ -258,7 +260,7 @@ header hr {
 .explain {
     margin-top: 5px;
     background-color: #def7ff;
-    border-left: 5px solid var(--cayan-color);
+    border-left: 5px solid var(--cyan-color);
     padding: 15px;
     margin-bottom: 25px;
 }
@@ -558,28 +560,32 @@ textarea {
     margin-bottom: 25px;
     margin-top: 25px;
 }
-.helpText{
+
+.helpText {
     display: none;
     color: var(--danger-color);
     font-weight: 600;
     font-size: 15px;
 }
-.required{
+
+.required {
     background-color: #fcf2f3;
     border-left: 5px solid var(--danger-color);
 }
+
 .required p {
     display: block;
     font-weight: 300;
 }
-/* -------------------------------------------- */
-  .uploader{
+
+/** ------------ upload file ------------ */
+.uploader {
     background: var(--bg-color);
     border-radius: 5px;
-    /* padding: 30px; */
     margin-bottom: 30px;
-  }
-  .uploader .uploadbox{
+}
+
+.uploader .uploadbox {
     height: 167px;
     display: flex;
     cursor: pointer;
@@ -590,81 +596,98 @@ textarea {
     border-radius: 5px;
     border: 2px solid #000000;
     background-color: white;
-  }
-  .uploadbox :where(i, p){
+}
+
+.uploadbox :where(i, p) {
     color: var(--main-color);
-  }
-  .uploadbox i{
+}
+
+.uploadbox i {
     font-size: 50px;
-  }
-  .uploadbox p{
+}
+
+.uploadbox p {
     margin-top: 15px;
     font-size: 16px;
-  }
-  
-  section .row{
+}
+
+section .row {
     margin-bottom: 10px;
-    background: var(--cayan-color2);
+    background: var(--cyan-color2);
     list-style: none;
     padding: 15px 20px;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  section .row i{
+}
+
+section .row i {
     color: var(--main-color);
     font-size: 30px;
-  }
-  section .details span{
+}
+
+section .details span {
     font-size: 14px;
-  }
-  .progress-area .row .content{
+}
+
+.progress-area .row .content {
     width: 100%;
     margin-left: 15px;
-  }
-  .progress-area .details{
+}
+
+.progress-area .details {
     display: flex;
     align-items: center;
     margin-bottom: 7px;
     justify-content: space-between;
-  }
-  .progress-area .content .progress-bar{
+}
+
+.progress-area .content .progress-bar {
     height: 6px;
     width: 100%;
     margin-bottom: 4px;
     background: #fff;
     border-radius: 30px;
-  }
-  .content .progress-bar .progress{
+}
+
+.content .progress-bar .progress {
     height: 100%;
     width: 0%;
     background: var(--main-color);
     border-radius: inherit;
-  }
-  .uploaded-area{
+}
+
+.uploaded-area {
     overflow-y: scroll;
-  }
-  .uploaded-area.onprogress{
+}
+
+.uploaded-area.onprogress {
     max-height: 150px;
-  }
-  .uploaded-area::-webkit-scrollbar{
+}
+
+.uploaded-area::-webkit-scrollbar {
     width: 10px;
-  }
-  .uploaded-area .row .content{
+}
+
+.uploaded-area .row .content {
     display: flex;
     align-items: center;
-  }
-  .uploaded-area .row .details{
+}
+
+.uploaded-area .row .details {
     display: flex;
     margin-left: 15px;
     flex-direction: column;
-  }
-  .uploaded-area .row .details .size{
+}
+
+.uploaded-area .row .details .size {
     color: #404040;
     font-size: 11px;
-  }
-  .uploaded-area i.fa-check{
+}
+
+.uploaded-area i.fa-check {
     font-size: 16px;
-  }
-  
+}
+/*! -------------------------------- IV- IOC report  -----------------------------#ff0000 */
+/*? -------------------------------- 1) IOC form  -------------------------------#1100ff */
