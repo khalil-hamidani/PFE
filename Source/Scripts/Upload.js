@@ -58,7 +58,7 @@ function uploadFile(name) {
                                 <span class="size">${fileSize}</span>
                               </div>
                             </div>
-                            <i class="fas fa-check"></i>
+                            <i class="fa fa-remove"></i>
                           </li>`;
       uploadedArea.classList.remove("onprogress");
       // uploadedArea.innerHTML = uploadedHTML; //uncomment this line if you don't want to show upload history
@@ -68,6 +68,10 @@ function uploadFile(name) {
   let data = new FormData(form); //FormData is an object to easily send form data
   xhr.send(data); //sending form data
 }
-function warn() {
-  prompt("This is a warning message!");
-}
+
+uploadedArea.addEventListener("click", (event) => {
+  if (event.target.classList.contains("fa-remove")) {
+    let listItem = event.target.parentNode;
+    uploadedArea.removeChild(listItem);
+  }
+});

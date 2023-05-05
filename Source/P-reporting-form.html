@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="img/icon.ico">
     <title>Report Form</title>
 </head>
@@ -40,17 +41,20 @@
         </div>
         <div class="main-wrapper">
             <div class="form-wrapper">
-                <form action="" method="POST" onbeforeunload="return warn()">
-                    <div class="textBox required">
+                <form action="/" method="POST">
+                    <p class="formErrorText">
+                        Please fill in or correct the required fields !
+                    </p>
+                    <div class="textBox">
                         <label for="name" class="form-label"> First Name <span class="Mandatory">*</span></label>
                         <br>
                         <p class="helpText">
                             Please provide your First name
                         </p>
-                        <input type="text" id="first_name" required maxlength="49" pattern="[^]*" name="first_name" autocomplete="on"
-                            value="" class="form-input" />
+                        <input type="text" id="first_name" maxlength="49" pattern="[^]*" name="first_name" autocomplete="on" value=""
+                            class="form-input" />
                     </div>
-                    <div class="textBox required">
+                    <div class="textBox ">
                         <label for="name" class="form-label"> Last Name <span class="Mandatory">*</span></label>
                         <br>
                         <p class="helpText">
@@ -58,14 +62,14 @@
                         </p>
                         <p class="helpText">
                         </p>
-                        <input type="text" id="last_name" maxlength="49" pattern="[^]*" name="first_name" autocomplete="on" value=""
+                        <input type="text" id="last_name" maxlength="49" pattern="[^]*" name="last_name" autocomplete="on" value=""
                             class="form-input" />
                     </div>
-                    <div class="textBox required">
+                    <div class="textBox">
                         <label for="email" class="form-label"> Email <span class="Mandatory">*</span></label>
                         <br>
                         <p class="helpText">
-                            Please provide your email
+                            Please provide a valid email address
                         </p>
                         <input type="email" id="contact_email" maxlength="100" pattern="[^]*" name="contact_email" autocomplete="on"
                             value="" class="form-input" />
@@ -85,7 +89,7 @@
                         </p>
                         <input type="number" id="age" name="age" autocomplete="off" value="" class="form-input" />
                     </div>
-                    <div class="textBox required">
+                    <div class="textBox ">
                         <label for="age" class="form-label"> Gender <span class="Mandatory">*</span> </label>
                         <p class="helpText">
                         </p>
@@ -107,7 +111,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="textBox required">
+                    <div class="textBox ">
                         <label class="form-label">
                             Which option best describes you? <span class="Mandatory">*</span>
                         </label>
@@ -153,7 +157,7 @@
                     <p>Tell us about the company, organization or individual that you have a complaint against. Please provide as much
                         information as possible and attach all documents you might have on hand to support your complaint.Any empty field
                         will be considered as unknown information</p>
-                    <div class="textBox required">
+                    <div class="textBox ">
                         <label for="name" class="form-label"> First Name <span class="Mandatory">*</span></label>
                         <br>
                         <p class="helpText">
@@ -161,7 +165,7 @@
                         </p>
                         <input type="text" name="F-name" id="F-name" autocomplete="off" class="form-input" />
                     </div>
-                    <div class="textBox required">
+                    <div class="textBox ">
                         <label for="name" class="form-label"> Last Name <span class="Mandatory">*</span></label>
                         <br>
                         <p class="helpText">
@@ -169,13 +173,13 @@
                         </p>
                         <input type="text" name="L-name" id="L-name" autocomplete="off" class="form-input" />
                     </div>
-                    <div class="textBox required">
+                    <div class="textBox ">
                         <label for="name" class="form-label"> Company Name <span class="Mandatory">*</span></label>
                         <br>
                         <p class="helpText">
                             Please provide a valid Company name
                         </p>
-                        <input type="text" name="L-name" id="L-name" autocomplete="off" class="form-input" />
+                        <input type="text" name="C-name" id="C-name" autocomplete="off" class="form-input" />
                     </div>
                     <div class="textBox">
                         <label for="name" class="form-label"> Country </label>
@@ -455,16 +459,15 @@
                     <p>Please provide us with information on the incedent, along with a detailed description of the
                         events, business conduct observed and any additional information you feel is pertinent to your complaint.</p>
 
-                    <div class="textBox required">
+                    <div class="textBox ">
                         <label for="name" class="form-label"> When was this incident detected <span class="Mandatory">*</span></label>
                         <p class="helpText">
                             Please provide a valid Date
                         </p>
-                        <input type="date" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off"
-                            class="form-input" />
+                        <input type="date" name="Date" id="Date" placeholder="Enter your Last name" autocomplete="off" class="form-input" />
                     </div>
 
-                    <div class="textBox required">
+                    <div class="textBox ">
                         <label for="message" class="form-label">
                             Description of the incident<span class="Mandatory">*</span>
                         </label>
@@ -493,8 +496,15 @@
                         <section class="progress-area"></section>
                         <section class="uploaded-area"></section>
                     </div>
-                    <button class="btn">Submit</button>
+                    <button class="btn">Submit The Report</button>
+
                 </form>
+            </div>
+            <hr id="lasthr">
+            <div class="helpus">
+                <h3>Help us to help others</h3>
+                <p> Sharing informative reports is crucial for us to comprehend the threat landscape and enhance the cyber intelligence
+                    capabilities. This subsequently improves our ability to help protect other Algerian organisations.</p>
             </div>
         </div>
     </div>
@@ -521,12 +531,7 @@
         </div>
     </footer>
     <script src="Scripts/Upload.js"></script>
-    <script>
-        let form = document.querySelector("form");
-        form.addEventListener("submit", (e) => {
-            e.preventDefault();
-        });
-    </script>
+    <script src="Scripts/FormCheker.js"></script>
 </body>
 
 </html>
