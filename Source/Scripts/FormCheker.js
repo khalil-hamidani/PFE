@@ -48,7 +48,7 @@ function checkRequired(inputArr) {
 }
 
 //Event Listeners
-form.addEventListener("submit", function (e) {
+TheForm.addEventListener("submit", function (e) {
   e.preventDefault();
   checkRequired([FirstName, LastName, Email, FirstName2, LastName2, CompanyName, TheDate, Description]);
   checkEmail(Email);
@@ -100,3 +100,7 @@ function showModal(message) {
   }
 }
 // window.addEventListener("beforeunload", warn);
+
+TheForm.addEventListener("submit", (event) => {
+  window.removeEventListener("beforeunload", warn);
+});
