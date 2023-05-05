@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="img/icon.ico">
-    <title>****</title>
+    <title>Report Form</title>
 </head>
 
-<body>
+<body id="companyForm">
     <header>
         <div class="top-header">
             <img src="img/Header.svg" alt="">
@@ -31,7 +33,7 @@
     <div class="form-container">
         <a class="backbtn" href="P-reporting.html">&#8592; Back</a>
         <h3 class="section">Section 1</h3>
-        <h2>Complainant's Information</h2>
+        <h2>Complainant's Informations</h2>
         <p>How much personal information you provide is up to you, however too little information may impact our ability to properly respond
             to or handle your request.</p>
         <div class="explain form-explain">
@@ -40,32 +42,38 @@
         <div class="main-wrapper">
             <div class="form-wrapper">
                 <form action="" method="POST">
+                    <p class="formErrorText">
+                        Please fill in or correct the required fields !
+                    </p>
                     <div class="textBox">
-                        <label for="name" class="form-label"> First Name <span class="Mandatory">*</span></label>
+                        <label for="first_name" class="form-label"> First Name <span class="Mandatory">*</span></label>
                         <br>
                         <p class="helpText">
+                            Please provide your first name.
                         </p>
                         <input type="text" id="first_name" maxlength="49" pattern="[^]*" name="first_name" autocomplete="on" value=""
                             class="form-input" />
                     </div>
                     <div class="textBox">
-                        <label for="name" class="form-label"> Last Name <span class="Mandatory">*</span></label>
+                        <label for="last_name" class="form-label"> Last Name <span class="Mandatory">*</span></label>
                         <br>
                         <p class="helpText">
+                            Please provide your last name.
                         </p>
                         <input type="text" id="last_name" maxlength="49" pattern="[^]*" name="first_name" autocomplete="on" value=""
                             class="form-input" />
                     </div>
                     <div class="textBox">
-                        <label for="email" class="form-label"> Email <span class="Mandatory">*</span></label>
+                        <label for="contact_email" class="form-label"> Email <span class="Mandatory">*</span></label>
                         <br>
                         <p class="helpText">
+                            Please provide a valid email address.
                         </p>
                         <input type="email" id="contact_email" maxlength="100" pattern="[^]*" name="contact_email" autocomplete="on"
                             value="" class="form-input" />
                     </div>
                     <div class="textBox">
-                        <label for="email" class="form-label"> Telephone </label>
+                        <label for="telephone_number" class="form-label"> Telephone </label>
                         <br>
                         <p class="helpText">
                         </p>
@@ -80,24 +88,33 @@
                         <input type="number" id="age" name="age" autocomplete="off" value="" class="form-input" />
                     </div>
                     <div class="textBox">
-                        <label for="age" class="form-label"> Gender </label>
+                        <label for="gender" class="form-label"> Gender </label>
                         <p class="helpText">
                         </p>
                         <div class="radio-flex">
                             <div class="radio-group">
                                 <label class="radio-label">
-                                    <input class="input-radio" type="radio" name="gender" id="male" />
+                                    <input class="input-radio" type="radio" name="gender" id="male" value="male" />
                                     Male
                                 </label>
                             </div>
                             <div class="radio-group">
                                 <label class="radio-label">
-                                    <input class="input-radio" type="radio" name="gender" id="female" />
+                                    <input class="input-radio" type="radio" name="gender" id="female" value="female" />
                                     Female
                                 </label>
                             </div>
                         </div>
                     </div>
+                    <div class="textBox ">
+                        <label for="address" class="form-label"> Address </label>
+                        <br>
+                        <p class="helpText">
+                        </p>
+                        <input type="text" id="address" maxlength="100" pattern="[^]*" name="address" autocomplete="on" value=""
+                            class="form-input lastinput" />
+                    </div>
+
                     <hr class="section_end">
                     <h3 class="section">Section 2</h3>
                     <h2>Company Informations</h2>
@@ -105,6 +122,7 @@
                         <label for="organ-name" class="form-label">Organization Name <span class="Mandatory">*</span></label>
                         <br>
                         <p class="helpText">
+                            please provide your organization name.
                         </p>
                         <input type="text" id="organ-name" maxlength="40" pattern="[^]*" name="organ-name" autocomplete="off" value=""
                             class="form-input" />
@@ -117,43 +135,51 @@
                         <input type="text" id="organ-website" maxlength="40" pattern="[^]*" name="organ-website" autocomplete="off" value=""
                             class="form-input" />
                     </div>
+                    <div class="textBox ">
+                        <label for="address" class="form-label"> Organization Address </label>
+                        <br>
+                        <p class="helpText">
+                        </p>
+                        <input type="text" id="Organ-address" maxlength="100" pattern="[^]*" name="Organ-address" autocomplete="on" value=""
+                            class="form-input lastinput" />
+                    </div>
                     <div class="textBox">
                         <label class="form-label">
-                            Which option best describes your organization? <span class="Mandatory">*</span>
+                            Which option best describes your organization?
                         </label>
                         <div class="radio-group">
                             <label class="radio-label">
-                                <input class="input-radio" type="radio" name="role" id="st" />
+                                <input class="input-radio" type="radio" name="role" id="fpo" value="fpo" />
                                 For-profit organizations
                             </label>
                         </div>
                         <div class="radio-group">
                             <label class="radio-label">
-                                <input class="input-radio" type="radio" name="role" id="em" />
+                                <input class="input-radio" type="radio" name="role" id="" value="npo" />
                                 Non-profit organizations
                             </label>
                         </div>
                         <div class="radio-group">
                             <label class="radio-label">
-                                <input class="input-radio" type="radio" name="role" id="re" />
+                                <input class="input-radio" type="radio" name="role" id="" value="eo" />
                                 Educational organizations
                             </label>
                         </div>
                         <div class="radio-group">
                             <label class="radio-label">
-                                <input class="input-radio" type="radio" name="role" id="other" />
+                                <input class="input-radio" type="radio" name="role" id="" value="ho" />
                                 Healthcare organizations
                             </label>
                         </div>
                         <div class="radio-group">
                             <label class="radio-label">
-                                <input class="input-radio" type="radio" name="role" id="other" />
+                                <input class="input-radio" type="radio" name="role" id="" value="so" />
                                 Social organizations
                             </label>
                         </div>
                         <div class="radio-group">
                             <label class="radio-label">
-                                <input class="input-radio" type="radio" name="role" id="other" />
+                                <input class="input-radio" type="radio" name="role" id="" value="ro" />
                                 Religious organizations
                             </label>
                         </div>
@@ -169,28 +195,28 @@
                         information as possible and attach all documents you might have on hand to support your complaint.Any empty field
                         will be considered as unknown information</p>
                     <div class="textBox">
-                        <label for="name" class="form-label"> First Name <span class="Mandatory">*</span></label>
+                        <label for="F-name" class="form-label"> First Name </label>
                         <br>
                         <p class="helpText">
                         </p>
                         <input type="text" name="F-name" id="F-name" autocomplete="off" class="form-input" />
                     </div>
                     <div class="textBox">
-                        <label for="name" class="form-label"> Last Name <span class="Mandatory">*</span></label>
+                        <label for="L-name" class="form-label"> Last Name </label>
                         <br>
                         <p class="helpText">
                         </p>
                         <input type="text" name="L-name" id="L-name" autocomplete="off" class="form-input" />
                     </div>
                     <div class="textBox">
-                        <label for="name" class="form-label"> Company Name</label>
+                        <label for="C-name" class="form-label"> Company Name</label>
                         <br>
                         <p class="helpText">
                         </p>
-                        <input type="text" name="L-name" id="L-name" autocomplete="off" class="form-input" />
+                        <input type="text" name="C-name" id="C-name" autocomplete="off" class="form-input" />
                     </div>
                     <div class="textBox">
-                        <label for="name" class="form-label"> Country </label>
+                        <label for="country" class="form-label"> Country </label>
                         <br>
                         <p class="helpText">
                         </p>
@@ -444,18 +470,19 @@
                         </select>
                     </div>
                     <div class="textBox">
-                        <label for="name" class="form-label"> Email Address </label>
+                        <label for="email2" class="form-label"> Email Address </label>
                         <br>
                         <p class="helpText">
+                            plese provide a valid email address
                         </p>
-                        <input type="text" name="L-name" id="L-name" autocomplete="off" class="form-input" />
+                        <input type="text" name="email2" id="email2" autocomplete="off" class="form-input" />
                     </div>
                     <div class="textBox">
-                        <label for="name" class="form-label"> Website </label>
+                        <label for="website" class="form-label"> Website </label>
                         <br>
                         <p class="helpText">
                         </p>
-                        <input type="text" name="L-name" id="L-name" autocomplete="off" class="form-input lastinput" />
+                        <input type="text" name="website" id="website" autocomplete="off" class="form-input lastinput" />
                     </div>
                     <hr class="section_end">
                     <h3 class="section">Section 4</h3>
@@ -467,40 +494,52 @@
                     <p>Please provide us with information on the incedent, along with a detailed description of the
                         events, business conduct observed and any additional information you feel is pertinent to your complaint.</p>
 
-                    <div class="textBox">
-                        <label for="name" class="form-label"> When was this incident detected <span class="Mandatory">*</span></label>
-                        <input type="date" name="L-name" id="L-name" placeholder="Enter your Last name" autocomplete="off"
-                            class="form-input" />
+                    <div class="textBox ">
+                        <label for="Date" class="form-label"> When was this incident detected <span class="Mandatory">*</span></label>
+                        <p class="helpText">
+                            Please provide a valid Date
+                        </p>
+                        <input type="date" name="Date" id="Date" placeholder="Enter your Last name" autocomplete="off" class="form-input" />
                     </div>
 
-                    <div class="textBox">
+                    <div class="textBox ">
                         <label for="message" class="form-label">
-                            description of the incident<span class="Mandatory">*</span>
+                            Description of the incident<span class="Mandatory">*</span>
                         </label>
                         <br>
+                        <p class="helpText">
+                            Please provide some informations about the incident
+                        </p>
                         <textarea rows="10" name="message" id="message" placeholder="Type here..." class="form-input lastinput"></textarea>
                     </div>
-            </div>
-            <hr class="section_end">
-            <h3 class="section">Section 4</h3>
-            <h2>Evidences</h2>
-            <p>Attach any and all documents you might have on hand to support your complaint.</p>
-            <p>Electronic files can be submitted by clicking the "Attach files" button. You can attach pictures, documents and
-                spreadsheets. </p>
-            <div class="form-warn">
-                <p> Note that combined file size cannot exceed 15 MB in size.</p>
-            </div>
+                    <hr class="section_end">
+                    <h3 class="section">Section 5</h3>
+                    <h2>Evidences</h2>
+                    <p>Attach any and all documents you might have on hand to support your complaint.</p>
+                    <p>Electronic files can be submitted by clicking the "Attach files" button. You can attach pictures, documents and
+                        spreadsheets. </p>
+                    <div class="form-warn">
+                        <p> Note that combined file size cannot exceed 10 MB in size.</p>
+                    </div>
 
-            <div class="formbold-input-file">
-
-                <label for="upload" class="formbold-input-label">
-                    Attach files<span class="Mandatory">*</span>
-                    <input type="file" name="upload" id="upload">
-                </label>
-                <hr class="section_end">
+                    <div class="uploader">
+                        <div class="uploadbox">
+                            <input class="file-input" type="file" name="file" hidden>
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Browse File to Upload</p>
+                        </div>
+                        <section class="progress-area"></section>
+                        <section class="uploaded-area"></section>
+                    </div>
+                    <button class="btn">Submit The Report</button>
+                </form>
             </div>
-            <button class="btn">Submit</button>
-            </form>
+            <hr id="lasthr">
+            <div class="helpus">
+                <h3>Help us to help others</h3>
+                <p> Sharing informative reports is crucial for us to comprehend the threat landscape and enhance the cyber intelligence
+                    capabilities. This subsequently improves our ability to help protect other Algerian organisations.</p>
+            </div>
         </div>
     </div>
     <footer class="footer-distributed">
@@ -526,6 +565,8 @@
             </p>
         </div>
     </footer>
+    <script src="Scripts/Upload.js"></script>
+    <script src="Scripts/FormCheker.js"></script>
 </body>
 
 </html>

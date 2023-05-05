@@ -1,11 +1,11 @@
+const body = document.body.id;
 const TheForm = document.querySelector("form");
 const FirstName = document.getElementById("first_name");
 const LastName = document.getElementById("last_name");
 const Email = document.getElementById("contact_email");
+const Email2 = document.getElementById("email2");
 
-const FirstName2 = document.getElementById("F-name");
-const LastName2 = document.getElementById("L-name");
-const CompanyName = document.getElementById("C-name");
+const companyName = document.getElementById("organ-name");
 
 const TheDate = document.getElementById("Date");
 const Description = document.getElementById("message");
@@ -15,7 +15,7 @@ let ErrorCount = 0;
 
 //Show input error messages
 function showError(input) {
-  input.parentElement.classList.add("required"); 
+  input.parentElement.classList.add("required");
   ErrorCount++;
 }
 
@@ -27,6 +27,10 @@ function showSucces(input) {
 
 //check email is valid
 function checkEmail(input) {
+  if (input.value.trim() === "") {
+    showSucces(input);
+    return;
+  }
   const re =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   if (re.test(input.value.trim())) {
@@ -50,8 +54,26 @@ function checkRequired(inputArr) {
 //Event Listeners
 TheForm.addEventListener("submit", function (e) {
   e.preventDefault();
-  checkRequired([FirstName, LastName, Email, FirstName2, LastName2, CompanyName, TheDate, Description]);
-  checkEmail(Email);
+  switch (body) {
+    case "personalForm":
+      checkRequired([FirstName, LastName, Email, TheDate, Description]);
+      checkEmail(Email);
+      checkEmail(Email2);
+      break;
+
+    case "companyForm":
+      checkRequired([FirstName, LastName, Email, companyName, TheDate, Description]);
+      checkEmail(Email);
+      checkEmail(Email2);
+      break;
+
+    case "GovForm":
+      checkRequired([FirstName, LastName, Email, companyName, TheDate, Description]);
+      checkEmail(Email);
+      checkEmail(Email2);
+      break;
+  }
+
   if (ErrorCount <= 0) {
     TheForm.submit();
   } else {
@@ -60,7 +82,8 @@ TheForm.addEventListener("submit", function (e) {
   }
 });
 
-// prevent form from exiting
+//! prevent form from exiting
+
 function warn(event) {
   event.preventDefault();
   event.returnValue = ""; // Required for Chrome and Firefox
@@ -99,8 +122,8 @@ function showModal(message) {
     modal.remove();
   }
 }
-// window.addEventListener("beforeunload", warn);
+window.addEventListener("beforeunload", warn);
 
-TheForm.addEventListener("submit", (event) => {
+TheForm.addEventListener("submit", () => {
   window.removeEventListener("beforeunload", warn);
 });

@@ -12,7 +12,7 @@
     <title>Report Form</title>
 </head>
 
-<body>
+<body id="personalForm">
     <header>
         <div class="top-header">
             <img src="img/Header.svg" alt="">
@@ -33,7 +33,7 @@
     <div class="form-container">
         <a class="backbtn" href="P-reporting.html">&#8592; Back</a>
         <h3 class="section">Section 1</h3>
-        <h2>Complainant's Information</h2>
+        <h2>Complainant's Informations</h2>
         <p>How much personal information you provide is up to you, however too little information may impact our ability to properly respond
             to or handle your request.</p>
         <div class="explain form-explain">
@@ -166,7 +166,7 @@
                         information as possible and attach all documents you might have on hand to support your complaint.Any empty field
                         will be considered as unknown information</p>
                     <div class="textBox ">
-                        <label for="F-name" class="form-label"> First Name <span class="Mandatory">*</span></label>
+                        <label for="F-name" class="form-label"> First Name</label>
                         <br>
                         <p class="helpText">
                             Please provide a valid First name
@@ -174,7 +174,7 @@
                         <input type="text" name="F-name" id="F-name" autocomplete="off" class="form-input" />
                     </div>
                     <div class="textBox ">
-                        <label for="L-name" class="form-label"> Last Name <span class="Mandatory">*</span></label>
+                        <label for="L-name" class="form-label"> Last Name</label>
                         <br>
                         <p class="helpText">
                             Please provide a valid Last name
@@ -182,7 +182,7 @@
                         <input type="text" name="L-name" id="L-name" autocomplete="off" class="form-input" />
                     </div>
                     <div class="textBox ">
-                        <label for="C-name" class="form-label"> Company Name <span class="Mandatory">*</span></label>
+                        <label for="C-name" class="form-label"> Company Name</label>
                         <br>
                         <p class="helpText">
                             Please provide a valid Company name
@@ -447,8 +447,9 @@
                         <label for="email2" class="form-label"> Email Address </label>
                         <br>
                         <p class="helpText">
+                            plese provide a valid email address
                         </p>
-                        <input type="text" name="email2" id="email2" autocomplete="off" class="form-input" />
+                        <input type="email" name="email2" id="email2" autocomplete="off" class="form-input" />
                     </div>
                     <div class="textBox">
                         <label for="website" class="form-label"> Website </label>

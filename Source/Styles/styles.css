@@ -62,9 +62,9 @@ header h2 {
 }
 
 header img {
-    height: auto;
-    max-width: 45%;
-    padding-left: 5em;
+    height: auto ;
+    max-width: 45% ;
+    padding-left: 5em ;
     margin: 0;
 }
 
@@ -409,30 +409,6 @@ a.report-btn:active {
     transform: scale(0.95);
 }
 
-a.back-btn {
-    margin-top: 20px;
-    margin-left: 60px;
-    background-color: #adb5bd;
-    color: #fff;
-    font-family: 'Poppins';
-    font-size: 19px;
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: none;
-    padding: 6px 14px;
-    border: 0px solid #ffffff;
-    border-radius: 100px;
-    display: inline-block;
-}
-
-a.back-btn:hover {
-    background-color: #6c757d;
-}
-
-a.back-btn:active {
-    transform: scale(0.95);
-}
-
 /*! -------------------------------- IV) Report Form -----------------------------#ff0000 */
 /*? -------------------------------- 1) Container -------------------------------#1100ff */
 .form-container {
@@ -448,6 +424,9 @@ a.back-btn:active {
     text-decoration: none;
     color: black;
     font-weight: 500;
+}
+.backbtn:hover {
+    text-decoration: underline;
 }
 
 .Mandatory {
