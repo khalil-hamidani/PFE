@@ -101,3 +101,26 @@ c)	Le diagramme de séquence :
 
 -----------------conclusion:
 Pour conclure, le chapitre consacré à la conception a souligné l'importance de cette phase dans le processus de développement logiciel. Nous avons vu comment l'analyse des besoins est un élément fondamental pour définir une solution logicielle qui répond de manière optimale aux attentes des utilisateurs. Les différents types de diagrammes UML, tels que les diagrammes de classe, de séquence et de cas d'utilisation, ont été présentés comme des outils indispensables pour modéliser les différentes vues et interactions entre les éléments du système.
+
+
+/////////////////////////////////////////////////////////////////
+chpitre3:
+-----------------Intro:
+Ce chapitre se concentre sur la réalisation de notre site web et couvre les aspects techniques liés à sa mise en œuvre. Nous discuterons des choix des technologies et des outils que nous avons utilisés pour développer notre application, ainsi que de la représentation des interfaces qui reflètent les scénarios décrits dans le chapitre précédent. Cette section est cruciale car elle permettra de mieux comprendre la façon dont notre application a été construite et comment elle fonctionne.
+
+------------------Technologie et APIs:
+II.2.1 Les langages utilisées:
+	II.2.2 APIs :	
+•	Qu’est-ce qu’un API ? 
+Un API (Application Programming Interface) est un ensemble de règles, protocoles et outils qui permettent à différentes applications de communiquer entre elles de manière standardisée et automatisée.
+
+
+-------------------L'outils nmap:
+
+------------------Présentation des fonctionnalités générales de l’application :
+
+
+------------------Conclusion:
+En conclusion, ce chapitre de réalisation nous a permis de concrétiser notre projet en développant un site web fonctionnel et efficace. Nous avons présenté les différentes technologies et outils que nous avons utilisés pour la mise en place de notre application, ainsi que les interfaces qui reflètent les fonctionnalités décrites dans les chapitres précédents.
+
+
