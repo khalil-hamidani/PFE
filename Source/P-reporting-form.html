@@ -478,6 +478,45 @@
                     </div>
 
                     <div class="textBox ">
+                        <label class="form-label">
+                            What is the type of the incident
+                        </label>
+                        <p class="helpText">
+                            Please slect an option
+                        </p>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input class="input-radio" type="radio" name="type" value="OAT" />
+                                Online abuse and threats
+                            </label>
+                        </div>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input class="input-radio" type="radio" name="type" value="Identity" />
+                                Identity fraud and identity theft
+                            </label>
+                        </div>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input class="input-radio" type="radio" name="type" value="Money" />
+                                Money loss or compromised accounts
+                            </label>
+                        </div>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input class="input-radio" type="radio" name="type" value="Vulnerability" />
+                                Vulnerability
+                            </label>
+                        </div>
+                    </div>
+                    <div class="textBox">
+                        <label for="otherissue" class="form-label"> If you select "Other", what is your issue ?</label>
+                        <br>
+                        <p class="helpText">
+                        </p>
+                        <input type="text" id="otherissue" maxlength="40" pattern="[^]*" name="otherissue" value="" class="form-input" />
+                    </div>
+                    <div class="textBox ">
                         <label for="message" class="form-label">
                             Description of the incident<span class="Mandatory">*</span>
                         </label>
