@@ -62,9 +62,9 @@ header h2 {
 }
 
 header img {
-    height: auto ;
-    max-width: 45% ;
-    padding-left: 5em ;
+    height: auto;
+    max-width: 45%;
+    padding-left: 5em;
     margin: 0;
 }
 
@@ -273,6 +273,7 @@ header hr {
 .explain p {
     font-weight: 500;
     line-height: 30px;
+    margin-bottom: 0 !important;
 }
 
 .report-incdent-container p {
@@ -425,6 +426,7 @@ a.report-btn:active {
     color: black;
     font-weight: 500;
 }
+
 .backbtn:hover {
     text-decoration: underline;
 }
@@ -529,12 +531,15 @@ input[type='radio']:hover {
     font-weight: 400;
     font-size: large;
 }
+
 .radio-label:first-of-type {
     margin-top: 5px;
 }
+
 .radio-label:last-of-type {
     margin-bottom: 0px;
 }
+
 .section_end {
     border: 3px solid var(--main-color);
     border-radius: 50px;
@@ -690,15 +695,18 @@ section .details span {
 .uploaded-area i.fa-check {
     font-size: 16px;
 }
-.fa-remove{
+
+.fa-remove {
     font-size: 20px !important;
 }
-.fa-remove:hover{
+
+.fa-remove:hover {
     color: black;
     cursor: pointer;
 }
+
 /** --------------- */
-.btn{
+.btn {
     background-color: #196bca;
     color: #fff;
     font-family: 'Poppins';
@@ -711,11 +719,24 @@ section .details span {
     border-radius: 100px;
     display: inline-block;
 }
+
 .btn:hover {
     background-color: #0e4787;
 }
+
 .btn:active {
     transform: scale(0.95);
 }
+
 /*! -------------------------------- IV- IOC report  -----------------------------#ff0000 */
 /*? -------------------------------- 1) IOC form  -------------------------------#1100ff */
+.ioc {
+    margin-top: 16px;
+}
+.iocurl{
+    margin-bottom: 1rem;
+}
+input[type="checkbox"]{
+    margin-right: 5px;
+
+}

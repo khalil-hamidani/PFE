@@ -10,7 +10,7 @@
     <title>****</title>
 </head>
 
-<body id="categories">
+<body id="">
     <header>
         <div class="top-header">
             <img src="img/Header.svg" alt="">
@@ -19,7 +19,7 @@
                     <ul class="header-links">
                         <li class="item"><a class="menu-link" href="">HOME</a></li>
                         <li class="item"><a class="menu-link" href="index.html">REPORT AN INCIDENT</a></li>
-                        <li class="item"><a class="menu-link" href="IOC-reporting.html">REPORT AN IOC</a></li>
+                        <li class="item"><a class="menu-link" href="IOC-report.html">REPORT AN IOC</a></li>
                         <li class="item"><a class="menu-link" href="">SCAN A SERVICE</a></li>
                     </ul>
                 </div>
@@ -30,29 +30,82 @@
     </header>
 
     <div class="report-incdent-container">
-        <a class="backbtn" href="P-reporting.html">&#8592; Back</a>
-        <div class="explain">
-            <h2>What is an IOC ?</h2>
-            <p>Indicators of Compromise (IOCs) are pieces of information that can help detect and identify potential security threats or
-                attacks.
-                IOCs can include any data that suggests malicious activity in IP addresses or domain names.</p>
-            <p>By collecting and analyzing IOCs reports, security professionals can identify patterns and trends in attacks and develop
-                strategies
-                to protect against future threats. these reports will be shared within the security community to improve threat intelligence
-                and
-                response efforts.</p>
-        </div>
-        <h2>Report The IOC</h2>
-        <p>Reporting Indicators of Compromise (IOCs) to the appropriate authorities or security teams is crucial in the fight against
-            cybercrime
-            and other security threats. By sharing IOCs, security professionals can collaborate and coordinate efforts to identify,
-            investigate,
-            and respond to potential attacks.</p>
+        <a class="backbtn" href="IOC-report.html">&#8592; Back</a>
         <div class="main-wrapper">
             <div class="form-wrapper">
                 <form action="" method="POST">
-                    <div class="input-group">
-                        <label for="telephone" class="form-label">Enter the website URL: </label>
+                    <h3 class="section">Section 1</h3>
+                    <h2>Submitter's Contact Informations</h2>
+                    <p>How much personal information you provide is up to you, however too little information may impact our ability to properly respond
+                        to or handle your request.</p>
+                    <div class="explain form-explain">
+                        <p>Mandatory fields are marked with an asterisk (<span class="Mandatory">*</span>).</p>
+                    </div>
+                    <div class="textBox">
+                        <label for="first_name" class="form-label"> First Name <span class="Mandatory">*</span></label>
+                        <br>
+                        <p class="helpText">
+                            Please provide your first name.
+                        </p>
+                        <input type="text" id="first_name" maxlength="49" pattern="[^]*" name="first_name" autocomplete="on" value=""
+                            class="form-input" />
+                    </div>
+                    <div class="textBox">
+                        <label for="last_name" class="form-label"> Last Name <span class="Mandatory">*</span></label>
+                        <br>
+                        <p class="helpText">
+                            Please provide your last name.
+                        </p>
+                        <input type="text" id="last_name" maxlength="49" pattern="[^]*" name="first_name" autocomplete="on" value=""
+                            class="form-input" />
+                    </div>
+                    <div class="textBox">
+                        <label for="contact_email" class="form-label"> Email <span class="Mandatory">*</span></label>
+                        <br>
+                        <p class="helpText">
+                            Please provide a valid email address.
+                        </p>
+                        <input type="email" id="contact_email" maxlength="100" pattern="[^]*" name="contact_email" autocomplete="on"
+                            value="" class="form-input" />
+                    </div>
+                    <div class="textBox">
+                        <label for="telephone_number" class="form-label"> Telephone </label>
+                        <br>
+                        <p class="helpText">
+                        </p>
+                        <input type="text" id="telephone_number" maxlength="40" pattern="[^]*" name="telephone_number" autocomplete="on"
+                            value="" class="form-input" />
+                    </div>
+                    <hr class="section_end">
+                    <h3 class="section">Section 2</h3>
+                    <h2>----</h2>
+                    <div class="textBox ">
+                        <label class="form-label">
+                            What is the type of your organization ?
+                        <p class="helpText">
+                            Please slect an option
+                        </p>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input class="input-radio" type="radio" name="type" value="OAT" />
+                                individual
+                            </label>
+                        </div>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input class="input-radio" type="radio" name="type" value="OAT" />
+                                Private Sector
+                            </label>
+                        </div>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input class="input-radio" type="radio" name="type" value="Identity" />
+                                Government sector
+                            </label>
+                        </div>
+                    </div>
+                    <div class=" iocurl textBox">
+                        <label for="telephone" class="form-label ">Enter the website URL: </label>
                         <input type="text" name="URL" id="URL" placeholder="example.com" autocomplete="off" class="form-input" />
                     </div>
                     <div class="input-checkbox-wrapper">
@@ -64,8 +117,7 @@
                         </label><br>
                         <label>
                             <input type="checkbox" value="Anomalies in Privileged User Account Activity">Anomalies in Privileged User
-                            Account
-                            Activity
+                            Account Activity
                         </label><br>
                         <label>
                             <input type="checkbox" value="Geographical Irregularities">Geographical Irregularities
@@ -74,16 +126,14 @@
                             <input type="checkbox" value="Log-In Red Flags">Log-In Red Flags
                         </label><br>
                         <label>
-                            <input type="checkbox" value="Increases in Database Read Volume">Increases in Database Read
-                            Volume
+                            <input type="checkbox" value="Increases in Database Read Volume">Increases in Database Read Volume
                         </label><br>
                         <label>
                             <input type="checkbox" value="HTML Response Sizes">HTML Response Sizes
                         </label><br>
                         <label>
                             <input type="checkbox" value="Large Numbers of Requests for the Same File">Large Numbers of Requests for the
-                            Same
-                            File
+                            Same File
                         </label><br>
                         <label>
                             <input type="checkbox" value="Mismatched Port-Application Traffic">Mismatched Port-Application Traffic
@@ -122,6 +172,12 @@
                     <button class="btn">Submit</button>
                 </form>
             </div>
+        </div>
+        <hr id="lasthr">
+        <div class="helpus">
+            <h3>Help us to help others</h3>
+            <p> Sharing informative reports is crucial for us to comprehend the threat landscape and enhance the cyber intelligence
+                capabilities. This subsequently improves our ability to help protect other Algerian organisations.</p>
         </div>
     </div>
     <footer class="footer-distributed">
