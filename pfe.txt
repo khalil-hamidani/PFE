@@ -116,6 +116,13 @@ HTML, en anglais (Hypertext Markup Language), est un langage de balisage utilis�
 Les feuilles de style en cascade, généralement appelées CSS de (Cascading Style Sheets), forment un langage informatique qui décrit la présentation des documents HTML et XML(Extensible Markup Language). Les standards définissant CSS sont publiés par le World Wide Web Consortium (W3C). Introduit au milieu des années 1990, CSS devient couramment utilisé dans la conception de sites web et bien pris en charge par les navigateurs web dans les années 2000.
 3.	JavaScript :
 JavaScript est un langage de programmation de scripts principalement utilisé pour les pages web interactives, ainsi que pour les serveurs avec l'utilisation de Node.js. Il est orienté objet à prototype et supporte les paradigmes objet, impératif et fonctionnel. Avec son gestionnaire de dépendances npm (Node Package Manager), JavaScript possède le plus large écosystème avec environ 500 000 paquets en août 2017.
+4.	Python :
+Python est un langage de programmation interprété, orienté objet et multi-paradigme. Il est conçu pour être simple à lire et à écrire, ce qui le rend très populaire pour les projets de développement logiciel. 
+4.1	 Flask :
+Flask est un micro-framework Web pour Python qui permet de créer rapidement et facilement des applications Web. Il est léger,  flexible et facile à apprendre, ce qui en fait un choix populaire pour les petits projets et les prototypes.
+
+5.	SQL : 
+SQL (Structured Query Language) est un langage de programmation utilisé pour la gestion de bases de données relationnelles. Il  permet de créer, modifier et interroger des données stockées dans une base de données. Les commandes SQL sont utilisées pour effectuer des opérations telles que la sélection, l'insertion, la mise à jour et la suppression de données dans une base de données. 
 
 II.2.2 APIs :	
 •	Qu’est-ce qu’un API ? 
