@@ -1,35 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "template.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/styles.css">
-    <link rel="icon" type="image/x-icon" href="img/icon.ico">
-    <title>****</title>
-</head>
+{% block title %}{% endblock title %}
 
-<body>
-    <header>
-        <div class="top-header">
-            <img src="img/Header.svg" alt="logo">
-            <div class="right-nav-container snipcss-YiXoc">
-                <div class="utility-items">
-                    <ul class="header-links">
-                        <li class="item"><a class="menu-link" href="index.html">HOME</a></li>
-                        <li class="item"><a class="menu-link" href="Report-Incident.html">REPORT AN INCIDENT</a></li>
-                        <li class="item"><a class="menu-link" href="IOC-report.html">REPORT AN IOC</a></li>
-                        <li class="item"><a class="menu-link" href="">SCAN A SERVICE</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <h1 id="report-cyber">Report Business cyber issue</h1>
-    </header>
+{% block id %}Business report{% endblock id %}
+
+{% block header %}
+    <h1 id="report-cyber">Report Business cyber issue</h1>
+{% endblock header  %}
+
+{% block main %}    
     <div class="report-incdent-container">
-        <a class="backbtn" href="index.html">&#8592; Back</a>
+        <a class="backbtn" href="/Incident-report">&#8592; Back</a>
         <div class="danger">
             <h2>If there is an immediate threat to life or risk of harm call your local police services</h2>
             <p>If you believe a cyber incident is an imminent threat to life or of a criminal nature, please contact your local police
@@ -70,29 +51,4 @@
                 capabilities. This subsequently improves our ability to help protect other Algerian organisations.</p>
         </div>
     </div>
-
-    <footer class="footer-distributed">
-        <div class="footer-left">
-            <img src="img/footer.svg" alt="">
-            <p class="footer-company-name">Algerian Cybersecurity Center © 2023</p>
-        </div>
-        <div class="footer-center">
-            <h6>Quick Links</h6>
-            <ul class="footer-links">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="Report-Incident.html">REPORT AN INCIDENT</a></li>
-                <li><a href="IOC-reporting.html">REPORT IOC</a></li>
-                <li><a href="">SCAN A SERVICE</a></li>
-            </ul>
-        </div>
-        <div class="footer-right">
-            <p class="footer-company-about">
-                <span>About the company</span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum amet quam reprehenderit sequi corporis, vel laborum beatae
-                ipsam ad nam sit officia eligendi accusamus aperiam reiciendis perferendis similique voluptate illum.
-            </p>
-        </div>
-    </footer>
-</body>
-
-</html>
+{% endblock main %}
