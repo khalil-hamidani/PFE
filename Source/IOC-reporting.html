@@ -17,8 +17,8 @@
             <div class="right-nav-container snipcss-YiXoc">
                 <div class="utility-items">
                     <ul class="header-links">
-                        <li class="item"><a class="menu-link" href="">HOME</a></li>
-                        <li class="item"><a class="menu-link" href="index.html">REPORT AN INCIDENT</a></li>
+                        <li class="item"><a class="menu-link" href="index.html">HOME</a></li>
+                        <li class="item"><a class="menu-link" href="Report-Incident.html">REPORT AN INCIDENT</a></li>
                         <li class="item"><a class="menu-link" href="IOC-report.html">REPORT AN IOC</a></li>
                         <li class="item"><a class="menu-link" href="">SCAN A SERVICE</a></li>
                     </ul>
@@ -36,7 +36,8 @@
                 <form action="" method="POST">
                     <h3 class="section">Section 1</h3>
                     <h2>Submitter's Contact Informations</h2>
-                    <p>How much personal information you provide is up to you, however too little information may impact our ability to properly respond
+                    <p>How much personal information you provide is up to you, however too little information may impact our ability to
+                        properly respond
                         to or handle your request.</p>
                     <div class="explain form-explain">
                         <p>Mandatory fields are marked with an asterisk (<span class="Mandatory">*</span>).</p>
@@ -78,17 +79,18 @@
                     </div>
                     <hr class="section_end">
                     <h3 class="section">Section 2</h3>
-                    <h2>----</h2>
-                    <div class="textBox ">
+                    <h2>IOC Description</h2>
+                    <div class="textBox">
                         <label class="form-label">
                             What is the type of your organization ?
-                        <p class="helpText">
-                            Please slect an option
-                        </p>
+                            <p class="helpText">
+                                Please slect an option
+                            </p>
+                        </label>
                         <div class="radio-group">
                             <label class="radio-label">
                                 <input class="input-radio" type="radio" name="type" value="OAT" />
-                                individual
+                                Individual
                             </label>
                         </div>
                         <div class="radio-group">
@@ -103,72 +105,82 @@
                                 Government sector
                             </label>
                         </div>
-                    </div>
-                    <div class=" iocurl textBox">
-                        <label for="telephone" class="form-label ">Enter the website URL: </label>
-                        <input type="text" name="URL" id="URL" placeholder="example.com" autocomplete="off" class="form-input" />
-                    </div>
-                    <div class="input-checkbox-wrapper">
-                        <label for="ans" class="form-label">
-                            What are the IOCs you detect in this website : <span> (at least one is required) </span>
-                        </label><br>
-                        <label>
-                            <input type="checkbox" value="Unusual Outbound Network Traffic">Unusual Outbound Network Traffic
-                        </label><br>
-                        <label>
-                            <input type="checkbox" value="Anomalies in Privileged User Account Activity">Anomalies in Privileged User
-                            Account Activity
-                        </label><br>
-                        <label>
-                            <input type="checkbox" value="Geographical Irregularities">Geographical Irregularities
-                        </label><br>
-                        <label>
-                            <input type="checkbox" value="Log-In Red Flags">Log-In Red Flags
-                        </label><br>
-                        <label>
-                            <input type="checkbox" value="Increases in Database Read Volume">Increases in Database Read Volume
-                        </label><br>
-                        <label>
-                            <input type="checkbox" value="HTML Response Sizes">HTML Response Sizes
-                        </label><br>
-                        <label>
-                            <input type="checkbox" value="Large Numbers of Requests for the Same File">Large Numbers of Requests for the
-                            Same File
-                        </label><br>
-                        <label>
-                            <input type="checkbox" value="Mismatched Port-Application Traffic">Mismatched Port-Application Traffic
-                        </label><br>
-                        <label>
-                            <input type="checkbox" value="Suspicious Registry or System File Changes">Suspicious Registry or System File
-                            Changes
-                        </label><br>
-                        <label>
-                            <input type="checkbox" value="Unusual DNS Requests">Unusual DNS Requests
-                        </label><br>
-                        <label>
-                            <input type="checkbox" value="Unexpected Patching of Systems">Unexpected Patching of Systems
-                        </label><br>
-                        <label>
-                            <input type="checkbox" value="Mobile Device Profile Changes">Mobile Device Profile Changes
-                        </label><br>
-                        <label>
-                            <input type="checkbox" value="Bundles of Data in the Wrong Place">Bundles of Data in the Wrong Place
-                        </label><br>
-                        <label>
-                            <input type="checkbox" value="Web Traffic with Unhuman Behavior">Web Traffic with Unhuman Behavior
-                        </label><br>
-                        <label>
-                            <input type="checkbox" value="Signs of DDoS Activity">Signs of DDoS Activity
-                        </label><br>
-                    </div>
-                    <div>
-                        <label for="message" class="form-label">
-                            comments
-                        </label>
-                        <textarea rows="5" name="message" id="message" placeholder="provide more details" class="form-input"></textarea>
-                    </div>
+                        <div class="iocurl textBox">
+                            <label for="iocurl" class="form-label ">Enter the website URL: </label>
+                            <input type="text" id="iocurl" name="iocurl" placeholder="example.com" autocomplete="off" class="form-input" />
+                        </div>
+                        <div class="input-checkbox-wrapper">
+                            <label class="form-label">
+                                What are the IOCs you detect in this website :
+                            </label><br>
+                            <label class="cl-checkbox">
+                                <input type="checkbox" value="Unusual Outbound Network Traffic">
+                                <span>Unusual Outbound Network Traffic</span>
+                            </label><br>
+                            <label class="cl-checkbox">
+                                <input type="checkbox" value="Anomalies in Privileged User Account Activity"><span>Anomalies in
+                                    Privileged User Account Activity</span>
+                            </label><br>
+                            <label class="cl-checkbox">
+                                <input type="checkbox" value="Geographical Irregularities"><span>Geographical Irregularities</span>
+                            </label><br>
+                            <label class="cl-checkbox">
+                                <input type="checkbox" value="Log-In Red Flags"><span>Log-In Red Flags</span>
+                            </label><br>
+                            <label class="cl-checkbox">
+                                <input type="checkbox" value="Increases in Database Read Volume"><span>Increases in Database Read
+                                    Volume</span>
+                            </label><br>
+                            <label class="cl-checkbox">
+                                <input type="checkbox" value="HTML Response Sizes"><span>HTML Response Sizes</span>
+                            </label><br>
+                            <label class="cl-checkbox">
+                                <input type="checkbox" value="Large Numbers of Requests for the Same File"><span>Large Numbers of
+                                    Requests for the Same File</span>
+                            </label><br>
+                            <label class="cl-checkbox">
+                                <input type="checkbox" value="Mismatched Port-Application Traffic"><span>Mismatched Port-Application
+                                    Traffic</span>
+                            </label><br>
+                            <label class="cl-checkbox">
+                                <input type="checkbox" value="Suspicious Registry or System File Changes"><span>Suspicious Registry or
+                                    System File Changes</span>
+                            </label><br>
+                            <label class="cl-checkbox">
+                                <input type="checkbox" value="Unusual DNS Requests"><span>Unusual DNS Requests</span>
+                            </label><br>
+                            <label class="cl-checkbox">
+                                <input type="checkbox" value="Unexpected Patching of Systems"><span>Unexpected Patching of Systems</span>
+                            </label><br>
+                            <label class="cl-checkbox">
+                                <input type="checkbox" value="Mobile Device Profile Changes"><span>Mobile Device Profile Changes</span>
+                            </label><br>
+                            <label class="cl-checkbox">
+                                <input type="checkbox" value="Bundles of Data in the Wrong Place"><span>Bundles of Data in the Wrong
+                                    Place</span>
+                            </label><br>
+                            <label class="cl-checkbox">
+                                <input type="checkbox" value="Web Traffic with Unhuman Behavior"><span>Web Traffic with Unhuman
+                                    Behavior</span>
+                            </label><br>
+                            <label class="cl-checkbox">
+                                <input type="checkbox" value="Signs of DDoS Activity"><span>Signs of DDoS Activity</span>
+                            </label><br>
+                        </div>
+                        <div class="textBox">
+                            <label for="otherioc" class="form-label"> Other IOC</label>
+                            <br>
+                            <input type="text" id="otherioc" maxlength="49" pattern="[^]*" name="first_name" value="" class="form-input" />
+                        </div>
+                        <div>
+                            <label for="message" class="form-label">
+                                Description
+                            </label>
+                            <textarea rows="7" name="message" id="message" placeholder="provide more details ..."
+                                class="form-input"></textarea>
+                        </div>
 
-
+                    </div>
                     <button class="btn">Submit</button>
                 </form>
             </div>
@@ -189,7 +201,7 @@
             <h6>Quick Links</h6>
             <ul class="footer-links">
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="index.html">REPORT AN INCIDENT</a></li>
+                <li><a href="Report-Incident.html">REPORT AN INCIDENT</a></li>
                 <li><a href="IOC-reporting.html">REPORT IOC</a></li>
                 <li><a href="">SCAN A SERVICE</a></li>
             </ul>
