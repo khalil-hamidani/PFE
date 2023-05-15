@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 
+
 app = Flask(__name__)
 
 # index route
@@ -11,16 +12,6 @@ def index():
 @app.route("/Incident-report")
 def incident():
     return render_template("Incident-report.html")
-
-# report IOC route
-@app.route("/IOC-report")
-def ioc():
-    return render_template("IOC-report.html")
-
-# scan route
-# @app.route("/scan")
-# def scan():
-#     return render_template(".html")
 
 # individual report route
 @app.route("/Individual-report")
@@ -51,3 +42,22 @@ def government_report():
 @app.route("/Government-report-form")
 def government_report_form():
     return render_template("Government-report-form.html")
+
+# report IOC route
+@app.route("/IOC-report")
+def ioc():
+    return render_template("IOC-report.html")
+
+
+# report IOC form route
+@app.route("/IOC-report-form")
+def ioc_form():
+    return render_template("IOC-report-form.html")
+# scan route
+# @app.route("/scan")
+# def scan():
+#     return render_template(".html")
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
