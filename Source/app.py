@@ -1,7 +1,12 @@
-from flask import Flask, render_template
-
+from flask import Flask, request, render_template
+from flask_mysqldb import MySQL
 
 app = Flask(__name__)
+
+app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_USER'] = 'root'
+app.config['MYSQL_password'] = ''
+app.config['MYSQL_DB'] = 'ACSC'
 
 # index route
 @app.route("/")
@@ -48,6 +53,11 @@ def government_report_form():
 def ioc():
     return render_template("IOC-report.html")
 
+# match type:
+#     case 1:
+#         value = kfds;fjdl
+# db.execute("incert into {value} ",)
+
 
 # report IOC form route
 @app.route("/IOC-report-form")
@@ -57,6 +67,12 @@ def ioc_form():
 # @app.route("/scan")
 # def scan():
 #     return render_template(".html")
+
+
+# # report IOC form route
+# @app.route("/fill" , methods=['POST'])
+# def ioc_form():
+#     return render_template("IOC-report-form.html")
 
 
 if __name__ == "__main__":

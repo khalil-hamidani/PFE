@@ -27,7 +27,8 @@
       </div>
       <div class="main-wrapper">
         <div class="form-wrapper">
-          <form action="/" method="POST">
+          <form action="/fill" method="POST">
+            <input type="hidden" name="Type" value="personal" />
             <p class="formErrorText">Please fill in or correct the required fields !</p>
             <div class="textBox">
               <label for="first_name" class="form-label"> First Name <span class="Mandatory">*</span></label>
@@ -106,12 +107,6 @@
                   Other
                 </label>
               </div>
-            </div>
-            <div class="textBox">
-              <label for="otherrole" class="form-label"> If you select "Other", what is your role ? </label>
-              <br />
-              <p class="helpText"></p>
-              <input type="text" id="otherrole" maxlength="40" pattern="[^]*" name="otherrole" value="" class="form-input" />
             </div>
             <div class="textBox">
               <label for="address" class="form-label"> Address </label>
