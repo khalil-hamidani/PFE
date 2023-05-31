@@ -16,13 +16,22 @@ La plateforme en ligne pour les statistiques et la veille sécuritaire en Algér
 En fournissant des statistiques sur les types d'attaques les plus courantes et les méthodes les plus efficaces pour s'en protéger, cette plateforme peut également aider les utilisateurs algériens à mieux comprendre les risques potentiels et à prendre des mesures pour renforcer la sécurité de leurs systèmes. En fin de compte, cette plateforme peut contribuer à améliorer la sécurité en ligne en Algérie, en offrant une solution pratique et efficace pour la veille et la surveillance de la sécurité informatique.
 
 *************Plan du mémoire************
-Afin d'atteindre cet objectif, la structure suivante a été choisie :
-● Le premier chapitre, intitulé « Introduction à la sécurité informatique », présente le domaine d'étude et explore les aspects liés à la sécurité informatique.
-● Le deuxième chapitre, intitulé « Conception », présente les différentes étapes du processus de conception, de la collecte des besoins à la conception détaillée.
-● Enfin, le troisième chapitre, intitulé «  Implémentation », porte sur la réalisation et l’implémentation de l’application ainsi que son fonctionnement.
+
+En vue d'atteindre cet objectif, la structure suivante a été retenue :
+
+•	Le premier chapitre, intitulé « », propose une description détaillée sur l’organisme d’accueil.
+
+•	Le deuxième chapitre, intitulé « Introduction à la sécurité informatique », présente le domaine d'étude et explore les aspects liés à la sécurité informatique.
+
+
+•	Le troisième chapitre, intitulé « Conception », présente les différentes étapes du processus de conception, de la collecte des besoins à la conception détaillée.
+
+
+•	Enfin, le quatrième chapitre, intitulé «  Implémentation », porte sur la réalisation et l’implémentation de l’application ainsi que son fonctionnement.
+
 
 /////////////////////////////////////////////////////////////////
-chpitre1:
+chpitre2:
 -----------------intro:
 L'objectif de ce chapitre est de fournir un aperçu de la sécurité informatique, d'examiner ses concepts fondamentaux et de souligner son importance dans le monde numérique actuel.
 -------------------definitions:
@@ -33,7 +42,7 @@ L'objectif de ce chapitre est de fournir un aperçu de la sécurité informatiqu
 -------3/Vulnerabilite: Est une faiblesse ou une lacune dans un système informatique ou dans une application qui peut être exploitée par des attaquants pour pénétrer ou perturber le système. Les vulnérabilités peuvent être causées par des erreurs de conception, des défauts de codage, des configurations inappropriées, ou des problèmes de mise à jour. Les attaquants exploitent souvent les vulnérabilités pour accéder à des données sensibles, installer des logiciels malveillants ou perturber le fonctionnement normal du système.
 
 
---------4/Attaque: En informatique, est un acte malveillant visant à compromettre ou à perturber un système informatique, un réseau ou une application. Les attaques peuvent prendre de nombreuses formes, notamment des virus, des malwares, des tentatives d'intrusion, des attaques par déni de service, des attaques de phishing, etc. Les attaquants peuvent chercher à voler des données sensibles, à perturber les opérations normales du système, à détruire des informations ou à compromettre la sécurité des utilisateurs.
+--------4/Attaque: Une attaque informatique est une action malveillante visant à nuire un système, un réseau ou une application, prenant diverses formes telles que virus, malwares, intrusions, phishing, etc. Les attaquants cherchent à voler des données, perturber les opérations, détruire des informations ou compromettre la sécurité des utilisateurs.
 
 ---------------------analyse vulnerabilite:
 L'analyse de vulnérabilités est un processus qui identifie les failles d'un système informatique, les évalue et les corrige pour empêcher les attaques. Ce processus comprend une évaluation de la sécurité du système, l'identification des vulnérabilités prioritaires et l'application de correctifs pour réduire les risques. Comme de nouvelles vulnérabilités peuvent survenir, il est essentiel de maintenir les systèmes à jour et de réaliser des analyses de vulnérabilités régulières pour assurer une sécurité optimale.
@@ -57,7 +66,7 @@ A la fin du présent chapitre, nous avons constaté que la sécurité informatiq
 
 
 /////////////////////////////////////////////////////////////////
-chpitre2:
+chpitre3:
 -----------------Intro:
 La conception est une étape clé dans tout projet de développement logiciel. Afin de la réussir,  il est nécessaire de suivre une méthodologie rigoureuse et structurée. Ce chapitre se concentre sur les différentes étapes de la conception, en mettant l'accent sur l'analyse des besoins et la conception avec les diagrammes de cas d’utilisation, de classe et de séquence. Les différentes techniques utilisées pour collecter, analyser et formaliser les besoins des utilisateurs sont détaillées, et les différents types de diagrammes utilisés en conception logicielle sont présentés pour concevoir une solution adaptée.
 
@@ -104,7 +113,7 @@ Pour conclure, le chapitre consacré à la conception a souligné l'importance d
 
 
 /////////////////////////////////////////////////////////////////
-chpitre3:
+chpitre4:
 -----------------Intro:
 Ce chapitre se concentre sur la réalisation de notre site web et couvre les aspects techniques liés à sa mise en œuvre. Nous discuterons des choix des technologies et des outils que nous avons utilisés pour développer notre application, ainsi que de la représentation des interfaces qui reflètent les scénarios décrits dans le chapitre précédent. Cette section est cruciale car elle permettra de mieux comprendre la façon dont notre application a été construite et comment elle fonctionne.
 
