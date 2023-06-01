@@ -31,6 +31,12 @@ En vue d'atteindre cet objectif, la structure suivante a été retenue :
 
 
 /////////////////////////////////////////////////////////////////
+chapitre1:
+
+
+
+
+/////////////////////////////////////////////////////////////////
 chpitre2:
 -----------------intro:
 L'objectif de ce chapitre est de fournir un aperçu de la sécurité informatique, d'examiner ses concepts fondamentaux et de souligner son importance dans le monde numérique actuel.
