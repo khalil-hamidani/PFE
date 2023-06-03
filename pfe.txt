@@ -145,6 +145,7 @@ Un API (Application Programming Interface) est un ensemble de règles, protocole
 
 
 -------------------L'outils nmap:
+Nmap est un outil de sécurité informatique utilisé pour l'exploration de réseau et la découverte d'hôtes. Il permet de scanner des réseaux et des ports pour identifier les services en cours d'exécution sur des machines distantes, ainsi que d'autres informations telles que les systèmes d'exploitation utilisés. Nmap est largement utilisé par les professionnels de la sécurité pour évaluer les vulnérabilités d'un réseau et identifier les éventuelles failles de sécurité.
 
 ------------------Présentation des fonctionnalités générales de l’application :
 
