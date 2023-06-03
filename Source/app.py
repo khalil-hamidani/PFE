@@ -3,30 +3,93 @@ from flask_mysqldb import MySQL
 
 app = Flask(__name__)
 
-app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_HOST'] = '172.27.145.170'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_password'] = ''
-app.config['MYSQL_DB'] = 'ACSC'
+app.config['MYSQL_DB'] = 'Reports'
+mySQL = MySQL(app)
+
 
 # index route
 @app.route("/")
 def index():
-    return render_template("index.html")
+    """
+    Route function for the home page of the website.
+
+    Returns:
+    HTML webpage rendered with the index.html template.
+    """
+    return render_template("index.html")  # Renders the index.html template.
+
 
 # report incident route
 @app.route("/Incident-report")
 def incident():
+    """
+    This function handles GET requests to the '/Incident-report' route.
+    It inserts a new report into the 'reports' table in the database,
+    and renders the 'Incident-report.html' template.
+    """
+    # Open a connection to the database
+    # conn = mySQL.connect()
+
+    # # Create a cursor object to execute SQL queries
+    # curr = conn.cursor()
+
+    # # Execute an INSERT query to add a new report to the 'reports' table
+    # curr.execute("INSERT INTO reports (incident_type) VALUES (?)", 1)
+
+    # # Commit the changes made to the database
+    # conn.commit()
+
+    # # Close the cursor object
+    # curr.close()
+
+    # try:
+        # Reopen the connection to the database
+        # conn = mySQL.connect()
+
+        # Create a new cursor object to execute another SQL query
+        # curr = conn.cursor()
+
+        # Execute another INSERT query to add a new report to the 'reports' table
+        # curr.execute("INSERT INTO reports (incident_type) VALUES (%s)")
+
+        # Commit the changes made to the database
+        # conn.commit()
+
+        # Close the cursor object
+        # curr.close()
+
+        # Uncomment the following lines if you want to fetch and print the data from the 'reports' table
+        # data = cursor.fetchall()
+        # print(data)
+    # except Exception as e:
+        # Print any errors that occur while executing the SQL query
+        # print(e)
+
+    # Render the 'Incident-report.html' template
     return render_template("Incident-report.html")
+
 
 # individual report route
 @app.route("/Individual-report")
 def individual_report():
+    # Renders the HTML template for the Individual-report page.
     return render_template("Individual-report.html")
+
 
 # individual report form route
 @app.route("/Individual-report-form")
 def individual_report_form():
-    return render_template("Individual-report-form.html")
+    if request.method == "POST":
+        # Render the HTML template for the individual report form and return it
+        return render_template("Individual-report-form.html")
+    else:
+        first_name = request.form.get("first_name")
+
+
+
 
 # business report route
 @app.route("/Business-report")
@@ -53,6 +116,8 @@ def government_report_form():
 def ioc():
     return render_template("IOC-report.html")
 
+""" create switch case in python """
+
 # match type:
 #     case 1:
 #         value = kfds;fjdl
@@ -63,6 +128,7 @@ def ioc():
 @app.route("/IOC-report-form")
 def ioc_form():
     return render_template("IOC-report-form.html")
+
 # scan route
 # @app.route("/scan")
 # def scan():
