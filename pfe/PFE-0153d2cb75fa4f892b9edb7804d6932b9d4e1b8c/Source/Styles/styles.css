@@ -1,0 +1,886 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+
+/* ----- table of content ----- */
+/*! ---- I- header & footer-------- */
+/* ? 1) header */
+/* ? 2) footer */
+/*! ---- II- report.html -------- */
+/* ? 1) notes */
+/* ? 2) categories */
+/*! ---- III- pre-report -------- */
+/* ? 1) befor you report */
+/*! ---- IV- IOC report -------- */
+/* ? 1) IOC form */
+/* ------------------------------- */
+:root {
+    --main-color: #041e52;
+    --cyan-color: #017ab5;
+    --cyan-color2: #def7ff;
+    --warning-color: #f5a523;
+    --warning-color2: #fff0d6;
+    --danger-color: #c00718;
+    --danger-color2: #fcf2f3;
+    --bg-color: #f5f6fa;
+}
+
+* {
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+/*! -------------------------------- I- header -----------------------------#ff0000 */
+/*? -------------------------------- 1) header -------------------------------#1100ff */
+header {
+    /* background: radial-gradient(circle at 50% 100%, #1d4186, #051c48 75%); */
+    background-color: var(--main-color);
+    height: 18rem;
+}
+
+.top-header {
+    display: flex;
+}
+
+header h1 {
+    color: #ffffff;
+    padding-left: 8rem;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+header h2 {
+    color: #ffffff;
+    padding-left: 9rem;
+}
+
+header img {
+    height: auto;
+    max-width: 45%;
+    padding-left: 5em;
+    margin: 0;
+}
+
+header hr {
+    border: 1px solid #ffffff80;
+    width: 1200px;
+    padding: 0;
+    padding-left: 2rem;
+    margin-left: 8rem;
+}
+
+.right-nav-container {
+    font-size: 1rem;
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: auto;
+    margin-right: 8rem;
+    border: 0.5px solid rgba(0, 0, 0, 0.151);
+    border-radius: 25px;
+    background-color: rgba(1, 18, 51, 0.587);
+    padding: 7px 17px;
+}
+
+.header-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    margin: 0px 10px;
+    text-decoration: none;
+}
+
+.utility-items ul {
+    margin-top: 0;
+    margin: auto;
+    padding: 0;
+    border: 0;
+    list-style-type: none;
+    text-transform: none;
+    color: #ffffff;
+}
+
+.menu-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.item a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+.item a, .item a:visited {
+    color: #ffffff;
+}
+
+.item a:hover {
+    text-decoration: underline;
+}
+
+.menu-link {
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1em;
+    line-height: normal;
+    letter-spacing: normal;
+    margin: auto;
+    text-transform: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*? -------------------------------- 2) footer -------------------------------#1100ff */
+.footer-distributed {
+    /* background: radial-gradient(circle at 50% 100%, #1d4186, #051c48 75%); */
+    background-color: var(--main-color);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px;
+    padding: 5px 50px;
+    color: white;
+    margin-top: 75px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-distributed .footer-left img {
+    max-width: 55%;
+}
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-center h6 {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+
+.footer-center .footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-center .footer-links li {
+    list-style-type: none;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "";
+    font-weight: 300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+.footer-distributed .footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+
+.footer-distributed .footer-right {
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0px 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+/*! -------------------------------- II- report.html-----------------------------#ff0000 */
+/*? -------------------------------- 1) notes -------------------------------#1100ff */
+
+#categories {
+    display: flex;
+    flex-direction: column;
+}
+
+#report-cyber {
+    padding-top: 1rem;
+    padding-left: 10rem;
+}
+
+.report-incdent-container {
+    z-index: 2;
+    background-color: var(--bg-color);
+    padding: 15px;
+    margin: -75px 10rem;
+    max-width: 100rem;
+    top: -50px;
+}
+
+.explain {
+    margin-top: 5px;
+    background-color: #def7ff;
+    border-left: 5px solid var(--cyan-color);
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.explain h2 {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.explain p {
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 0 !important;
+}
+
+.report-incdent-container p {
+    font-size: 1.2rem;
+    font-family: 'Poppins';
+    margin-bottom: 25px;
+}
+
+.warn {
+    background-color: #fff0d6;
+    border-left: 5px solid var(--warning-color);
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.warn h2 {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.warn ul {
+    font-weight: 500;
+    line-height: 30px;
+}
+
+/*? -------------------------------- 2) categories -------------------------------#1100ff */
+
+.categories {
+    border: 1px solid rgb(139, 133, 127);
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px;
+    cursor: pointer;
+    margin: 25px 15px;
+    max-width: 1100px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.categories small {
+    display: flex;
+    width: 100%;
+    color: rgba(87, 87, 87, 0.808);
+    font-weight: 400;
+    margin: 15px 0px;
+}
+
+.categories a {
+    display: flex;
+    flex-direction: c;
+    width: 100%;
+}
+
+.categories:hover {
+    border-color: #0078d4;
+    background-color: #e8f5ff;
+}
+
+.categorie i {
+    margin-right: 15px;
+    margin-top: 4px;
+}
+
+.categorie a {
+    text-decoration: none;
+    color: black;
+}
+
+#lasthr {
+    margin-top: 30px;
+    margin-bottom: 1rem;
+}
+
+.helpus p {
+    margin: 0.5rem 0px;
+}
+
+/*! -------------------------------- III) Pre-report-----------------------------#ff0000 */
+/*? -------------------------------- 1) befor you report  -------------------------------#1100ff */
+
+.danger {
+    background-color: #fcf2f3;
+    border-left: 5px solid var(--danger-color);
+    padding: 15px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.danger h2 {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.danger p {
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.beforreport h2 {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.beforreport p {
+    font-weight: 400;
+    margin-bottom: 0.4rem;
+}
+
+.beforreport li {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+a.report-btn {
+    margin-top: 20px;
+    background-color: #196bca;
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 19px;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding: 6px 14px;
+    border: 0px solid #ffffff;
+    border-radius: 100px;
+    display: inline-block;
+}
+
+a.report-btn:hover {
+    background-color: #0e4787;
+}
+
+a.report-btn:active {
+    transform: scale(0.95);
+}
+
+/*! -------------------------------- IV) Report Form -----------------------------#ff0000 */
+/*? -------------------------------- 1) Container -------------------------------#1100ff */
+.form-container {
+    z-index: 2;
+    background-color: var(--bg-color);
+    padding: 15px;
+    margin: -75px 10rem;
+    max-width: 100rem;
+    top: -50px;
+}
+
+.backbtn {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.backbtn:hover {
+    text-decoration: underline;
+}
+
+.Mandatory {
+    color: var(--danger-color);
+}
+
+.formErrorText {
+    color: var(--danger-color);
+    font-size: 1.3rem;
+    font-weight: 500 !important;
+    margin-top: 0.2rem;
+    padding: 1rem;
+    background-color: var(--danger-color2);
+    border-left: 5px solid var(--danger-color);
+    display: none;
+}
+
+p.formError {
+    display: block !important;
+}
+
+h3.section {
+    margin-top: 1.5rem;
+}
+
+.section {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+}
+
+.form-container h2 {
+    margin-bottom: 1rem;
+}
+
+.form-explain {
+    margin-top: 1rem;
+}
+
+form {
+    display: block;
+}
+
+.textBox {
+    margin-bottom: 1.8%;
+    margin-top: 1.8%;
+    padding: 10px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: large;
+}
+
+.form-input {
+    margin-bottom: 1rem;
+    align-self: stretch;
+    border-color: black;
+    border-style: solid;
+    border-radius: 4px;
+    display: block;
+    font-size: 1rem;
+    line-height: var(--lh-body-sm);
+    margin: 4px 0px;
+    padding: 7px 16px;
+    width: 97%;
+}
+
+
+.input-radio-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-radio {
+    height: 20px;
+    width: 20px;
+    left: 0;
+    margin: 0;
+    --active-color: var(--main-color);
+}
+
+input[type='radio']:after {
+    background-color: var(--main-color);
+}
+
+input[type='radio']:hover {
+    background-color: var(--main-color);
+}
+
+.radio-group {
+    margin-top: 5px;
+}
+
+.radio-label {
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: large;
+}
+
+.radio-label:first-of-type {
+    margin-top: 5px;
+}
+
+.radio-label:last-of-type {
+    margin-bottom: 0px;
+}
+
+.section_end {
+    border: 3px solid var(--main-color);
+    border-radius: 50px;
+}
+
+#country {
+    width: 100%;
+    border: 2px solid black;
+}
+
+.lastinput {
+    margin-bottom: 15px;
+}
+
+textarea {
+    border: 2px solid black;
+}
+
+.form-warn {
+    background-color: #fff0d6;
+    border-left: 5px solid var(--warning-color);
+    padding: 15px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.helpText {
+    display: none;
+    color: var(--danger-color);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.required {
+    background-color: #fcf2f3;
+    border-left: 5px solid var(--danger-color);
+}
+
+.required p {
+    display: block;
+    font-weight: 300;
+}
+
+/** ------------ upload file ------------ */
+.uploader {
+    background: var(--bg-color);
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.uploader .uploadbox {
+    height: 167px;
+    display: flex;
+    cursor: pointer;
+    margin: 30px 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    background-color: white;
+}
+
+.uploadbox :where(i, p) {
+    color: var(--main-color);
+}
+
+.uploadbox i {
+    font-size: 50px;
+}
+
+.uploadbox p {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+section .row {
+    margin-bottom: 10px;
+    background: var(--cyan-color2);
+    list-style: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .row i {
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+section .details span {
+    font-size: 14px;
+}
+
+.progress-area .row .content {
+    width: 100%;
+    margin-left: 15px;
+}
+
+.progress-area .details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    justify-content: space-between;
+}
+
+.progress-area .content .progress-bar {
+    height: 6px;
+    width: 100%;
+    margin-bottom: 4px;
+    background: #fff;
+    border-radius: 30px;
+}
+
+.content .progress-bar .progress {
+    height: 100%;
+    width: 0%;
+    background: var(--main-color);
+    border-radius: inherit;
+}
+
+.uploaded-area {
+    overflow-y: scroll;
+}
+
+.uploaded-area.onprogress {
+    max-height: 150px;
+}
+
+.uploaded-area::-webkit-scrollbar {
+    width: 10px;
+}
+
+.uploaded-area .row .content {
+
+    display: flex;
+    align-items: center;
+}
+
+.uploaded-area .row .details {
+    display: flex;
+    margin-left: 15px;
+    flex-direction: column;
+}
+
+.uploaded-area .row .details .size {
+    color: #404040;
+    font-size: 11px;
+}
+
+.uploaded-area i.fa-check {
+    font-size: 16px;
+}
+
+.fa-remove {
+    font-size: 20px !important;
+}
+
+.fa-remove:hover {
+    color: black;
+    cursor: pointer;
+}
+
+/** --------------- */
+.btn {
+    background-color: #196bca;
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 19px;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding: 6px 14px;
+    border: 0px solid #ffffff;
+    border-radius: 100px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #0e4787;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/*! -------------------------------- IV- IOC report  -----------------------------#ff0000 */
+/*? -------------------------------- 1) IOC form  -------------------------------#1100ff */
+.ioc {
+    margin-top: 16px;
+}
+
+.iocurl {
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+
+}
+
+.cl-checkbox {
+    position: relative;
+    display: inline-block;
+    margin: 0.4rem;
+}
+.input-checkbox-wrapper{
+    margin-top: 2rem ;
+}
+
+/* Input */
+.cl-checkbox > input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    z-index: -1;
+    position: absolute;
+    left: -10px;
+    top: -8px;
+    display: block;
+    margin: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: none;
+    outline: none;
+    opacity: 0;
+    transform: scale(1);
+    pointer-events: none;
+    transition: opacity 0.3s, transform 0.2s;
+}
+
+/* Span */
+.cl-checkbox > span {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Box */
+.cl-checkbox > span::before {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 3px 11px 3px 1px;
+    border: solid 2px;
+    /* Safari */
+    border-color: rgba(0, 0, 0, 0.6);
+    border-radius: 2px;
+    width: 18px;
+    height: 18px;
+    vertical-align: top;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+/* Checkmark */
+.cl-checkbox > span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 1px;
+    width: 10px;
+    height: 5px;
+    border: solid 2px transparent;
+    border-right: none;
+    border-top: none;
+    transform: translate(3px, 4px) rotate(-45deg);
+}
+
+/* Checked, Indeterminate */
+.cl-checkbox > input:checked,
+.cl-checkbox > input:indeterminate {
+    background-color: var(--main-color);
+}
+
+.cl-checkbox > input:checked + span::before,
+.cl-checkbox > input:indeterminate + span::before {
+    border-color: var(--main-color);
+    background-color: var(--main-color);
+}
+
+.cl-checkbox > input:checked + span::after,
+.cl-checkbox > input:indeterminate + span::after {
+    border-color: #fff;
+}
+
+.cl-checkbox > input:indeterminate + span::after {
+    border-left: none;
+    transform: translate(4px, 3px);
+}
+
+/* Hover, Focus */
+.cl-checkbox:hover > input {
+    opacity: 0.04;
+}
+
+.cl-checkbox > input:focus {
+    opacity: 0.12;
+}
+
+.cl-checkbox:hover > input:focus {
+    opacity: 0.16;
+}
+
+/* Active */
+.cl-checkbox > input:active {
+    opacity: 1;
+    transform: scale(0);
+    transition: transform 0s, opacity 0s;
+}
+
+.cl-checkbox > input:active + span::before {
+    border-color: var(--cyan-color);
+}
+
+.cl-checkbox > input:checked:active + span::before {
+    border-color: transparent;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Disabled */
+.cl-checkbox > input:disabled {
+    opacity: 0;
+}
+
+.cl-checkbox > input:disabled + span {
+    color: rgba(0, 0, 0, 0.38);
+    cursor: initial;
+}
+
+.cl-checkbox > input:disabled + span::before {
+    border-color: currentColor;
+}
+
+.cl-checkbox > input:checked:disabled + span::before,
+.cl-checkbox > input:indeterminate:disabled + span::before {
+    border-color: transparent;
+    background-color: currentColor;
+}
