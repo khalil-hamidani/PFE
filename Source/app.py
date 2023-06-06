@@ -1,7 +1,12 @@
 from flask import Flask, request, render_template
 from flask_mysqldb import MySQL
+from livereload import Server
 
 app = Flask(__name__)
+app.debug = True
+live_server = Server(app.wsgi_app)
+live_server.watch('static/css/*.css')
+live_server.watch('templates/*.html')
 
 app.config['MYSQL_HOST'] = '172.27.145.170'
 app.config['MYSQL_USER'] = 'root'
@@ -82,7 +87,7 @@ def individual_report():
 # individual report form route
 @app.route("/Individual-report-form")
 def individual_report_form():
-    if request.method == "POST":
+    if request.method == "GET":
         # Render the HTML template for the individual report form and return it
         return render_template("Individual-report-form.html")
     else:
@@ -140,6 +145,11 @@ def ioc_form():
 # def ioc_form():
 #     return render_template("IOC-report-form.html")
 
+def run_server():
+    app.run(debug=True)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    live_server.serve(port=5000)
+    run_server()
+    
+print(" * Starting The Server...")    
