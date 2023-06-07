@@ -891,29 +891,15 @@ input[type="checkbox"] {
 
 /*! -------------------------------- V- Index  -----------------------------#ff0000 */
 /*? -------------------------------- 1) slider -------------------------------#1100ff */
+
 .swiper {
-    width: 800px;
+    width: 95%;
     height: 420px;
+    margin-bottom: 1rem;
 }
 
-/* .slider {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    background: #d3d3d3;
-    outline: none;
-} */
 
-/* @font-face {
-    font-family: "Font Awesome 5 Free";
-    font-style: normal;
-    font-weight: 400;
-    font-display: block;
-    src: url(https://www.free-css.com/assets/files/free-css-templates/preview/page281/biznews/assets/css/fonts/fa-regular-400.eot);
-    src: url(https://www.free-css.com/assets/files/free-css-templates/preview/page281/biznews/assets/css/fonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(https://www.free-css.com/assets/files/free-css-templates/preview/page281/biznews/assets/css/https://www.free-css.com/assets/files/free-css-templates/preview/page281/biznews/assets/css/fonts/fa-regular-400.woff2) format("woff2"), url(fonts/fa-regular-400.woff) format("woff"), url(https://www.free-css.com/assets/files/free-css-templates/preview/page281/biznews/assets/css/fonts/fa-regular-400.ttf) format("truetype"), url(https://www.free-css.com/assets/files/free-css-templates/preview/page281/biznews/assets/css/fonts/fa-regular-400.svg#fontawesome) format("svg");
-} */
-
-.container-fluid {
+/* .container-fluid {
     width: 100%;
     padding-right: .5rem;
     padding-left: .5rem;
@@ -1244,11 +1230,11 @@ a.badge-primary:hover {
 small {
     font-size: 80%;
     font-weight: 400;
-}
+} */
 
 
 /* These were inline style tags. Uses id+class to override almost everything */
-#style-i4YY6.style-i4YY6 {
+/* #style-i4YY6.style-i4YY6 {
     transform: translate3d(-1154px, 0px, 0px);
     transition: all 1s ease 0s;
     width: 3751px;
@@ -1421,4 +1407,4 @@ small {
 
 #style-yDKTa.style-yDKTa {
     object-fit: cover;
-}
+} */

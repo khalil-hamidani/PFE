@@ -1,5 +1,8 @@
 {% extends "template.html" %}
 
+{% block link %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+{% endblock link %}
 {% block title %}Cyber report{% endblock title %}
 
 {% block id %}index{% endblock id %}
@@ -12,382 +15,56 @@
 {% block main %}
 
 <div class="swiper">
+
     <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">
-        <img class="slider" src="../static/img/banner.svg" alt="banner">
-      </div>
-      <div class="swiper-slide">
-        <img class="slider" src="../static/img/footer.svg" alt="banner">
-      </div>
-      <div class="swiper-slide">
-        <img class="slider" src="../static/img/banner.svg" alt="banner">
-      </div>
-      ...
+        <div class="swiper-slide"><img src="../static/img/banner.svg" alt=""></div>
+        <div class="swiper-slide"><img src="../static/img/footer.svg" alt=""></div>
+        <div class="swiper-slide"><img src="../static/img/banner.svg" alt=""></div>
     </div>
-    <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
-  
-    <!-- If we need navigation buttons -->
+
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-  
-    <!-- If we need scrollbar -->
-    <!-- <div class="swiper-scrollbar"></div> -->
+
 </div>
-<div class="cve">
-    <div class="container snipcss-hWUlI">
-        <div class="section-title">
-            <h4 class="m-0 text-uppercase font-weight-bold">
-                Featured News
-            </h4>
-        </div>
-        <div class="owl-carousel news-carousel carousel-item-4 position-relative owl-loaded owl-drag">
-            <div class="owl-stage-outer">
-                <div class="owl-stage style-i4YY6" id="style-i4YY6">
-                    <div class="owl-item cloned style-SoFHQ" id="style-SoFHQ">
-                        <div class="position-relative overflow-hidden style-Y7nmO" id="style-Y7nmO">
-                            <img src="https://www.free-css.com/assets/files/free-css-templates/preview/page281/biznews/assets/img/news-700x435-2.jpg"
-                                alt="website template image" class="img-fluid h-100 style-SF8PJ" id="style-SF8PJ">
-                            <div class="overlay">
-                                <div class="mb-2">
-                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                        href="">
-                                        Business
-                                    </a>
-                                    <a class="text-white" href="">
-                                        <small>
-                                            Jan 01, 2045
-                                        </small>
-                                    </a>
-                                </div>
-                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold"
-                                    href="">
-                                    Lorem ipsum dolor sit amet elit...
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-item cloned style-8F8lX" id="style-8F8lX">
-                        <div class="position-relative overflow-hidden style-O5zxT" id="style-O5zxT">
-                            <img src="https://www.free-css.com/assets/files/free-css-templates/preview/page281/biznews/assets/img/news-700x435-3.jpg"
-                                alt="website template image" class="img-fluid h-100 style-nNnsc" id="style-nNnsc">
-                            <div class="overlay">
-                                <div class="mb-2">
-                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                        href="">
-                                        Business
-                                    </a>
-                                    <a class="text-white" href="">
-                                        <small>
-                                            Jan 01, 2045
-                                        </small>
-                                    </a>
-                                </div>
-                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold"
-                                    href="">
-                                    Lorem ipsum dolor sit amet elit...
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-item cloned style-yaJmi" id="style-yaJmi">
-                        <div class="position-relative overflow-hidden style-KL5nI" id="style-KL5nI">
-                            <img src="https://www.free-css.com/assets/files/free-css-templates/preview/page281/biznews/assets/img/news-700x435-4.jpg"
-                                alt="website template image" class="img-fluid h-100 style-awq2U" id="style-awq2U">
-                            <div class="overlay">
-                                <div class="mb-2">
-                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                        href="">
-                                        Business
-                                    </a>
-                                    <a class="text-white" href="">
-                                        <small>
-                                            Jan 01, 2045
-                                        </small>
-                                    </a>
-                                </div>
-                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold"
-                                    href="">
-                                    Lorem ipsum dolor sit amet elit...
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-item cloned style-s5ljF" id="style-s5ljF">
-                        <div class="position-relative overflow-hidden style-nJLz4" id="style-nJLz4">
-                            <img src="https://www.free-css.com/assets/files/free-css-templates/preview/page281/biznews/assets/img/news-700x435-5.jpg"
-                                alt="website template image" class="img-fluid h-100 style-Gvd8l" id="style-Gvd8l">
-                            <div class="overlay">
-                                <div class="mb-2">
-                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                        href="">
-                                        Business
-                                    </a>
-                                    <a class="text-white" href="">
-                                        <small>
-                                            Jan 01, 2045
-                                        </small>
-                                    </a>
-                                </div>
-                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold"
-                                    href="">
-                                    Lorem ipsum dolor sit amet elit...
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-item active style-YnoTs" id="style-YnoTs">
-                        <div class="position-relative overflow-hidden style-oUYws" id="style-oUYws">
-                            <img src="https://www.free-css.com/assets/files/free-css-templates/preview/page281/biznews/assets/img/news-700x435-1.jpg"
-                                alt="website template image" class="img-fluid h-100 style-ZLzA8" id="style-ZLzA8">
-                            <div class="overlay">
-                                <div class="mb-2">
-                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                        href="">
-                                        Business
-                                    </a>
-                                    <a class="text-white" href="">
-                                        <small>
-                                            Jan 01, 2045
-                                        </small>
-                                    </a>
-                                </div>
-                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold"
-                                    href="">
-                                    Lorem ipsum dolor sit amet elit...
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-item active style-zDqsF" id="style-zDqsF">
-                        <div class="position-relative overflow-hidden style-AolIP" id="style-AolIP">
-                            <img src="https://www.free-css.com/assets/files/free-css-templates/preview/page281/biznews/assets/img/news-700x435-2.jpg"
-                                alt="website template image" class="img-fluid h-100 style-Q96F3" id="style-Q96F3">
-                            <div class="overlay">
-                                <div class="mb-2">
-                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                        href="">
-                                        Business
-                                    </a>
-                                    <a class="text-white" href="">
-                                        <small>
-                                            Jan 01, 2045
-                                        </small>
-                                    </a>
-                                </div>
-                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold"
-                                    href="">
-                                    Lorem ipsum dolor sit amet elit...
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-item active style-GL64C" id="style-GL64C">
-                        <div class="position-relative overflow-hidden style-KbqY6" id="style-KbqY6">
-                            <img src="https://www.free-css.com/assets/files/free-css-templates/preview/page281/biznews/assets/img/news-700x435-3.jpg"
-                                alt="website template image" class="img-fluid h-100 style-P9XUz" id="style-P9XUz">
-                            <div class="overlay">
-                                <div class="mb-2">
-                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                        href="">
-                                        Business
-                                    </a>
-                                    <a class="text-white" href="">
-                                        <small>
-                                            Jan 01, 2045
-                                        </small>
-                                    </a>
-                                </div>
-                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold"
-                                    href="">
-                                    Lorem ipsum dolor sit amet elit...
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-item active style-9NJ6d" id="style-9NJ6d">
-                        <div class="position-relative overflow-hidden style-nZehR" id="style-nZehR">
-                            <img src="https://www.free-css.com/assets/files/free-css-templates/preview/page281/biznews/assets/img/news-700x435-4.jpg"
-                                alt="website template image" class="img-fluid h-100 style-mSdv5" id="style-mSdv5">
-                            <div class="overlay">
-                                <div class="mb-2">
-                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                        href="">
-                                        Business
-                                    </a>
-                                    <a class="text-white" href="">
-                                        <small>
-                                            Jan 01, 2045
-                                        </small>
-                                    </a>
-                                </div>
-                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold"
-                                    href="">
-                                    Lorem ipsum dolor sit amet elit...
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-item style-J1ygc" id="style-J1ygc">
-                        <div class="position-relative overflow-hidden style-I2tTR" id="style-I2tTR">
-                            <img src="https://www.free-css.com/assets/files/free-css-templates/preview/page281/biznews/assets/img/news-700x435-5.jpg"
-                                alt="website template image" class="img-fluid h-100 style-aww7L" id="style-aww7L">
-                            <div class="overlay">
-                                <div class="mb-2">
-                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                        href="">
-                                        Business
-                                    </a>
-                                    <a class="text-white" href="">
-                                        <small>
-                                            Jan 01, 2045
-                                        </small>
-                                    </a>
-                                </div>
-                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold"
-                                    href="">
-                                    Lorem ipsum dolor sit amet elit...
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-item cloned style-4SFMZ" id="style-4SFMZ">
-                        <div class="position-relative overflow-hidden style-elqed" id="style-elqed">
-                            <img src="https://www.free-css.com/assets/files/free-css-templates/preview/page281/biznews/assets/img/news-700x435-1.jpg"
-                                alt="website template image" class="img-fluid h-100 style-O762P" id="style-O762P">
-                            <div class="overlay">
-                                <div class="mb-2">
-                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                        href="">
-                                        Business
-                                    </a>
-                                    <a class="text-white" href="">
-                                        <small>
-                                            Jan 01, 2045
-                                        </small>
-                                    </a>
-                                </div>
-                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold"
-                                    href="">
-                                    Lorem ipsum dolor sit amet elit...
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-item cloned style-vGnGm" id="style-vGnGm">
-                        <div class="position-relative overflow-hidden style-EqSRc" id="style-EqSRc">
-                            <img src="https://www.free-css.com/assets/files/free-css-templates/preview/page281/biznews/assets/img/news-700x435-2.jpg"
-                                alt="website template image" class="img-fluid h-100 style-dagoo" id="style-dagoo">
-                            <div class="overlay">
-                                <div class="mb-2">
-                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                        href="">
-                                        Business
-                                    </a>
-                                    <a class="text-white" href="">
-                                        <small>
-                                            Jan 01, 2045
-                                        </small>
-                                    </a>
-                                </div>
-                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold"
-                                    href="">
-                                    Lorem ipsum dolor sit amet elit...
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-item cloned style-iQfQw" id="style-iQfQw">
-                        <div class="position-relative overflow-hidden style-Xf4Qy" id="style-Xf4Qy">
-                            <img src="https://www.free-css.com/assets/files/free-css-templates/preview/page281/biznews/assets/img/news-700x435-3.jpg"
-                                alt="website template image" class="img-fluid h-100 style-O1F5r" id="style-O1F5r">
-                            <div class="overlay">
-                                <div class="mb-2">
-                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                        href="">
-                                        Business
-                                    </a>
-                                    <a class="text-white" href="">
-                                        <small>
-                                            Jan 01, 2045
-                                        </small>
-                                    </a>
-                                </div>
-                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold"
-                                    href="">
-                                    Lorem ipsum dolor sit amet elit...
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-item cloned style-5eNON" id="style-5eNON">
-                        <div class="position-relative overflow-hidden style-KlZUM" id="style-KlZUM">
-                            <img src="https://www.free-css.com/assets/files/free-css-templates/preview/page281/biznews/assets/img/news-700x435-4.jpg"
-                                alt="website template image" class="img-fluid h-100 style-yDKTa" id="style-yDKTa">
-                            <div class="overlay">
-                                <div class="mb-2">
-                                    <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
-                                        href="">
-                                        Business
-                                    </a>
-                                    <a class="text-white" href="">
-                                        <small>
-                                            Jan 01, 2045
-                                        </small>
-                                    </a>
-                                </div>
-                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold"
-                                    href="">
-                                    Lorem ipsum dolor sit amet elit...
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="owl-nav">
-                <div class="owl-prev">
-                    <i class="fa fa-angle-left" aria-hidden="true">
-                    </i>
-                </div>
-                <div class="owl-next">
-                    <i class="fa fa-angle-right" aria-hidden="true">
-                    </i>
-                </div>
-            </div>
-            <div class="owl-dots disabled">
-            </div>
-        </div>
-    </div>
-</div>
-sc
+
+
 {% endblock main %}
 
 {% block scripts %}
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="../static/Scripts/swiper.js"></script>
-    <script >
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            direction: 'vertical',
-            loop: true,
-          
-            // If we need pagination
-            pagination: {
-              el: '.swiper-pagination',
-            },
-          
-            // Navigation arrows
-            navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-            },
-          
-            // And if we need scrollbar
-            scrollbar: {
-              el: '.swiper-scrollbar',
-            },
-          });
-    </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+      // core version + navigation, pagination modules:
+  import Swiper, { Navigation, Pagination } from 'swiper';
+  // import Swiper and modules styles
+  import 'swiper/css';
+  import 'swiper/css/navigation';
+  import 'swiper/css/pagination';
+  
+    const swiper = new Swiper('.swiper', {
+        direction: 'horizontal',
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: true
+        },
+        loop: true,
+
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
+</script>
 {% endblock scripts %}
