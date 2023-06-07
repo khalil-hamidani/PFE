@@ -6292,9 +6292,9 @@
 											},
 											"fillColor": "#d8f2ff",
 											"font": "Arial;13;0",
-											"left": 174.55908203125,
+											"left": 176.72998046875,
 											"top": 13,
-											"width": 124.08740234375,
+											"width": 139.74072265625,
 											"height": 13,
 											"text": "Scanner un service web"
 										},
@@ -6308,7 +6308,7 @@
 											"font": "Arial;13;1",
 											"left": 157,
 											"top": 13,
-											"width": 12.55908203125,
+											"width": 14.72998046875,
 											"height": 13,
 											"text": "sd"
 										}
@@ -7711,9 +7711,9 @@
 											},
 											"fillColor": "#d8f2ff",
 											"font": "Arial;13;0",
-											"left": 158.55908203125,
+											"left": 160.72998046875,
 											"top": 13,
-											"width": 171.93603515625,
+											"width": 183.3935546875,
 											"height": 13,
 											"text": "Remplir un formulaire d'incident"
 										},
@@ -7727,7 +7727,7 @@
 											"font": "Arial;13;1",
 											"left": 141,
 											"top": 13,
-											"width": 12.55908203125,
+											"width": 14.72998046875,
 											"height": 13,
 											"text": "sd"
 										}
@@ -9037,7 +9037,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 215.99365234375,
+											"left": 216.72998046875,
 											"top": 373,
 											"width": 1,
 											"height": 13
@@ -9051,7 +9051,7 @@
 											"font": "Arial;13;1",
 											"left": 197,
 											"top": 373,
-											"width": 13.99365234375,
+											"width": 14.72998046875,
 											"height": 13,
 											"text": "alt"
 										},
@@ -9895,9 +9895,9 @@
 											},
 											"fillColor": "#d8f2ff",
 											"font": "Arial;13;0",
-											"left": 302.55908203125,
+											"left": 304.72998046875,
 											"top": 13,
-											"width": 214.73193359375,
+											"width": 235.84423828125,
 											"height": 13,
 											"text": "Signaler un indicateur de compromission"
 										},
@@ -9911,7 +9911,7 @@
 											"font": "Arial;13;1",
 											"left": 285,
 											"top": 13,
-											"width": 12.55908203125,
+											"width": 14.72998046875,
 											"height": 13,
 											"text": "sd"
 										}
@@ -9920,7 +9920,7 @@
 									"font": "Arial;13;0",
 									"left": 280,
 									"top": 8,
-									"width": 1297,
+									"width": 1305,
 									"height": 841,
 									"nameLabel": {
 										"$ref": "AAAAAAGIkZ1Y0vtgx6o="
@@ -10874,7 +10874,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 383.99365234375,
+											"left": 384.72998046875,
 											"top": 421,
 											"width": 1,
 											"height": 13
@@ -10888,7 +10888,7 @@
 											"font": "Arial;13;1",
 											"left": 365,
 											"top": 421,
-											"width": 13.99365234375,
+											"width": 14.72998046875,
 											"height": 13,
 											"text": "alt"
 										},
