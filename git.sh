@@ -7,4 +7,4 @@ then
 else
   git commit -m "$1"
 fi
-git push origin main
+git push -u origin main
