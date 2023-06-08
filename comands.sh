@@ -1,3 +1,4 @@
+#!/bin/bash
 # Flask App run in localhost:5000 by default (http://127.0.0.1:5000)
 # If you want to run in other port, you can use:
 # python3 -m flask run -p 5001
