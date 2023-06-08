@@ -1,4 +1,10 @@
 #!/bin/bash
+
 git add .
-git commit -m "$1"
+if [ -z "$1" ]
+then
+  git commit -m "Update"
+else
+  git commit -m "$1"
+fi
 git push origin main
