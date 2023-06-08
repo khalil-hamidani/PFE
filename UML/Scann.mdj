@@ -7711,9 +7711,9 @@
 											},
 											"fillColor": "#d8f2ff",
 											"font": "Arial;13;0",
-											"left": 160.72998046875,
+											"left": 158.55908203125,
 											"top": 13,
-											"width": 183.3935546875,
+											"width": 171.93603515625,
 											"height": 13,
 											"text": "Remplir un formulaire d'incident"
 										},
@@ -7727,7 +7727,7 @@
 											"font": "Arial;13;1",
 											"left": 141,
 											"top": 13,
-											"width": 14.72998046875,
+											"width": 12.55908203125,
 											"height": 13,
 											"text": "sd"
 										}
@@ -9037,7 +9037,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 216.72998046875,
+											"left": 215.99365234375,
 											"top": 373,
 											"width": 1,
 											"height": 13
@@ -9051,7 +9051,7 @@
 											"font": "Arial;13;1",
 											"left": 197,
 											"top": 373,
-											"width": 14.72998046875,
+											"width": 13.99365234375,
 											"height": 13,
 											"text": "alt"
 										},
@@ -12362,12 +12362,12 @@
 										},
 										{
 											"_type": "UMLAttributeView",
-											"_id": "AAAAAAGIkuAduwrKhJs=",
+											"_id": "AAAAAAGIm5DG5Xj9dW0=",
 											"_parent": {
 												"$ref": "AAAAAAGIktTFtAh/4eY="
 											},
 											"model": {
-												"$ref": "AAAAAAGIkuAdtQrHfYg="
+												"$ref": "AAAAAAGIm5DGynj6s4o="
 											},
 											"fillColor": "#d8f2ff",
 											"font": "Arial;13;0",
@@ -12375,7 +12375,25 @@
 											"top": 163,
 											"width": 334,
 											"height": 13,
-											"text": "+Mot_de_Passe",
+											"text": "+Telephone",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGIm5D9Unm40cs=",
+											"_parent": {
+												"$ref": "AAAAAAGIktTFtAh/4eY="
+											},
+											"model": {
+												"$ref": "AAAAAAGIm5D9TXm1HSs="
+											},
+											"fillColor": "#d8f2ff",
+											"font": "Arial;13;0",
+											"left": 269,
+											"top": 178,
+											"width": 334,
+											"height": 13,
+											"text": "+Age",
 											"horizontalAlignment": 0
 										}
 									],
@@ -12384,7 +12402,7 @@
 									"left": 264,
 									"top": 113,
 									"width": 344,
-									"height": 68
+									"height": 83
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -12408,7 +12426,7 @@
 											"fillColor": "#d8f2ff",
 											"font": "Arial;13;0",
 											"left": 269,
-											"top": 186,
+											"top": 201,
 											"width": 334,
 											"height": 13,
 											"text": "+authentifier()",
@@ -12426,7 +12444,7 @@
 											"fillColor": "#d8f2ff",
 											"font": "Arial;13;0",
 											"left": 269,
-											"top": 201,
+											"top": 216,
 											"width": 334,
 											"height": 13,
 											"text": "+saisirLien()",
@@ -12436,7 +12454,7 @@
 									"fillColor": "#d8f2ff",
 									"font": "Arial;13;0",
 									"left": 264,
-									"top": 181,
+									"top": 196,
 									"width": 344,
 									"height": 38
 								},
@@ -13515,6 +13533,24 @@
 											"height": 13,
 											"text": "+SiteWeb",
 											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGIm5Pao4Nnms8=",
+											"_parent": {
+												"$ref": "AAAAAAGIkuTAzgtCbxQ="
+											},
+											"model": {
+												"$ref": "AAAAAAGIm5PamYNk4wQ="
+											},
+											"fillColor": "#d8f2ff",
+											"font": "Arial;13;0",
+											"left": 709,
+											"top": 458,
+											"width": 318,
+											"height": 13,
+											"text": "+Pays",
+											"horizontalAlignment": 0
 										}
 									],
 									"fillColor": "#d8f2ff",
@@ -13522,7 +13558,7 @@
 									"left": 704,
 									"top": 393,
 									"width": 328,
-									"height": 68
+									"height": 83
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -13536,7 +13572,7 @@
 									"fillColor": "#d8f2ff",
 									"font": "Arial;13;0",
 									"left": 704,
-									"top": 461,
+									"top": 476,
 									"width": 328,
 									"height": 10
 								},
@@ -14851,12 +14887,19 @@
 						},
 						{
 							"_type": "UMLAttribute",
-							"_id": "AAAAAAGIkuAdtQrHfYg=",
+							"_id": "AAAAAAGIm5DGynj6s4o=",
 							"_parent": {
 								"$ref": "AAAAAAGIktTFrQh3b3U="
 							},
-							"name": "Mot_de_Passe",
-							"type": ""
+							"name": "Telephone"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGIm5D9TXm1HSs=",
+							"_parent": {
+								"$ref": "AAAAAAGIktTFrQh3b3U="
+							},
+							"name": "Age"
 						}
 					],
 					"operations": [
@@ -15097,6 +15140,14 @@
 							},
 							"name": "SiteWeb",
 							"type": ""
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGIm5PamYNk4wQ=",
+							"_parent": {
+								"$ref": "AAAAAAGIkuTAzQs6o58="
+							},
+							"name": "Pays"
 						}
 					]
 				}
