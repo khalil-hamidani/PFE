@@ -138,9 +138,12 @@ def ioc_form():
 
 
 #scan route
-@app.route("/scan")
+@app.route("/scan", methods=['GET', 'POST'])
 def scan():
-    return render_template("scan.html")
+    if request.method == "GET":
+        return render_template("scan.html")
+    else:
+        return render_template("scan.html")
 
 
 # # report IOC form route

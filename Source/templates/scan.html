@@ -7,10 +7,36 @@
 {% block id %}Scan a service{% endblock id %}
 
 {% block header %}
-    <h1 id="report-cyber">Scan A Service</h1>
+<h1 id="report-cyber">Scan A Service</h1>
 {% endblock header %}
 
 {% block main %}
+<div class="report-incdent-container">
+    <div class="explain">
+        <h2>What does the scan service provide ?</h2>
+        <p>The scan service provides a detailed report of the domain name you want to scan to help you identify potential security threats
+            or attacks.</p>
+
+    </div>
+    <h2>Before you start scanning</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, aspernatur repellat. Quae nobis, enim repellat cum laudantium vero vitae fuga dolorum et earum doloremque omnis, incidunt quidem, aliquid delectus porro!</p>
+    <form action="/scan" method="post">
+        <div class="textBox">
+            <label for="first_name" class="form-label"> Enter the Domain <span class="Mandatory">*</span></label>
+            <br />
+            <p class="helpText">Please provide a valid domain.</p>
+            <input type="domain" id="domain" maxlength="49" pattern="[^]*" name="domain" autocomplete="on" value=""
+                class="form-input" />
+        </div>
+        <button class="btn">Scan</button>
+    </form>
+    <hr id="lasthr">
+    <div class="helpus">
+        <h3>Help us to help others</h3>
+        <p> Sharing informative reports is crucial for us to comprehend the threat landscape and enhance the cyber intelligence
+            capabilities. This subsequently improves our ability to help protect other Algerian organisations.</p>
+    </div>
+</div>
 {% endblock main %}
 
 {% block script %}
