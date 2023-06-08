@@ -2,13 +2,15 @@
 
 {% block link %}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<link rel="stylesheet" href="../static/lib/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="../static/lib/css/owl.carousel.min.css">
 {% endblock link %}
 {% block title %}Cyber report{% endblock title %}
 
 {% block id %}index{% endblock id %}
 
 {% block header %}
-<h1>The Algerian Cyber Security Centre</h1>
+<h1 id="index-h1">The Algerian Cyber Security Center</h1>
 <h2>Helping to make Algeria the safest place to live and work online.</h2>
 {% endblock header %}
 
@@ -17,54 +19,85 @@
 <div class="swiper">
 
     <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="../static/img/banner.svg" alt=""></div>
-        <div class="swiper-slide"><img src="../static/img/footer.svg" alt=""></div>
-        <div class="swiper-slide"><img src="../static/img/banner.svg" alt=""></div>
+        <div class="swiper-slide pic1"></div>
+        <div class="swiper-slide pic2"></div>
+        <div class="swiper-slide pic3"></div>
+
     </div>
+
     <div class="swiper-pagination"></div>
 
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
 
 </div>
-
+<div class="cve-container">
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="../static/img/1.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="../static/img/1.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="../static/img/1.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="../static/img/1.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="../static/img/1.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="../static/img/1.jpg" alt="">
+        </div>
+    </div>
+</div>
 
 {% endblock main %}
 
-{% block scripts %}
+{% block script %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="../static/lib/js/owl.carousel.min.js"></script>
+<!-- for swiper js -->
 <script>
-      // core version + navigation, pagination modules:
-  import Swiper, { Navigation, Pagination } from 'swiper';
-  // import Swiper and modules styles
-  import 'swiper/css';
-  import 'swiper/css/navigation';
-  import 'swiper/css/pagination';
-  
     const swiper = new Swiper('.swiper', {
         direction: 'horizontal',
+        loop: true,
         autoplay: {
             delay: 3000,
             disableOnInteraction: true
         },
-        loop: true,
-
 
         pagination: {
             el: '.swiper-pagination',
-            clickable: true
         },
-
-
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-
-
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
     });
 </script>
-{% endblock scripts %}
+<!-- for owl carousel -->
+<script>
+    $('.owl-carousel').owlCarousel({
+        items:3,
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplayTimeout:1000,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 5
+            }
+        }
+    })
+</script>
+{% endblock script %}

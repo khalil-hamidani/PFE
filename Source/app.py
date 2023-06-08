@@ -137,10 +137,10 @@ def ioc_form():
     return render_template("IOC-report-form.html")
 
 
-# scan route
-# @app.route("/scan")
-# def scan():
-#     return render_template(".html")
+#scan route
+@app.route("/scan")
+def scan():
+    return render_template("scan.html")
 
 
 # # report IOC form route
