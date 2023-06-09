@@ -932,6 +932,18 @@ a.banner-button:active {
 a.banner-button i {
     margin-left: 10px;
 }
+.first-banner{
+    top: 21rem;
+    left: 28rem;
+}
+.seccond-banner{
+    top: 21rem;
+    left: 28rem;
+}
+.third-banner{
+    top: 21rem;
+    left: 28rem;
+}
 /*? -------------------------------- 2) cve -------------------------------#1100ff */
 /* .cve-container{
    margin: 0 10rem;
