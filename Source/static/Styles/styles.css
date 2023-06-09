@@ -907,12 +907,8 @@ input[type="checkbox"] {
     height: auto;
 }
 
-
-
 a.banner-button {
     position: absolute;
-    top: 21rem;
-    left: 28rem;
     z-index: 1;
     background-color: #041e52;
     color: #fff;
