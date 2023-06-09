@@ -922,15 +922,15 @@ input[type="checkbox"] {
     display: inline-block;
 }
 
-a.banner-button:hover {
+.swiper-slide a.banner-button:hover {
     background-color: #181f45;
 }
 
-a.banner-button:active {
+.swiper-slide a.banner-button:active {
     transform: scale(0.95);
 }
 
-a.banner-button i {
+.swiper-slide a.banner-button i {
     margin-left: 10px;
 }
 
@@ -964,6 +964,9 @@ a.banner-button i {
     padding: 10px;
     margin: 1rem 0rem;
     margin-bottom: 2rem;
+}
+.item .read-more {
+    color: black ;
 }
 
 .owl-carousel div {
