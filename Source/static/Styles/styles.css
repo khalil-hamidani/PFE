@@ -986,4 +986,5 @@ div.item {
     border-bottom: 1px solid var(--cyan-color);
     background-color: white;
     padding: 10px;
+    z-index: 99;
 }
