@@ -929,21 +929,26 @@ a.banner-button:hover {
 a.banner-button:active {
     transform: scale(0.95);
 }
+
 a.banner-button i {
     margin-left: 10px;
 }
-.first-banner{
+
+.first-banner {
     top: 21rem;
     left: 28rem;
 }
-.seccond-banner{
+
+.seccond-banner {
     top: 21rem;
     left: 28rem;
 }
-.third-banner{
+
+.third-banner {
     top: 21rem;
     left: 28rem;
 }
+
 /*? -------------------------------- 2) cve -------------------------------#1100ff */
 /* .cve-container{
    margin: 0 10rem;
