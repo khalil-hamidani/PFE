@@ -907,29 +907,13 @@ input[type="checkbox"] {
     height: auto;
 }
 
+
+
 a.banner-button {
     position: absolute;
     top: 20rem;
     left: 25rem;
     z-index: 1;
-    background: linear-gradient(to right, #041e52, #193f89);
-    background-color: #041e52;
-    color: #fff;
-    font-family: Verdana;
-    font-size: 15px;
-    font-weight: 800;
-    font-style: normal;
-    text-decoration: none;
-    padding: 13px 16px;
-    border: 0px solid #000;
-    border-radius: 18px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 10px 0px #2D2D2D;
-}
-
-a.banner-button{
     background-color: #041e52;
     color: #fff;
     font-family: Verdana;
@@ -941,13 +925,16 @@ a.banner-button{
     border: 0px solid #000;
     border-radius: 18px;
     display: inline-block;
-   }
-   a.banner-button:hover{
+}
+
+a.banner-button:hover {
     background-color: #515670;
-   }
-   a.banner-button:active{
+}
+
+a.banner-button:active {
     transform: scale(0.95);
-   }
+}
+
 /*? -------------------------------- 2) cve -------------------------------#1100ff */
 /* .cve-container{
    margin: 0 10rem;
