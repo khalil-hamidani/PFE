@@ -955,6 +955,6 @@ a.banner-button i {
     position: relative;
     margin: 0 auto;
 }
-.owl-carousel .item img{
+.owl-carousel div{
     height: 10rem;
 }
