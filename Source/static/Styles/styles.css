@@ -960,7 +960,8 @@ input[type="checkbox"] {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 1px solid black;
+    border: 1px solid var(--cyan-color);
+    border
     padding: 10px;
     margin: 1rem 0rem;
     margin-bottom: 2rem;
