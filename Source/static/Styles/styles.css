@@ -962,6 +962,7 @@ input[type="checkbox"] {
     justify-content: space-between;
     border: 1px solid var(--cyan-color);
     border-left: 5px solid var(--cyan-color);
+    background-color: white;
     padding: 10px;
     margin: 1rem 0rem;
     margin-bottom: 2rem;
