@@ -953,7 +953,7 @@ input[type="checkbox"] {
 .cve-container {
     max-width: 65em;
     position: relative;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 .title-box {
