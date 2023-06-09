@@ -950,6 +950,7 @@ a.banner-button i {
 }
 
 /*? -------------------------------- 2) cve -------------------------------#1100ff */
-/* .cve-container{
+.cve-container{
+    max-width: 5000x;
    margin: 0 10rem;
-} */
+}
