@@ -958,4 +958,6 @@ a.banner-button i {
 .owl-carousel div{
     height: 10rem;
 }
-.item img
+.item img{
+    height: max-content;
+}
