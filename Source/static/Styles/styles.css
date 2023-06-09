@@ -910,7 +910,7 @@ input[type="checkbox"] {
 a.banner-button {
     position: absolute;
     top: 20rem;
-    left: 15rem;
+    left: 25rem;
     z-index: 1;
     background: linear-gradient(to right, #041e52, #193f89);
     background-color: #041e52;
