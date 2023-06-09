@@ -965,7 +965,8 @@ input[type="checkbox"] {
     margin: 1rem 0rem;
     margin-bottom: 2rem;
 }
-a.read-more  {
+
+a.read-more {
     color: black !important;
     font-weight: bold;
     margin-top: 5rem;
