@@ -894,8 +894,12 @@ input[type="checkbox"] {
 /*? -------------------------------- 1) slider -------------------------------#1100ff */
 .swiper {
     width: 100%;
-    height: 427px;
+    height: 445px;
     margin-bottom: 3rem;
+}
+.banner-button {
+    display: absolute;
+    z-index: 5 ;
 }
 
 .swiper-slide img{
