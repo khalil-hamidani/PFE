@@ -900,11 +900,6 @@ input[type="checkbox"] {
     margin-bottom: 3rem;
 }
 
-.banner-button {
-    display: absolute;
-    z-index: 5;
-}
-
 .swiper-slide img {
     position: relative;
     display: inline-block;
@@ -912,6 +907,16 @@ input[type="checkbox"] {
     height: auto;
 }
 
+.banner-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
 /*? -------------------------------- 2) cve -------------------------------#1100ff */
 /* .cve-container{
    margin: 0 10rem;
