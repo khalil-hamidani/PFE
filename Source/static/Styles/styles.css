@@ -907,7 +907,7 @@ input[type="checkbox"] {
     height: auto;
 }
 
-a.banner-button {
+.swiper-slide a.banner-button {
     position: absolute;
     z-index: 1;
     background-color: #041e52;
