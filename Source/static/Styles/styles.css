@@ -899,7 +899,6 @@ input[type="checkbox"] {
 }
 .banner-button {
     display: absolute;
-    display:;
     z-index: 5 ;
 }
 
