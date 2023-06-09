@@ -56,11 +56,13 @@ header h1 {
     padding-left: 9rem;
     font-size: 3rem;
     padding-bottom: 1rem;
-    
+
 }
+
 #index-h1 {
-    margin-top: 1rem; 
+    margin-top: 1rem;
 }
+
 header h2 {
     color: #ffffff;
     padding-left: 12rem;
@@ -897,12 +899,15 @@ input[type="checkbox"] {
     height: 445px;
     margin-bottom: 3rem;
 }
+
 .banner-button {
     display: absolute;
-    z-index: 5 ;
+    z-index: 5;
 }
 
-.swiper-slide img{
+.swiper-slide img {
+    position: relative;
+    display: inline-block;
     width: 100%;
     height: auto;
 }
@@ -911,4 +916,3 @@ input[type="checkbox"] {
 /* .cve-container{
    margin: 0 10rem;
 } */
-
