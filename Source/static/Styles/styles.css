@@ -968,7 +968,8 @@ input[type="checkbox"] {
 a.read-more  {
     color: black !important;
     font-weight: bold;
-    margin-top: 5rem;
+    margin-top: 5rem !important;
+    padding-top: 2rem;
 }
 
 .owl-carousel div {
