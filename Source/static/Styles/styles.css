@@ -969,7 +969,6 @@ input[type="checkbox"] {
 }
 .item {
     border: 1px solid black;
-    border-bottom: 1px solid black !important;
     padding: 10px;
 }
 a.read-more {
