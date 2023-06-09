@@ -933,7 +933,9 @@ a.banner-button:hover {
 a.banner-button:active {
     transform: scale(0.95);
 }
-
+a.banner-button i {
+    margin-right: 10px;
+}
 /*? -------------------------------- 2) cve -------------------------------#1100ff */
 /* .cve-container{
    margin: 0 10rem;
