@@ -952,8 +952,8 @@ a.banner-button i {
 /*? -------------------------------- 2) cve -------------------------------#1100ff */
 .cve-container{
     max-width: 500px;
-    position: absolute;
-  top: 150%;
-  left: 50%;
+    position: relative;
+    top: 150%;
+    left: 50%;
   transform: translate(-50%, -50%);
 }
