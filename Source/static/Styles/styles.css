@@ -955,6 +955,13 @@ a.banner-button i {
     position: relative;
     margin: 0 auto;
 }
+.title-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+    
+}
 .owl-carousel div{
     height: 25rem;
 }
