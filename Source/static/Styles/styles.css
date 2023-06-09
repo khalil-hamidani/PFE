@@ -960,7 +960,8 @@ a.banner-button i {
     flex-direction: row;
     justify-content: space-between;
     border: 1px solid black;
-    
+    padding: 10px;
+    margin: ;
 }
 .owl-carousel div{
     height: 25rem;
