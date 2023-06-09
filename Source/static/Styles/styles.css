@@ -911,8 +911,8 @@ input[type="checkbox"] {
 
 a.banner-button {
     position: absolute;
-    top: 20rem;
-    left: 25rem;
+    top: 21rem;
+    left: 28rem;
     z-index: 1;
     background-color: #041e52;
     color: #fff;
@@ -934,7 +934,7 @@ a.banner-button:active {
     transform: scale(0.95);
 }
 a.banner-button i {
-    margin-right: 10px;
+    margin-left: 10px;
 }
 /*? -------------------------------- 2) cve -------------------------------#1100ff */
 /* .cve-container{
