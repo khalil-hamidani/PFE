@@ -950,12 +950,13 @@ a.banner-button i {
 }
 
 /*? -------------------------------- 2) cve -------------------------------#1100ff */
-.cve-container{
+.cve-container {
     max-width: 65em;
     position: relative;
     margin: 0 auto;
 }
-.title-box{
+
+.title-box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -964,9 +965,11 @@ a.banner-button i {
     margin: 1rem 0rem;
     margin-bottom: 2rem;
 }
-.owl-carousel div{
+
+.owl-carousel div {
     height: 25rem;
 }
-.item img{
+
+.item img {
     height: max-content;
 }
