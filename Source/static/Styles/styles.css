@@ -102,7 +102,7 @@ header hr {
     flex-direction: row;
 }
 
-.item {
+.nav-item {
     margin: 0px 10px;
     text-decoration: none;
 }
@@ -122,7 +122,7 @@ header hr {
     text-decoration: none;
 }
 
-.item a {
+.nav-item a {
     color: #007bff;
     text-decoration: none;
     background-color: transparent;
@@ -133,11 +133,11 @@ header hr {
     vertical-align: baseline;
 }
 
-.item a, .item a:visited {
+.nav-item a, .nav-item a:visited {
     color: #ffffff;
 }
 
-.item a:hover {
+.nav-item a:hover {
     text-decoration: underline;
 }
 
