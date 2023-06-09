@@ -955,4 +955,6 @@ a.banner-button i {
     position: relative;
     margin: 0 auto;
 }
-.i
+.item{
+    height: 50rem;
+}
