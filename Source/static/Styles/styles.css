@@ -906,16 +906,7 @@ input[type="checkbox"] {
     width: 100%;
     height: auto;
 }
-.pic2{
-    background-image: url(../img/test.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.pic3{
-    background-image: url(../img/test2.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 /*? -------------------------------- 2) cve -------------------------------#1100ff */
 /* .cve-container{
    margin: 0 10rem;
