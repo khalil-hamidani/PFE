@@ -954,7 +954,6 @@ input[type="checkbox"] {
     max-width: 65em;
     position: relative;
     margin: 1rem auto;
-    background-color: wheat;
 }
 
 .title-box {
@@ -972,8 +971,8 @@ input[type="checkbox"] {
 a.read-more {
     color: black !important;
     font-weight: bold;
-    /* margin-top: 5rem;
-    padding-top: 2rem; */
+    margin-top: 5rem;
+    padding-top: 2rem;
 }
 
 div.item {
