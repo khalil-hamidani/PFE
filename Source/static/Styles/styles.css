@@ -1032,7 +1032,7 @@ div.item {
   .read-more {
     margin: auto;
   }
-  .see-all{
+  .see-all {
     color: var(--cyan-color);
     text-align: center;
     margin-top: 3rem;
@@ -1041,5 +1041,9 @@ div.item {
     font-weight: 800;
     font-style: normal;
     text-decoration: none;
-    
+    padding: 10px 16px;
+    border: 0px solid #000;
+    border-radius: 18px;
+    display: inline-block;
+
   }
