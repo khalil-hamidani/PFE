@@ -984,10 +984,10 @@ input[type="checkbox"] {
     border-radius: 0px;
     display: inline-block;
    }
-   a.owl-nav:hover{
+   owl-nav:hover{
     background-color: #054a99;
    }
-   a.owl-nav:active{
+   .owl-nav:active{
     transform: scale(0.95);
    }
 
