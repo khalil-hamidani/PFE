@@ -969,7 +969,7 @@ input[type="checkbox"] {
     max-width: 50px;
     position: absolute;
     top: -22%;
-    left: 95%;
+    left: 90%;
 }
 .owl-nav span{
     background-color: #054ea1;
@@ -982,7 +982,6 @@ input[type="checkbox"] {
     padding: 3px 3px;
     border: 0px solid #000;
     border-radius: 0px;
-    display: inline-block;
    }
    .owl-nav:hover span{
     background-color: #054a99;
