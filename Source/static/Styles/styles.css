@@ -978,7 +978,7 @@ div.item {
     cursor: pointer;
 }
 div.item:hover{
-    background-color: rgba(128, 128, 128, 0.05);
+    background-color: var(--bg-color);
 }
 .item-header {
     display: grid;
