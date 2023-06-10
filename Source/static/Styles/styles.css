@@ -1066,3 +1066,6 @@ div.item {
     transform: scale(1.1);
     transition: 0.4s ease-in-out;
 }
+.rating0 {
+    color: #ff0000;
+}
