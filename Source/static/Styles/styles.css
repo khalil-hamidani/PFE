@@ -1073,10 +1073,12 @@ div.item:hover i.fa-arrow-right-long {
     margin-right: 5px;
     color: var(--cyan-color);
 }
+
 .rating1 a {
     color: var(--cyan-color);
     font-size: large;
 }
+
 .rating2 {
     border: 1px solid var(--warning-color) !important;
     border-left: 5px solid var(--warning-color) !important;
@@ -1086,10 +1088,12 @@ div.item:hover i.fa-arrow-right-long {
     margin-right: 5px;
     color: var(--warning-color);
 }
+
 .rating2 a {
     color: var(--warning-color);
     font-size: large;
 }
+
 .rating3 {
     border: 1px solid var(--danger-color) !important;
     border-left: 5px solid var(--danger-color) !important;
@@ -1099,6 +1103,7 @@ div.item:hover i.fa-arrow-right-long {
     margin-right: 5px;
     color: var(--danger-color);
 }
+
 .rating3 a {
     color: var(--danger-color);
     font-size: large;
