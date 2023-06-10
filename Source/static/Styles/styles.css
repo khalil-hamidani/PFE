@@ -1125,5 +1125,5 @@ div.item:hover .title {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: ;
+    max-width: 15rem;
 }
