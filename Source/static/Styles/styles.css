@@ -1013,7 +1013,7 @@ div.item:hover{
 }
 
 .read-more {
-    margin: auto;
+    margin: 0 0 0 ;
 }
 .read-more i{
     text-align: left;
