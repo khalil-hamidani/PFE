@@ -992,6 +992,9 @@ input[type="checkbox"] {
     background: none !important; 
     color: white;
 }
+.owl-theme .owl-nav [class*=owl-]:active{
+
+}
 
 div.item {
     border: 1px solid var(--cyan-color);
