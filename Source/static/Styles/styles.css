@@ -972,7 +972,7 @@ input[type="checkbox"] {
     max-width: 50px;
     position: absolute;
     top: 50%;
-    
+    left: 50%;
 }
 
 div.item {
