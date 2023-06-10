@@ -1033,6 +1033,8 @@ div.item {
     margin: auto;
   }
   .see-all{
-    
+    color: var(--cyan-color);
     text-align: center;
+    margin-top: 3rem;
+    
   }
