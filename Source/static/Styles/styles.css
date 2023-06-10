@@ -1037,7 +1037,6 @@ div.item {
     text-align: center;
     margin-top: 1rem;
     font-size: 1.5rem;
-    
     font-weight: 800;
     font-style: normal;
     text-decoration: none;
@@ -1046,6 +1045,7 @@ div.item {
     border-radius: 18px;
     display: inline-block;
   }
+  .see-all i{}
   .see-all:hover{
     transform: scale(1.1);
     transition: 0.4s ease-in-out; 
