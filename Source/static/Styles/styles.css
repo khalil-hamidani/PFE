@@ -1137,7 +1137,6 @@ div.item:hover .title {
 }
 
 .index {
-    padding: 15px !important;
-    margin: -4rem 10rem !important;
+    margin: 0 10rem !important;
     max-width: 100rem !important;
 }
