@@ -1126,4 +1126,5 @@ div.item:hover .title {
     justify-content: center;
     align-items: center;
     max-width: 70rem;
+    margin: auto;
 }
