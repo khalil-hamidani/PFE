@@ -983,3 +983,43 @@ div.item {
     background-color: white;
     padding: 10px;
 } */
+
+div.item {
+    border: 1px solid var(--cyan-color);
+    border-left: 5px solid var(--cyan-color);
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .item-header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px;
+    align-items: center;
+  }
+  
+  .title {
+    margin: 0;
+  }
+  
+  .rating {
+    text-align: right;
+  }
+  
+  .subtitle {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
+  .description {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .read-more {
+    margin: auto;
+  }
