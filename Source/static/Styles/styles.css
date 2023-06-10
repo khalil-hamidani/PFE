@@ -985,15 +985,12 @@ input[type="checkbox"] {
    .owl-prev:hover span ,.owl-next:hover span{
     background-color: var(--main-color) !important;
    }
-   .owl-carousel .owl-nav button.owl-next span, .owl-next:active span{
-    transform: scale(0.95) !important;
-   }
    .owl-theme .owl-nav [class*=owl-]:hover {
     background: none !important; 
     color: white;
 }
 .owl-theme .owl-nav [class*=owl-]:active{
-
+    transform: scale(0.95) !important;
 }
 
 div.item {
