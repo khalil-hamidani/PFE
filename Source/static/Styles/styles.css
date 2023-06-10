@@ -972,7 +972,7 @@ input[type="checkbox"] {
     left: 90%;
 }
 .owl-carousel .owl-nav button.owl-next {
-    background-color: #054ea1 !important;
+    background-color: #054ea1;
     color: #fff;
     font-family: Trebuchet MS;
     font-size: 32px;
@@ -981,9 +981,9 @@ input[type="checkbox"] {
     border: 0px solid #000;
     border-radius: 0px;
    }
-   /* .owl-prev:hover span{
+   .owl-prev:hover span{
     background-color: #054a99;
-   } */
+   }
    .owl-prev:active span{
     transform: scale(0.95);
    }
