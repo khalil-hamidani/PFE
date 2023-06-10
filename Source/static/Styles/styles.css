@@ -194,7 +194,7 @@ header hr {
 
 .footer-center .footer-links a {
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
     line-height: 2rem;
 }
 
