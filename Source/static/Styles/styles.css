@@ -976,8 +976,8 @@ a.read-more {
     padding-top: 2rem; */
 }
 
-
 div.item {
+    height: 25rem;
     border: 1px solid var(--cyan-color);
     border-left: 5px solid var(--cyan-color);
     border-bottom: 1px solid var(--cyan-color) !important;
