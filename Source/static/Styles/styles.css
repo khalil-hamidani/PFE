@@ -1067,8 +1067,8 @@ div.item {
     transition: 0.4s ease-in-out;
 }
 .rating0 {
-    border: 1px solid var(--danger-color);
+    border: 1px solid var(--danger-color)!important;
 }
 .ratingdot0{
-    color: var();
+    color: var(--danger-color);
 }
