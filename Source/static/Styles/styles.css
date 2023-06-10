@@ -1015,6 +1015,9 @@ div.item:hover{
 .read-more {
     margin: 0 0 0 85%;
 }
+..read-more a {
+    color: var(--cyan-color);
+}
 
 
 .see-all {
