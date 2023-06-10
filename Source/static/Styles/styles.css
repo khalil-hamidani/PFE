@@ -972,7 +972,7 @@ input[type="checkbox"] {
     left: 92%;
 }
 .owl-carousel .owl-nav button.owl-next span , .owl-carousel .owl-nav button.owl-prev span{
-    background-color: var(--cyan-color);
+    background-color: var(--main-color);
     color: #fff;
     font-family: Trebuchet MS;
     font-size: 39px;
