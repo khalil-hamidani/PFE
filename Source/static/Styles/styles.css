@@ -1011,7 +1011,7 @@ div.item:hover{
 
 .read-more-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: right;
 }
 
 .see-all {
