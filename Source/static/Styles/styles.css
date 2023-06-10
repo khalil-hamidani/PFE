@@ -952,6 +952,7 @@ input[type="checkbox"] {
 /*? -------------------------------- 2) cve -------------------------------#1100ff */
 .cve-container {
     max-width: 70em;
+    height: 15rem;
     position: relative;
     margin: 1rem auto;
 
