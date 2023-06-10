@@ -1090,3 +1090,11 @@ div.item {
     margin-right: 5px;
     color: var(--danger-color);
 }
+.rating3 {
+    border: 1px solid var(--danger-color)!important;
+    border-left: 5px solid var(--danger-color)!important;
+}
+.ratingdot3{
+    margin-right: 5px;
+    color: var(--danger-color);
+}
