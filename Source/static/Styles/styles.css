@@ -1018,7 +1018,7 @@ div.item:hover i {
 
 .read-more {
     margin: 0 0 0 85%;
-    
+    transition: 0.5s ease-in-out;
 }
 
 
