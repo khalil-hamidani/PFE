@@ -1009,12 +1009,14 @@ div.item:hover{
     display: flex;
     justify-content: center;
     position: absolute;
-    bo
+    bottom: 0;
+    right: 0;
 }
 
 .read-more {
     margin: auto;
-    text-align: right;
+    display: inline-block;
+    text-align: center;
 }
 
 
