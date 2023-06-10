@@ -1075,12 +1075,12 @@ div.item {
     color: gray;
 }
 .rating1 {
-    border: 1px solid var(--danger-color)!important;
-    border-left: 5px solid var(--danger-color)!important;
+    border: 1px solid var(--cyan-color)!important;
+    border-left: 5px solid var(--cyan-color)!important;
 }
 .ratingdot1{
     margin-right: 5px;
-    color: var(--danger-color);
+    color: var(--cyan-color);
 }
 .rating2 {
     border: 1px solid var(--danger-color)!important;
