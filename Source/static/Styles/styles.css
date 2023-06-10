@@ -213,7 +213,7 @@ header hr {
 }
 
 .footer-distributed .footer-links a:hover {
-    text-decoration: none;
+    text-decoration: uberline;
 }
 
 .footer-distributed .footer-links .link-1:before {
