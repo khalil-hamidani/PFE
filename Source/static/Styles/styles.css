@@ -1005,17 +1005,7 @@ div.item:hover{
     margin-bottom: 10px;
 }
 
-.read-more-wrapper {
-    display: flex;
-    justify-content: center;
-}
 
-.read-more {
-    margin: auto;
-}
-.read-more i{
-    text-align: left;
-}
 
 
 .see-all {
