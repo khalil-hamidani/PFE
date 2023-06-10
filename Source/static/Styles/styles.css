@@ -1046,5 +1046,6 @@ div.item {
     display: inline-block;
   }
   .see-all:hover{
-    transform: scale();
+    transform: scale(1.5);
+    transition: s;
   }
