@@ -1008,7 +1008,7 @@ div.item:hover{
 .read-more-wrapper {
     display: flex;
     flex-direction: row;
-    
+    justify-content: flex-end;
 
 }
 
