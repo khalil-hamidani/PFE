@@ -1032,11 +1032,10 @@ div.item {
   .read-more {
     margin: auto;
   }
-  a.see-all{
+  .see-all{
     color: var(--cyan-color);
     text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
     font-size: 1.5rem;
     font-weight: 800;
     font-style: normal;
