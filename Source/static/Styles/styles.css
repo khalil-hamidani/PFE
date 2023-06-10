@@ -958,7 +958,7 @@ input[type="checkbox"] {
 }
 
 .title-box {
-    /* border: 1px solid var(--main-color); */
+    border: 1px solid var(--main-color);
     border-left: 5px solid var(--main-color);
     background-color: white;
     padding: 10px;
