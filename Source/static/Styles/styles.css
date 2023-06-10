@@ -977,7 +977,9 @@ div.item {
     height: 100%;
     cursor: pointer;
 }
-
+div.item:hover{
+    
+}
 .item-header {
     display: grid;
     grid-template-columns: auto 1fr;
