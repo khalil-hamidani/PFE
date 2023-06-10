@@ -954,7 +954,7 @@ input[type="checkbox"] {
     max-width: 65em;
     position: relative;
     margin: 1rem auto;
-    
+
 
 }
 
@@ -967,12 +967,13 @@ input[type="checkbox"] {
     margin-bottom: 2rem;
 }
 
-.owl-nav{
+.owl-nav {
     position: absolute;
     top: -25.2%;
     left: 92%;
 }
-.owl-carousel .owl-nav button.owl-next span , .owl-carousel .owl-nav button.owl-prev span{
+
+.owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span {
     background-color: var(--cyan-color);
     color: #fff;
     font-family: Trebuchet MS;
@@ -982,15 +983,18 @@ input[type="checkbox"] {
     margin: 0 3px;
     border: 0px solid #000;
     border-radius: 0px;
-   }
-   .owl-prev:hover span ,.owl-next:hover span{
+}
+
+.owl-prev:hover span, .owl-next:hover span {
     background-color: var(--cyan-color) !important;
-   }
-   .owl-theme .owl-nav [class*=owl-]:hover {
-    background: none !important; 
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none !important;
     color: white;
 }
-.owl-theme .owl-nav [class*=owl-]:active{
+
+.owl-theme .owl-nav [class*=owl-]:active {
     transform: scale(0.95) !important;
 }
 
@@ -1003,47 +1007,46 @@ div.item {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-  }
-  
-  .item-header {
+}
+
+.item-header {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: 10px;
     align-items: center;
-  }
-  
-  .title {
+}
+
+.title {
     margin: 0;
-  }
-  
-  .rating {
+}
+
+.rating {
     text-align: right;
-  }
-  
-  .subtitle {
+}
+
+.subtitle {
     margin-top: 0;
     margin-bottom: 5px;
-  }
-  
-  .description {
+}
+
+.description {
     margin-top: 0;
     margin-bottom: 10px;
-  }
-  
-  .read-more {
+}
+
+.read-more {
     margin: auto;
-  }
-  .read-more-wrapper {
+}
+
+.read-more-wrapper {
     display: flex;
     justify-content: center;
-  }
-  
-    
- 
-  .see-all{
+}
+
+.see-all {
     display: inline-block;
     text-align: center;
-    transition: 0.5s ease-in-out; 
+    transition: 0.5s ease-in-out;
     color: var(--cyan-color);
     text-align: center;
     margin-top: 1rem;
@@ -1054,11 +1057,13 @@ div.item {
     padding: 10px 16px;
     border: 0px solid #000;
     border-radius: 18px;
-  }
-  .see-all i{
+}
+
+.see-all i {
     margin-left: 10px;
-  }
-  .see-all:hover{
+}
+
+.see-all:hover {
     transform: scale(1.1);
-    transition: 0.4s ease-in-out; 
-  }
+    transition: 0.4s ease-in-out;
+}
