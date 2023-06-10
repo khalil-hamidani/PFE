@@ -1038,7 +1038,7 @@ div.item:hover .title {
     transition: 0.5s ease-in-out;
     color: var(--main-color);
     text-align: center;
-    margin: 1rem 0;
+    margin: 2rem;
     font-size: 1.5rem;
     font-weight: 800;
     font-style: normal;
