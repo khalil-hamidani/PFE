@@ -1012,8 +1012,6 @@ div.item:hover{
 
 .read-more {
     margin: auto;
-    display: inline-block;
-    text-align: left;
 }
 .read-more i{
     text-align: left;
