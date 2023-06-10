@@ -968,21 +968,7 @@ input[type="checkbox"] {
     margin-bottom: 2rem;
 }
 
-/* a.read-more {
-    color: black !important;
-    font-weight: bold;
-    margin-top: 5rem;
-    padding-top: 2rem;
-}
 
-div.item {
-    height: 25rem;
-    border: 1px solid var(--cyan-color);
-    border-left: 5px solid var(--cyan-color);
-    border-bottom: 1px solid var(--cyan-color) !important;
-    background-color: white;
-    padding: 10px;
-} */
 
 div.item {
     border: 1px solid var(--cyan-color);
