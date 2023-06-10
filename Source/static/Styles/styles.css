@@ -982,7 +982,7 @@ input[type="checkbox"] {
     border-radius: 0px;
    }
    .owl-prev:hover span ,.owl-next:hover span{
-    background-color: #054a99;
+    background-color: #b5c0ce;
    }
    .owl-prev:active span, .owl-next:active span{
     transform: scale(0.95);
