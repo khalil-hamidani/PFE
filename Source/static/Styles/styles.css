@@ -1100,6 +1100,6 @@ div.item:hover i.fa-arrow-right-long {
     color: var(--danger-color);
 }
 .rating3 a {
-    color: var(--cyan-color);
+    color: var(--danger-color);
     font-size: large;
 }
