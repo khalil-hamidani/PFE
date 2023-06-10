@@ -997,7 +997,9 @@ div.item:hover i.fa-arrow-right-long {
 .title {
     margin: 0.5rem 0;
 }
-div.item:hover .it
+div.item:hover .title {
+    text-decoration: underline;
+}
 .rating {
     text-align: right;
 }
