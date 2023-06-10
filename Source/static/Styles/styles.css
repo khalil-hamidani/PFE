@@ -968,8 +968,8 @@ input[type="checkbox"] {
 .owl-nav{
     max-width: 500px;
     position: absolute;
-    top: -25%;
-    left: 95%;
+    top: -24%;
+    left: 93%;
 }
 .owl-carousel .owl-nav button.owl-next span , .owl-carousel .owl-nav button.owl-prev span{
     background-color: #054ea1;
