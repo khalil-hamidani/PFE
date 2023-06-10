@@ -969,7 +969,7 @@ input[type="checkbox"] {
     /* max-width: 500px; */
     position: absolute;
     top: -24%;
-    left: 93%;
+    left: 90%;
 }
 .owl-carousel .owl-nav button.owl-next span , .owl-carousel .owl-nav button.owl-prev span{
     background-color: var(--cyan-color);
@@ -978,7 +978,7 @@ input[type="checkbox"] {
     font-size: 39px;
     font-weight: 800;
     padding: 3px 5px;
-    margin: 0 5px;
+    margin: 0 3px;
     border: 0px solid #000;
     border-radius: 0px;
    }
