@@ -1117,6 +1117,7 @@ div.item:hover .title {
     font-size: large;
 }
 /*? -------------------------------- 3) long banner -------------------------------#1100ff */
-.long-banner{
+.long-banner img{
     width: 100%;
+    height: inherit;
 }
