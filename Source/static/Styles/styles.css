@@ -1123,4 +1123,6 @@ div.item:hover .title {
 .about-us{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
