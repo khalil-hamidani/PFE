@@ -1044,5 +1044,7 @@ div.item {
     border: 0px solid #000;
     border-radius: 18px;
     display: inline-block;
-
+  }
+  .see-all:hover{
+    color: var(--main-color);
   }
