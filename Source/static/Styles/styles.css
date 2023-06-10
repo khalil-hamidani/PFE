@@ -1038,11 +1038,11 @@ div.item {
     justify-content: center;
   }
   
-    display: inline-block;
-    text-align: center;
+    
  
   .see-all{
-    align-items: center;
+    display: inline-block;
+    text-align: center;
     transition: 0.5s ease-in-out; 
     color: var(--cyan-color);
     text-align: center;
@@ -1054,7 +1054,6 @@ div.item {
     padding: 10px 16px;
     border: 0px solid #000;
     border-radius: 18px;
-    display: inline-block;
   }
   .see-all i{
     margin-left: 10px;
