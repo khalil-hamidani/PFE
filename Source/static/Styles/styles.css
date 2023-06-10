@@ -1042,6 +1042,9 @@ div.item:hover{
     border: 1px solid gray !important;
     border-left: 5px solid gray!important;
 }
+.rating0 a{
+    color: gray;
+}
 .ratingdot0{
     margin-right: 5px;
     color: gray;
