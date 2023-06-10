@@ -988,6 +988,11 @@ input[type="checkbox"] {
    .owl-carousel .owl-nav button.owl-next span, .owl-next:active span{
     transform: scale(0.95) !important;
    }
+   .owl-theme .owl-nav [class*=owl-]:hover {
+    background: #869791; */
+    color: #FFF;
+    /* text-decoration: none;
+}
 
 div.item {
     border: 1px solid var(--cyan-color);
