@@ -1071,6 +1071,6 @@ div.item {
     border-left: 5px solid var(--danger-color)!important;
 }
 .ratingdot0{
-    
+    margin-right: 5px;
     color: var(--danger-color);
 }
