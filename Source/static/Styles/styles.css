@@ -1074,19 +1074,19 @@ div.item {
     margin-right: 5px;
     color: var(--danger-color);
 }
-.rating0 {
+.rating1 {
     border: 1px solid var(--danger-color)!important;
     border-left: 5px solid var(--danger-color)!important;
 }
-.ratingdot0{
+.ratingdot1{
     margin-right: 5px;
     color: var(--danger-color);
 }
-.rating0 {
+.rating2 {
     border: 1px solid var(--danger-color)!important;
     border-left: 5px solid var(--danger-color)!important;
 }
-.ratingdot0{
+.ratingdot2{
     margin-right: 5px;
     color: var(--danger-color);
 }
