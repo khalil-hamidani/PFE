@@ -971,6 +971,25 @@ input[type="checkbox"] {
     top: -22%;
     left: 95%;
 }
+a.owl-nav{
+    background-color: #054ea1;
+    color: #fff;
+    font-family: Trebuchet MS;
+    font-size: 32px;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    padding: 3px 3px;
+    border: 0px solid #000;
+    border-radius: 0px;
+    display: inline-block;
+   }
+   a.owl-nav:hover{
+    background-color: #054a99;
+   }
+   a.owl-nav:active{
+    transform: scale(0.95);
+   }
 
 div.item {
     border: 1px solid var(--cyan-color);
