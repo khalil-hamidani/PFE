@@ -1032,7 +1032,7 @@ div.item {
     margin: auto;
   }
   .see-all{
-    
+    align-items: center;
     transition: 0.5s ease-in-out; 
     color: var(--cyan-color);
     text-align: center;
