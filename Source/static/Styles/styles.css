@@ -1127,4 +1127,5 @@ div.item:hover .title {
     align-items: center;
     max-width: 70rem;
     margin: auto;
+    margin-top: 1rem;
 }
