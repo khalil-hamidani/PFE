@@ -990,8 +990,7 @@ input[type="checkbox"] {
    }
    .owl-theme .owl-nav [class*=owl-]:hover {
     background: none !important; 
-    color: ;
-    text-decoration: none;
+    color: white;
 }
 
 div.item {
