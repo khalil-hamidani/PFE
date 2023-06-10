@@ -980,8 +980,9 @@ div.item {
 div.item:hover{
     background-color: var(--bg-color);
 }
-.item:hover i {
-    transform: scale(1.1);
+div.item:hover i {
+    transition: 0
+    .;
   }
 .item-header {
     display: grid;
