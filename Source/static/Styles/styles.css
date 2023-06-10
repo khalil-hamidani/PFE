@@ -1059,6 +1059,11 @@ div.item:hover i.fa-arrow-right-long {
     color: gray;
 }
 
+.rating0 a {
+    color: gray;
+    font-size: large;
+}
+
 .rating1 {
     border: 1px solid var(--cyan-color) !important;
     border-left: 5px solid var(--cyan-color) !important;
@@ -1068,7 +1073,10 @@ div.item:hover i.fa-arrow-right-long {
     margin-right: 5px;
     color: var(--cyan-color);
 }
-
+.rating0 a {
+    color: gray;
+    font-size: large;
+}
 .rating2 {
     border: 1px solid var(--warning-color) !important;
     border-left: 5px solid var(--warning-color) !important;
