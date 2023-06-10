@@ -983,7 +983,7 @@ input[type="checkbox"] {
     border-radius: 0px;
    }
    .owl-prev:hover span ,.owl-next:hover span{
-    background-color: var(--main-color) !important;
+    background-color: var(--cyan-color) !important;
    }
    .owl-theme .owl-nav [class*=owl-]:hover {
     background: none !important; 
