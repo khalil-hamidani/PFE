@@ -966,36 +966,6 @@ input[type="checkbox"] {
     margin-bottom: 2rem;
 }
 
-.owl-nav {
-    position: absolute;
-    top: -27%;
-    left: 92%;
-}
-
-.owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span {
-    background-color: var(--cyan-color);
-    color: #fff;
-    font-family: Trebuchet MS;
-    font-size: 39px;
-    font-weight: 800;
-    padding: 3px 5px;
-    margin: 0 3px;
-    border: 0px solid #000;
-    border-radius: 0px;
-}
-
-.owl-prev:hover span, .owl-next:hover span {
-    background-color: #0179b5af !important;
-}
-
-.owl-theme .owl-nav [class*=owl-]:hover {
-    background: none !important;
-    color: white;
-}
-
-.owl-theme .owl-nav [class*=owl-]:active {
-    transform: scale(0.95) !important;
-}
 
 div.item {
     border: 1px solid var(--cyan-color);
