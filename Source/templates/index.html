@@ -114,7 +114,11 @@
 
 <div class="about-us">
     <h3>about-us</h3>
-    <p>
+    <p>ACSC, or the Algerian Cyber Security Center, is a web site dedicated to promoting cyber security awareness and offering resources and
+        solutions for individuals and businesses in Algeria. The site covers a broad range of topics related to cyber security, including
+        information on the latest threats, best practices for securing networks and devices, and tools and techniques for detecting and
+        responding to cyber attacks.</p>
+        
     <h3>what-we-do</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, repellendus.</p>
 
@@ -151,36 +155,35 @@
 </script>
 <!-- for owl carousel -->
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         var owl = $('.owl-carousel');
         owl.owlCarousel({
-        items: 3,
-        loop: true,
-        margin: 10,
-        nav: false,
-        dots: false,
-        autoplayTimeout: 1000,
-        responsive: {
-            0: {
-                items: 1,
+            items: 3,
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: false,
+            autoplayTimeout: 1000,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 2,
+                },
+                1000: {
+                    items: 3,
+                },
             },
-            600: {
-                items: 2,
-            },
-            1000: {
-                items: 3,
-            },
-        },
-    });
-    owl.on('mousewheel', '.owl-stage', function(e) {
-        if (e.deltaY > 0) {
-          owl.trigger('prev.owl');
-        } else {
-          owl.trigger('next.owl');
-        }
-        e.preventDefault();
-      });
+        });
+        owl.on('mousewheel', '.owl-stage', function (e) {
+            if (e.deltaY > 0) {
+                owl.trigger('prev.owl');
+            } else {
+                owl.trigger('next.owl');
+            }
+            e.preventDefault();
+        });
     })
 </script>
 {% endblock script %}
-
