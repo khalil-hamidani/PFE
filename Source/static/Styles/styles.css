@@ -1036,5 +1036,10 @@ div.item {
     color: var(--cyan-color);
     text-align: center;
     margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
     
   }
