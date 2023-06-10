@@ -1005,7 +1005,19 @@ div.item:hover{
     margin-bottom: 10px;
 }
 
+.read-more-wrapper {
+    display: flex;
+    flex-direction: row;
+    
 
+}
+
+.read-more {
+    margin: auto;
+}
+.read-more i{
+    text-align: left;
+}
 
 
 .see-all {
