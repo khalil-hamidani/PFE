@@ -980,6 +980,9 @@ div.item {
 div.item:hover{
     background-color: var(--bg-color);
 }
+.item:hover i {
+    transform: scale(1.1);
+  }
 .item-header {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -1016,11 +1019,7 @@ div.item:hover{
     margin: 0 0 0 85%;
     
 }
-.read-more:hover {
-    transform: scale(1.1);
-    transition: 0.4s ease-in-out;
-    
-}
+
 
 
 .see-all {
