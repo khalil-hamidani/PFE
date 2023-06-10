@@ -1129,4 +1129,6 @@ div.item:hover .title {
     margin: auto;
     margin-top: 1rem;
 }
-.section-title
+.section-title{
+    text-align: center;
+}
