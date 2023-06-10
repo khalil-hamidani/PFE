@@ -1005,7 +1005,7 @@ div.item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 25rem;
+    height: 100%;
 }
 
 .item-header {
