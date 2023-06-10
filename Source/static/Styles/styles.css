@@ -971,7 +971,7 @@ input[type="checkbox"] {
     top: -22%;
     left: 90%;
 }
-.owl-prev{
+button.owl-prev{
     background-color: #054ea1;
     color: #fff;
     font-family: Trebuchet MS;
