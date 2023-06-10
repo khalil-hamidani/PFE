@@ -1137,6 +1137,6 @@ div.item:hover .title {
 }
 
 .index {
-    margin: 0 10rem !important;
+    margin: 0 10rem;
     max-width: 100rem !important;
 }
