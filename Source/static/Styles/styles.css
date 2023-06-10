@@ -966,7 +966,7 @@ input[type="checkbox"] {
 }
 
 .owl-nav{
-    max-width: 50px;
+    max-width: 100px;
     position: absolute;
     top: -22%;
     left: 90%;
