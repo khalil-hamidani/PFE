@@ -1069,3 +1069,6 @@ div.item {
 .rating0 {
     border: 1px solid var(--danger-color);
 }
+.ratingdot0{
+    color: var();
+}
