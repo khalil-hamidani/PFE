@@ -1012,7 +1012,7 @@ div.item:hover i.fa-arrow-right-long {
 .read-more-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
 
 }
 
