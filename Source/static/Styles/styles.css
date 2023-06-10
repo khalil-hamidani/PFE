@@ -1068,11 +1068,11 @@ div.item {
 }
 .rating0 {
     border: 1px solid gray !important;
-    border-left: 5px solid var(--danger-color)!important;
+    border-left: 5px solid gray!important;
 }
 .ratingdot0{
     margin-right: 5px;
-    color: var(--danger-color);
+    color: gray;
 }
 .rating1 {
     border: 1px solid var(--danger-color)!important;
