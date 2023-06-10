@@ -1032,6 +1032,7 @@ div.item {
     margin: auto;
   }
   .see-all{
+    
     transition: 0.5s ease-in-out; 
     color: var(--cyan-color);
     text-align: center;
@@ -1045,7 +1046,9 @@ div.item {
     border-radius: 18px;
     display: inline-block;
   }
-  .see-all i{}
+  .see-all i{
+    margin-left: 10px;
+  }
   .see-all:hover{
     transform: scale(1.1);
     transition: 0.4s ease-in-out; 
