@@ -1030,7 +1030,7 @@ div.item:hover .title {
     display: inline-block;
     text-align: center;
     transition: 0.5s ease-in-out;
-    color: var(--cyan-color);
+    color: var(--main-color);
     text-align: center;
     margin-top: 1rem;
     font-size: 1.5rem;
