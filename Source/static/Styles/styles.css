@@ -1086,8 +1086,8 @@ div.item:hover i.fa-arrow-right-long {
     margin-right: 5px;
     color: var(--warning-color);
 }
-.rating1 a {
-    color: var(--cyan-color);
+.rating2 a {
+    color: var(--warning-color);
     font-size: large;
 }
 .rating3 {
@@ -1098,4 +1098,8 @@ div.item:hover i.fa-arrow-right-long {
 .ratingdot3 {
     margin-right: 5px;
     color: var(--danger-color);
+}
+.rating3 a {
+    color: var(--cyan-color);
+    font-size: large;
 }
