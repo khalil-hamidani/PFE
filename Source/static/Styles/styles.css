@@ -1046,5 +1046,5 @@ div.item {
     display: inline-block;
   }
   .see-all:hover{
-    color: var(--main-color);
+    transform: scale();
   }
