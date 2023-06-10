@@ -1008,9 +1008,6 @@ div.item:hover{
 .read-more-wrapper {
     display: flex;
     justify-content: center;
-    position: absolute;
-    bottom: 0;
-    right: 0;
 }
 
 .read-more {
