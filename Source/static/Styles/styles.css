@@ -1116,11 +1116,13 @@ div.item:hover .title {
     color: var(--danger-color);
     font-size: large;
 }
+
 /*? -------------------------------- 3) About us -------------------------------#1100ff */
-.long-banner img{
+.long-banner img {
     width: 100%;
 }
-.about-us{
+
+.about-us {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1129,9 +1131,13 @@ div.item:hover .title {
     margin: auto;
     margin-top: 1rem;
 }
-.section-title{
+
+.section-title {
     text-align: center;
 }
-.index{
-    
+
+.index {
+    padding: 15px;
+    margin: -4rem 10rem;
+    max-width: 100rem;
 }
