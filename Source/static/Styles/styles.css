@@ -1033,6 +1033,7 @@ div.item {
     margin: auto;
   }
   .see-all{
+    transition: 0.5s ease-in-out; 
     color: var(--cyan-color);
     text-align: center;
     margin-top: 1rem;
