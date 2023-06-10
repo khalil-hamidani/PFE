@@ -153,7 +153,9 @@
 </script>
 <!-- for owl carousel -->
 <script>
-    $(".owl-carousel").owlCarousel({
+    $(document).ready(function() {
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
         items: 3,
         loop: true,
         margin: 10,
@@ -172,13 +174,15 @@
             },
         },
     });
-    owl.on('mousewheel', '.owl-stage', function (e) {
-        if (e.deltaY>0) {
-            owl.trigger('next.owl');
+    owl.on('mousewheel', '.owl-stage', function(e) {
+        if (e.deltaY > 0) {
+          owl.trigger('next.owl');
         } else {
-            owl.trigger('prev.owl');
+          owl.trigger('prev.owl');
         }
         e.preventDefault();
-    });
+      });
+    })
 </script>
 {% endblock script %}
+
