@@ -983,10 +983,10 @@ button.owl-prev{
     border: 0px solid #000;
     border-radius: 0px;
    }
-   .owl-nav:hover span{
+   .owl-prev:hover span{
     background-color: #054a99;
    }
-   .owl-nav:active span{
+   .owl-prev:active span{
     transform: scale(0.95);
    }
 
