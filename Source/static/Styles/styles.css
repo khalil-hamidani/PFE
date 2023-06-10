@@ -985,7 +985,7 @@ input[type="checkbox"] {
    .owl-prev:hover button ,.owl-next:hover button{
     background-color: var(--main-color) !important;
    }
-   .owl-prev:active button, .owl-next:active button{
+   .owl-prev:active span, .owl-next:active span{
     transform: scale(0.95);
    }
 
