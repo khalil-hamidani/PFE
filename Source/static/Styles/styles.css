@@ -1120,3 +1120,7 @@ div.item:hover .title {
 .long-banner img{
     width: 100%;
 }
+.about-us{
+    display: flex;
+    flex-direction: column;
+}
