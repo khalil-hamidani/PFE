@@ -954,6 +954,7 @@ input[type="checkbox"] {
     max-width: 65em;
     position: relative;
     margin: 1rem auto;
+    height: 15rem;
 }
 
 .title-box {
