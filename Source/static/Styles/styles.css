@@ -969,7 +969,10 @@ input[type="checkbox"] {
 }
 
 .owl-nav{
-    max-width: ;
+    max-width: 50px;
+    position: absolute;
+    top: 50%;
+    
 }
 
 div.item {
