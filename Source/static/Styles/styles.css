@@ -1033,6 +1033,15 @@ div.item {
   .read-more {
     margin: auto;
   }
+  .read-more-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .read-more {
+    display: inline-block;
+    text-align: center;
+  }
   .see-all{
     align-items: center;
     transition: 0.5s ease-in-out; 
