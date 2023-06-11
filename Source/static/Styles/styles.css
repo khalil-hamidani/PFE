@@ -1158,8 +1158,8 @@ div.item:hover .title {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 1rem 0;
 }
+
 .abt-element {
     display: flex;
     flex-direction: row;
@@ -1170,6 +1170,7 @@ img.abt-img {
     width: 100%;
     display: inline-block;
 }
+
 .abt-descreption {
     display: flex;
     flex-direction: column;
