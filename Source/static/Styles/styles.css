@@ -1179,7 +1179,7 @@ img.abt-img {
 }
 
 .abt-descreption h3 {
-    margin: 1rem auto;
+    margin: 0.5rem auto;
     color: var(--main-color);
     font-size: 20px;
 }
