@@ -1161,7 +1161,7 @@ div.item:hover .title {
 }
 
 .abt-img {
-    width: 40%!;
+    width: 40% !important;
     display: inline-block;
 }
 
