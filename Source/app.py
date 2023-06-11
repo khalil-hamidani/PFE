@@ -89,11 +89,22 @@ def individual_report():
 # individual report form route
 @app.route("/Individual-report-form")
 def individual_report_form():
-    if request.method == "GET":
+    if request.method == "POST":
         # Render the HTML template for the individual report form and return it
         return render_template("Individual-report-form.html")
     else:
         first_name = request.form.get("first_name")
+        last_name = request.form.get("last_name")
+        email = request.form.get("contact_email")
+        telephone = request.form.get("telephone_number")
+        age = request.form.get("age")
+        address = request.form.get("address")
+        Fname = request.form.get("F-name")
+        Lname = request.form.get("L-name")
+        Cname = request.form.get("C-name")
+        email_address = request.form.get("email2")
+        website = request.form.get("website")
+        date = request.form.get("Date")
 
 
 # business report route
