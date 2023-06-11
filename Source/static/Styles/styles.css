@@ -1162,7 +1162,7 @@ div.item:hover .title {
 .abt-element {
     display: flex;
     flex-direction: row;
-    margin: ;
+    margin: 1rem auto;
 }
 
 .abt-container {
