@@ -1154,15 +1154,15 @@ div.item:hover .title {
     margin-bottom: 1rem;
 }
 
-.abt-img {
-    width: 35%;
-    display: inline-block;
-}
-
 .abt-element {
     display: flex;
     flex-direction: row;
     margin: 1rem auto;
+}
+
+.abt-img {
+    width: 40%!;
+    display: inline-block;
 }
 
 .abt-container {
