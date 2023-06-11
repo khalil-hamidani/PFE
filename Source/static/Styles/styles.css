@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
 
 /* ----- table of content ----- */
-/*! ---- I- header & footer-------- */
+/* ---- I- header & footer-------- */
 /* ? 1) header */
 /* ? 2) footer */
 /*! ---- II- report.html -------- */
@@ -15,14 +15,14 @@
 /* ? 1) slider */
 /* ------------------------------- */
 :root {
-    --main-color: #041e52;
-    --cyan-color: #017ab5;
-    --cyan-color2: #def7ff;
-    --warning-color: #f5a523;
-    --warning-color2: #fff0d6;
-    --danger-color: #c00718;
-    --danger-color2: #fcf2f3;
-    --bg-color: #f5f6fa;
+    --main-color: rgb(4, 30, 82);
+    --cyan-color: rgb(1, 122, 183);
+    --cyan-color2: rgb(222, 247, 255);
+    --warning-color: rgb(245, 165, 35);
+    --warning-color2: rgb(255, 240, 214);
+    --danger-color: rgb(192, 7, 24);
+    --danger-color2: rgb(252, 242, 243);
+    --bg-color: rgb(245, 246, 250);
 }
 
 * {
@@ -923,7 +923,7 @@ input[type="checkbox"] {
 }
 
 .swiper-slide a.banner-button:hover {
-    background-color: #181f45;
+    background-color: #090f3b;
 }
 
 .swiper-slide a.banner-button:active {
