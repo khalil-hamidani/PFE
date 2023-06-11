@@ -1174,6 +1174,7 @@ div.item:hover .title {
 .abt-descreption {
     display: flex;
     flex-direction: column;
+    
 }
 
 .index {
