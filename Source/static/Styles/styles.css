@@ -1178,7 +1178,9 @@ img.abt-img {
     align-items: center;
 }
 
-
+.abt-descreption h3 {
+    margin-bottom: 0.5rem;
+}
 
 
 .index {
