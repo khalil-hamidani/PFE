@@ -89,7 +89,7 @@ def individual_report():
 # individual report form route
 @app.route("/Individual-report-form")
 def individual_report_form():
-    if request.method == "POST":
+    if request.method == "GET":
         # Render the HTML template for the individual report form and return it
         return render_template("Individual-report-form.html")
     else:
@@ -116,7 +116,24 @@ def group_report():
 # business report form route
 @app.route("/Business-report-form")
 def group_report_form():
-    return render_template("Business-report-form.html")
+    if request.method == "POST":
+        return render_template("Business-report-form.html")
+    else:
+        first_name = request.form.get("first_name")
+        last_name = request.form.get("last_name")
+        email = request.form.get("contact_email")
+        telephone = request.form.get("telephone_number")
+        age = request.form.get("age")
+        address = request.form.get("address")
+        organ_name = request.form.get("organ-name")
+        organ_website = request.form.get("organ-website")
+        Organ_address = request.form.get("Organ-address")
+        F_name = request.form.get("F-name")
+        L_name = request.form.get("L-name")
+        C_name = request.form.get("C-name")
+        email_address = request.form.get("email2")
+        website = request.form.get("website")
+        date = request.form.get("Date")
 
 
 # government report route
