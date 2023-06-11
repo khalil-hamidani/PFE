@@ -145,6 +145,12 @@ def government_report():
 # government report form route
 @app.route("/Government-report-form")
 def government_report_form():
+     """
+     This function handles the GET and POST requests for the /Government-report-form route. If the request is a GET request, it
+     returns the rendered "Government-report-form.html" template. If the request is a POST request, it retrieves the data from the
+     form fields and assigns them to their respective variables. The function does not take any parameters. Upon a successful POST
+     request, no return type is specified.
+     """
      if request.method == "GET":
         return render_template("Government-report-form.html")
      else:
