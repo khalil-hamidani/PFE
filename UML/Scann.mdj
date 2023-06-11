@@ -6832,9 +6832,9 @@
 												"$ref": "AAAAAAGH+49fC3xUsi8="
 											},
 											"font": "Arial;13;0",
-											"left": 334,
+											"left": 330,
 											"top": 152,
-											"width": 117.787109375,
+											"width": 125.01708984375,
 											"height": 13,
 											"alpha": 1.5707963267948966,
 											"distance": 10,
@@ -6842,7 +6842,7 @@
 												"$ref": "AAAAAAGH+49fC3xVNQk="
 											},
 											"edgePosition": 1,
-											"text": "1 : Entrer un domain"
+											"text": "1 : Entrer un domaine"
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -6944,9 +6944,9 @@
 												"$ref": "AAAAAAGH+5R50HyLbQA="
 											},
 											"font": "Arial;13;0",
-											"left": 635,
+											"left": 631,
 											"top": 176,
-											"width": 125.734375,
+											"width": 132.96435546875,
 											"height": 13,
 											"alpha": 1.5707963267948966,
 											"distance": 10,
@@ -6954,7 +6954,7 @@
 												"$ref": "AAAAAAGH+5R50HyMCdI="
 											},
 											"edgePosition": 1,
-											"text": "2 : Envoyer le domain"
+											"text": "2 : Envoyer le domaine"
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -7056,9 +7056,9 @@
 												"$ref": "AAAAAAGH+5UZOHyhd3A="
 											},
 											"font": "Arial;13;0",
-											"left": 863,
+											"left": 860,
 											"top": 176,
-											"width": 128.62255859375,
+											"width": 135.8525390625,
 											"height": 13,
 											"alpha": 1.9028547412028276,
 											"distance": 61.35144660071187,
@@ -7066,7 +7066,7 @@
 												"$ref": "AAAAAAGH+5UZOXyiOHo="
 											},
 											"edgePosition": 1,
-											"text": "3 : Analyser le domain"
+											"text": "3 : Analyser le domaine"
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -7494,7 +7494,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGH+txsAU/DuuQ="
 							},
-							"name": "Entrer un domain",
+							"name": "Entrer un domaine",
 							"source": {
 								"$ref": "AAAAAAGH+2UX/llZrvE="
 							},
@@ -7508,7 +7508,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGH+txsAU/DuuQ="
 							},
-							"name": "Envoyer le domain",
+							"name": "Envoyer le domaine",
 							"source": {
 								"$ref": "AAAAAAGH+vRPalJP+Ik="
 							},
@@ -7522,7 +7522,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGH+txsAU/DuuQ="
 							},
-							"name": "Analyser le domain",
+							"name": "Analyser le domaine",
 							"source": {
 								"$ref": "AAAAAAGH+2o7r1mAmw8="
 							},
@@ -9895,9 +9895,9 @@
 											},
 											"fillColor": "#d8f2ff",
 											"font": "Arial;13;0",
-											"left": 304.72998046875,
+											"left": 302.55908203125,
 											"top": 13,
-											"width": 235.84423828125,
+											"width": 214.73193359375,
 											"height": 13,
 											"text": "Signaler un indicateur de compromission"
 										},
@@ -9911,7 +9911,7 @@
 											"font": "Arial;13;1",
 											"left": 285,
 											"top": 13,
-											"width": 14.72998046875,
+											"width": 12.55908203125,
 											"height": 13,
 											"text": "sd"
 										}
@@ -10874,7 +10874,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 384.72998046875,
+											"left": 383.99365234375,
 											"top": 421,
 											"width": 1,
 											"height": 13
@@ -10888,7 +10888,7 @@
 											"font": "Arial;13;1",
 											"left": 365,
 											"top": 421,
-											"width": 14.72998046875,
+											"width": 13.99365234375,
 											"height": 13,
 											"text": "alt"
 										},
@@ -14891,7 +14891,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGIktTFrQh3b3U="
 							},
-							"name": "Telephone"
+							"name": "Telephone",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -14899,7 +14900,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGIktTFrQh3b3U="
 							},
-							"name": "Age"
+							"name": "Age",
+							"type": ""
 						}
 					],
 					"operations": [
@@ -15147,7 +15149,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGIkuTAzQs6o58="
 							},
-							"name": "Pays"
+							"name": "Pays",
+							"type": ""
 						}
 					]
 				}
