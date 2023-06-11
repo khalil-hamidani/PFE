@@ -77,9 +77,7 @@ header img {
 .logo-link{
     all: unset;
     height: auto;
-    max-width: 45%;
-    padding-left: 5em;
-    margin: 0;
+    width: 100%;
 }
 
 header hr {
