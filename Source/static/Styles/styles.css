@@ -1163,7 +1163,7 @@ div.item:hover .title {
 .abt-element {
     display: flex;
     flex-direction: row;
-    margin: 1rem auto;
+    margin: 1.5rem auto;
 }
 
 img.abt-img {
