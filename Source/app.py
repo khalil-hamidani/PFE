@@ -172,6 +172,10 @@ def government_report_form():
 # report IOC route
 @app.route("/IOC-report")
 def ioc():
+    """
+    This function is a route decorator that maps the URL "/IOC-report" to this function.
+    When a request is made using this URL, it returns the rendered template "IOC-report.html".
+    """
     return render_template("IOC-report.html")
 
 
