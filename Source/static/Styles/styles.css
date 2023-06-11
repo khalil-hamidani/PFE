@@ -1187,7 +1187,7 @@ img.abt-img {
 .abt-descreption p {
     margin: 0 1rem;
     justify-content: center;
-    padding: auto;
+    padding: 10px;
     font-size: 20px;
 }
 
