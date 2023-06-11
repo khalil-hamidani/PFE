@@ -1168,7 +1168,7 @@ div.item:hover .title {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 20px 0;
+    margin: 1rem 0;
 }
 
 .abt-descreption {
