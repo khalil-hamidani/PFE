@@ -1174,7 +1174,7 @@ img.abt-img {
 .abt-descreption {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
