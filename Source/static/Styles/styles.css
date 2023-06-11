@@ -1134,9 +1134,37 @@ div.item:hover .title {
 
 .section-title {
     text-align: center;
+    color: var(--main-color);
+    text-transform: uppercase;
+    margin: 1rem auto;
+    font-size: 30px;
 }
 
+.section-text {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.abt-img {
+    width: 30%;
+    display: inline-block;
+}
+.abt-element {
+    display: flex;
+    flex-direction: row;
+}
+.abt-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
 .index {
     margin: 3rem 10rem -3rem 10rem;
     max-width: 100rem !important;
+}
+.abt-descreption {
+    display: flex;
+    flex-direction: column;
 }
