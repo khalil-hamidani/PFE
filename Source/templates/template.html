@@ -1,57 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../static/Styles/styles.css" />
-    <link rel="icon" type="image/x-icon" href="../static/img/icon.ico" />
-    {% block link %}{% endblock link %}
-    <title>{% block title %}{% endblock title %}</title>
-  </head>
-  <body id="{% block id%}{% endblock id %}">
-    <header>
-      <div class="top-header">
-        <a href="/"></a>
-        <img src="../static/img/Header.svg" alt="logo" />
-        <div class="right-nav-container snipcss-YiXoc">
-          <div class="utility-items">
-            <ul class="header-links">
-              <li class="nav-item"><a class="menu-link" href="/">HOME</a></li>
-              <li class="nav-item"><a class="menu-link" href="/Incident-report">REPORT AN INCIDENT</a></li>
-              <li class="nav-item"><a class="menu-link" href="/IOC-report">REPORT AN IOC</a></li>
-              <li class="nav-item"><a class="menu-link" href="/scan">SCAN A SERVICE</a></li>
-            </ul>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../static/Styles/styles.css" />
+  <link rel="icon" type="image/x-icon" href="../static/img/icon.ico" />
+  {% block link %}{% endblock link %}
+  <title>{% block title %}{% endblock title %}</title>
+</head>
+
+<body id="{% block id%}{% endblock id %}">
+  <header>
+    <div class="top-header">
+      <a href="/" class="logo"><img src="../static/img/Header.svg" alt="logo" />
+      </a>
+
+      <div class="right-nav-container snipcss-YiXoc">
+        <div class="utility-items">
+          <ul class="header-links">
+            <li class="nav-item"><a class="menu-link" href="/">HOME</a></li>
+            <li class="nav-item"><a class="menu-link" href="/Incident-report">REPORT AN INCIDENT</a></li>
+            <li class="nav-item"><a class="menu-link" href="/IOC-report">REPORT AN IOC</a></li>
+            <li class="nav-item"><a class="menu-link" href="/scan">SCAN A SERVICE</a></li>
+          </ul>
         </div>
       </div>
-      <hr />
-      {% block header %}{% endblock header %}
-    </header>
-    {% block main %} {% endblock main %}
-    <footer class="footer-distributed">
-      <div class="footer-left">
-        <img src="../static/img/footer.svg" alt="" />
-        <p class="footer-company-name">Algerian Cybersecurity Center © 2023. All Rights Reserved</p>
-      </div>
-      <div class="footer-center">
-        <h6>Quick Links</h6>
-        <ul class="footer-links">
-          <li><a href="/">HOME</a></li>
-          <li><a href="/Incident-report">REPORT AN INCIDENT</a></li>
-          <li><a href="/IOC-report">REPORT IOC</a></li>
-          <li><a href="/scan">SCAN A SERVICE</a></li>
-        </ul>
-      </div>
-      <div class="footer-right">
-        <p class="footer-company-about">
-          <span>About The Ministry</span>
-          The Ministry of Digitization and Statistics in Algeria was formed in January 2020 through the restructuring of the former Ministry of Post,
-          Telecommunications, Technologies and Digital and the former National Statistics Office (ONS).
-        </p>
-      </div>
-    </footer>
+    </div>
+    <hr />
+    {% block header %}{% endblock header %}
+  </header>
+  {% block main %} {% endblock main %}
+  <footer class="footer-distributed">
+    <div class="footer-left">
+      <img src="../static/img/footer.svg" alt="" />
+      <p class="footer-company-name">Algerian Cybersecurity Center © 2023. All Rights Reserved</p>
+    </div>
+    <div class="footer-center">
+      <h6>Quick Links</h6>
+      <ul class="footer-links">
+        <li><a href="/">HOME</a></li>
+        <li><a href="/Incident-report">REPORT AN INCIDENT</a></li>
+        <li><a href="/IOC-report">REPORT IOC</a></li>
+        <li><a href="/scan">SCAN A SERVICE</a></li>
+      </ul>
+    </div>
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>About The Ministry</span>
+        The Ministry of Digitization and Statistics in Algeria was formed in January 2020 through the restructuring of the former Ministry
+        of Post,
+        Telecommunications, Technologies and Digital and the former National Statistics Office (ONS).
+      </p>
+    </div>
+  </footer>
 
-    {% block script %}{% endblock script %}
-  </body>
+  {% block script %}{% endblock script %}
+</body>
+
 </html>
