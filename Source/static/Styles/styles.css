@@ -1160,8 +1160,8 @@ div.item:hover .title {
     margin: 1rem auto;
 }
 
-.abt-img {
-    width: 70% !important;
+img.abt-img {
+    width: 100% !important;
     display: inline-block;
 }
 
