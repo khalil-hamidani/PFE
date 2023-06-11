@@ -145,7 +145,7 @@ def government_report():
 # government report form route
 @app.route("/Government-report-form")
 def government_report_form():
-     if request.method == "POST":
+     if request.method == "GET":
         return render_template("Government-report-form.html")
      else:
         first_name = request.form.get("first_name")
