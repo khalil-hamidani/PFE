@@ -89,6 +89,14 @@ def individual_report():
 # individual report form route
 @app.route("/Individual-report-form")
 def individual_report_form():
+    """
+    This function defines the route for the individual report form page. It takes no parameters.
+    The function renders the HTML template for the individual report form and returns it if
+    the request method is GET. Otherwise, it retrieves data from the request form and assigns
+    it to variables first_name, last_name, email, telephone, age, address, Fname, Lname, Cname,
+    email_address, website, and date. This function does not return anything if the request
+    method is not GET. 
+    """
     if request.method == "GET":
         # Render the HTML template for the individual report form and return it
         return render_template("Individual-report-form.html")
@@ -116,6 +124,14 @@ def group_report():
 # business report form route
 @app.route("/Business-report-form")
 def group_report_form():
+    """
+    Renders a template for a business report form when the request method is GET.
+    Populates the template with user input when the request method is POST.
+    
+    Returns:
+    - If request method is GET: A rendered template for the business report form.
+    - If request method is POST: User input from the form in various variables.
+    """
     if request.method == "GET":
         return render_template("Business-report-form.html")
     else:
