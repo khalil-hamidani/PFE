@@ -26,7 +26,7 @@ def index():
     HTML webpage rendered with the index.html template.
     """
     # Renders the index.html template.
-    return render_template("index.html")  
+    return render_template("scan.html")  
 
 
 # report incident route
