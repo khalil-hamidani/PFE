@@ -74,12 +74,11 @@ header img {
     padding-left: 5em;
     margin: 0;
 }
-.logo-link{
+/* .logo-link{
     all: unset;
     height: 100%;
     width: 100%;
-}
-
+} */
 header hr {
     border: 1px solid #ffffff80;
     width: 1200px;
