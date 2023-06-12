@@ -213,7 +213,7 @@ def scan():
     if request.method == "GET":
         return render_template("scan.html")
     else:
-        return render_template("scan.html")
+        link = request.form("domain")
 
 
 # # report IOC form route

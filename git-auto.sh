@@ -26,7 +26,7 @@ usage="usage: $0
 
 push_to_server=0
 server=origin
-interval=10
+interval=1800
 once=0
 
 OPTIND=1
