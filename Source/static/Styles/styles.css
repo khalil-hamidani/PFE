@@ -44,7 +44,6 @@ body {
 /*! -------------------------------- I- header -----------------------------#ff0000 */
 /*? -------------------------------- 1) header -------------------------------#1100ff */
 header {
-    /* background: radial-gradient(circle at 50% 100%, #1d4186, #051c48 75%); */
     background-color: var(--main-color);
     height: 17rem;
 }
