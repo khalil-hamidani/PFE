@@ -1,8 +1,2 @@
-INVEST
-INVEST invest.gov.dz
-
-MJS
-MJS survey.mjs.gov.dz
-
-MNS
-MNS ons.dz
+ETATCIVIL
+ETATCIVIL etatcivil.interieur.gov.dz
