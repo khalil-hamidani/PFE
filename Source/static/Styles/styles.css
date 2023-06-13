@@ -1328,7 +1328,7 @@ img.abt-img {
 }
 
 .result-back{
-    margin-top: 15px !important;
+
     margin-left: 2rem;
     margin-bottom: 0;
 }
@@ -1347,7 +1347,7 @@ img.abt-img {
         font-size: 20pt;
         color: var(--bg-color);
         background-color: var(--main-color);
-        margin: 10px 0px 0px 0px;
+        margin: 5px 0px 0px 0px;
         padding: 5px 4px 5px 4px;
         width: 100%;
         border: 1px solid black;
