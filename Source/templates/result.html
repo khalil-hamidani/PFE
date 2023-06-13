@@ -4,13 +4,13 @@
 {% endblock link %}
 {% block title %}Cyber report{% endblock title %}
 
-{% block id %}{% endblock id %}
+{% block id %}scan-result-id{% endblock id %}
 
 {% block header %}
+<h1 id="report-cyber">Scan Results</h1>
 {% endblock header %}
 
 {% block main %}
-<a class="backbtn" href="/scan">&#8592; Back</a>
 <div id="scan-results">
 {{results|safe}}
 </div>

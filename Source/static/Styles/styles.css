@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
 
 /* ----- table of content ----- */
-/* ---- I- header & footer-------- */
+/*! ---- I- header & footer-------- */
 /* ? 1) header */
 /* ? 2) footer */
 /*! ---- II- report.html -------- */
@@ -17,6 +17,8 @@
 /* ? 3) about us */
 /*! ---- VI- scan -------- */
 /* ? 1) scan button */
+/*! ---- VII- scan results -------- */
+/* ? 1) container */
 /* ------------------------------- */
 :root {
     --main-color: rgb(4, 30, 82);
@@ -1310,11 +1312,17 @@ img.abt-img {
     }
 }
 
-/*! ----------------------------- VII- result.html  --------------------------#ff0000 */
-/*? -------------------------------- 1) xxxxxx -------------------------------#1100ff */
+/*! ----------------------------- VII- scan results  --------------------------#ff0000 */
+/*? -------------------------------- 1) container -------------------------------#1100ff */
+#scan-result-id header {
+    height: 13rem !important;
+}
 
+#scan-results {
+    max-width: 95%;
+    padding-left: 1rem;
+}
 
-/* hahaah */
 /* stylesheet print */
 @media print {
     #menu {
@@ -1390,7 +1398,7 @@ img.abt-img {
         position: relative;
         text-align: left;
         margin: 1rem 1rem;
-        width: 80%;
+        width: 95%;
     }
 
     #scan-results h1 {
@@ -1549,6 +1557,7 @@ img.abt-img {
         position: fixed;
         bottom: 0;
         right: 0;
+        margin-left: 90%;
         width: 120px;
     }
 
