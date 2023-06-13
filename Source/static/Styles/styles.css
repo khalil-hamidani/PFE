@@ -1200,8 +1200,11 @@ img.abt-img {
 }
 
 /*! -------------------------------- VI- scan  -----------------------------#ff0000 */
-/*? -------------------------------- 1) scan button -------------------------------#1100ff */
-
+/*? -------------------------------- 1) scan -------------------------------#1100ff */
+#domain{
+    max-width: 54rem;
+    margin-right: 1rem;
+}
 #scan-btn:disabled {
     background-color: #0e4787 !important;
     cursor: not-allowed;
@@ -1211,22 +1214,43 @@ img.abt-img {
     background-color: #0e4787 !important;
     cursor: not-allowed;
 }
-
+.scan-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 /*? -------------------------------- 2) loader -------------------------------#1100ff */
 
 .loading {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.text-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    color: var(--main-color);
+}
+.text-loader p{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
 .hidden-loader {
     display: none;
 }
+
 .loading .dot {
     position: relative;
     width: 2em;
     height: 2em;
-    margin: 0.8em;
+    margin: 0.9em;
     border-radius: 50%;
 }
+
 .loading .dot::before {
     position: absolute;
     content: "";
@@ -1236,47 +1260,53 @@ img.abt-img {
     border-radius: inherit;
     animation: wave 2s ease-out infinite;
 }
+
 .loading .dot:nth-child(1) {
     background: #7ef9ff;
 }
+
 .loading .dot:nth-child(1)::before {
     animation-delay: 0.2s;
 }
+
 .loading .dot:nth-child(2) {
     background: #89cff0;
 }
+
 .loading .dot:nth-child(2)::before {
     animation-delay: 0.4s;
 }
+
 .loading .dot:nth-child(3) {
     background: #4682b4;
 }
+
 .loading .dot:nth-child(3)::before {
     animation-delay: 0.6s;
 }
+
 .loading .dot:nth-child(4) {
     background: #0f52ba;
 }
+
 .loading .dot:nth-child(4)::before {
     animation-delay: 0.8s;
 }
+
 .loading .dot:nth-child(5) {
     background: #041e52;
 }
+
 .loading .dot:nth-child(5)::before {
     animation-delay: 1s;
 }
+
 @keyframes wave {
     50%, 75% {
         transform: scale(2.5);
-   }
+    }
+
     80%, 100% {
         opacity: 0;
-   }
+    }
 }
-
-.loading-text {
-    display: block;
-    text-align: center;
-    margin-top: 1em;
-  }

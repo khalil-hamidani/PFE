@@ -26,8 +26,11 @@
             <label for="first_name" class="form-label"> Enter the Domain <span class="Mandatory">*</span></label>
             <br />
             <p class="helpText">Please provide a valid domain.</p>
-            <input type="domain" id="domain" maxlength="49" pattern="[^]*" name="domain" autocomplete="on" value="" class="form-input" />
-            <button id="scan-btn" class="btn scan-btn" onclick="startScan()">Scan</button>
+            <div class="scan-input">
+                <input type="domain" id="domain" maxlength="49" pattern="[^]*" name="domain" autocomplete="on" value=""
+                    class="form-input" />
+                <button id="scan-btn" class="btn scan-btn" onclick="startScan()">Scan The domain</button>
+            </div>
         </div>
     </form>
 
@@ -39,7 +42,7 @@
         <div class="dot"></div>
 
     </div>
-    <div id="text-loader" class="hidden-loader">
+    <div id="text-loader" class="hidden-loader text-loader">
         <p>Scan in Progres... be patient</p>
     </div>
     <hr id="lasthr">
