@@ -208,55 +208,6 @@ def ioc_form():
     return render_template("IOC-report-form.html")
 
 
-
-# def nmap_scan(web_address):
-#     # Create a directory with the web address as the name
-#     directory_name = web_address.replace("http://", "").replace("https://", "").replace(".", "_")
-#     os.system(f"mkdir {directory_name}")
-#     os.system(f"sudo chmod 777 {directory_name}")
-    
-#     # Run nmap on the web address and save the output in XML format
-#     xml_file_name = f"{directory_name}/{web_address.replace('http://', '').replace('https://', '')}.xml"
-#     cmd = f"sudo nmap -sV --script nmap-vulners/ {web_address} --resolve-all -oX {xml_file_name}"
-#     os.system(cmd)
-    
-#     # Convert the XML output to HTML format
-#     html_file_name = xml_file_name.replace(".xml", ".html")
-#     os.system(f"xsltproc {xml_file_name} -o {html_file_name}")
-#     os.system(f"sudo chmod 777 {html_file_name}")
-
-#scan route
-# @app.route('/scan', methods=['GET', 'POST'])
-# def scan():
-#     """
-#     Perform a scan of the provided domain/IP address using nmap and nmap-vulners script.
-#     Then, convert the output to HTML and display it to the user.
-
-#     Returns:
-#         HTML page with the scan results.
-#     """
-#     if request.method == 'POST':
-#         # Extract domain/IP from URL
-#         url = request.form.get('domain')
-#         domain = url.split('/')[0]
-        
-#         # Run nmap scan and save output to XML file
-#         cmd = f'sudo nmap -sV --script nmap-vulners --resolve-all {domain} -oX /tmp/{domain}.xml'
-#         os.system(cmd)
-        
-#         # Convert XML output to HTML
-#         cmd2 = f'sudo xsltproc /tmp/{domain}.xml -o /tmp/{domain}.html' 
-#         os.system(cmd2)
-        
-#         # Read HTML file and return results to user
-#         with open(f'/tmp/{domain}.html') as f:
-#             results = f.read()
-#         return render_template('result.html',results=results)
-    
-#     else:
-#         # Display form to user to input domain/IP address
-#         return render_template("scan.html")
-
 @app.route('/scan', methods=['GET', 'POST'])
 def scan():
     """
