@@ -225,6 +225,37 @@ def nmap_scan(web_address):
     os.system(f"sudo chmod 777 {html_file_name}")
 
 #scan route
+# @app.route('/scan', methods=['GET', 'POST'])
+# def scan():
+#     """
+#     Perform a scan of the provided domain/IP address using nmap and nmap-vulners script.
+#     Then, convert the output to HTML and display it to the user.
+
+#     Returns:
+#         HTML page with the scan results.
+#     """
+#     if request.method == 'POST':
+#         # Extract domain/IP from URL
+#         url = request.form.get('domain')
+#         domain = url.split('/')[0]
+        
+#         # Run nmap scan and save output to XML file
+#         cmd = f'sudo nmap -sV --script nmap-vulners --resolve-all {domain} -oX /tmp/{domain}.xml'
+#         os.system(cmd)
+        
+#         # Convert XML output to HTML
+#         cmd2 = f'sudo xsltproc /tmp/{domain}.xml -o /tmp/{domain}.html' 
+#         os.system(cmd2)
+        
+#         # Read HTML file and return results to user
+#         with open(f'/tmp/{domain}.html') as f:
+#             results = f.read()
+#         return render_template('result.html',results=results)
+    
+#     else:
+#         # Display form to user to input domain/IP address
+#         return render_template("scan.html")
+
 @app.route('/scan', methods=['GET', 'POST'])
 def scan():
     """
@@ -244,11 +275,14 @@ def scan():
         os.system(cmd)
         
         # Convert XML output to HTML
-        cmd2 = f'sudo xsltproc /tmp/{domain}.xml -o /tmp/{domain}.html' 
+        cmd2 = f'sudo xsltproc --novalid --noout /usr/share/nmap/nmap.xsl /tmp/{domain}.xml -o /tmp/{domain}.html'
         os.system(cmd2)
         
         # Read HTML file and return results to user
-        with open(f'/tmp/{domain}.html') as f:
+        report_dir = 'reports'
+        if not os.path.exists(report_dir):
+            os.makedirs(report_dir)
+        with open(f'{report_dir}/{domain}.html', 'r') as f:
             results = f.read()
         return render_template('result.html',results=results)
     
