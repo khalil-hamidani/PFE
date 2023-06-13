@@ -1330,14 +1330,6 @@ img.abt-img {
         padding: 0;
     }
 
-    #scan-results h2 {
-        font-size: 12pt;
-        font-weight: bold;
-        margin: 3pt 0pt 0pt 0pt;
-        padding: 0;
-    }
-
-    #scan-results h3,
     #scan-results a:link,
     #scan-results a:visited {
         font-size: 9pt;
@@ -1366,13 +1358,6 @@ img.abt-img {
 
 /* stylesheet screen */
 @media screen {
-    #scan-results body {
-        margin: 0px;
-        background-color: #FFFFFF;
-        color: #000000;
-        text-align: center;
-    }
-
     #container {
         text-align: left;
         margin: 10px auto;
@@ -1383,7 +1368,7 @@ img.abt-img {
         font-weight: bold;
         font-size: 14pt;
         color: #FFFFFF;
-        background-color: #2A0D45;
+        background-color: var(--main-color);
         margin: 10px 0px 0px 0px;
         padding: 5px 4px 5px 4px;
         width: 100%;
@@ -1404,14 +1389,14 @@ img.abt-img {
 
     #scan-results h2.green {
         color: #000000;
-        background-color: #CCFFCC;
-        border-color: #006400;
+        background-color: var(--cyan-color2);
+        border-color: var(--cyan-color);
     }
 
     #scan-results h2.red {
         color: #000000;
-        background-color: #FFCCCC;
-        border-color: #8B0000;
+        background-color: var(--danger-color2);
+        border-color: var(--danger-color);
     }
 
     #scan-results h3 {
@@ -1468,7 +1453,7 @@ img.abt-img {
     }
 
     #scan-results a.up {
-        color: #006400;
+        color: var(--cyan-color);
     }
 
     #scan-results table {
@@ -1493,7 +1478,7 @@ img.abt-img {
     }
 
     tr.open {
-        background-color: #CCFFCC;
+        background-color: var(--cyan-color2);
         color: #000000;
     }
 
@@ -1532,7 +1517,7 @@ img.abt-img {
 
     .up {
         color: #000000;
-        background-color: #CCFFCC;
+        background-color: var(--cyan-color2);
     }
 
     .down {
