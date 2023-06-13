@@ -1387,17 +1387,18 @@ img.abt-img {
 /* stylesheet screen */
 @media screen {
     #container {
+        position: relative;
         text-align: left;
-        margin: 10px auto;
-        width: 90%;
+        margin: 1rem 1rem;
+        width: 80%;
     }
 
     #scan-results h1 {
         font-family: Verdana, Helvetica, sans-serif;
         font-weight: bold;
         font-size: 14pt;
-        color: #FFFFFF;
-        background-color: #2A0D45;
+        color: var(--bg-color);
+        background-color: var(--main-color);
         margin: 10px 0px 0px 0px;
         padding: 5px 4px 5px 4px;
         width: 100%;
@@ -1413,20 +1414,20 @@ img.abt-img {
         margin: 30px 0px 0px 0px;
         padding: 4px;
         width: 100%;
-        background-color: #F0F8FF;
+        background-color: var(--bg-color);
         text-align: left;
     }
 
     #scan-results h2.green {
         color: #000000;
-        background-color: #CCFFCC;
-        border-color: #006400;
+        background-color: var(--cyan-color2);
+        border-color: var(--cyan-color);
     }
 
     #scan-results h2.red {
         color: #000000;
-        background-color: #FFCCCC;
-        border-color: #8B0000;
+        background-color: var(--danger-color2);
+        border-color: var(--danger-color);
     }
 
     #scan-results h3 {
@@ -1434,7 +1435,7 @@ img.abt-img {
         font-weight: bold;
         font-size: 10pt;
         color: #000000;
-        background-color: #FFFFFF;
+        background-color: var(--bg-color);
         width: 75%;
         text-align: left;
     }
@@ -1443,7 +1444,7 @@ img.abt-img {
         font-family: Verdana, Helvetica, sans-serif;
         font-size: 8pt;
         color: #000000;
-        background-color: #FFFFFF;
+        background-color: var(--bg-color);
         width: 75%;
         text-align: left;
     }
@@ -1459,7 +1460,7 @@ img.abt-img {
         font-family: Verdana, Helvetica, sans-serif;
         font-size: 8pt;
         color: #000000;
-        background-color: #FFFFFF;
+        background-color: var(--bg-color);
         width: 75%;
         text-align: left;
     }
@@ -1479,7 +1480,7 @@ img.abt-img {
         font-size: 10pt;
         color: #000000;
         font-weight: bold;
-        background-color: #FFFFFF;
+        background-color: var(--bg-color);
         color: #000000;
     }
 
@@ -1488,7 +1489,7 @@ img.abt-img {
     }
 
     #scan-results a.up {
-        color: #006400;
+        color: var(--cyan-color);
     }
 
     table {
@@ -1504,7 +1505,7 @@ img.abt-img {
         font-family: Verdana, Helvetica, sans-serif;
         font-size: 8pt;
         color: #000000;
-        background-color: #FFFFFF;
+        background-color: var(--bg-color);
     }
 
     tr.head {
@@ -1514,12 +1515,12 @@ img.abt-img {
     }
 
     tr.open {
-        background-color: #CCFFCC;
+        background-color: var(--cyan-color2);
         color: #000000;
     }
 
     tr.script {
-        background-color: #EFFFF7;
+        background-color: #a2d3fa;
         color: #000000;
     }
 
@@ -1545,29 +1546,31 @@ img.abt-img {
     }
 
     #menubox {
-        position: relative;
+        position: fixed;
+        bottom: 0;
+        right: 0;
         width: 120px;
     }
 
     /* This section handle's IE's refusal to honor the fixed CSS attribute */
-    * html div#menubox {
+    div#menubox {
         position: relative;
     }
 
     /* This fixes the jerky effect when scrolling in IE*/
     * html,
     * html body {
-        background: #fff url(nosuchfile) fixed;
+        background: var(--bg-color) url(nosuchfile) fixed;
     }
 
     .up {
         color: #000000;
-        background-color: #CCFFCC;
+        background-color: var(--cyan-color2);
     }
 
     .down {
         color: #626262;
-        background-color: #F2F2F2;
+        background-color: var(--bg-color);
     }
 
     .print_only {
