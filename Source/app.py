@@ -209,21 +209,21 @@ def ioc_form():
 
 
 
-def nmap_scan(web_address):
-    # Create a directory with the web address as the name
-    directory_name = web_address.replace("http://", "").replace("https://", "").replace(".", "_")
-    os.system(f"mkdir {directory_name}")
-    os.system(f"sudo chmod 777 {directory_name}")
+# def nmap_scan(web_address):
+#     # Create a directory with the web address as the name
+#     directory_name = web_address.replace("http://", "").replace("https://", "").replace(".", "_")
+#     os.system(f"mkdir {directory_name}")
+#     os.system(f"sudo chmod 777 {directory_name}")
     
-    # Run nmap on the web address and save the output in XML format
-    xml_file_name = f"{directory_name}/{web_address.replace('http://', '').replace('https://', '')}.xml"
-    cmd = f"sudo nmap -sV --script nmap-vulners/ {web_address} --resolve-all -oX {xml_file_name}"
-    os.system(cmd)
+#     # Run nmap on the web address and save the output in XML format
+#     xml_file_name = f"{directory_name}/{web_address.replace('http://', '').replace('https://', '')}.xml"
+#     cmd = f"sudo nmap -sV --script nmap-vulners/ {web_address} --resolve-all -oX {xml_file_name}"
+#     os.system(cmd)
     
-    # Convert the XML output to HTML format
-    html_file_name = xml_file_name.replace(".xml", ".html")
-    os.system(f"xsltproc {xml_file_name} -o {html_file_name}")
-    os.system(f"sudo chmod 777 {html_file_name}")
+#     # Convert the XML output to HTML format
+#     html_file_name = xml_file_name.replace(".xml", ".html")
+#     os.system(f"xsltproc {xml_file_name} -o {html_file_name}")
+#     os.system(f"sudo chmod 777 {html_file_name}")
 
 #scan route
 # @app.route('/scan', methods=['GET', 'POST'])
@@ -256,8 +256,6 @@ def nmap_scan(web_address):
 #     else:
 #         # Display form to user to input domain/IP address
 #         return render_template("scan.html")
-from flask import render_template, request
-import os
 
 @app.route('/scan', methods=['GET', 'POST'])
 def scan():
@@ -286,9 +284,7 @@ def scan():
             html_content = f.read()
              # Remove CSS styling from the HTML content
             html_content = re.sub(r'<style.*?>.*?</style>', '', html_content, flags=re.DOTALL)
-            # Remove the CSS link from the HTML
-            html_content = html_content.replace('<link rel="stylesheet" type="text/css" href="nmap.xsl">', '')
-        
+        # Return results to user
         return render_template('result.html', results=html_content)
     
     else:

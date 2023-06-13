@@ -1327,73 +1327,10 @@ img.abt-img {
     padding-left: 1rem;
 }
 
-/* stylesheet print */
-@media print {
-    #menu {
-        display: none;
-    }
-
-    #scan-results h1 {
-        font-size: 13pt;
-        font-weight: bold;
-        margin: 4pt 0pt 0pt 0pt;
-        padding: 0;
-    }
-
-    #scan-results h2 {
-        font-size: 12pt;
-        font-weight: bold;
-        margin: 3pt 0pt 0pt 0pt;
-        padding: 0;
-    }
-
-    #scan-results h3,
-    #scan-results a:link,
-    #scan-results a:visited {
-        font-size: 9pt;
-        font-weight: bold;
-        margin: 1pt 0pt 0pt 20pt;
-        padding: 0;
-        text-decoration: none;
-        color: #000000;
-    }
-
-    #scan-results p,
-    #scan-results ul {
-        font-size: 9pt;
-        margin: 1pt 0pt 8pt 40pt;
-        padding: 0;
-        text-align: left;
-    }
-
-    #scan-results li {
-        font-size: 13pt;
-        margin: 0;
-        padding: 0;
-        text-align: left;
-    }
-
-    table {
-        margin: 1pt 0pt 8pt 40pt;
-        border: 0px;
-        width: 90%
-    }
-
-    td {
-        border: 0px;
-        border-top: 1px solid black;
-        font-size: 9pt;
-    }
-
-    .head td {
-        border: 0px;
-        font-weight: bold;
-        font-size: 9pt;
-    }
-
-    .noprint {
-        display: none;
-    }
+.result-back{
+    margin-top: 15px !important;
+    margin-left: 2rem;
+    margin-bottom: 0;
 }
 
 /* stylesheet screen */
@@ -1473,7 +1410,7 @@ img.abt-img {
 
     #scan-results a {
         text-decoration: none;
-        font-size: 8pt;
+        font-size: 12pt;
         color: #000000;
         font-weight: bold;
         color: #000000;
@@ -1554,7 +1491,7 @@ img.abt-img {
         bottom: 0;
         right: 0;
         margin-left: 90%;
-        width: 120px;
+        width: 160px;
     }
 
     /* This section handle's IE's refusal to honor the fixed CSS attribute */

@@ -58,6 +58,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 <script>
     function startScan() {
+        
         // Get the button and loader elements
         const btn = document.getElementById("scan-btn");
         const loader = document.getElementById("loader");
@@ -68,7 +69,8 @@
         btn.setAttribute("disabled", "");
         loader.classList.remove("hidden-loader");
         text.classList.remove("hidden-loader");
-
+        
+        // Submit the form
         form.submit();
     }
 </script>
