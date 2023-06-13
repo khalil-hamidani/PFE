@@ -2,6 +2,7 @@ from flask import Flask, request, render_template , redirect
 from flask_mysqldb import MySQL
 from livereload import Server
 import os
+import re
 
 app = Flask(__name__)
 app.debug = True
@@ -255,6 +256,8 @@ def nmap_scan(web_address):
 #     else:
 #         # Display form to user to input domain/IP address
 #         return render_template("scan.html")
+from flask import render_template, request
+import os
 
 @app.route('/scan', methods=['GET', 'POST'])
 def scan():
@@ -275,16 +278,18 @@ def scan():
         os.system(cmd)
         
         # Convert XML output to HTML
-        cmd2 = f'sudo xsltproc --novalid --noout /usr/share/nmap/nmap.xsl /tmp/{domain}.xml -o /tmp/{domain}.html'
+        cmd2 = f'sudo xsltproc /tmp/{domain}.xml -o /tmp/{domain}.html' 
         os.system(cmd2)
         
-        # Read HTML file and return results to user
-        report_dir = 'reports'
-        if not os.path.exists(report_dir):
-            os.makedirs(report_dir)
-        with open(f'{report_dir}/{domain}.html', 'r') as f:
-            results = f.read()
-        return render_template('result.html',results=results)
+        # Read HTML file and remove CSS link
+        with open(f'/tmp/{domain}.html') as f:
+            html_content = f.read()
+             # Remove CSS styling from the HTML content
+            html_content = re.sub(r'<style.*?>.*?</style>', '', html_content, flags=re.DOTALL)
+            # Remove the CSS link from the HTML
+            html_content = html_content.replace('<link rel="stylesheet" type="text/css" href="nmap.xsl">', '')
+        
+        return render_template('result.html', results=html_content)
     
     else:
         # Display form to user to input domain/IP address
