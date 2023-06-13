@@ -1,1 +1,16 @@
+{% extends "template.html" %}
+
+{% block link %}
+{% endblock link %}
+{% block title %}Cyber report{% endblock title %}
+
+{% block id %}{% endblock id %}
+
+{% block header %}
+{% endblock header %}
+
+{% block main %}
+<div id="scan-results">
 {{results|safe}}
+</div>
+{% endblock main %}
