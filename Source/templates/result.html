@@ -15,11 +15,16 @@
 {% endblock main %}
 {% block script %}
 <script>
-    const heading = document.getElementsByName("h1")[0];
-    const link = document.createElement('a');
-    link.setAttribute('href', '/scan');
-    link.setAttribute('style', 'float: right; color:#fff; font-size: 20pt');
-    link.appendChild(document.createTextNode('\u2190 Go Back'));
-    heading.appendChild(link);
+    const heading = document.querySelector("h1")
+    if (heading) {
+        const link = document.createElement('a');
+        link.setAttribute('href', '/scan');
+        link.setAttribute('style', 'float: right; color:#fff; margin-right: 20px; font-size: 20pt');
+        link.appendChild(document.createTextNode('\u2190 Go Back'));
+        heading.appendChild(link);
+      }
+    else {
+        console.log("no heading");
+    }
 </script>
 {% endblock script %}
