@@ -27,10 +27,19 @@
             <br />
             <p class="helpText">Please provide a valid domain.</p>
             <input type="domain" id="domain" maxlength="49" pattern="[^]*" name="domain" autocomplete="on" value="" class="form-input" />
+            <button id="scan-btn" class="btn scan-btn" onclick="startScan()">Scan</button>
         </div>
     </form>
-    <button id="scan-btn" class="btn scan-btn" onclick="startScan()">Scan</button>
-    <div id="loader" class="hidden-loader"></div>
+    
+    <div id="loader" class="loading hidden-loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="loading-text">Scan in Progres... be patient</div>
+      </div>
+      
     <hr id="lasthr">
     <div class="helpus">
         <h3>Help us to help others</h3>
@@ -53,7 +62,7 @@
         btn.setAttribute("disabled", "");
         loader.classList.remove("hidden-loader");
 
-        form.submit();
+        //form.submit();
     }
 </script>
 {% endblock script %}
