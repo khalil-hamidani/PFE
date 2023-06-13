@@ -1458,13 +1458,13 @@ img.abt-img {
     }
 
     #scan-results p i {
-        font-size: 8pt;
+        font-size: 10pt;
         color: #000000;
         background-color: #CCCCCC;
     }
 
     #scan-results ul {
-        font-size: 8pt;
+        font-size: 10pt;
         color: #000000;
         background-color: var(--bg-color);
         width: 75%;
