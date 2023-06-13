@@ -1275,7 +1275,7 @@ img.abt-img {
    }
 }
 
-.loading .loading-text {
+.loading-text {
     display: block;
     text-align: center;
     margin-top: 1em;

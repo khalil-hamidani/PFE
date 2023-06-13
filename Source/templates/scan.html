@@ -30,16 +30,18 @@
             <button id="scan-btn" class="btn scan-btn" onclick="startScan()">Scan</button>
         </div>
     </form>
-    
+
     <div id="loader" class="loading hidden-loader">
         <div class="dot"></div>
         <div class="dot"></div>
         <div class="dot"></div>
         <div class="dot"></div>
         <div class="dot"></div>
-        <div class="loading-text">Scan in Progres... be patient</div>
-      </div>
-      
+
+    </div>
+    <div id="text-loader" class="hidden-loader">
+        <p>Scan in Progres... be patient</p>
+    </div>
     <hr id="lasthr">
     <div class="helpus">
         <h3>Help us to help others</h3>
@@ -57,10 +59,12 @@
         const btn = document.getElementById("scan-btn");
         const loader = document.getElementById("loader");
         const form = document.getElementById("my-form");
+        const text = document.getElementById("text-loader")
 
         // Disable the button and show the loader
         btn.setAttribute("disabled", "");
         loader.classList.remove("hidden-loader");
+        text.classList.remove("hidden-loader");
 
         //form.submit();
     }
