@@ -1219,10 +1219,12 @@ img.abt-img {
     flex-direction: row;
     justify-content: space-between;
 }
-.required #domain{
+
+.required #domain {
     max-width: 53rem !important;
 }
-.required .helpText{
+
+.required .helpText {
     margin-bottom: 4px !important;
 }
 
@@ -1339,9 +1341,39 @@ img.abt-img {
 }
 
 .result-back {
-
     margin-left: 2rem;
     margin-bottom: 0;
+}
+
+.help-section {
+    margin-bottom: 0px;
+}
+
+.help-btn {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0;
+}
+
+.help-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.help-content.show {
+    display: block;
+}
+
+.help-content img {
+    max-width: 100%;
+}
+
+.help-content p {
+    margin-top: 10px;
 }
 
 /* stylesheet screen */
