@@ -19,8 +19,18 @@
 
     </div>
     <h2>Before you start scanning</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, aspernatur repellat. Quae nobis, enim repellat cum laudantium
-        vero vitae fuga dolorum et earum doloremque omnis, incidunt quidem, aliquid delectus porro!</p>
+    <p>Before scanning, please ensure that you enter a valid domain name in the input field. The scan input will only accept the root URL
+        without the 'http://' or 'https://' prefix</p>
+    <div class="help-section">
+        <button class="help-btn" onclick="toggleHelp()">Click to expand</button>
+        <div class="help-content">
+            <img src="domain-format.png" alt="Example of valid domain name format">
+            <p>Before scanning, please ensure that you enter a valid domain name in the input field. The scan input will only accept the
+                root URL without the 'http://' or 'https://' prefix. For example, if the URL you would like to scan is
+                'https://example.com', please enter 'example.com' in the input field. This will help ensure that the scan is performed
+                accurately and efficiently.</p>
+        </div>
+    </div>
     <form id="my-form" action="/scan" method="post">
         <div id="scan-input" class="textBox">
             <label for="first_name" class="form-label"> Enter The Target Domain</label>
@@ -79,7 +89,11 @@
             // Submit the form
             form.submit();
         }
-
     }
+    // Toggle the help content
+    function toggleHelp() {
+        const helpContent = document.querySelector('.help-content');
+        helpContent.classList.toggle('show');
+      }
 </script>
 {% endblock script %}
