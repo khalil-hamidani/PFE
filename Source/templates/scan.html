@@ -20,22 +20,25 @@
     </div>
     <h2>Before you start scanning</h2>
     <p>Before scanning, please ensure that you enter a valid domain name in the input field. The scan input will only accept the root URL
-        without the 'http://' or 'https://' prefix</p>
-    <div class="help-section">
-        <button class="help-btn" onclick="toggleHelp()">Click to expand</button>
+        without the <span class="Mandatory">http://</span> or <span class="Mandatory">https://</span> prefix and without the <span
+            class="Mandatory">Folder name</span> and <span class="Mandatory">Web page name</span>.</p>
+    <!-- <div class="help-section">
+        <button class="help-btn" onclick="toggleHelp()"><i class="fa-solid fa-caret-right" id="expandicon"></i> Click See The corrct domain
+            form</button>
         <div class="help-content">
-            <img src="../static/img/Incident.svg" alt="Example of valid domain name format">
+            <img src="../static/img/Domain.svg" alt="Example of valid domain name format">
+            <img src="../static/img/Domain2.svg" alt="Example of valid domain name format">
         </div>
-    </div>
+    </div> -->
     <form id="my-form" action="/scan" method="post">
         <div id="scan-input" class="textBox">
-            <label for="first_name" class="form-label"> Enter The Target Domain</label>
+            <label for="first_name" class="form-label"> Enter The Target Domain Name</label>
             <br />
-            <p class="helpText">Please provide a valid domain.</p>
+            <p class="helpText">Please provide a valid domain name</p>
             <div class="scan-input">
                 <input type="domain" id="domain" maxlength="49" pattern="[^]*" name="domain" autocomplete="on" value=""
                     class="form-input" />
-                <button id="scan-btn" class="btn scan-btn" onclick="startScan()">Scan The domain</button>
+                <button id="scan-btn" class="btn scan-btn" onclick="startScan()">Scan The Domain</button>
             </div>
         </div>
     </form>
@@ -49,7 +52,33 @@
 
     </div>
     <div id="text-loader" class="hidden-loader text-loader">
-        <p>Scan in Progres... be patient</p>
+        <p>Scan in Progress... be patient</p>
+    </div>
+
+    <div class="">
+        <h2>How the scan is working ?</h2>
+        <p>The scan service is done using the nmap tool to perform a port scan on the domain specified, this will detect the open ports and
+            vulnerabilities on the target domain.This type of scan can be useful for identifying potential security vulnerabilities in a
+            network or host, and can help system administrators take steps to secure their systems against potential attacks.</p>
+    </div>
+    <div class="help-section">
+        <button class="help-btn" onclick="toggleHelp()"><i class="fa-solid fa-caret-right" id="expandicon"></i> Click to understand more
+            about the nmap scan process</button>
+        <div class="help-content">
+            <p>The nmap tool works by sending packets to the target network or host and analyzing the responses it receives. By doing so, it
+                can determine which ports are open and which services are running on those ports. In addition, nmap can attempt to identify
+                the versions of services running on open ports and check those versions against a database of known vulnerabilities. This
+                can help identify potential security weaknesses on the target network or host.</p>
+            <p>the sevice also used for providing additional vulnerability detection capabilities by using various methods to identify known
+                vulnerabilities in the target system, including checking against a database of known vulnerabilities and performing active
+                checks against the target system.</p>
+            <div class="warn terms">
+                <h2>Terms and conditions</h2>
+                <p> Note that it's important to consider that the scan should only be used for legitimate purposes and with the permission
+                    of the target network or host owner. Unauthorized use of these tools can be illegal and can result in serious
+                    consequences.</p>
+            </div>
+        </div>
     </div>
     <hr id="lasthr">
     <div class="helpus">
@@ -82,14 +111,41 @@
             btn.setAttribute("disabled", "");
             loader.classList.remove("hidden-loader");
             text.classList.remove("hidden-loader");
+            // Scroll to the input form
+            parent.scrollIntoView({ behavior: 'smooth', block: 'start' });
             // Submit the form
             form.submit();
+            // Update the text after 10 seconds
+            setTimeout(function () {
+                text.innerHTML = "<p>Scan Almost Completed...</p>";
+                text.classList.add("text-loader");
+            }, 10000);
+            // Update the text after 20 seconds
+            setTimeout(function () {
+                text.innerHTML = "<p>Redirecting...</p>";
+                text.classList.add("text-loader");
+            }, 20000);
+            // Update the text after 30 seconds
+            setTimeout(function () {
+                text.innerHTML = "<p>This may take longer!</p>";
+                text.classList.add("text-loader");
+            }, 30000);
         }
     }
+
     // Toggle the help content
     function toggleHelp() {
         const helpContent = document.querySelector('.help-content');
+        const expand = document.getElementById("expandicon");
         helpContent.classList.toggle('show');
-      }
+        if (expand.classList.contains('fa-caret-right')) {
+            expand.classList.remove('fa-caret-right');
+            expand.classList.add('fa-caret-down');
+        }
+        else {
+            expand.classList.remove('fa-caret-down');
+            expand.classList.add('fa-caret-right');
+        }
+    }
 </script>
 {% endblock script %}
