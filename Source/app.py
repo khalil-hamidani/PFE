@@ -242,6 +242,11 @@ def scan():
         # Display form to user to input domain/IP address
         return render_template("scan.html")
 
+@app.route('/submission', methods=['GET'])
+def submission():
+    return render_template("submission.html")
+    
+
 def run_server():
     """
     Runs the Flask application in debug mode.
