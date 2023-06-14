@@ -13,9 +13,14 @@ const Description = document.getElementById("message");
 const formError = document.querySelector(".formErrorText");
 let ErrorCount = 0;
 
-//Show input error messages
+/**
+ * Show error message for input field
+ * @param {Object} input - Input field object
+ */
 function showError(input) {
+  // Add required class to input field's parent element
   input.parentElement.classList.add("required");
+  // Increment global error count
   ErrorCount++;
 }
 
