@@ -8,16 +8,25 @@
 {% block id %}{% endblock id %}
 
 {% block header %}
-    {{header}}
-{% endblock header  %}
+{{header}}
+<h1 id="report-cyber">Report Government cyber issue Form</h1>
+{% endblock header %}
 
 {% block main %}
 <div class="report-incdent-container">
     <a class="backbtn" href="/Incident-report">&#8592; Back</a>
-    <div>
+    <div class="thankyou-container">
         <h1>Thank you for your submissions</h1>
-        <i class="fa-regular fa-circle-check fa-2xl" style="color: #041e52;"></i>
-        <p>your submission has been successfully submissions</p>  
+        <!-- <i class="fa-regular fa-circle-check fa-2xl" style="color: #041e52;"></i> -->
+        <img src="../static/img/circle-check-regular.svg" alt="">
+        <p>your report has been successfully submitted and will be reviewed soon</p>
+    </div>
+
+    <hr id="lasthr">
+    <div class="helpus">
+        <h3>Help us to help others</h3>
+        <p> Sharing informative reports is crucial for us to comprehend the threat landscape and enhance the cyber intelligence
+            capabilities. This subsequently improves our ability to help protect other Algerian organisations.</p>
     </div>
 </div>
 {% endblock main %}
