@@ -22,14 +22,14 @@
     <p>Before scanning, please ensure that you enter a valid domain name in the input field. The scan input will only accept the root URL
         without the <span class="Mandatory">http://</span> or <span class="Mandatory">https://</span> prefix and without the <span
             class="Mandatory">Folder name</span> and <span class="Mandatory">Web page name</span>.</p>
-    <!-- <div class="help-section">
+    <div class="help-section">
         <button class="help-btn" onclick="toggleHelp()"><i class="fa-solid fa-caret-right" id="expandicon"></i> Click See The corrct domain
             form</button>
         <div class="help-content">
             <img src="../static/img/Domain.svg" alt="Example of valid domain name format">
             <img src="../static/img/Domain2.svg" alt="Example of valid domain name format">
         </div>
-    </div> -->
+    </div>
     <form id="my-form" action="/scan" method="post">
         <div id="scan-input" class="textBox">
             <label for="first_name" class="form-label"> Enter The Target Domain Name</label>
@@ -55,16 +55,16 @@
         <p>Scan in Progress... be patient</p>
     </div>
 
-    <div class="">
+    <div class="scanwork">
         <h2>How the scan is working ?</h2>
         <p>The scan service is done using the nmap tool to perform a port scan on the domain specified, this will detect the open ports and
             vulnerabilities on the target domain.This type of scan can be useful for identifying potential security vulnerabilities in a
             network or host, and can help system administrators take steps to secure their systems against potential attacks.</p>
     </div>
     <div class="help-section">
-        <button class="help-btn" onclick="toggleHelp()"><i class="fa-solid fa-caret-right" id="expandicon"></i> Click to understand more
-            about the nmap scan process</button>
-        <div class="help-content">
+        <button class="help-btn" onclick="togglemore()"><i class="fa-solid fa-caret-right expandicon" id="expandicon"></i> 
+            Click to understand more about the nmap scan process</button>
+        <div class="help-content more">
             <p>The nmap tool works by sending packets to the target network or host and analyzing the responses it receives. By doing so, it
                 can determine which ports are open and which services are running on those ports. In addition, nmap can attempt to identify
                 the versions of services running on open ports and check those versions against a database of known vulnerabilities. This
@@ -138,6 +138,21 @@
         const helpContent = document.querySelector('.help-content');
         const expand = document.getElementById("expandicon");
         helpContent.classList.toggle('show');
+        if (expand.classList.contains('fa-caret-right')) {
+            expand.classList.remove('fa-caret-right');
+            expand.classList.add('fa-caret-down');
+        }
+        else {
+            expand.classList.remove('fa-caret-down');
+            expand.classList.add('fa-caret-right');
+        }
+    }
+
+    // Toggle the help content
+    function togglemore() {
+        const moreContent = document.querySelector('.more');
+        const expand = document.querySelector('.expandicon');
+        moreContent.classList.toggle('show');
         if (expand.classList.contains('fa-caret-right')) {
             expand.classList.remove('fa-caret-right');
             expand.classList.add('fa-caret-down');

@@ -1324,9 +1324,13 @@ img.abt-img {
         opacity: 0;
     }
 }
+.scanwork{
+    margin-top: 1.2rem;
+}
 .terms{
     padding-bottom: 1px;
 }
+
 /*! ----------------------------- VII- scan results  --------------------------#ff0000 */
 /*? -------------------------------- 1) container -------------------------------#1100ff */
 #scan-result-id header {
