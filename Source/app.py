@@ -237,7 +237,6 @@ def scan():
             html_content = re.sub(r'<style.*?>.*?</style>', '', html_content, flags=re.DOTALL)
         # Return results to user
         return render_template('result.html', results=html_content)
-    
     else:
         # Display form to user to input domain/IP address
         return render_template("scan.html")
@@ -245,7 +244,7 @@ def scan():
 @app.route('/submission', methods=['GET'])
 def submission():
     return render_template("submission.html")
-    
+
 
 def run_server():
     """

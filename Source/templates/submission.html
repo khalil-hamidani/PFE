@@ -8,8 +8,8 @@
 {% block id %}{% endblock id %}
 
 {% block header %}
-{{header}}
-<h1 id="report-cyber">Report Government cyber issue Form</h1>
+
+<h1 id="report-cyber">{{header}}</h1>
 {% endblock header %}
 
 {% block main %}
@@ -17,7 +17,6 @@
     <a class="backbtn" href="/Incident-report">&#8592; Back</a>
     <div class="thankyou-container">
         <h1>Thank you for your submissions</h1>
-        <!-- <i class="fa-regular fa-circle-check fa-2xl" style="color: #041e52;"></i> -->
         <img src="../static/img/circle-check-regular.svg" alt="">
         <p>your report has been successfully submitted and will be reviewed soon</p>
     </div>
