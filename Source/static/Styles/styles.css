@@ -246,10 +246,12 @@ header hr {
     margin-bottom: 20px;
     margin-top: 25px;
 }
+
 .footer-distributed .footer-right li {
     display: block;
     margin-top: 1rem !important;
 }
+
 /*! -------------------------------- II- report.html-----------------------------#ff0000 */
 /*? -------------------------------- 1) notes -------------------------------#1100ff */
 
@@ -1324,10 +1326,12 @@ img.abt-img {
         opacity: 0;
     }
 }
-.scanwork{
+
+.scanwork {
     margin-top: 1.2rem;
 }
-.terms{
+
+.terms {
     padding-bottom: 1px;
 }
 

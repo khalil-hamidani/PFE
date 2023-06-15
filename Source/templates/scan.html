@@ -119,17 +119,17 @@
             setTimeout(function () {
                 text.innerHTML = "<p>Scan Almost Completed...</p>";
                 text.classList.add("text-loader");
-            }, 10000);
-            // Update the text after 20 seconds
-            setTimeout(function () {
-                text.innerHTML = "<p>Redirecting...</p>";
-                text.classList.add("text-loader");
             }, 20000);
-            // Update the text after 30 seconds
+            // Update the text after 20 seconds
             setTimeout(function () {
                 text.innerHTML = "<p>This may take longer!</p>";
                 text.classList.add("text-loader");
             }, 30000);
+            // Update the text after 30 seconds
+            setTimeout(function () {
+                text.innerHTML = "<p>Redirecting...</p>";
+                text.classList.add("text-loader");
+            }, 40000);
         }
     }
 
