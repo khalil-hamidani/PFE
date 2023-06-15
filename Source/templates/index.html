@@ -35,24 +35,25 @@
 
 <div class="cve-container">
     <div class="title-box">
-        <h2>Discover the most common vulnerabilities and exposures (CVEs)</h2>
+        <h2>Discover The Last 20 Scored Vulnerability IDs & Summaries From <a href="https://nvd.nist.gov/">NIST Database </a></h2>
     </div>
     <div id="cve-carousel" class="owl-carousel owl-theme">
+
         <div class="item rating3">
-            <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24535">
+            <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-2237#vulnDescriptionTitle">
                 <div class="item-header">
-                    <span class="date">juin 08, 2023</span>
+                    <span class="date">juin 09, 2023</span>
                     <span class="rating">Rating: <span class="score"><i class="fa-solid fa-circle ratingdot3"></i>High</span></span>
                 </div>
-                <h3 class="title">CVE-2023-24535</h3>
-                <p class="descreption">Parsing invalid messages can panic. Parsing a text-format message which contains a potential number
-                    consisting of a minus sign, one or more characters of whitespace, and no further input will cause a panic.</p>
-                <h4 style="margin-top: 15px;">source: Go Project</h4>
-                <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24535" class="read-more"><i
+                <h3 class="title">CVE-2023-2237</h3>
+                <p class="descreption">The WP Replicate Post plugin for WordPress is vulnerable to SQL Injection via the post_id parameter
+                    in versions up to, and including, 4.0.2 due to insufficient escaping on the user supplied parameter and lack of
+                    sufficient preparation on the existing queries that can be used to extract sensitive informations...</p>
+                <h4 style="margin-top: 15px;">source: Wordfence</h4>
+                <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-2237#vulnDescriptionTitle" class="read-more"><i
                         class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
             </a>
         </div>
-
 
         <div class="item rating2">
             <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-2305">
@@ -70,8 +71,53 @@
             </a>
         </div>
 
+        <div class="item rating1">
+            <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-3173">
+                <div class="item-header">
+                    <span class="date">juin 08, 2023</span>
+                    <span class="rating">Rating: <span class="score"><i class="fa-solid fa-circle ratingdot1"></i>Critical</span></span>
+                </div>
+                <h3 class="title">CVE-2023-3173</h3>
+                <p class="descreption">The GitHub repository for froxlor/froxlor prior to version 2.0.20 had a vulnerability related to
+                    improper restriction of excessive authentication attempts, which can be exploited by an attacker and allow unauthorized access to the system via brute-force attacks.</p>
+                    <h4 style="margin-top: 15px;">source: huntr.dev</h4>
+                <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-3173" class="read-more"><i class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
+            </a>
+        </div>
 
-        <div class="item rating0">
+        <div class="item rating3">
+            <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-42915">
+                <div class="item-header">
+                    <span class="date">octobre 29, 2022</span>
+                    <span class="rating">Rating: <span class="score"><i class="fa-solid fa-circle ratingdot3"></i>High</span></span>
+                </div>
+                <h3 class="title">CVE-2022-42915</h3>
+                <p class="descreption">curl before 7.86.0 has a double free. If curl is told to use an HTTP proxy for a transfer with a
+                    non-HTTP(S) URL, it sets up the connection to the remote server by issuing a CONNECT request to the proxy, and then
+                    tunnels the rest of the protocol...</p>
+                <h4 style="margin-top: 15px;">source: MITRE</h4>
+                <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-42915" class="read-more"><i
+                        class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
+            </a>
+        </div>
+
+        <div class="item rating3">
+            <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24535">
+                <div class="item-header">
+                    <span class="date">juin 08, 2023</span>
+                    <span class="rating">Rating: <span class="score"><i class="fa-solid fa-circle ratingdot3"></i>High</span></span>
+                </div>
+                <h3 class="title">CVE-2023-24535</h3>
+                <p class="descreption">Parsing invalid messages can panic. Parsing a text-format message which contains a potential number
+                    consisting of a minus sign, one or more characters of whitespace, and no further input will cause a panic.</p>
+                <h4 style="margin-top: 15px;">source: Go Project</h4>
+                <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24535" class="read-more"><i
+                        class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
+            </a>
+        </div>
+
+
+        <!-- <div class="item rating0">
             <a href="">
                 <div class="item-header">
                     <span class="date">12 MAY 2012</span>
@@ -81,22 +127,7 @@
                 <p class="descreption"></p>
                 <a href="#" class="read-more"><i class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
             </a>
-        </div>
-
-
-        <div class="item rating3">
-            <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-2237#vulnDescriptionTitle">
-                <div class="item-header">
-                    <span class="date">juin 09, 2023</span>
-                    <span class="rating">Rating: <span class="score"><i class="fa-solid fa-circle ratingdot3"></i>High</span></span>
-                </div>
-                <h3 class="title">CVE-2023-2237</h3>
-                <p class="descreption">The WP Replicate Post plugin for WordPress is vulnerable to SQL Injection via the post_id parameter in versions up to, and including, 4.0.2 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing queries that can be used to extract sensitive information from the database. </p>
-                <h4 style="margin-top: 15px;">source: Wordfence</h4>
-                <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-2237#vulnDescriptionTitle" class="read-more"><i
-                        class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
-            </a>
-        </div>
+        </div> -->
 
 
         <div class="item rating3">
@@ -113,9 +144,148 @@
                         class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
             </a>
         </div>
+        <div class="item rating3">
+            <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24535">
+                <div class="item-header">
+                    <span class="date">juin 08, 2023</span>
+                    <span class="rating">Rating: <span class="score"><i class="fa-solid fa-circle ratingdot3"></i>High</span></span>
+                </div>
+                <h3 class="title">CVE-2023-24535</h3>
+                <p class="descreption">Parsing invalid messages can panic. Parsing a text-format message which contains a potential number
+                    consisting of a minus sign, one or more characters of whitespace, and no further input will cause a panic.</p>
+                <h4 style="margin-top: 15px;">source: Go Project</h4>
+                <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24535" class="read-more"><i
+                        class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
+            </a>
+        </div>
+        <div class="item rating3">
+            <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24535">
+                <div class="item-header">
+                    <span class="date">juin 08, 2023</span>
+                    <span class="rating">Rating: <span class="score"><i class="fa-solid fa-circle ratingdot3"></i>High</span></span>
+                </div>
+                <h3 class="title">CVE-2023-24535</h3>
+                <p class="descreption">Parsing invalid messages can panic. Parsing a text-format message which contains a potential number
+                    consisting of a minus sign, one or more characters of whitespace, and no further input will cause a panic.</p>
+                <h4 style="margin-top: 15px;">source: Go Project</h4>
+                <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24535" class="read-more"><i
+                        class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
+            </a>
+        </div>
+        <div class="item rating3">
+            <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24535">
+                <div class="item-header">
+                    <span class="date">juin 08, 2023</span>
+                    <span class="rating">Rating: <span class="score"><i class="fa-solid fa-circle ratingdot3"></i>High</span></span>
+                </div>
+                <h3 class="title">CVE-2023-24535</h3>
+                <p class="descreption">Parsing invalid messages can panic. Parsing a text-format message which contains a potential number
+                    consisting of a minus sign, one or more characters of whitespace, and no further input will cause a panic.</p>
+                <h4 style="margin-top: 15px;">source: Go Project</h4>
+                <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24535" class="read-more"><i
+                        class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
+            </a>
+        </div>
+        <div class="item rating3">
+            <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24535">
+                <div class="item-header">
+                    <span class="date">juin 08, 2023</span>
+                    <span class="rating">Rating: <span class="score"><i class="fa-solid fa-circle ratingdot3"></i>High</span></span>
+                </div>
+                <h3 class="title">CVE-2023-24535</h3>
+                <p class="descreption">Parsing invalid messages can panic. Parsing a text-format message which contains a potential number
+                    consisting of a minus sign, one or more characters of whitespace, and no further input will cause a panic.</p>
+                <h4 style="margin-top: 15px;">source: Go Project</h4>
+                <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24535" class="read-more"><i
+                        class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
+            </a>
+        </div>
+        <div class="item rating3">
+            <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24535">
+                <div class="item-header">
+                    <span class="date">juin 08, 2023</span>
+                    <span class="rating">Rating: <span class="score"><i class="fa-solid fa-circle ratingdot3"></i>High</span></span>
+                </div>
+                <h3 class="title">CVE-2023-24535</h3>
+                <p class="descreption">Parsing invalid messages can panic. Parsing a text-format message which contains a potential number
+                    consisting of a minus sign, one or more characters of whitespace, and no further input will cause a panic.</p>
+                <h4 style="margin-top: 15px;">source: Go Project</h4>
+                <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24535" class="read-more"><i
+                        class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
+            </a>
+        </div>
+        <div class="item rating3">
+            <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24535">
+                <div class="item-header">
+                    <span class="date">juin 08, 2023</span>
+                    <span class="rating">Rating: <span class="score"><i class="fa-solid fa-circle ratingdot3"></i>High</span></span>
+                </div>
+                <h3 class="title">CVE-2023-24535</h3>
+                <p class="descreption">Parsing invalid messages can panic. Parsing a text-format message which contains a potential number
+                    consisting of a minus sign, one or more characters of whitespace, and no further input will cause a panic.</p>
+                <h4 style="margin-top: 15px;">source: Go Project</h4>
+                <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24535" class="read-more"><i
+                        class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
+            </a>
+        </div>
+        <div class="item rating3">
+            <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24535">
+                <div class="item-header">
+                    <span class="date">juin 08, 2023</span>
+                    <span class="rating">Rating: <span class="score"><i class="fa-solid fa-circle ratingdot3"></i>High</span></span>
+                </div>
+                <h3 class="title">CVE-2023-24535</h3>
+                <p class="descreption">Parsing invalid messages can panic. Parsing a text-format message which contains a potential number
+                    consisting of a minus sign, one or more characters of whitespace, and no further input will cause a panic.</p>
+                <h4 style="margin-top: 15px;">source: Go Project</h4>
+                <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24535" class="read-more"><i
+                        class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
+            </a>
+        </div>
+        <div class="item rating3">
+            <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24535">
+                <div class="item-header">
+                    <span class="date">juin 08, 2023</span>
+                    <span class="rating">Rating: <span class="score"><i class="fa-solid fa-circle ratingdot3"></i>High</span></span>
+                </div>
+                <h3 class="title">CVE-2023-24535</h3>
+                <p class="descreption">Parsing invalid messages can panic. Parsing a text-format message which contains a potential number
+                    consisting of a minus sign, one or more characters of whitespace, and no further input will cause a panic.</p>
+                <h4 style="margin-top: 15px;">source: Go Project</h4>
+                <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24535" class="read-more"><i
+                        class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
+            </a>
+        </div>
+        <div class="item rating3">
+            <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24535">
+                <div class="item-header">
+                    <span class="date">juin 08, 2023</span>
+                    <span class="rating">Rating: <span class="score"><i class="fa-solid fa-circle ratingdot3"></i>High</span></span>
+                </div>
+                <h3 class="title">CVE-2023-24535</h3>
+                <p class="descreption">Parsing invalid messages can panic. Parsing a text-format message which contains a potential number
+                    consisting of a minus sign, one or more characters of whitespace, and no further input will cause a panic.</p>
+                <h4 style="margin-top: 15px;">source: Go Project</h4>
+                <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24535" class="read-more"><i
+                        class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
+            </a>
+        </div>
+        <div class="item rating3">
+            <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24535">
+                <div class="item-header">
+                    <span class="date">juin 08, 2023</span>
+                    <span class="rating">Rating: <span class="score"><i class="fa-solid fa-circle ratingdot3"></i>High</span></span>
+                </div>
+                <h3 class="title">CVE-2023-24535</h3>
+                <p class="descreption">Parsing invalid messages can panic. Parsing a text-format message which contains a potential number
+                    consisting of a minus sign, one or more characters of whitespace, and no further input will cause a panic.</p>
+                <h4 style="margin-top: 15px;">source: Go Project</h4>
+                <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24535" class="read-more"><i
+                        class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
+            </a>
+        </div>
 
     </div>
-
     <div class="read-more-wrapper">
         <a href="" class="see-all">See all the CVEs <i class="fa-solid fa-arrow-left-long fa-rotate-180" style="color: #041e52"></i></a>
     </div>
