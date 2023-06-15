@@ -995,6 +995,7 @@ div.item {
     left: 15px;
     font-weight: 400;
     font-size: 1.2rem;
+    text-decoration: underline;
 }
 div.item:hover {
     background-color: var(--bg-color);
