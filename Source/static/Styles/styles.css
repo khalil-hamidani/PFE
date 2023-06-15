@@ -747,6 +747,11 @@ section .details span {
 
 /*! -------------------------------- IV- IOC report  -----------------------------#ff0000 */
 /*? -------------------------------- 1) IOC form  -------------------------------#1100ff */
+.ioc-defensive li{
+    font-size: 1.3rem !important;
+    margin: 12px auto;
+}
+
 .ioc {
     margin-top: 16px;
 }
