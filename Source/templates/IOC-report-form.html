@@ -36,7 +36,7 @@
           <label for="last_name" class="form-label"> Last Name <span class="Mandatory">*</span></label>
           <br />
           <p class="helpText">Please provide your last name.</p>
-          <input type="text" id="last_name" maxlength="49" pattern="[^]*" name="first_name" autocomplete="on" value="" class="form-input" />
+          <input type="text" id="last_name" maxlength="49" pattern="[^]*" name="last_name" autocomplete="on" value="" class="form-input" />
         </div>
         <div class="textBox">
           <label for="contact_email" class="form-label"> Email <span class="Mandatory">*</span></label>
@@ -62,24 +62,24 @@
           </label>
           <div class="radio-group">
             <label class="radio-label">
-              <input class="input-radio" type="radio" name="type" value="OAT" />
+              <input class="input-radio" type="radio" name="type" value="private" />
               Private website
             </label>
           </div>
           <div class="radio-group">
             <label class="radio-label">
-              <input class="input-radio" type="radio" name="type" value="Identity" />
+              <input class="input-radio" type="radio" name="type" value="governement" />
               Government website
             </label>
           </div>
           <div class="iocurl textBox">
-            <label for="iocurl" class="form-label">Enter the website URL: </label>
-            <input type="text" id="iocurl" name="iocurl" placeholder="example.com" autocomplete="off" class="form-input" />
+            <label for="url" class="form-label">Enter the website URL: </label>
+            <input type="text" id="iocurl" name="url" placeholder="example.com" autocomplete="off" class="form-input" />
           </div>
           <div class="input-checkbox-wrapper">
             <label class="form-label"> What are the IOCs you detect in this website : </label><br />
             <label class="cl-checkbox">
-              <input type="checkbox" value="Unusual Outbound Network Traffic" />
+              <input type="checkbox" name="ioc[]" value="Unusual Outbound Network Traffic" />
               <span>Unusual Outbound Network Traffic</span> </label><br />
             <label class="cl-checkbox">
               <input type="checkbox" value="Anomalies in Privileged User Account Activity" /><span>Anomalies in Privileged User Account

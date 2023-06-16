@@ -238,9 +238,17 @@ def ioc():
 
 
 # report IOC form route
-@app.route("/IOC-report-form")
+@app.route("/IOC-report-form", methods=["GET", "POST"])
 def ioc_form():
-    return render_template("IOC-report-form.html")
+    if request.method == "GET":
+        return render_template("IOC-report-form.html")
+    else:
+        first_name = request.form.get("first_name")
+        last_name = request.form.get("last_name")
+        email = request.form.get("contact_email")
+        telephone = request.form.get("telephone_number")
+        website = request.form.get("url")
+        date = request.form.get("Date")
 
 
 @app.route('/scan', methods=['GET', 'POST'])
