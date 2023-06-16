@@ -10,26 +10,50 @@ live_server = Server(app.wsgi_app)
 live_server.watch('static/css/*.css')
 live_server.watch('templates/*.html')
 
-app.config['MYSQL_HOST'] = '172.27.145.170'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_password'] = ''
-app.config['MYSQL_DB'] = 'Reports'
-mySQL = MySQL(app)
 
+# database connection 1 [IOC]
+app.config['MYSQL_HOST1'] = '172.27.145.170'
+app.config['MYSQL_USER1'] = 'root'
+app.config['MYSQL_password1'] = ''
+app.config['MYSQL_DB1'] = 'IOC'
+mySQL_IOC = MySQL(app)
 
+# database connection 2 [Personal reports]
+app.config['MYSQL_HOST2'] = '172.27.145.170'
+app.config['MYSQL_USER2'] = 'root'
+app.config['MYSQL_password2'] = ''
+app.config['MYSQL_DB2'] = 'Personal_reports'
+mySQL_Personal = MySQL(app)
+
+# database connection 2 [Personal reports]
+app.config['MYSQL_HOST3'] = '172.27.145.170'
+app.config['MYSQL_USER3'] = 'root'
+app.config['MYSQL_password3'] = ''
+app.config['MYSQL_DB3'] = 'Buissiness_reports'
+mySQL_Personal = MySQL(app)
+
+# database connection 3 [Government reports]
+app.config['MYSQL_HOST4'] = '172.27.145.170'
+app.config['MYSQL_USER4'] = 'root'
+app.config['MYSQL_password4'] = ''
+app.config['MYSQL_DB4'] = 'Government_reports'
+mySQL_Government = MySQL(app)
+
+ 
 # index route
-@app.route("/")
+@app.route("/", methods=["GET"])
 def index():
     """
     Route function for the home page of the website.
 
     Returns:
-    HTML webpage rendered with the index.html template.
+        A rendered HTML webpage with the index.html template.
     """
-    # Renders the index.html template.
-    return render_template("index.html")  
-
-
+    if request.method == "GET":
+        # Renders the index.html template.
+        return render_template("index.html")
+   
+   
 # report incident route
 @app.route("/Incident-report")
 def incident():
@@ -81,10 +105,21 @@ def incident():
 
 
 # individual report route
-@app.route("/Individual-report")
+@app.route("/Individual-report" , methods=["GET"])
 def individual_report():
-    # Renders the HTML template for the Individual-report page.
-    return render_template("Individual-report.html")
+    """
+    Defines the route for the "Individual-report" page and renders the HTML template
+    for it upon GET request.
+    
+    Args:
+        None
+        
+    Returns:
+        The rendered HTML template for the "Individual-report" page.
+    """
+    if request.method == "GET":
+        # Renders the HTML template for the Individual-report page.
+        return render_template("Individual-report.html")
 
 
 # individual report form route
