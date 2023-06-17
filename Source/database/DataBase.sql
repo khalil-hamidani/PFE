@@ -23,6 +23,7 @@ CREATE TABLE IOCReports (
 -- Create the Complainants table
 CREATE TABLE Complainants (
   complainant_id INT AUTO_INCREMENT PRIMARY KEY,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
   first_name VARCHAR(50),
   last_name VARCHAR(50),
   email VARCHAR(100),
@@ -46,11 +47,13 @@ CREATE TABLE Complaints (
 
 -- Create the Complained_Against table
 CREATE TABLE Complained_Against (
-  company_person_id INT AUTO_INCREMENT PRIMARY KEY,
+  Complained_Against INT AUTO_INCREMENT PRIMARY KEY,
+  complainant_id INT,
   first_name VARCHAR(50),
   last_name VARCHAR(50),
   company_name VARCHAR(100),
   country VARCHAR(100),
   email_address VARCHAR(100),
-  website VARCHAR(200)
+  website VARCHAR(200),
+  FOREIGN KEY (complainant_id) REFERENCES Complainants (complainant_id)
 );

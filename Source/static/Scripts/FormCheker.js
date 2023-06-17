@@ -4,32 +4,27 @@ const FirstName = document.getElementById("first_name");
 const LastName = document.getElementById("last_name");
 const Email = document.getElementById("contact_email");
 const Email2 = document.getElementById("email2");
-
 const companyName = document.getElementById("organ-name");
-
 const TheDate = document.getElementById("Date");
 const Description = document.getElementById("message");
-
 const formError = document.querySelector(".formErrorText");
-let ErrorCount = 0;
+let ErrorCount = false;
 
 function showError(input) {
   // Add required class to input field's parent element
   input.parentElement.classList.add("required");
   // Increment global error count
-  ErrorCount++;
+  ErrorCount = true;
 }
 
 //show success
 function showSucces(input) {
   input.parentElement.classList.remove("required");
-  ErrorCount--;
 }
 
 //check email is valid
 function checkEmail(input) {
   if (input.value.trim() === "") {
-    showSucces(input);
     return;
   }
   const re =
@@ -39,13 +34,16 @@ function checkEmail(input) {
   } else {
     showError(input);
   }
+  return;
 }
 
 //checkRequired fields
 function checkRequired(inputArr) {
+  let checker = false;
   inputArr.forEach(function (input) {
     if (input.value.trim() === "") {
       showError(input);
+      checker = true;
     } else {
       showSucces(input);
     }
@@ -55,27 +53,28 @@ function checkRequired(inputArr) {
 //Event Listeners
 TheForm.addEventListener("submit", function (e) {
   e.preventDefault();
+  ErrorCount = false;
   switch (body) {
     case "personalForm":
-      checkRequired([FirstName, LastName, Email, TheDate, Description]);
       checkEmail(Email);
       checkEmail(Email2);
+      let checker = checkRequired([FirstName, LastName, Email, TheDate, Description]);
       break;
 
     case "companyForm":
-      checkRequired([FirstName, LastName, Email, companyName, TheDate, Description]);
       checkEmail(Email);
       checkEmail(Email2);
+      checkRequired([FirstName, LastName, Email, companyName, TheDate, Description]);
       break;
 
     case "GovForm":
-      checkRequired([FirstName, LastName, Email, companyName, TheDate, Description]);
       checkEmail(Email);
       checkEmail(Email2);
+      checkRequired([FirstName, LastName, Email, companyName, TheDate, Description]);
       break;
   }
-
-  if (ErrorCount <= 0) {
+  console.log(ErrorCount);
+  if (!ErrorCount) {
     TheForm.submit();
   } else {
     window.scrollTo({ top: 0, behavior: "smooth" });
