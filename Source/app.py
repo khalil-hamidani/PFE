@@ -185,7 +185,7 @@ def group_report():
 
 
 # business report form route
-@app.route("/Business-report-form")
+@app.route("/Business-report-form" , methods=["GET", "POST"])
 def group_report_form():
     if request.method == "GET":
         return render_template("Business-report-form.html")
@@ -197,10 +197,11 @@ def group_report_form():
         age = request.form.get("age") or 0
         gender = request.form.get("gender")
         address = request.form.get("address")
-        organ_name = request.form.get("organ-name")
-        organ_website = request.form.get("organ-website")
-        Organ_address = request.form.get("Organ-address")
-        type = request.form.get("type")
+        company_name = request.form.get("company-name")
+        company_website = request.form.get("company-website")
+        company_address = request.form.get("company-address")
+        company_email = request.form.get("company-email")
+        company_type = request.form.get("type")
         role = request.form.get("role")
         Fname = request.form.get("F-name")
         Lname = request.form.get("L-name")
@@ -223,25 +224,25 @@ def group_report_form():
 
         # Open a connection to the database
         cur = mySQL.connection.cursor()
-        cur.execute("USE Buisnesses_reports")
-
+        # use the Buissnesses_reports database
+        cur.execute("USE Buissnesses_reports")
         # Insert the data into the 'Complainants' table
         cur.execute(
-            "INSERT INTO Buisnesses_reports.Complainants (first_name, last_name, email, telephone , age, gender, address) VALUES (%s, %s, %s, %s, %s, %s, %s)",
+            "INSERT INTO Buissnesses_reports.Complainants (first_name, last_name, email, telephone , age, gender, address) VALUES (%s, %s, %s, %s, %s, %s, %s)",
             (first_name, last_name, email, telephone, age, gender, address)
         )
         complainant_id = cur.lastrowid
 
         # Insert the data into the 'Complained_Against' table
         cur.execute(
-            "INSERT INTO Personal_reports.Complained_Against (first_name, last_name, company_name, country, email_address, website, complainant_id) VALUES (%s, %s, %s, %s, %s, %s, %s)",
+            "INSERT INTO Buissnesses_reports.Complained_Against (first_name, last_name, company_name, country, email_address, website, complainant_id) VALUES (%s, %s, %s, %s, %s, %s, %s)",
             (Fname, Lname, Cname, country, email_address, website, complainant_id)
         )
 
-        # insert the data into the 'Companys' table
+        # insert the data into the 'Companies' table
         cur.execute(
-            "INSERT INTO Personal_reports.Companys (organ-name, complainant_id) VALUES (%s, %s, %s, %s, %s, %s, %s)",
-            (Fname, Lname, Cname, country, email_address, website, complainant_id)
+            "INSERT INTO Buissnesses_reports.Companies (company_name, company_website, company_address, company_email, company_type, role, complainant_id) VALUES (%s, %s, %s, %s, %s, %s, %s)",
+            (company_name, company_website, company_address, company_email, company_type, role, complainant_id)
         )
 
         file_path = "reports/Personal_reports/"

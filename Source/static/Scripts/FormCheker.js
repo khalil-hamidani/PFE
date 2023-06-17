@@ -4,7 +4,7 @@ const FirstName = document.getElementById("first_name");
 const LastName = document.getElementById("last_name");
 const Email = document.getElementById("contact_email");
 const Email2 = document.getElementById("email2");
-const companyName = document.getElementById("organ-name");
+const companyName = document.getElementById("company-name");
 const TheDate = document.getElementById("Date");
 const Description = document.getElementById("message");
 const formError = document.querySelector(".formErrorText");
@@ -12,7 +12,6 @@ const formError = document.querySelector(".formErrorText");
 function showError(input) {
   // Add required class to input field's parent element
   input.parentElement.classList.add("required");
-  console.log("error");
   // Increment global error count
   return false;
 }
