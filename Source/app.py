@@ -25,14 +25,14 @@ app.config['MYSQL_password2'] = ''
 app.config['MYSQL_DB2'] = 'Personal_reports'
 mySQL_Personal = MySQL(app)
 
-# database connection 2 [Personal reports]
+# database connection 3 [buissness reports]
 app.config['MYSQL_HOST3'] = '172.27.145.170'
 app.config['MYSQL_USER3'] = 'root'
 app.config['MYSQL_password3'] = ''
 app.config['MYSQL_DB3'] = 'Buissiness_reports'
-mySQL_Personal = MySQL(app)
+mySQL_buissness = MySQL(app)
 
-# database connection 3 [Government reports]
+# database connection 4 [Government reports]
 app.config['MYSQL_HOST4'] = '172.27.145.170'
 app.config['MYSQL_USER4'] = 'root'
 app.config['MYSQL_password4'] = ''
@@ -123,33 +123,31 @@ def individual_report():
 
 
 # individual report form route
-@app.route("/Individual-report-form")
+@app.route("/Individual-report-form", methods=["GET", "POST"])
 def individual_report_form():
-    """
-    This function defines the route for the individual report form page. It takes no parameters.
-    The function renders the HTML template for the individual report form and returns it if
-    the request method is GET. Otherwise, it retrieves data from the request form and assigns
-    it to variables first_name, last_name, email, telephone, age, address, Fname, Lname, Cname,
-    email_address, website, and date. This function does not return anything if the request
-    method is not GET. 
-    """
     if request.method == "GET":
         # Render the HTML template for the individual report form and return it
         return render_template("Individual-report-form.html")
     else:
         first_name = request.form.get("first_name")
-        last_name = request.form.get("last_name")
-        email = request.form.get("contact_email")
-        telephone = request.form.get("telephone_number")
-        age = request.form.get("age")
-        address = request.form.get("address")
-        Fname = request.form.get("F-name")
-        Lname = request.form.get("L-name")
-        Cname = request.form.get("C-name")
-        email_address = request.form.get("email2")
-        website = request.form.get("website")
-        date = request.form.get("Date")
+        cur = mysql_IOC.connection.cursor()
+        cur.execute("INSERT INTO Personal_reports.Complainants (first_name) VALUES (%s)",(first_name,))
+        mysql_IOC.connection.commit()
 
+        # Get the submitter ID of the last inserted row
+        return render_template("submission.html")
+        
+# last_name = request.form.get("last_name")
+        # email = request.form.get("contact_email")
+        # telephone = request.form.get("telephone_number")
+        # age = request.form.get("age")
+        # address = request.form.get("address")
+        # Fname = request.form.get("F-name")
+        # Lname = request.form.get("L-name")
+        # Cname = request.form.get("C-name")
+        # email_address = request.form.get("email2")
+        # website = request.form.get("website")
+        # date = request.form.get("Date")
 
 # business report route
 @app.route("/Business-report")
@@ -248,7 +246,19 @@ def ioc_form():
         email = request.form.get("contact_email")
         telephone = request.form.get("telephone_number")
         website = request.form.get("url")
-        date = request.form.get("Date")
+        ioc = request.form.getlist('ioc[]')
+        description = request.form.get("description")
+        # Insert the submitter's data into the Submitters table
+        cur = mysql_IOC.connection.cursor()
+        cur.execute("INSERT INTO IOC.Submitter (first_name, last_name, email, telephone) VALUES (%s, %s, %s, %s)", (first_name, last_name, email, telephone))
+        mysql_IOC.connection.commit()
+        cur.close()
+            
+
+        # Get the submitter ID of the last inserted row
+        submitter_id = cur.lastrowid
+        return render_template("submission.html")
+        
 
 
 @app.route('/scan', methods=['GET', 'POST'])

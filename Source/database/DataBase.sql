@@ -1,79 +1,56 @@
-CREATE TABLE personal_informations (
-    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    first_name VARCHAR(255),
-    last_name VARCHAR(255),
-    email VARCHAR(255),
-    phone_number VARCHAR(255),
-    age INT,
-    gender VARCHAR(255),
-    address VARCHAR(255)
+--! IOC database
+-- Create the Submitters table
+CREATE TABLE Submitter (
+  submitter_id INT AUTO_INCREMENT PRIMARY KEY,
+  first_name VARCHAR(50),
+  last_name VARCHAR(50),
+  email VARCHAR(100),
+  telephone VARCHAR(20),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+-- Create the IOCReports table
+CREATE TABLE IOCReports (
+  report_id INT AUTO_INCREMENT PRIMARY KEY,
+  submitter_id INT,
+  website_type VARCHAR(50),
+  website_url VARCHAR(200),
+  ioc_detected VARCHAR(100),
+  ioc_description TEXT,
+  FOREIGN KEY (submitter_id) REFERENCES Submitters(submitter_id)
 );
 
-CREATE TABLE complained_against (
-    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    first_name VARCHAR(255),
-    last_name VARCHAR(255),
-    company_name VARCHAR(255),
-    email VARCHAR(255),
-    country VARCHAR(255),
-    website VARCHAR(255)
+--! personal report database
+-- Create the Complainants table
+CREATE TABLE Complainants (
+  complainant_id INT AUTO_INCREMENT PRIMARY KEY,
+  first_name VARCHAR(50),
+  last_name VARCHAR(50),
+  email VARCHAR(100),
+  telephone VARCHAR(20),
+  age INT,
+  gender VARCHAR(10),
+  role VARCHAR(50),
+  address VARCHAR(200)
 );
 
-CREATE TABLE details (
-    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    incident_date DATE,
-    incident_type VARCHAR(255),
-    description VARCHAR(255),
-    file_path VARCHAR(255)
+-- Create the Complaints table
+CREATE TABLE Complaints (
+  complaint_id INT AUTO_INCREMENT PRIMARY KEY,
+  complainant_id INT,
+  incident_date DATE,
+  incident_type VARCHAR(100),
+  description TEXT,
+  file_path VARCHAR(200),
+  FOREIGN KEY (complainant_id) REFERENCES Complainants (complainant_id)
 );
 
-CREATE TABLE ioc (
-    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    first_name VARCHAR(255),
-    last_name VARCHAR(255),
-    email VARCHAR(255),
-    website VARCHAR(255),
-    ioc_name VARCHAR(255),
-    details VARCHAR(255)
-);
-
-CREATE TABLE incident (
-    incident_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    type VARCHAR(255),
-    report_p INT,
-    report_b INT,
-    report_g INT,
-    FOREIGN KEY (report_p) REFERENCES personal(id),
-    FOREIGN KEY (report_b) REFERENCES business(id),
-    FOREIGN KEY (report_g) REFERENCES governement(id)
-);
-
-CREATE TABLE reports (
-    reports_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    incident_type INT,
-    ioc_type INT,
-    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (incident_type) REFERENCES incident(incident_id),
-    FOREIGN KEY (ioc_type) REFERENCES ioc(id)
-);
-
-CREATE TABLE governement (
-    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    personal_informations INT,
-    complained_against INT,
-    details INT,
-    FOREIGN KEY (personal_informations) REFERENCES personal_informations(id),
-    FOREIGN KEY (complained_against) REFERENCES complained_against(id),
-    FOREIGN KEY (details) REFERENCES details(id)
-);
-
-CREATE TABLE business (
-    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    personal_informations INT,
-    business_info INT,
-    complained_against INT,
-    details INT,
-    FOREIGN KEY (personal_informations) REFERENCES personal_informations(id),
-    FOREIGN KEY (complained_against) REFERENCES complained_against(id),
-    FOREIGN KEY (details) REFERENCES details(id)
+-- Create the Complained_Against table
+CREATE TABLE Complained_Against (
+  company_person_id INT AUTO_INCREMENT PRIMARY KEY,
+  first_name VARCHAR(50),
+  last_name VARCHAR(50),
+  company_name VARCHAR(100),
+  country VARCHAR(100),
+  email_address VARCHAR(100),
+  website VARCHAR(200)
 );
