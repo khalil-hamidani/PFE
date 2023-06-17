@@ -16,28 +16,7 @@ app.config['MYSQL_HOST'] = '172.27.145.170'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_password'] = ''
 app.config['MYSQL_DB'] = 'IOC'
-mySQL_IOC = MySQL(app)
-
-# # database connection 2 [Personal reports]
-# app.config['MYSQL_HOST2'] = '172.27.145.170'
-# app.config['MYSQL_USER2'] = 'root'
-# app.config['MYSQL_password2'] = ''
-# app.config['MYSQL_DB2'] = 'Personal_reports'
-# mySQL_Personal = MySQL(app)
-
-# # database connection 3 [buissness reports]
-# app.config['MYSQL_HOST3'] = '172.27.145.170'
-# app.config['MYSQL_USER3'] = 'root'
-# app.config['MYSQL_password3'] = ''
-# app.config['MYSQL_DB3'] = 'Buissiness_reports'
-# mySQL_buissness = MySQL(app)
-
-# # database connection 4 [Government reports]
-# app.config['MYSQL_HOST4'] = '172.27.145.170'
-# app.config['MYSQL_USER4'] = 'root'
-# app.config['MYSQL_password4'] = ''
-# app.config['MYSQL_DB4'] = 'Government_reports'
-# mySQL_Government = MySQL(app)
+mySQL = MySQL(app)
 
  
 # index route
@@ -160,12 +139,12 @@ def individual_report_form():
             # Render the HTML template for the error page and return it
             return render_template("error.html")
 
+        # If incident type is not provided, set it to 'other'
         if not incident_type:
-            # Set incident type to 'other' if not provided
             incident_type = other
 
         # Open a connection to the database
-        cur = mySQL_IOC.connection.cursor()
+        cur = mySQL.connection.cursor()
         cur.execute("USE Personal_reports")
 
         # Insert the data into the 'Complainants' table
@@ -188,8 +167,8 @@ def individual_report_form():
             "INSERT INTO Personal_reports.Complaints (incident_date,incident_type, description,file_path, complainant_id) VALUES (%s, %s, %s, %s, %s)",
             (date, incident_type, description, file_path, complainant_id)
         )
-
-        mySQL_IOC.connection.commit()
+        # Commit the changes made to the database
+        mySQL.connection.commit()
 
         # Close the cursor object
         cur.close()
@@ -208,14 +187,6 @@ def group_report():
 # business report form route
 @app.route("/Business-report-form")
 def group_report_form():
-    """
-    Renders a template for a business report form when the request method is GET.
-    Populates the template with user input when the request method is POST.
-    
-    Returns:
-    - If request method is GET: A rendered template for the business report form.
-    - If request method is POST: User input from the form in various variables.
-    """
     if request.method == "GET":
         return render_template("Business-report-form.html")
     else:
@@ -299,9 +270,9 @@ def ioc_form():
         ioc = request.form.getlist('ioc[]')
         description = request.form.get("description")
         # Insert the submitter's data into the Submitters table
-        cur = mySQL_IOC.connection.cursor()
+        cur = mySQL.connection.cursor()
         cur.execute("INSERT INTO IOC.Submitter (first_name, last_name, email, telephone) VALUES (%s, %s, %s, %s)", (first_name, last_name, email, telephone))
-        mySQL_IOC.connection.commit()
+        mySQL.connection.commit()
         cur.close()
             
 

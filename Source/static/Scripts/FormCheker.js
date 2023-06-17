@@ -61,15 +61,11 @@ TheForm.addEventListener("submit", function (e) {
       break;
 
     case "companyForm":
-      checkEmail(Email);
-      checkEmail(Email2);
-      checkRequired([FirstName, LastName, Email, companyName, TheDate, Description]);
+      good = checkEmail(Email) && checkEmail(Email2) && checkRequired([FirstName, LastName, Email, companyName, TheDate, Description]);
       break;
 
     case "GovForm":
-      checkEmail(Email);
-      checkEmail(Email2);
-      checkRequired([FirstName, LastName, Email, companyName, TheDate, Description]);
+      good = checkEmail(Email) && checkEmail(Email2) && checkRequired([FirstName, LastName, Email, companyName, TheDate, Description]);
       break;
   }
   console.log(good);
