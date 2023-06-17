@@ -249,7 +249,7 @@ def group_report_form():
 
         # Insert the data into the 'Complaints' table
         cur.execute(
-            "INSERT INTO Personal_reports.Complaints (incident_date,incident_type, description,file_path, complainant_id) VALUES (%s, %s, %s, %s, %s)",
+            "INSERT INTO Buissnesses_reports.Complaints (incident_date,incident_type, description,file_path, complainant_id) VALUES (%s, %s, %s, %s, %s)",
             (date, incident_type, description, file_path, complainant_id)
         )
         # Commit the changes made to the database
