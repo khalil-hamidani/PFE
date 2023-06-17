@@ -8,25 +8,25 @@ const companyName = document.getElementById("organ-name");
 const TheDate = document.getElementById("Date");
 const Description = document.getElementById("message");
 const formError = document.querySelector(".formErrorText");
-let ErrorCount = false;
 
 function showError(input) {
   // Add required class to input field's parent element
   input.parentElement.classList.add("required");
+  console.log("error");
   // Increment global error count
-  return true;
+  return false;
 }
 
 //show success
 function showSucces(input) {
   input.parentElement.classList.remove("required");
-  return false;
+  return true;
 }
 
 //check email is valid
 function checkEmail(input) {
   if (input.value.trim() === "") {
-    return;
+    return true;
   }
   const re =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -35,30 +35,29 @@ function checkEmail(input) {
   } else {
     return showError(input);
   }
-  return;
 }
 
 //checkRequired fields
 function checkRequired(inputArr) {
-  let checker = false;
+  let checker = true;
   inputArr.forEach(function (input) {
     if (input.value.trim() === "") {
       showError(input);
-      checker = true;
+      checker = false;
     } else {
       showSucces(input);
     }
   });
+  return checker;
 }
 
 //Event Listeners
 TheForm.addEventListener("submit", function (e) {
+  let good = true;
   e.preventDefault();
   switch (body) {
     case "personalForm":
-      checkEmail(Email);
-      checkEmail(Email2);
-      checkRequired([FirstName, LastName, Email, TheDate, Description]);
+      good = checkEmail(Email) && checkEmail(Email2) && checkRequired([FirstName, LastName, Email, TheDate, Description]);
       break;
 
     case "companyForm":
@@ -73,8 +72,8 @@ TheForm.addEventListener("submit", function (e) {
       checkRequired([FirstName, LastName, Email, companyName, TheDate, Description]);
       break;
   }
-  console.log(ErrorCount);
-  if (!ErrorCount) {
+  console.log(good);
+  if (good) {
     TheForm.submit();
   } else {
     window.scrollTo({ top: 0, behavior: "smooth" });

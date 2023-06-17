@@ -23,7 +23,7 @@ CREATE TABLE IOCReports (
 -- Create the Complainants table
 CREATE TABLE Complainants (
   complainant_id INT AUTO_INCREMENT PRIMARY KEY,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   first_name VARCHAR(50),
   last_name VARCHAR(50),
   email VARCHAR(100),
