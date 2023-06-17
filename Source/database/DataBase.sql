@@ -123,17 +123,16 @@ CREATE TABLE Complainants (
   email VARCHAR(100),
   telephone VARCHAR(20),
   age INT,
-  gender VARCHAR(10),
+  gender VARCHAR(10)
 );
 --? Create the companies table
 CREATE TABLE governments (
-  company_id INT AUTO_INCREMENT PRIMARY KEY,
+  organization_id INT AUTO_INCREMENT PRIMARY KEY,
   complainant_id INT,
-  company_name VARCHAR(100),
-  company_website VARCHAR(200),
-  company_address VARCHAR(200),
-  company_email VARCHAR(100),
-  company_type VARCHAR(100),
+  organization_name VARCHAR(100),
+  organization_website VARCHAR(200),
+  organization_address VARCHAR(200),
+  organization_email VARCHAR(100),
   role VARCHAR(50),
   FOREIGN KEY (complainant_id) REFERENCES Complainants (complainant_id)
 );
