@@ -194,17 +194,71 @@ def group_report_form():
         last_name = request.form.get("last_name")
         email = request.form.get("contact_email")
         telephone = request.form.get("telephone_number")
-        age = request.form.get("age")
+        age = request.form.get("age") or 0
+        gender = request.form.get("gender")
         address = request.form.get("address")
         organ_name = request.form.get("organ-name")
         organ_website = request.form.get("organ-website")
         Organ_address = request.form.get("Organ-address")
-        F_name = request.form.get("F-name")
-        L_name = request.form.get("L-name")
-        C_name = request.form.get("C-name")
+        type = request.form.get("type")
+        role = request.form.get("role")
+        Fname = request.form.get("F-name")
+        Lname = request.form.get("L-name")
+        Cname = request.form.get("C-name")
+        country = request.form.get("country")
         email_address = request.form.get("email2")
         website = request.form.get("website")
         date = request.form.get("Date")
+        incident_type = request.form.get("type")
+        other = request.form.get("otherissue")
+        description = request.form.get("message")
+        
+        if not (first_name and last_name and email and date and description):
+            # Render the HTML template for the error page and return it
+            return render_template("error.html")
+
+        # If incident type is not provided, set it to 'other'
+        if not incident_type:
+            incident_type = other
+
+        # Open a connection to the database
+        cur = mySQL.connection.cursor()
+        cur.execute("USE Buisnesses_reports")
+
+        # Insert the data into the 'Complainants' table
+        cur.execute(
+            "INSERT INTO Buisnesses_reports.Complainants (first_name, last_name, email, telephone , age, gender, address) VALUES (%s, %s, %s, %s, %s, %s, %s)",
+            (first_name, last_name, email, telephone, age, gender, address)
+        )
+        complainant_id = cur.lastrowid
+
+        # Insert the data into the 'Complained_Against' table
+        cur.execute(
+            "INSERT INTO Personal_reports.Complained_Against (first_name, last_name, company_name, country, email_address, website, complainant_id) VALUES (%s, %s, %s, %s, %s, %s, %s)",
+            (Fname, Lname, Cname, country, email_address, website, complainant_id)
+        )
+
+        # insert the data into the 'Companys' table
+        cur.execute(
+            "INSERT INTO Personal_reports.Companys (organ-name, complainant_id) VALUES (%s, %s, %s, %s, %s, %s, %s)",
+            (Fname, Lname, Cname, country, email_address, website, complainant_id)
+        )
+
+        file_path = "reports/Personal_reports/"
+
+        # Insert the data into the 'Complaints' table
+        cur.execute(
+            "INSERT INTO Personal_reports.Complaints (incident_date,incident_type, description,file_path, complainant_id) VALUES (%s, %s, %s, %s, %s)",
+            (date, incident_type, description, file_path, complainant_id)
+        )
+        # Commit the changes made to the database
+        mySQL.connection.commit()
+
+        # Close the cursor object
+        cur.close()
+
+        # Render the HTML template for the submission confirmation page and return it
+        return render_template("submission.html")
 
 
 # government report route
