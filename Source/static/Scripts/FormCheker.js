@@ -14,12 +14,13 @@ function showError(input) {
   // Add required class to input field's parent element
   input.parentElement.classList.add("required");
   // Increment global error count
-  ErrorCount = true;
+  return true;
 }
 
 //show success
 function showSucces(input) {
   input.parentElement.classList.remove("required");
+  return false;
 }
 
 //check email is valid
@@ -30,9 +31,9 @@ function checkEmail(input) {
   const re =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   if (re.test(input.value.trim())) {
-    showSucces(input);
+    return showSucces(input);
   } else {
-    showError(input);
+    return showError(input);
   }
   return;
 }
@@ -53,12 +54,11 @@ function checkRequired(inputArr) {
 //Event Listeners
 TheForm.addEventListener("submit", function (e) {
   e.preventDefault();
-  ErrorCount = false;
   switch (body) {
     case "personalForm":
       checkEmail(Email);
       checkEmail(Email2);
-      let checker = checkRequired([FirstName, LastName, Email, TheDate, Description]);
+      checkRequired([FirstName, LastName, Email, TheDate, Description]);
       break;
 
     case "companyForm":
