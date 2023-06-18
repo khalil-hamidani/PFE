@@ -45,30 +45,41 @@ function checkRequired(inputArr) {
   inputArr.forEach(function (input) {
     if (input.value.trim() === "") {
       showError(input);
-      console.log(input);
       checker = false;
+    }
       else {
         showSucces(input);
       }
-  }});
+  });
   return checker;
 }
 
 //Event Listeners
 TheForm.addEventListener("submit", function (e) {
   let good = true;
+  let valid, valid2, valid3, valid4;
   e.preventDefault();
   switch (body) {
     case "personalForm":
-      good = checkEmail(Email) && checkEmail(Email2) && checkRequired([FirstName, LastName, Email, TheDate, Description]);
+      valid = checkEmail(Email);
+      valid2 = checkEmail(Email2);
+      valid3 = checkRequired([FirstName, LastName, Email, TheDate, Description]);
+      good = valid && valid2 && valid3;
       break;
 
     case "companyForm":
-      good = checkEmail(Email) && checkEmail(Email2) && checkRequired([FirstName, LastName, Email, companyName, TheDate, Description]);
+      valid = checkEmail(Email);
+      valid2 = checkEmail(Email2);
+      valid3 = checkRequired([FirstName, LastName, Email, companyName, TheDate, Description]);
+      good = valid && valid2 && valid3;
       break;
 
     case "GovForm":
-      good = checkEmail(Email) && checkEmail(Email2) && checkRequired([FirstName, LastName, Email, organName, TheDate, Description]);
+      valid = checkEmail(Email);
+      valid2 = checkEmail(Email2);
+      valid3 = checkEmail(organEmail);
+      valid4 = checkRequired([FirstName, LastName, Email, organName, TheDate, Description]);
+      good = valid && valid2 && valid3 && valid4;
       break;
   }
   console.log(good);
