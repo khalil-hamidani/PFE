@@ -227,28 +227,79 @@ def government_report():
 # government report form route
 @app.route("/Government-report-form")
 def government_report_form():
-     """
-     This function handles the GET and POST requests for the /Government-report-form route. If the request is a GET request, it
-     returns the rendered "Government-report-form.html" template. If the request is a POST request, it retrieves the data from the
-     form fields and assigns them to their respective variables. The function does not take any parameters. Upon a successful POST
-     request, no return type is specified.
-     """
-     if request.method == "GET":
-        return render_template("Government-report-form.html")
-     else:
+    if request.method == "GET":
+        return render_template("government-report-form.html")
+    else:
         first_name = request.form.get("first_name")
         last_name = request.form.get("last_name")
         email = request.form.get("contact_email")
         telephone = request.form.get("telephone_number")
-        age = request.form.get("age")
-        organ_name = request.form.get("organ-name")
-        organ_website = request.form.get("organ-website")
-        F_name = request.form.get("F-name")
-        L_name = request.form.get("L-name")
-        C_name = request.form.get("C-name")
+        age = request.form.get("age") or 0
+        gender = request.form.get("gender")
+        address = request.form.get("address")
+        company_name = request.form.get("company-name")
+        company_website = request.form.get("company-website")
+        company_address = request.form.get("company-address")
+        company_email = request.form.get("company-email")
+        company_type = request.form.get("type")
+        role = request.form.get("role")
+        Fname = request.form.get("F-name")
+        Lname = request.form.get("L-name")
+        Cname = request.form.get("C-name")
+        country = request.form.get("country")
         email_address = request.form.get("email2")
         website = request.form.get("website")
         date = request.form.get("Date")
+        incident_type = request.form.get("type")
+        other = request.form.get("otherissue")
+        description = request.form.get("message")
+        
+        if not (first_name and last_name and email and date and description):
+            # Render the HTML template for the error page and return it
+            return render_template("error.html")
+
+        # If incident type is not provided, set it to 'other'
+        if not incident_type:
+            incident_type = other
+
+        # Open a connection to the database
+        cur = mySQL.connection.cursor()
+        # use the Buissnesses_reports database
+        cur.execute("USE Buissnesses_reports")
+        # Insert the data into the 'Complainants' table
+        cur.execute(
+            "INSERT INTO Buissnesses_reports.Complainants (first_name, last_name, email, telephone , age, gender, address) VALUES (%s, %s, %s, %s, %s, %s, %s)",
+            (first_name, last_name, email, telephone, age, gender, address)
+        )
+        complainant_id = cur.lastrowid
+
+        # Insert the data into the 'Complained_Against' table
+        cur.execute(
+            "INSERT INTO Buissnesses_reports.Complained_Against (first_name, last_name, company_name, country, email_address, website, complainant_id) VALUES (%s, %s, %s, %s, %s, %s, %s)",
+            (Fname, Lname, Cname, country, email_address, website, complainant_id)
+        )
+
+        # insert the data into the 'Companies' table
+        cur.execute(
+            "INSERT INTO Buissnesses_reports.Companies (company_name, company_website, company_address, company_email, company_type, role, complainant_id) VALUES (%s, %s, %s, %s, %s, %s, %s)",
+            (company_name, company_website, company_address, company_email, company_type, role, complainant_id)
+        )
+
+        file_path = "reports/Personal_reports/"
+
+        # Insert the data into the 'Complaints' table
+        cur.execute(
+            "INSERT INTO Buissnesses_reports.Complaints (incident_date,incident_type, description,file_path, complainant_id) VALUES (%s, %s, %s, %s, %s)",
+            (date, incident_type, description, file_path, complainant_id)
+        )
+        # Commit the changes made to the database
+        mySQL.connection.commit()
+
+        # Close the cursor object
+        cur.close()
+
+        # Render the HTML template for the submission confirmation page and return it
+        return render_template("submission.html")
 
 
 # report IOC route
