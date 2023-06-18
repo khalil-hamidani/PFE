@@ -11,7 +11,7 @@ live_server.watch('static/css/*.css')
 live_server.watch('templates/*.html')
 
 
-# database connection 1 [IOC]
+# database connection
 app.config['MYSQL_HOST'] = '172.27.145.170'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_password'] = ''
@@ -34,51 +34,8 @@ def index():
    
    
 # report incident route
-@app.route("/Incident-report")
+@app.route("/Incident-report", methods=["GET"])
 def incident():
-    """
-    This function handles GET requests to the '/Incident-report' route.
-    It inserts a new report into the 'reports' table in the database,
-    and renders the 'Incident-report.html' template.
-    """
-    # Open a connection to the database
-    # conn = mySQL.connect()
-
-    # # Create a cursor object to execute SQL queries
-    # curr = conn.cursor()
-
-    # # Execute an INSERT query to add a new report to the 'reports' table
-    # curr.execute("INSERT INTO reports (incident_type) VALUES (?)", 1)
-
-    # # Commit the changes made to the database
-    # conn.commit()
-
-    # # Close the cursor object
-    # curr.close()
-
-    # try:
-        # Reopen the connection to the database
-        # conn = mySQL.connect()
-
-        # Create a new cursor object to execute another SQL query
-        # curr = conn.cursor()
-
-        # Execute another INSERT query to add a new report to the 'reports' table
-        # curr.execute("INSERT INTO reports (incident_type) VALUES (%s)")
-
-        # Commit the changes made to the database
-        # conn.commit()
-
-        # Close the cursor object
-        # curr.close()
-
-        # Uncomment the following lines if you want to fetch and print the data from the 'reports' table
-        # data = cursor.fetchall()
-        # print(data)
-    # except Exception as e:
-        # Print any errors that occur while executing the SQL query
-        # print(e)
-
     # Render the 'Incident-report.html' template
     return render_template("Incident-report.html")
 
@@ -175,11 +132,10 @@ def individual_report_form():
 
         # Render the HTML template for the submission confirmation page and return it
         return render_template("submission.html")
-        
 
 
 # business report route
-@app.route("/Business-report")
+@app.route("/Business-report", methods=["GET"])
 def group_report():
     return render_template("Business-report.html")
 
@@ -263,7 +219,7 @@ def group_report_form():
 
 
 # government report route
-@app.route("/Government-report")
+@app.route("/Government-report", methods=["GET"])
 def government_report():
     return render_template("Government-report.html")
 
@@ -296,19 +252,13 @@ def government_report_form():
 
 
 # report IOC route
-@app.route("/IOC-report")
+@app.route("/IOC-report", methods=["GET"])
 def ioc():
     """
     This function is a route decorator that maps the URL "/IOC-report" to this function.
     When a request is made using this URL, it returns the rendered template "IOC-report.html".
     """
     return render_template("IOC-report.html")
-
-
-# match type:
-#     case 1:
-#         value = kfds;fjdl
-# db.execute("incert into {value} ",)
 
 
 # report IOC form route
@@ -336,7 +286,7 @@ def ioc_form():
         return render_template("submission.html")
         
 
-
+# scan route
 @app.route('/scan', methods=['GET', 'POST'])
 def scan():
     """
@@ -370,21 +320,20 @@ def scan():
         # Display form to user to input domain/IP address
         return render_template("scan.html")
 
+
+# submission route
 @app.route('/submission', methods=['GET'])
 def submission():
     return render_template("submission.html")
 
 
+# error route
+@app.route("/error", methods=["GET",])
+def error():
+    return render_template("error.html")
+
+
 def run_server():
-    """
-    Runs the Flask application in debug mode.
-
-    Args:
-        None
-
-    Returns:
-        None
-    """
     # Start Flask application in debug mode
     app.run(debug=True)
 
