@@ -237,11 +237,10 @@ def government_report_form():
         age = request.form.get("age") or 0
         gender = request.form.get("gender")
         address = request.form.get("address")
-        company_name = request.form.get("company-name")
-        company_website = request.form.get("company-website")
-        company_address = request.form.get("company-address")
-        company_email = request.form.get("company-email")
-        company_type = request.form.get("type")
+        organ_name = request.form.get("organ-name")
+        organ_website = request.form.get("organ-website")
+        organ_address = request.form.get("organ-address")
+        organ_email = request.form.get("organ-email")
         role = request.form.get("role")
         Fname = request.form.get("F-name")
         Lname = request.form.get("L-name")
@@ -265,7 +264,7 @@ def government_report_form():
         # Open a connection to the database
         cur = mySQL.connection.cursor()
         # use the Buissnesses_reports database
-        cur.execute("USE Buissnesses_reports")
+        cur.execute("USE Government_reports")
         # Insert the data into the 'Complainants' table
         cur.execute(
             "INSERT INTO Buissnesses_reports.Complainants (first_name, last_name, email, telephone , age, gender, address) VALUES (%s, %s, %s, %s, %s, %s, %s)",

@@ -5,6 +5,7 @@ const LastName = document.getElementById("last_name");
 const Email = document.getElementById("contact_email");
 const Email2 = document.getElementById("email2");
 const companyName = document.getElementById("company-name");
+const organName = document.getElementById("organ-name");
 const TheDate = document.getElementById("Date");
 const Description = document.getElementById("message");
 const formError = document.querySelector(".formErrorText");
@@ -69,7 +70,7 @@ TheForm.addEventListener("submit", function (e) {
       break;
 
     case "GovForm":
-      good = checkEmail(Email) && checkEmail(Email2) && checkRequired([FirstName, LastName, Email, companyName, TheDate, Description]);
+      good = checkEmail(Email) && checkEmail(Email2) && checkRequired([FirstName, LastName, Email, organName, TheDate, Description]);
       break;
   }
   console.log(good);
