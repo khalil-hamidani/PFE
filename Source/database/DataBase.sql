@@ -1,6 +1,6 @@
 --todo ------ IOC database ------#ff9900
 
---? Create the Submitters table
+-- Create the Submitters table
 CREATE TABLE Submitter (
   submitter_id INT AUTO_INCREMENT PRIMARY KEY,
   first_name VARCHAR(50),
@@ -9,7 +9,7 @@ CREATE TABLE Submitter (
   telephone VARCHAR(20),
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
---? Create the IOCReports table
+-- Create the IOCReports table
 CREATE TABLE IOCReports (
   report_id INT AUTO_INCREMENT PRIMARY KEY,
   submitter_id INT,
@@ -23,7 +23,7 @@ CREATE TABLE IOCReports (
 
 --todo ------ personal report database ------#ff9900
 
---? Create the Complainants table
+-- Create the Complainants table
 CREATE TABLE Complainants (
   complainant_id INT AUTO_INCREMENT PRIMARY KEY,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -37,7 +37,7 @@ CREATE TABLE Complainants (
   address VARCHAR(200)
 );
 
---? Create the Complaints table
+-- Create the Complaints table
 CREATE TABLE Complaints (
   complaint_id INT AUTO_INCREMENT PRIMARY KEY,
   complainant_id INT,
@@ -48,7 +48,7 @@ CREATE TABLE Complaints (
   FOREIGN KEY (complainant_id) REFERENCES Complainants (complainant_id)
 );
 
---? Create the Complained_Against table
+-- Create the Complained_Against table
 CREATE TABLE Complained_Against (
   Complained_Against INT AUTO_INCREMENT PRIMARY KEY,
   complainant_id INT,
@@ -64,7 +64,7 @@ CREATE TABLE Complained_Against (
 
 --todo ------ Buisinesses report database ------#ff9900
 
---? Create the Complainants table
+-- Create the Complainants table
 CREATE TABLE Complainants (
   complainant_id INT AUTO_INCREMENT PRIMARY KEY,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -73,9 +73,9 @@ CREATE TABLE Complainants (
   email VARCHAR(100),
   telephone VARCHAR(20),
   age INT,
-  gender VARCHAR(10),
+  gender VARCHAR(10)
 );
---? Create the companies table
+-- Create the companies table
 CREATE TABLE Companies (
   company_id INT AUTO_INCREMENT PRIMARY KEY,
   complainant_id INT,
@@ -87,7 +87,7 @@ CREATE TABLE Companies (
   role VARCHAR(50),
   FOREIGN KEY (complainant_id) REFERENCES Complainants (complainant_id)
 );
---? Create the Complaints table
+-- Create the Complaints table
 CREATE TABLE Complaints (
   complaint_id INT AUTO_INCREMENT PRIMARY KEY,
   complainant_id INT,
@@ -98,7 +98,7 @@ CREATE TABLE Complaints (
   FOREIGN KEY (complainant_id) REFERENCES Complainants (complainant_id)
 );
 
---? Create the Complained_Against table
+-- Create the Complained_Against table
 CREATE TABLE Complained_Against (
   Complained_Against INT AUTO_INCREMENT PRIMARY KEY,
   complainant_id INT,
@@ -114,7 +114,7 @@ CREATE TABLE Complained_Against (
 
 --todo ------ government report database ------#ff9900
 
---? Create the Complainants table
+-- Create the Complainants table
 CREATE TABLE Complainants (
   complainant_id INT AUTO_INCREMENT PRIMARY KEY,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -125,7 +125,7 @@ CREATE TABLE Complainants (
   age INT,
   gender VARCHAR(10)
 );
---? Create the companies table
+-- Create the companies table
 CREATE TABLE governments (
   organization_id INT AUTO_INCREMENT PRIMARY KEY,
   complainant_id INT,
@@ -136,7 +136,7 @@ CREATE TABLE governments (
   role VARCHAR(50),
   FOREIGN KEY (complainant_id) REFERENCES Complainants (complainant_id)
 );
---? Create the Complaints table
+-- Create the Complaints table
 CREATE TABLE Complaints (
   complaint_id INT AUTO_INCREMENT PRIMARY KEY,
   complainant_id INT,
@@ -147,7 +147,7 @@ CREATE TABLE Complaints (
   FOREIGN KEY (complainant_id) REFERENCES Complainants (complainant_id)
 );
 
---? Create the Complained_Against table
+-- Create the Complained_Against table
 CREATE TABLE Complained_Against (
   Complained_Against INT AUTO_INCREMENT PRIMARY KEY,
   complainant_id INT,
