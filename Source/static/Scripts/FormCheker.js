@@ -6,12 +6,12 @@ const Email = document.getElementById("contact_email");
 const Email2 = document.getElementById("email2");
 const companyName = document.getElementById("company-name");
 const organName = document.getElementById("organ-name");
+const organEmail = document.getElementById("organ-email");
 const TheDate = document.getElementById("Date");
 const Description = document.getElementById("message");
 const formError = document.querySelector(".formErrorText");
 
 function showError(input) {
-  console.log("red");
   // Add required class to input field's parent element
   input.parentElement.classList.add("required");
   // Increment global error count
@@ -20,7 +20,6 @@ function showError(input) {
 
 //show success
 function showSucces(input) {
-  console.log("green");
   // remove required class to input field's parent element
   input.parentElement.classList.remove("required");
   return true;
@@ -46,10 +45,9 @@ function checkRequired(inputArr) {
   inputArr.forEach(function (input) {
     if (input.value.trim() === "") {
       showError(input);
-      console.log("dir name");
+      console.log(input);
       checker = false;
     } else {
-      showSucces(input);
       console.log("nahi name");
     }
   });

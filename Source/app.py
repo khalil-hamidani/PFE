@@ -225,7 +225,7 @@ def government_report():
 
 
 # government report form route
-@app.route("/Government-report-form")
+@app.route("/Government-report-form", methods=["GET", "POST"])
 def government_report_form():
     if request.method == "GET":
         return render_template("government-report-form.html")
@@ -263,32 +263,32 @@ def government_report_form():
 
         # Open a connection to the database
         cur = mySQL.connection.cursor()
-        # use the Buissnesses_reports database
+        # use the Government_reports database
         cur.execute("USE Government_reports")
         # Insert the data into the 'Complainants' table
         cur.execute(
-            "INSERT INTO Buissnesses_reports.Complainants (first_name, last_name, email, telephone , age, gender, address) VALUES (%s, %s, %s, %s, %s, %s, %s)",
-            (first_name, last_name, email, telephone, age, gender, address)
+            "INSERT INTO Government_reports.Complainants (first_name, last_name, email, telephone , age, gender) VALUES (%s, %s, %s, %s, %s, %s)",
+            (first_name, last_name, email, telephone, age, gender)
         )
         complainant_id = cur.lastrowid
 
         # Insert the data into the 'Complained_Against' table
         cur.execute(
-            "INSERT INTO Buissnesses_reports.Complained_Against (first_name, last_name, company_name, country, email_address, website, complainant_id) VALUES (%s, %s, %s, %s, %s, %s, %s)",
+            "INSERT INTO Government_reports.Complained_Against (first_name, last_name, company_name, country, email_address, website, complainant_id) VALUES (%s, %s, %s, %s, %s, %s, %s)",
             (Fname, Lname, Cname, country, email_address, website, complainant_id)
         )
 
-        # insert the data into the 'Companies' table
+        # insert the data into the 'governments' table
         cur.execute(
-            "INSERT INTO Buissnesses_reports.Companies (company_name, company_website, company_address, company_email, company_type, role, complainant_id) VALUES (%s, %s, %s, %s, %s, %s, %s)",
-            (company_name, company_website, company_address, company_email, company_type, role, complainant_id)
+            "INSERT INTO Government_reports.governments (organization_name, organization_website, organization_address, organization_email, role, complainant_id) VALUES (%s, %s, %s, %s, %s, %s)",
+            (organ_name, organ_website, organ_address, organ_email, role, complainant_id)
         )
 
         file_path = "reports/Personal_reports/"
 
         # Insert the data into the 'Complaints' table
         cur.execute(
-            "INSERT INTO Buissnesses_reports.Complaints (incident_date,incident_type, description,file_path, complainant_id) VALUES (%s, %s, %s, %s, %s)",
+            "INSERT INTO Government_reports.Complaints (incident_date,incident_type, description,file_path, complainant_id) VALUES (%s, %s, %s, %s, %s)",
             (date, incident_type, description, file_path, complainant_id)
         )
         # Commit the changes made to the database
