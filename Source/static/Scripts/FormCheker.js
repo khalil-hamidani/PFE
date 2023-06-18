@@ -47,10 +47,10 @@ function checkRequired(inputArr) {
       showError(input);
       console.log(input);
       checker = false;
-    } else {
-      console.log("nahi name");
-    }
-  });
+      else {
+        showSucces(input);
+      }
+  }});
   return checker;
 }
 
