@@ -7381,9 +7381,9 @@
 												"$ref": "AAAAAAGIrz0Nn6Bs7/0="
 											},
 											"font": "Arial;13;0",
-											"left": 319,
+											"left": 307,
 											"top": 348,
-											"width": 156.0888671875,
+											"width": 181.38427734375,
 											"height": 13,
 											"alpha": 1.5707963267948966,
 											"distance": 10,
@@ -7391,7 +7391,7 @@
 												"$ref": "AAAAAAGIrz0NoKBt5cc="
 											},
 											"edgePosition": 1,
-											"text": "5 : Entrer un sous domaine"
+											"text": "5 : Demander un sous domaine"
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -7987,7 +7987,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGH+txsAU/DuuQ="
 							},
-							"name": "Entrer un sous domaine",
+							"name": "Demander un sous domaine",
 							"source": {
 								"$ref": "AAAAAAGH+vRPalJP+Ik="
 							},
