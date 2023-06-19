@@ -39,7 +39,7 @@
     </div>
     <div id="cve-carousel" class="owl-carousel owl-theme">
 
-        <div class="item rating3">
+        <!-- <div class="item rating3">
             <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-2237#vulnDescriptionTitle">
                 <div class="item-header">
                     <span class="date">juin 09, 2023</span>
@@ -47,7 +47,7 @@
                 </div>
                 <h3 class="title">CVE-2023-2237</h3>
                 <p class="descreption">The WP Replicate Post plugin for WordPress is vulnerable to SQL Injection via the post_id parameter
-                    in versions up to, and including, 4.0.2 due to insufficient escaping on the user supplied parameter and lack of
+                    in versions up to and including 4.0.2 due to insufficient escaping on the user supplied parameter and lack of
                     sufficient preparation on the existing queries that can be used to extract sensitive informations...</p>
                 <h4 style="margin-top: 15px;">source: Wordfence</h4>
                 <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-2237#vulnDescriptionTitle" class="read-more"><i
@@ -79,9 +79,11 @@
                 </div>
                 <h3 class="title">CVE-2023-3173</h3>
                 <p class="descreption">The GitHub repository for froxlor/froxlor prior to version 2.0.20 had a vulnerability related to
-                    improper restriction of excessive authentication attempts, which can be exploited by an attacker and allow unauthorized access to the system via brute-force attacks.</p>
-                    <h4 style="margin-top: 15px;">source: huntr.dev</h4>
-                <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-3173" class="read-more"><i class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
+                    improper restriction of excessive authentication attempts, which can be exploited by an attacker and allow unauthorized
+                    access to the system via brute-force attacks.</p>
+                <h4 style="margin-top: 15px;">source: huntr.dev</h4>
+                <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-3173" class="read-more"><i
+                        class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
             </a>
         </div>
 
@@ -93,7 +95,7 @@
                 </div>
                 <h3 class="title">CVE-2022-42915</h3>
                 <p class="descreption">curl before 7.86.0 has a double free. If curl is told to use an HTTP proxy for a transfer with a
-                    non-HTTP(S) URL, it sets up the connection to the remote server by issuing a CONNECT request to the proxy, and then
+                    non-HTTP(S) URL, it sets up the connection to the remote server by issuing a CONNECT request to the proxy and then
                     tunnels the rest of the protocol...</p>
                 <h4 style="margin-top: 15px;">source: MITRE</h4>
                 <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-42915" class="read-more"><i
@@ -117,7 +119,7 @@
         </div>
 
 
-        <!-- <div class="item rating0">
+        <div class="item rating0">
             <a href="">
                 <div class="item-header">
                     <span class="date">12 MAY 2012</span>
@@ -127,7 +129,7 @@
                 <p class="descreption"></p>
                 <a href="#" class="read-more"><i class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
             </a>
-        </div> -->
+        </div>
 
 
         <div class="item rating3">
@@ -283,7 +285,7 @@
                 <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-24535" class="read-more"><i
                         class="fa-solid fa-arrow-right-long fa-2xl"></i></a>
             </a>
-        </div>
+        </div> -->
 
     </div>
     <div class="read-more-wrapper">
@@ -297,10 +299,10 @@
 </div>
 <div class="about-us">
     <h2 class="section-title">Who we are</h2>
-    <p class="section-text">ACSC, or the Algerian Cyber Security Center, is a web site dedicated to promoting cyber security awareness and
+    <p class="section-text">ACSC, or the Algerian Cyber Security Center, is a website dedicated to promoting cyber security awareness and
         offering resources and solutions for individuals and businesses in Algeria. The site covers a broad range of topics related to cyber
         security, including information on the latest threats, best practices for securing networks and devices, and tools and techniques
-        for detecting and responding to cyber attacks.</p>
+        for detecting and responding to cyber-attacks.</p>
 
     <h2 class="section-title">what we do</h2>
     <p class="section-text">ACSC offers a variety of services to help individuals and organizations in Algeria better protect themselves
@@ -363,7 +365,7 @@
     <div class="helpus">
         <h3>Help us to help others</h3>
         <p> Sharing informative reports is crucial for us to comprehend the threat landscape and enhance the cyber intelligence
-            capabilities. This subsequently improves our ability to help protect other Algerian organisations.</p>
+            capabilities. This subsequently improves our ability to help protect other Algerian organizations.</p>
     </div>
 </div>
 {% endblock main %} {% block script %}
@@ -371,7 +373,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="../static/lib/js/owl.carousel.min.js"></script>
 <script src="../static/lib/js/jquery.mousewheel.min.js"></script>
-<!-- <script src="../static/Scripts/CVE_API.js"></script> -->
+<script src="../static/Scripts/CVE_API.js"></script>
 <!-- for swiper js -->
 <script>
     const swiper = new Swiper(".swiper", {
@@ -390,38 +392,5 @@
             prevEl: ".swiper-button-prev",
         },
     });
-</script>
-<!-- for owl carousel -->
-<script>
-    $(document).ready(function () {
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            items: 3,
-            loop: true,
-            margin: 10,
-            nav: false,
-            dots: true,
-            autoplayTimeout: 1000,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                600: {
-                    items: 2,
-                },
-                1000: {
-                    items: 3,
-                },
-            },
-        });
-        owl.on('mousewheel', '.owl-stage', function (e) {
-            if (e.deltaY > 0) {
-                owl.trigger('prev.owl');
-            } else {
-                owl.trigger('next.owl');
-            }
-            e.preventDefault();
-        });
-    })
 </script>
 {% endblock script %}
