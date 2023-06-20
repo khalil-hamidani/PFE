@@ -327,12 +327,14 @@ def ioc_form():
         # Insert the submitter's data into the Submitters table
         cur = mySQL.connection.cursor()
         cur.execute("INSERT INTO IOC.Submitter (first_name, last_name, email, telephone) VALUES (%s, %s, %s, %s)", (first_name, last_name, email, telephone))
+        # Get the submitter ID of the last inserted row
+        submitter_id = cur.lastrowid
+        cur.execute("INSERT INTO IOC.IOCReport (submitter_id, website_url, ioc_detected, ioc_description) VALUES (%s, %s, %s, %s)", (first_name, last_name, email, telephone))
         mySQL.connection.commit()
         cur.close()
             
 
-        # Get the submitter ID of the last inserted row
-        submitter_id = cur.lastrowid
+        
         return render_template("submission.html")
         
 
