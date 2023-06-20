@@ -17,7 +17,7 @@ CREATE TABLE IOCReports (
   website_url VARCHAR(200),
   ioc_detected VARCHAR(100),
   ioc_description TEXT,
-  FOREIGN KEY (submitter_id) REFERENCES Submitters(submitter_id)
+  FOREIGN KEY (submitter_id) REFERENCES Submitter(submitter_id)
 );
 
 

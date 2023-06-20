@@ -322,6 +322,7 @@ def ioc_form():
         email = request.form.get("contact_email")
         telephone = request.form.get("telephone_number")
         website = request.form.get("url")
+        websitetype = request.form.get("websitetype")
         ioc = request.form.getlist('ioc[]')
         description = request.form.get("description")
         # Insert the submitter's data into the Submitters table
@@ -329,7 +330,7 @@ def ioc_form():
         cur.execute("INSERT INTO IOC.Submitter (first_name, last_name, email, telephone) VALUES (%s, %s, %s, %s)", (first_name, last_name, email, telephone))
         # Get the submitter ID of the last inserted row
         submitter_id = cur.lastrowid
-        cur.execute("INSERT INTO IOC.IOCReport (submitter_id, website_url, ioc_detected, ioc_description) VALUES (%s, %s, %s, %s)", (first_name, last_name, email, telephone))
+        cur.execute("INSERT INTO IOC.IOCReports (submitter_id, website_url, website_type, ioc_detected, ioc_description) VALUES (%s, %s, %s, %s, %s)", (submitter_id,websitetype, website, ioc, description))
         mySQL.connection.commit()
         cur.close()
             
