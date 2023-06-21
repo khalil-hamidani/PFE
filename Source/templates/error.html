@@ -1,1 +1,34 @@
-{{% extends 'template.html' %}}
+{% extends "template.html" %}
+
+{% block link %}
+{% endblock link %}
+
+{% block title %}Cyber report{% endblock title %}
+
+{% block id %}{% endblock id %}
+
+{% block header %}
+
+<h1 id="report-cyber">{{header}}</h1>
+{% endblock header %}
+
+{% block main %}
+<div class="report-incdent-container">
+    <a class="backbtn" href="/Incident-report">&#8592; Back</a>
+    <div class="thankyou-container">
+        <h1>An Error occurred while submitting</h1>
+        <img src="../static/img/circle-check-regular.svg" alt="">
+        <p>there was an error while submitting your report</p>
+    </div>
+
+    <hr id="lasthr">
+    <div class="helpus">
+        <h3>Help us to help others</h3>
+        <p> Sharing informative reports is crucial for us to comprehend the threat landscape and enhance the cyber intelligence
+            capabilities. This subsequently improves our ability to help protect other Algerian organizations.</p>
+    </div>
+</div>
+{% endblock main %}
+{% block script %}
+<script src="https://kit.fontawesome.com/c070b8016f.js" crossorigin="anonymous"></script>
+{% endblock script %}
