@@ -92,7 +92,7 @@ def individual_report_form():
         description = request.form.get("message")
 
         # Check if any of the required fields are empty
-        if not (first_name and last_name and email and date and description):
+        if not (first_name or last_name or email or date or description):
             # Render the HTML template for the error page and return it
             return render_template("error.html")
 
@@ -170,7 +170,7 @@ def group_report_form():
         other = request.form.get("otherissue")
         description = request.form.get("message")
         
-        if not (first_name and last_name and email and date and description):
+        if not (first_name or last_name or email or date or description):
             # Render the HTML template for the error page and return it
             return render_template("error.html")
 
@@ -230,7 +230,8 @@ def government_report_form():
     if request.method == "GET":
         return render_template("government-report-form.html")
     else:
-        first_name = request.form.get("first_name")
+        # first_name = request.form.get("first_name")
+        first_name = None
         last_name = request.form.get("last_name")
         email = request.form.get("contact_email")
         telephone = request.form.get("telephone_number")
@@ -253,7 +254,7 @@ def government_report_form():
         other = request.form.get("otherissue")
         description = request.form.get("message")
         
-        if not (first_name and last_name and email and date and description):
+        if not (first_name or last_name or email or date or description):
             # Render the HTML template for the error page and return it
             return render_template("error.html")
 
