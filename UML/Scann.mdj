@@ -8188,7 +8188,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGIkWVk5vitrRo="
 							},
-							"name": "Remplir un formulaire d'incident",
+							"name": "Déclarer un incident",
 							"ownedViews": [
 								{
 									"_type": "UMLFrameView",
@@ -8208,11 +8208,11 @@
 											},
 											"fillColor": "#d8f2ff",
 											"font": "Arial;13;0",
-											"left": 158.55908203125,
+											"left": 160.72998046875,
 											"top": 13,
-											"width": 171.93603515625,
+											"width": 116.6162109375,
 											"height": 13,
-											"text": "Remplir un formulaire d'incident"
+											"text": "Déclarer un incident"
 										},
 										{
 											"_type": "LabelView",
@@ -8224,7 +8224,7 @@
 											"font": "Arial;13;1",
 											"left": 141,
 											"top": 13,
-											"width": 12.55908203125,
+											"width": 14.72998046875,
 											"height": 13,
 											"text": "sd"
 										}
@@ -9534,7 +9534,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 215.99365234375,
+											"left": 216.72998046875,
 											"top": 373,
 											"width": 1,
 											"height": 13
@@ -9548,7 +9548,7 @@
 											"font": "Arial;13;1",
 											"left": 197,
 											"top": 373,
-											"width": 13.99365234375,
+											"width": 14.72998046875,
 											"height": 13,
 											"text": "alt"
 										},
@@ -10392,9 +10392,9 @@
 											},
 											"fillColor": "#d8f2ff",
 											"font": "Arial;13;0",
-											"left": 302.55908203125,
+											"left": 304.72998046875,
 											"top": 13,
-											"width": 214.73193359375,
+											"width": 235.84423828125,
 											"height": 13,
 											"text": "Signaler un indicateur de compromission"
 										},
@@ -10408,7 +10408,7 @@
 											"font": "Arial;13;1",
 											"left": 285,
 											"top": 13,
-											"width": 12.55908203125,
+											"width": 14.72998046875,
 											"height": 13,
 											"text": "sd"
 										}
@@ -11371,7 +11371,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 383.99365234375,
+											"left": 384.72998046875,
 											"top": 421,
 											"width": 1,
 											"height": 13
@@ -11385,7 +11385,7 @@
 											"font": "Arial;13;1",
 											"left": 365,
 											"top": 421,
-											"width": 13.99365234375,
+											"width": 14.72998046875,
 											"height": 13,
 											"text": "alt"
 										},
@@ -13058,7 +13058,7 @@
 											"top": 111,
 											"width": 358,
 											"height": 13,
-											"text": "RapportIncident"
+											"text": "Incident"
 										},
 										{
 											"_type": "LabelView",
@@ -13356,7 +13356,7 @@
 											"top": 391,
 											"width": 326,
 											"height": 13,
-											"text": "SignalIOC"
+											"text": "IOC"
 										},
 										{
 											"_type": "LabelView",
@@ -13486,7 +13486,7 @@
 											"top": 459,
 											"width": 326,
 											"height": 13,
-											"text": "+TypeProbleme",
+											"text": "+TypeIOC",
 											"horizontalAlignment": 0
 										},
 										{
@@ -13654,7 +13654,7 @@
 											"top": 391,
 											"width": 279,
 											"height": 13,
-											"text": "ScannService"
+											"text": "Service"
 										},
 										{
 											"_type": "LabelView",
@@ -14875,7 +14875,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGIkp/LlwhdgTM="
 					},
-					"name": "RapportIncident",
+					"name": "Incident",
 					"attributes": [
 						{
 							"_type": "UMLAttribute",
@@ -14940,7 +14940,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGIkp/LlwhdgTM="
 					},
-					"name": "SignalIOC",
+					"name": "IOC",
 					"attributes": [
 						{
 							"_type": "UMLAttribute",
@@ -14975,8 +14975,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGIkth0ZQpZWvg="
 							},
-							"name": "TypeProbleme",
-							"type": ""
+							"name": "TypeIOC"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -15005,7 +15004,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGIkp/LlwhdgTM="
 					},
-					"name": "ScannService",
+					"name": "Service",
 					"attributes": [
 						{
 							"_type": "UMLAttribute",
