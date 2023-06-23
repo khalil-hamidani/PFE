@@ -14,7 +14,13 @@
 
 {% block main %}
 <div class="report-incdent-container">
-    <a class="backbtn" href="/Incident-report">&#8592; Back</a>
+    <a class="backbtn" href="
+    {% if ioc == True %}
+    /IOC-report
+    {% else %}
+    /Incident-report
+    {% endif %}
+    ">&#8592; Back</a>
     <div class="thankyou-container">
         <h1>Thank you for your submissions</h1>
         <img src="../static/img/circle-check-regular.svg" alt="">

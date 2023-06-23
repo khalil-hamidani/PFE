@@ -323,7 +323,7 @@ def ioc_form():
         telephone = request.form.get("telephone_number")
         website = request.form.get("url")
         websitetype = request.form.get("websitetype")
-        ioc = request.form.getlist('ioc[]')
+        ioc = ",".join(request.form.getlist('ioc[]'))
         description = request.form.get("description")
         # Insert the submitter's data into the Submitters table
         cur = mySQL.connection.cursor()
