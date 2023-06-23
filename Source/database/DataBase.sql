@@ -73,7 +73,8 @@ CREATE TABLE Complainants (
   email VARCHAR(100),
   telephone VARCHAR(20),
   age INT,
-  gender VARCHAR(10)
+  gender VARCHAR(10),
+  address VARCHAR(100)
 );
 -- Create the companies table
 CREATE TABLE Companies (
@@ -123,7 +124,8 @@ CREATE TABLE Complainants (
   email VARCHAR(100),
   telephone VARCHAR(20),
   age INT,
-  gender VARCHAR(10)
+  gender VARCHAR(10),
+  address VARCHAR(100)
 );
 -- Create the companies table
 CREATE TABLE governments (
