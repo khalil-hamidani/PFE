@@ -155,7 +155,7 @@ def group_report_form():
         address = request.form.get("address")
         company_name = request.form.get("company-name")
         company_website = request.form.get("company-website")
-        company_address = request.form.get("Organ-address")
+        company_address = request.form.get("company-address")
         company_email = request.form.get("company-email")
         company_type = request.form.get("type")
         role = request.form.get("role")
@@ -333,10 +333,8 @@ def ioc_form():
         cur.execute("INSERT INTO IOC.IOCReports (submitter_id, website_url, website_type, ioc_detected, ioc_description) VALUES (%s, %s, %s, %s, %s)", (submitter_id,websitetype, website, ioc, description))
         mySQL.connection.commit()
         cur.close()
-            
-
-        
-        return render_template("submission.html")
+        ioc = True;    
+        return render_template("submission.html",ioc=ioc)
         
 
 # scan route

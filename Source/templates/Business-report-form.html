@@ -109,14 +109,14 @@
           <label for="address" class="form-label"> Company Address </label>
           <br />
           <p class="helpText"></p>
-          <input type="text" id="Organ-address" maxlength="100" pattern="[^]*" name="Organ-address" autocomplete="on" value=""
+          <input type="text" id="company-address" maxlength="100" pattern="[^]*" name="company-address" autocomplete="on" value=""
             class="form-input lastinput" />
         </div>
         <div class="textBox">
-          <label for="email2" class="form-label"> Company Email </label>
+          <label for="company-email" class="form-label"> Company Email </label>
           <br />
           <p class="helpText">plese provide a valid email address</p>
-          <input type="text" name="email2" id="email2" autocomplete="off" class="form-input" />
+          <input type="text" name="company-email" id="company-email" autocomplete="off" class="form-input" />
         </div>
         <div class="textBox">
           <label class="form-label"> Which option best describes your Company? </label>
@@ -158,8 +158,8 @@
           </div>
         </div>
         <div class="textBox">
-          <label for="telephone" class="form-label"> Your role in the Company </label>
-          <input type="text" name="urrole" id="urrole" autocomplete="off" class="form-input lastinput" />
+          <label for="role" class="form-label"> Your role in the Company </label>
+          <input type="text" name="role" id="role" autocomplete="off" class="form-input lastinput" />
         </div>
         <hr class="section_end" />
         <h3 class="section">Section 3</h3>
@@ -495,6 +495,12 @@
             <label class="radio-label">
               <input class="input-radio" type="radio" name="type" value="Vulnerability" />
               Vulnerability
+            </label>
+          </div>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input class="input-radio" type="radio" name="type" value="" />
+              Other Issue
             </label>
           </div>
         </div>
