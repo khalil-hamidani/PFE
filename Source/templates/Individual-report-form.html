@@ -27,14 +27,14 @@
   </div>
   <div class="main-wrapper">
     <div class="form-wrapper">
-      <form action="/Individual-report-form" method="POST">
+      <form action="/Individual-report-form" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="Type" value="personal" />
         <p class="formErrorText">Please fill in or correct the required fields !</p>
         <div class="textBox">
           <label for="first_name" class="form-label"> First Name <span class="Mandatory">*</span></label>
           <br />
           <p class="helpText">Please provide your First name</p>
-          <input type="text" id="first_name" maxlength="49" pattern="[^]*" name="first_name" autocomplete="on" value=""
+          <input type="text" id="first_name" maxlength="49" name="first_name" autocomplete="on" value=""
             class="form-input" />
         </div>
         <div class="textBox">
@@ -42,20 +42,20 @@
           <br />
           <p class="helpText">Please provide your Last name</p>
           <p class="helpText"></p>
-          <input type="text" id="last_name" maxlength="49" pattern="[^]*" name="last_name" autocomplete="on" value="" class="form-input" />
+          <input type="text" id="last_name" maxlength="49"  name="last_name" autocomplete="on" value="" class="form-input" />
         </div>
         <div class="textBox">
           <label for="contact_email" class="form-label"> Email <span class="Mandatory">*</span></label>
           <br />
           <p class="helpText">Please provide a valid email address</p>
-          <input type="email" id="contact_email" maxlength="100" pattern="[^]*" name="contact_email" autocomplete="on" value=""
+          <input type="email" id="contact_email" maxlength="100"  name="contact_email" autocomplete="on" value=""
             class="form-input" />
         </div>
         <div class="textBox">
           <label for="telephone_number" class="form-label"> Telephone </label>
           <br />
           <p class="helpText"></p>
-          <input type="text" id="telephone_number" maxlength="40" pattern="[^]*" name="telephone_number" autocomplete="on" value=""
+          <input type="text" id="telephone_number" maxlength="40"  name="telephone_number" autocomplete="on" value=""
             class="form-input" />
         </div>
         <div class="textBox">
@@ -115,7 +115,7 @@
           <label for="address" class="form-label"> Address </label>
           <br />
           <p class="helpText"></p>
-          <input type="text" id="address" maxlength="100" pattern="[^]*" name="address" autocomplete="on" value=""
+          <input type="text" id="address" maxlength="100"  name="address" autocomplete="on" value=""
             class="form-input lastinput" />
         </div>
         <!--* ------------------------------------------------------------------ -->
@@ -466,7 +466,7 @@
           <label for="otherissue" class="form-label"> If you select "Other", what is your issue ?</label>
           <br />
           <p class="helpText"></p>
-          <input type="text" id="otherissue" maxlength="40" pattern="[^]*" name="otherissue" value="" class="form-input" />
+          <input type="text" id="otherissue" maxlength="40"  name="otherissue" value="" class="form-input" />
         </div>
         <div class="textBox">
           <label for="message" class="form-label"> Description of the incident<span class="Mandatory">*</span> </label>
@@ -485,7 +485,7 @@
 
         <div class="uploader">
           <div class="uploadbox">
-            <input class="file-input" type="file" name="file" hidden />
+            <input class="file-input" type="file" name="file[]" multiple accept="*" hidden />
             <i class="fas fa-cloud-upload-alt"></i>
             <p>Browse File to Upload</p>
           </div>

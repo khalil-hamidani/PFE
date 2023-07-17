@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template , redirect
 from flask_mysqldb import MySQL
 from livereload import Server
+
 import os
 import re
 
@@ -56,7 +57,6 @@ def individual_report():
     if request.method == "GET":
         # Renders the HTML template for the Individual-report page.
         return render_template("Individual-report.html")
-
 
 # individual report form route
 @app.route("/Individual-report-form", methods=["GET", "POST"])
@@ -116,9 +116,11 @@ def individual_report_form():
             "INSERT INTO Personal_reports.Complained_Against (first_name, last_name, company_name, country, email_address, website, complainant_id) VALUES (%s, %s, %s, %s, %s, %s, %s)",
             (Fname, Lname, Cname, country, email_address, website, complainant_id)
         )
-
+        
+        # file = request.files["file"]
+        # filename = file.filename
         file_path = "reports/Personal_reports/"
-
+        
         # Insert the data into the 'Complaints' table
         cur.execute(
             "INSERT INTO Personal_reports.Complaints (incident_date,incident_type, description,file_path, complainant_id) VALUES (%s, %s, %s, %s, %s)",
@@ -129,7 +131,18 @@ def individual_report_form():
 
         # Close the cursor object
         cur.close()
-
+        
+        file = request.files["file"]
+    
+        if not file.filename == "":
+            filename = file.filename
+    
+            if not os.path.exists("uploads"):
+                os.mkdir("uploads")
+        
+            if file:
+                destination = os.path.join("uploads", filename)
+                file.save(destination)
         # Render the HTML template for the submission confirmation page and return it
         return render_template("submission.html")
 
@@ -300,6 +313,26 @@ def government_report_form():
         return render_template("submission.html")
 
 
+@app.route("/upload", methods=["POST"])
+def upload_file():
+    if "file" not in request.files:
+        return "No file selected"
+
+    file = request.files["file"]
+    
+    if file.filename == "":
+        return "No file selected"
+    
+    filename = file.filename
+    
+    if not os.path.exists("uploads"):
+        os.mkdir("uploads")
+        
+    if file:
+        destination = os.path.join("uploads", filename)
+        file.save(destination)
+        return {"message": "File uploaded successfully!"}
+    
 # report IOC route
 @app.route("/IOC-report", methods=["GET"])
 def ioc():
