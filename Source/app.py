@@ -144,6 +144,7 @@ def individual_report_form():
                 destination = os.path.join("uploads", filename)
                 file.save(destination)
         # Render the HTML template for the submission confirmation page and return it
+        
         return render_template("submission.html")
 
 
