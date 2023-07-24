@@ -116,35 +116,35 @@ def individual_report_form():
             "INSERT INTO Personal_reports.Complained_Against (first_name, last_name, company_name, country, email_address, website, complainant_id) VALUES (%s, %s, %s, %s, %s, %s, %s)",
             (Fname, Lname, Cname, country, email_address, website, complainant_id)
         )
-        
-        # file = request.files["file"]
-        # filename = file.filename
-        file_path = "reports/Personal_reports/"
-        
         # Insert the data into the 'Complaints' table
         cur.execute(
-            "INSERT INTO Personal_reports.Complaints (incident_date,incident_type, description,file_path, complainant_id) VALUES (%s, %s, %s, %s, %s)",
-            (date, incident_type, description, file_path, complainant_id)
+            "INSERT INTO Personal_reports.Complaints (incident_date,incident_type, description, complainant_id) VALUES (%s, %s, %s, %s)",
+            (date, incident_type, description, complainant_id)
         )
+        
+        file = request.files["file"]
+
+        if file:
+            filename = file.filename
+            if not os.path.exists("uploads"):
+                os.mkdir("uploads")
+
+            destination = os.path.join("uploads", filename)
+            file.save(destination)
+                
+            file_path = destination
+            complainant_id = cur.lastrowid
+            cur.execute(
+                "INSERT INTO Personal_reports.Complaints (file_path, complainant_id) VALUES (%s, %s)",
+                (file_path, complainant_id)
+            )
         # Commit the changes made to the database
         mySQL.connection.commit()
 
         # Close the cursor object
         cur.close()
-        
-        file = request.files["file"]
-    
-        if not file.filename == "":
-            filename = file.filename
-    
-            if not os.path.exists("uploads"):
-                os.mkdir("uploads")
-        
-            if file:
-                destination = os.path.join("uploads", filename)
-                file.save(destination)
+
         # Render the HTML template for the submission confirmation page and return it
-        
         return render_template("submission.html")
 
 
