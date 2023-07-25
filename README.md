@@ -50,7 +50,7 @@ cd PFE
 ```bash
 pip install -r requirements.txt
 ```
-- Install also the required nmap package by following the installation instructions [here](https://geekflare.com/nmap-vulnerability-scan/)
+- Install also the required nmap package by following the installation instructions [here](https://geekflare.com/nmap-vulnerability-scan/).
 - Setup the MySQL database with the provided schema in [DataBase.sql](/Source/database/DataBase.sql) where you will find the sql commands to create the tables, make sure to setup a proper database connection on your server or local machine and edit the config on the flask rout :
 ```python
 # database connection
