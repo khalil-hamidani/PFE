@@ -1,13 +1,13 @@
 
-# PFE Licence 2023 : Algeria Cybersecurity Web Application
+# PFE Licence: Algeria Cybersecurity Web Application
 
 ![Logo](/Source/static/img/Header.svg)
 
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
-- [Technologies Used](#technologies-Used)
-- [Getting Started](#getting-Started)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
 - [Contributing](#contributing)
 - [Contact us](#contact-us)
 
@@ -77,7 +77,7 @@ We welcome contributions to improve the application. To contribute, follow these
 - Submit a pull request.
 
 
-## Conntact us
+## Contact us
 
 This project was created by: 
 - [khalil hamidani](https://github.com/Khalil-hamidani)
