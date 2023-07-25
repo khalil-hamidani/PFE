@@ -4,14 +4,13 @@
 ![Logo](/Source/static/img/Header.svg)
 
 ## Table of Contents
-- [Introduction](#Introduction)
-- [Features](#Features)
-- [Technologies Used](#Technologies-Used)
-- [Getting Started](#-Getting-Started)
-- [Contributing](#-Contributing)
-- [Contact us](#Contact-us)
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-Used)
+- [Getting Started](#getting-Started)
+- [Contributing](#contributing)
+- [Contact us](#contact-us)
 
-<a name="Introduction"/>
 ## Introduction
 The Cybersecurity Web Application is a platform that enables individuals, businesses, and government departments to report cyber issues and incidents. The application offers a user-friendly interface for submitting reports, reporting Indicators of Compromise (IOCs) and scanning websites for open ports.
 
@@ -77,7 +76,6 @@ We welcome contributions to improve the application. To contribute, follow these
 - Push to the branch: git push origin feature/YourFeature
 - Submit a pull request.
 
-<a name="Contact-us"/>
 
 ## Conntact us
 
