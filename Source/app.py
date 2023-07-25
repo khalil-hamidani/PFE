@@ -1,16 +1,11 @@
 from flask import Flask, request, render_template , redirect
 from flask_mysqldb import MySQL
-from livereload import Server
 
 import os
 import re
 
 app = Flask(__name__)
 app.debug = True
-live_server = Server(app.wsgi_app)
-live_server.watch('static/css/*.css')
-live_server.watch('templates/*.html')
-
 
 # database connection
 app.config['MYSQL_HOST'] = '172.27.145.170'
