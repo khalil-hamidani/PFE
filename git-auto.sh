@@ -1,19 +1,9 @@
 #!/usr/bin/env bash
 
-## Tested on macOS big sur 11.2.1
 ## Usage:
-##  git-auto ;; use current script dir as git dir, and auto commit, not push.
-##  git-auto -d /path/to/your/note's/dir   ;; set git dir
 ##  git-auto -p ;; auto commit and push
-## git-auto -r ;; auto commit, rebase, merge, push
-##  git-auto -s origin -p ;; set remote server
 ##  git-auto -b main -p ;; set git branch
-##  git-auto -i 30 -p ;; set interval seconds
 ##  git-auto -o -p;; execute once
-
-
-#set -e
-#set -x
 
 usage="usage: $0
     [-d <git directory>]
