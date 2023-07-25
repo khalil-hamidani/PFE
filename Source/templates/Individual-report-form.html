@@ -477,15 +477,16 @@
         <hr class="section_end" />
         <h3 class="section">Section 4</h3>
         <h2>Evidences</h2>
-        <p>Attach any and all documents you might have on hand to support your complaint.</p>
-        <p>Electronic files can be submitted by clicking the "Attach files" button. You can attach pictures, documents, and spreadsheets.</p>
+        <p>Attach One document you might have on hand to support your complaint.</p>
+        <p>Electronic file can be submitted by clicking the "Browse File to Upload" button. You can only attach file that has one of the following extensions: <span class="Mandatory">.pdf, .doc, .docx, .txt</span>.</p>
         <div class="form-warn">
-          <p>Note that combined file size cannot exceed 10 MB in size.</p>
+          <p>Note that combined file size cannot exceed 16 MB in size.</p>
         </div>
 
         <div class="uploader">
           <div class="uploadbox">
-            <input class="file-input" type="file" name="file[]" multiple accept="*" hidden />
+            <input type="text" name="route" id="route" value="/Individual-report-form" hidden>
+            <input class="file-input" type="file" name="file[]" multiple accept=".pdf, .doc, .docx, .txt" hidden />
             <i class="fas fa-cloud-upload-alt"></i>
             <p>Browse File to Upload</p>
           </div>

@@ -28,33 +28,33 @@
   </div>
   <div class="main-wrapper">
     <div class="form-wrapper">
-      <form action="/Government-report-form" method="POST">
+      <form action="/Government-report-form" method="POST" enctype="multipart/form-data">
         <p class="formErrorText">Please fill in or correct the required fields !</p>
         <div class="textBox">
           <label for="name" class="form-label"> First Name <span class="Mandatory">*</span></label>
           <br />
           <p class="helpText">plese provide your first name</p>
-          <input type="text" id="first_name" maxlength="49" pattern="[^]*" name="first_name" autocomplete="on" value=""
+          <input type="text" id="first_name" maxlength="49"  name="first_name" autocomplete="on" value=""
             class="form-input" />
         </div>
         <div class="textBox">
           <label for="name" class="form-label"> Last Name <span class="Mandatory">*</span></label>
           <br />
           <p class="helpText">plese provide your last name</p>
-          <input type="text" id="last_name" maxlength="49" pattern="[^]*" name="last_name" autocomplete="on" value="" class="form-input" />
+          <input type="text" id="last_name" maxlength="49"  name="last_name" autocomplete="on" value="" class="form-input" />
         </div>
         <div class="textBox">
           <label for="email" class="form-label"> Email <span class="Mandatory">*</span></label>
           <br />
           <p class="helpText">plese provide a valid email</p>
-          <input type="email" id="contact_email" maxlength="100" pattern="[^]*" name="contact_email" autocomplete="on" value=""
+          <input type="email" id="contact_email" maxlength="100"  name="contact_email" autocomplete="on" value=""
             class="form-input" />
         </div>
         <div class="textBox">
           <label for="email" class="form-label"> Telephone </label>
           <br />
           <p class="helpText"></p>
-          <input type="text" id="telephone_number" maxlength="40" pattern="[^]*" name="telephone_number" autocomplete="on" value=""
+          <input type="text" id="telephone_number" maxlength="40"  name="telephone_number" autocomplete="on" value=""
             class="form-input" />
         </div>
         <div class="textBox">
@@ -88,28 +88,28 @@
           <label for="organ-name" class="form-label">Organization Name <span class="Mandatory">*</span></label>
           <br />
           <p class="helpText">plese provide the name of the organization</p>
-          <input type="text" id="organ-name" maxlength="40" pattern="[^]*" name="organ-name" autocomplete="off" value=""
+          <input type="text" id="organ-name" maxlength="40"  name="organ-name" autocomplete="off" value=""
             class="form-input" />
         </div>
         <div class="textBox">
           <label for="organ-website" class="form-label">Organization Website </label>
           <br />
           <p class="helpText"></p>
-          <input type="text" id="organ-website" maxlength="40" pattern="[^]*" name="organ-website" autocomplete="off" value=""
+          <input type="text" id="organ-website" maxlength="40"  name="organ-website" autocomplete="off" value=""
             class="form-input" />
         </div>
         <div class="textBox">
           <label for="organ-address" class="form-label">Organization Address </label>
           <br />
           <p class="helpText"></p>
-          <input type="text" id="organ-address" maxlength="40" pattern="[^]*" name="organ-address" autocomplete="off" value=""
+          <input type="text" id="organ-address" maxlength="40"  name="organ-address" autocomplete="off" value=""
             class="form-input" />
         </div>
         <div class="textBox">
           <label for="organ-email" class="form-label">Organization Email </label>
           <br />
           <p class="helpText"></p>
-          <input type="text" id="organ-email" maxlength="40" pattern="[^]*" name="organ-email" autocomplete="off" value=""
+          <input type="text" id="organ-email" maxlength="40"  name="organ-email" autocomplete="off" value=""
             class="form-input" />
         </div>
         <div class="textBox">
@@ -463,7 +463,7 @@
           <label for="otherissue" class="form-label"> If you select "Other", what is your issue ?</label>
           <br />
           <p class="helpText"></p>
-          <input type="text" id="otherissue" maxlength="40" pattern="[^]*" name="otherissue" value="" class="form-input" />
+          <input type="text" id="otherissue" maxlength="40"  name="otherissue" value="" class="form-input" />
         </div>
         <div class="textBox">
           <label for="message" class="form-label"> Description of the incident <span class="Mandatory">*</span> </label>
@@ -474,15 +474,16 @@
         <hr class="section_end" />
         <h3 class="section">Section 5</h3>
         <h2>Evidences</h2>
-        <p>Attach any and all documents you might have on hand to support your complaint.</p>
-        <p>Electronic files can be submitted by clicking the "Attach files" button. You can attach pictures, documents and spreadsheets.</p>
+        <p>Attach One document you might have on hand to support your complaint.</p>
+        <p>Electronic file can be submitted by clicking the "Browse File to Upload" button. You can only attach file that has one of the following extensions: <span class="Mandatory">.pdf, .doc, .docx, .txt</span>.</p>
         <div class="form-warn">
-          <p>Note that combined file size cannot exceed 10 MB in size.</p>
+          <p>Note that combined file size cannot exceed 16 MB in size.</p>
         </div>
 
         <div class="uploader">
           <div class="uploadbox">
-            <input class="file-input" type="file" name="file" hidden />
+            <input type="text" name="route" id="route" value="/Individual-report-form" hidden>
+            <input class="file-input" type="file" name="file[]" multiple accept=".pdf, .doc, .docx, .txt" hidden />
             <i class="fas fa-cloud-upload-alt"></i>
             <p>Browse File to Upload</p>
           </div>

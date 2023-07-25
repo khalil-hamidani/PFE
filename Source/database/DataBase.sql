@@ -161,3 +161,4 @@ CREATE TABLE Complained_Against (
   website VARCHAR(200),
   FOREIGN KEY (complainant_id) REFERENCES Complainants (complainant_id)
 );
+

@@ -19,7 +19,10 @@ app.config['MYSQL_password'] = ''
 app.config['MYSQL_DB'] = 'IOC'
 mySQL = MySQL(app)
 
- 
+# file upload limit config
+app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # Set the limit to 16 MB
+
+
 # index route
 @app.route("/", methods=["GET"])
 def index():
@@ -116,28 +119,27 @@ def individual_report_form():
             "INSERT INTO Personal_reports.Complained_Against (first_name, last_name, company_name, country, email_address, website, complainant_id) VALUES (%s, %s, %s, %s, %s, %s, %s)",
             (Fname, Lname, Cname, country, email_address, website, complainant_id)
         )
+        
+        destination = "No file Uploaded"
+        file = request.files.get("file[]")
+        if file:
+            if not os.path.exists("uploads"):
+               os.mkdir("uploads")
+               
+            if not os.path.exists(os.path.join("uploads", "personal_reports")):
+               os.mkdir(os.path.join("uploads", "personal_reports"))
+         
+            filename = file.filename
+            destination = os.path.join("uploads", "personal_reports", filename)
+            file.save(destination)
+            
+            
         # Insert the data into the 'Complaints' table
         cur.execute(
-            "INSERT INTO Personal_reports.Complaints (incident_date,incident_type, description, complainant_id) VALUES (%s, %s, %s, %s)",
-            (date, incident_type, description, complainant_id)
+            "INSERT INTO Personal_reports.Complaints (incident_date,incident_type, description,file_path, complainant_id) VALUES (%s, %s, %s, %s, %s)",
+            (date, incident_type, description,destination, complainant_id)
         )
         
-        file = request.files["file"]
-
-        if file:
-            filename = file.filename
-            if not os.path.exists("uploads"):
-                os.mkdir("uploads")
-
-            destination = os.path.join("uploads", filename)
-            file.save(destination)
-                
-            file_path = destination
-            complainant_id = cur.lastrowid
-            cur.execute(
-                "INSERT INTO Personal_reports.Complaints (file_path, complainant_id) VALUES (%s, %s)",
-                (file_path, complainant_id)
-            )
         # Commit the changes made to the database
         mySQL.connection.commit()
 
@@ -214,13 +216,24 @@ def group_report_form():
             "INSERT INTO Buissnesses_reports.Companies (company_name, company_website, company_address, company_email, company_type, role, complainant_id) VALUES (%s, %s, %s, %s, %s, %s, %s)",
             (company_name, company_website, company_address, company_email, company_type, role, complainant_id)
         )
-
-        file_path = "reports/Personal_reports/"
+        
+        destination = "No file Uploaded"
+        file = request.files.get("file[]")
+        if file:
+            if not os.path.exists("uploads"):
+               os.mkdir("uploads")
+               
+            if not os.path.exists(os.path.join("uploads", "buissnesses_reports")):
+               os.mkdir(os.path.join("uploads", "buissnesses_reports"))
+         
+            filename = file.filename
+            destination = os.path.join("uploads", "buissnesses_reports", filename)
+            file.save(destination)
 
         # Insert the data into the 'Complaints' table
         cur.execute(
             "INSERT INTO Buissnesses_reports.Complaints (incident_date,incident_type, description,file_path, complainant_id) VALUES (%s, %s, %s, %s, %s)",
-            (date, incident_type, description, file_path, complainant_id)
+            (date, incident_type, description, destination, complainant_id)
         )
         # Commit the changes made to the database
         mySQL.connection.commit()
@@ -296,13 +309,24 @@ def government_report_form():
             "INSERT INTO Government_reports.governments (organization_name, organization_website, organization_address, organization_email, role, complainant_id) VALUES (%s, %s, %s, %s, %s, %s)",
             (organ_name, organ_website, organ_address, organ_email, role, complainant_id)
         )
-
-        file_path = "reports/Personal_reports/"
+        
+        destination = "No file Uploaded"
+        file = request.files.get("file[]")
+        if file:
+            if not os.path.exists("uploads"):
+               os.mkdir("uploads")
+               
+            if not os.path.exists(os.path.join("uploads", "government_reports")):
+               os.mkdir(os.path.join("uploads", "government_reports"))
+         
+            filename = file.filename
+            destination = os.path.join("uploads", "government_reports", filename)
+            file.save(destination)
 
         # Insert the data into the 'Complaints' table
         cur.execute(
             "INSERT INTO Government_reports.Complaints (incident_date,incident_type, description,file_path, complainant_id) VALUES (%s, %s, %s, %s, %s)",
-            (date, incident_type, description, file_path, complainant_id)
+            (date, incident_type, description, destination, complainant_id)
         )
         # Commit the changes made to the database
         mySQL.connection.commit()
