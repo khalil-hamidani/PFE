@@ -1,6 +1,5 @@
 from flask import Flask, request, render_template , redirect
 from flask_mysqldb import MySQL
-
 import os
 import re
 
@@ -442,5 +441,4 @@ def run_server():
 
 
 if __name__ == "__main__":
-    live_server.serve(port=5000)
     run_server() 
