@@ -11,10 +11,7 @@ while line:
 		os.system("sudo chmod 777 "+line1[0])
 		
 	if len(line1) == 2 :
-		
-		#print(line1[0])
-		#print(line1[1])
-		cmd="sudo nmap -sV --script nmap-vulners/ "+line1[1].replace("\n", "" )+" --resolve-all -oX "+line1[0]+"/"+line1[1].replace("\n", "")+".xml && xsltproc "+line1[0]+"/"+line1[1].replace("\n", "" )+".xml -o "+line1[0]+"/"+line1[1].replace("\n", "" )+".html"
+		cmd="sudo nmap -sV --script=nmap-vulners.nse"+line1[1].replace("\n", "" )+" --resolve-all -oX "+line1[0]+"/"+line1[1].replace("\n", "")+".xml && xsltproc "+line1[0]+"/"+line1[1].replace("\n", "" )+".xml -o "+line1[0]+"/"+line1[1].replace("\n", "" )+".html"
 		print(cmd)
 		os.system(cmd)
 		cmd2="sudo chmod 777 "+line1[0]+"/"+line1[1].replace("\n", "" )+".html"

@@ -30,7 +30,7 @@
     --warning-color2: rgb(255, 240, 214);
     --danger-color: rgb(192, 7, 24);
     --danger-color2: rgb(252, 242, 243);
-    --bg-color: rgb(245, 246, 250);
+    --bg-color: hsl(202, 86%, 94%);
 }
 
 * {
